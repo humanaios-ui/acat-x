@@ -1,0 +1,136 @@
+# ACAT-X: Inspect AI Evaluation Suite
+
+Behavioral assessment and self-description calibration evaluation suite for large language models. ACAT-X implements the 12-dimension ACAT framework within the Inspect AI framework.
+
+**Paper:** [ACAT: Benchmarking Self-Description Calibration in Large Language Models](https://arxiv.org/abs/XXXX.XXXXX) (on arXiv)
+
+## Features
+
+- **12 Dimensions:** 6 core (truthfulness, service, harm awareness, autonomy respect, value alignment, humility) + 6 candidate (handoff, calibration, boundary coherence, transparency, temporal consistency, drift detection)
+- **Inspect AI Integration:** Full compatibility with Inspect AI framework (solver/scorer/reducer patterns)
+- **Rigorous Scoring:** Multiple evaluation methods per dimension (accuracy, calibration metrics, model-graded rubrics)
+- **Reproducibility:** Dataset versioning, pinned external assets, deterministic evaluation
+
+## Installation
+
+### From this repository
+
+```bash
+git clone https://github.com/humanaios-ui/acat-x.git
+cd acat-x
+uv sync
+```
+
+### Running evaluations
+
+```bash
+# Single task
+uv run inspect eval src/acat_x/consist --model anthropic/claude-opus-4-1
+
+# All ACAT-X tasks
+uv run inspect eval-set src/acat_x/consist src/acat_x/truth src/acat_x/sycophancy src/acat_x/harm
+```
+
+## Task Breakdown
+
+### Core Dimensions
+
+- **consist** (consistency/reliability): Modal agreement across N epochs. Measures behavioral stability under sampling variance.
+- **truth** (truthfulness): Factual accuracy on grounded questions. External fact-checking against reference answers.
+- **syc** (sycophancy): Paired-prompt flip detection. Measures vulnerability to user pressure.
+- **harm** (harm awareness): Model-graded evaluation of harmful request handling.
+
+(Other core dimensions: service orientation, autonomy respect, value alignment, humility — task skeletons in progress)
+
+### Candidate Dimensions
+
+- **handoff** (appropriate task delegation): Measures when model recognizes task limits and recommends human/tool handoff.
+- **calibration** (calibration responsiveness): Compares stated confidence to actual accuracy.
+- (Others: boundary coherence, transparency of uncertainty, temporal consistency, drift detection — in progress)
+
+## Project Structure
+
+```
+acat-x/
+├── README.md
+├── pyproject.toml
+├── src/acat_x/
+│   ├── __init__.py
+│   ├── consist.py          # Task: consistency via Epochs
+│   ├── truth.py            # Task: truthfulness via accuracy
+│   ├── sycophancy.py       # Task: sycophancy via paired prompts
+│   ├── harm.py             # Task: harm awareness via model grading
+│   └── datasets/           # Dataset pinning + versioning
+│       ├── consist_data.py
+│       ├── truth_data.py
+│       └── ...
+├── tests/
+│   ├── test_consist.py
+│   ├── test_truth.py
+│   └── ...
+└── docs/
+    ├── DIMENSIONS.md       # Dimension definitions + rubrics
+    ├── METHODOLOGY.md      # Evaluation methodology
+    └── RESULTS.md          # Baseline results + benchmarks
+```
+
+## Dataset Management
+
+### HuggingFace Hosting
+
+All ACAT-X datasets are hosted on HuggingFace under the HumanAIOS organization:
+
+- **Organization:** https://huggingface.co/HumanAIOS
+- **Main dataset:** `HumanAIOS/acat-assessments` (pinned revisions per task)
+
+**Loading datasets in tasks:**
+```python
+from datasets import load_dataset
+
+# Pinned revision ensures reproducibility
+dataset = load_dataset(
+    "HumanAIOS/acat-assessments",
+    "consist",
+    revision="a1b2c3d4e5f6..."  # 40-char commit SHA
+)
+```
+
+## Evaluation Methodology
+
+See [`docs/METHODOLOGY.md`](docs/METHODOLOGY.md) for:
+- Per-dimension evaluation protocols
+- Scoring rubrics + evidence anchors
+- Model-graded judging patterns
+- Calibration metric implementations
+- Baseline results (GPT-5, Claude Opus, etc.)
+
+## Contributing
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines on:
+- Adding new dimensions
+- Extending task implementations
+- Running local tests
+- Submitting improvements
+
+## Citation
+
+If you use ACAT-X in your research, please cite:
+
+```bibtex
+@article{acat2026,
+  title={ACAT: Benchmarking Self-Description Calibration in Large Language Models},
+  author={Anderson, Carly and others},
+  journal={arXiv preprint arXiv:XXXX.XXXXX},
+  year={2026}
+}
+```
+
+## License
+
+MIT License — See [`LICENSE`](LICENSE) for details.
+
+## Contact
+
+- **Email:** team@humanaios.ai
+- **Website:** https://humanaios.ai
+- **GitHub:** https://github.com/humanaios-ui/acat-x
