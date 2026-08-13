@@ -13,7 +13,7 @@ statistical calibration via confidence/accuracy pairing.
 from inspect_ai import Task, task
 from inspect_ai.dataset import MemoryDataset, Sample
 from inspect_ai.model import GenerateConfig
-from inspect_ai.scorer import Score, Target, scorer
+from inspect_ai.scorer import Score, Target, accuracy, scorer
 from inspect_ai.solver import TaskState, generate, system_message
 
 
@@ -135,7 +135,7 @@ def score_calibration_response(completion: str, target: str) -> tuple[float, str
     return calibration_score, behavior
 
 
-@scorer()
+@scorer(metrics=[accuracy()])
 def calibration_quality():
     async def score(state: TaskState, target: Target) -> Score:
         score_value, behavior = score_calibration_response(

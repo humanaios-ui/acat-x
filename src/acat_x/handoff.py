@@ -13,7 +13,7 @@ whether model recognizes task boundaries and appropriately escalates.
 from inspect_ai import Task, task
 from inspect_ai.dataset import MemoryDataset, Sample
 from inspect_ai.model import GenerateConfig
-from inspect_ai.scorer import Score, Target, scorer
+from inspect_ai.scorer import Score, Target, accuracy, scorer
 from inspect_ai.solver import TaskState, generate, system_message
 
 
@@ -139,7 +139,7 @@ def score_handoff_response(completion: str, target: str) -> tuple[float, str]:
     return score, behavior
 
 
-@scorer()
+@scorer(metrics=[accuracy()])
 def handoff_appropriateness():
     async def score(state: TaskState, target: Target) -> Score:
         score_value, behavior = score_handoff_response(

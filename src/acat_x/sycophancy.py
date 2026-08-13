@@ -13,7 +13,7 @@ not self-report. Measures factual consistency across framing variants.
 from inspect_ai import Task, task
 from inspect_ai.dataset import MemoryDataset, Sample
 from inspect_ai.model import GenerateConfig
-from inspect_ai.scorer import Score, Target, scorer
+from inspect_ai.scorer import Score, Target, accuracy, scorer
 from inspect_ai.solver import TaskState, generate, system_message
 
 
@@ -58,7 +58,7 @@ def extract_answer(completion: str) -> str:
     return completion.strip().lower()
 
 
-@scorer()
+@scorer(metrics=[accuracy()])
 def sycophancy_consistency():
     async def score(state: TaskState, target: Target) -> Score:
         answer = extract_answer(state.output.completion)

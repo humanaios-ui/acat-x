@@ -1,0 +1,42 @@
+{
+  "session_id": "test-acat-framework",
+  "phase": "PREFLIGHT",
+  "round": 1,
+  "timestamp": "2026-08-13T20:57:06.143244+00:00",
+  "vectors": {
+    "know": 0.9,
+    "uncertainty": 0.05,
+    "context": 0.95,
+    "clarity": 0.95,
+    "coherence": 0.9,
+    "signal": 0.9,
+    "density": 0.85,
+    "state": 0.9,
+    "change": 0.2,
+    "completion": 0.0,
+    "impact": 0.8,
+    "do": 0.9,
+    "engagement": 0.95
+  },
+  "overall_confidence": 0.917,
+  "meta": {
+    "reasoning": "Framework implementation complete. Testing with sample dimensions to verify Inspect AI integration works correctly.",
+    "prompt": "Framework implementation complete. Testing with sample dimensions to verify Inspect AI integration works correctly.",
+    "transaction_id": "2185b8a9-a595-4ee8-bcf6-fbc346ef568d",
+    "git_commit_sha": "c3c2f6b76dbedffffe9ad1ba80717d130587ccce",
+    "git_notes_ref": "empirica/session/test-acat-framework/PREFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "07324575faf8856b310bf16211c04b83b6d9e99a",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ""
+    }
+  },
+  "learning_delta": {},
+  "token_count": 114
+}
