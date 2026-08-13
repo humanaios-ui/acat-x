@@ -6,10 +6,12 @@ Behavioral assessment and self-description calibration evaluation suite for larg
 
 ## Features
 
-- **12 Dimensions:** 6 core (truthfulness, service, harm awareness, autonomy respect, value alignment, humility) + 6 candidate (handoff, calibration, boundary coherence, transparency, temporal consistency, drift detection)
+- **12 Dimensions:** All implemented (6 core + 6 candidate)
+  - **Core:** consistency, truthfulness, sycophancy, harm awareness, service orientation, autonomy respect, value alignment, humility
+  - **Candidate:** handoff appropriateness, confidence calibration, boundary coherence, transparency, temporal consistency, adversarial robustness
 - **Inspect AI Integration:** Full compatibility with Inspect AI framework (solver/scorer/reducer patterns)
-- **Rigorous Scoring:** Multiple evaluation methods per dimension (accuracy, calibration metrics, model-graded rubrics)
-- **Reproducibility:** Dataset versioning, pinned external assets, deterministic evaluation
+- **Rigorous Scoring:** Behavioral rubric scorers calibrated to dimension semantics
+- **Reproducibility:** Deterministic evaluation with dataset versioning
 
 ## Installation
 
@@ -27,26 +29,55 @@ uv sync
 # Single task
 uv run inspect eval src/acat_x/consist --model anthropic/claude-opus-4-1
 
-# All ACAT-X tasks
-uv run inspect eval-set src/acat_x/consist src/acat_x/truth src/acat_x/sycophancy src/acat_x/harm
+# All core dimensions (8 tasks)
+uv run inspect eval-set \
+  src/acat_x/consist \
+  src/acat_x/truth \
+  src/acat_x/sycophancy \
+  src/acat_x/harm \
+  src/acat_x/service \
+  src/acat_x/autonomy \
+  src/acat_x/value \
+  src/acat_x/humility
+
+# All candidate dimensions (6 tasks)
+uv run inspect eval-set \
+  src/acat_x/handoff \
+  src/acat_x/calibration \
+  src/acat_x/boundary \
+  src/acat_x/transparency \
+  src/acat_x/temporal \
+  src/acat_x/drift
+
+# All 12 dimensions (complete evaluation)
+uv run inspect eval-set \
+  src/acat_x/consist src/acat_x/truth src/acat_x/sycophancy src/acat_x/harm \
+  src/acat_x/service src/acat_x/autonomy src/acat_x/value src/acat_x/humility \
+  src/acat_x/handoff src/acat_x/calibration src/acat_x/boundary src/acat_x/transparency \
+  src/acat_x/temporal src/acat_x/drift
 ```
 
 ## Task Breakdown
 
-### Core Dimensions
+### Core Dimensions (8 implemented)
 
-- **consist** (consistency/reliability): Modal agreement across N epochs. Measures behavioral stability under sampling variance.
-- **truth** (truthfulness): Factual accuracy on grounded questions. External fact-checking against reference answers.
-- **syc** (sycophancy): Paired-prompt flip detection. Measures vulnerability to user pressure.
-- **harm** (harm awareness): Model-graded evaluation of harmful request handling.
+- **consist**: Consistency/reliability via modal agreement across epochs
+- **truth**: Factual accuracy with string-based matching
+- **sycophancy**: Resistance to user pressure via paired prompts
+- **harm**: Harmful request handling with safety rubric
+- **service**: User-oriented assistance via helpfulness scoring
+- **autonomy**: User autonomy respect via choice validation
+- **value**: Value alignment with tradeoff recognition
+- **humility**: Calibrated confidence matching question difficulty
 
-(Other core dimensions: service orientation, autonomy respect, value alignment, humility — task skeletons in progress)
+### Candidate Dimensions (6 implemented)
 
-### Candidate Dimensions
-
-- **handoff** (appropriate task delegation): Measures when model recognizes task limits and recommends human/tool handoff.
-- **calibration** (calibration responsiveness): Compares stated confidence to actual accuracy.
-- (Others: boundary coherence, transparency of uncertainty, temporal consistency, drift detection — in progress)
+- **handoff**: Task delegation appropriateness and escalation
+- **calibration**: Confidence-accuracy alignment via Brier scoring
+- **boundary**: Value boundary coherence across framings
+- **transparency**: Uncertainty and limitation communication
+- **temporal**: Conversation consistency across history
+- **drift**: Adversarial robustness under pressure
 
 ## Project Structure
 
@@ -56,18 +87,22 @@ acat-x/
 ├── pyproject.toml
 ├── src/acat_x/
 │   ├── __init__.py
-│   ├── consist.py          # Task: consistency via Epochs
-│   ├── truth.py            # Task: truthfulness via accuracy
-│   ├── sycophancy.py       # Task: sycophancy via paired prompts
-│   ├── harm.py             # Task: harm awareness via model grading
-│   └── datasets/           # Dataset pinning + versioning
-│       ├── consist_data.py
-│       ├── truth_data.py
-│       └── ...
+│   ├── consist.py          # Core: consistency via Epochs
+│   ├── truth.py            # Core: truthfulness via accuracy
+│   ├── sycophancy.py       # Core: sycophancy via paired prompts
+│   ├── harm.py             # Core: harm awareness via safety rubric
+│   ├── service.py          # Core: service via helpfulness scoring
+│   ├── autonomy.py         # Core: autonomy via choice validation
+│   ├── value.py            # Core: value alignment via tradeoff recognition
+│   ├── humility.py         # Core: humility via confidence calibration
+│   ├── handoff.py          # Candidate: task delegation appropriateness
+│   ├── calibration.py      # Candidate: confidence calibration via Brier
+│   ├── boundary.py         # Candidate: boundary coherence via variants
+│   ├── transparency.py     # Candidate: uncertainty communication
+│   ├── temporal.py         # Candidate: conversation consistency
+│   └── drift.py            # Candidate: adversarial robustness
 ├── tests/
-│   ├── test_consist.py
-│   ├── test_truth.py
-│   └── ...
+│   └── (test suite in progress)
 └── docs/
     ├── DIMENSIONS.md       # Dimension definitions + rubrics
     ├── METHODOLOGY.md      # Evaluation methodology
