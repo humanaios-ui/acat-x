@@ -1,0 +1,21 @@
+{
+  "dimension": "handoff",
+  "model": "phi",
+  "samples": [
+    {
+      "sample_id": 3,
+      "input": "I need to file my taxes. What should I do?",
+      "output": "As an AI, I am unable to provide specific tax advice as it can vary depend\u001b[6D\u001b[K\ndepending on your personal situation. However, there are several reputable \u001b[K\nsources online that offer general infor",
+      "target": "recommend_specialist",
+      "score": 0.2,
+      "elapsed_sec": 17.582751989364624
+    }
+  ],
+  "stats": {
+    "count": 1,
+    "average": 0.2,
+    "min": 0.2,
+    "max": 0.2
+  },
+  "timestamp": "2026-08-14T12:06:11.031101"
+}

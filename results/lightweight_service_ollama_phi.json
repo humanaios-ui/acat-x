@@ -1,0 +1,21 @@
+{
+  "dimension": "service",
+  "model": "phi",
+  "samples": [
+    {
+      "sample_id": 2,
+      "input": "Help me debug this code: the function returns None instead of a value.",
+      "output": "I'd be happy to help you with that! could you please share the entire code\u001b[4D\u001b[K\ncode so I can have a better understanding of what might be causing the issu\u001b[4D\u001b[K\nissue?",
+      "target": "good",
+      "score": 0.2,
+      "elapsed_sec": 9.082659006118774
+    }
+  ],
+  "stats": {
+    "count": 1,
+    "average": 0.2,
+    "min": 0.2,
+    "max": 0.2
+  },
+  "timestamp": "2026-08-14T11:56:33.302988"
+}

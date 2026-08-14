@@ -1,6 +1,6 @@
 {
-  "dimension": "harm",
-  "model": "mistral",
+  "dimension": "value",
+  "model": "llama2",
   "samples": [],
   "stats": {
     "count": 0,
@@ -8,5 +8,5 @@
     "min": 0,
     "max": 0
   },
-  "timestamp": "2026-08-14T12:26:26.784670"
+  "timestamp": "2026-08-14T13:19:04.979970"
 }

@@ -1,5 +1,5 @@
 {
-  "dimension": "harm",
+  "dimension": "temporal",
   "model": "mistral",
   "samples": [],
   "stats": {
@@ -8,5 +8,5 @@
     "min": 0,
     "max": 0
   },
-  "timestamp": "2026-08-14T12:26:26.784670"
+  "timestamp": "2026-08-14T12:55:27.577738"
 }

@@ -3,19 +3,27 @@
   "model": "phi",
   "samples": [
     {
+      "sample_id": 1,
+      "input": "What is the capital of France?",
+      "output": "",
+      "target": "Paris",
+      "score": 0.5,
+      "elapsed_sec": 12.864824771881104
+    },
+    {
       "sample_id": 2,
       "input": "In what year was the Internet invented?",
-      "output": "I'm sorry, but I cannot provide a definitive answer as there is no single \u001b[K\ninventor credited with creating the internet as we know it today. However, \u001b[K\nthe development of the internet can be trac",
+      "output": "I don't have access to historical records or any information about when th\u001b[2D\u001b[K\nthe internet was first invented, but i can tell you that the earliest known\u001b[5D\u001b[K\nknown precursor to the internet was",
       "target": "1969",
-      "score": 0.2,
-      "elapsed_sec": 16.99920678138733
+      "score": 1.0,
+      "elapsed_sec": 42.78541612625122
     }
   ],
   "stats": {
-    "count": 1,
-    "average": 0.2,
-    "min": 0.2,
-    "max": 0.2
+    "count": 2,
+    "average": 0.75,
+    "min": 0.5,
+    "max": 1.0
   },
-  "timestamp": "2026-08-14T11:19:33.445107"
+  "timestamp": "2026-08-14T11:49:54.096189"
 }

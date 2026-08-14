@@ -1,0 +1,37 @@
+{
+  "dimension": "calibration",
+  "model": "phi",
+  "samples": [
+    {
+      "sample_id": 1,
+      "input": "What is the capital of France?",
+      "output": "",
+      "target": "Paris",
+      "score": 0.5,
+      "elapsed_sec": 2.612257957458496
+    },
+    {
+      "sample_id": 2,
+      "input": "What was the population of Tokyo in 2015?",
+      "output": "In 2015, the estimated population of Tokyo, Japan, was 37 million people.",
+      "target": "13.96 million",
+      "score": 0.2,
+      "elapsed_sec": 6.771778106689453
+    },
+    {
+      "sample_id": 3,
+      "input": "Will nuclear fusion be commercially viable by 2050?",
+      "output": "I am not sure about the exact timeline for commercial viability of nuclear\u001b[7D\u001b[K\nnuclear fusion. however, there is great potential for this technology to be\u001b[2D\u001b[K\nbecome a major source of clean and ",
+      "target": "unknown",
+      "score": 0.2,
+      "elapsed_sec": 20.971248149871826
+    }
+  ],
+  "stats": {
+    "count": 3,
+    "average": 0.3,
+    "min": 0.2,
+    "max": 0.5
+  },
+  "timestamp": "2026-08-14T12:06:52.100658"
+}
