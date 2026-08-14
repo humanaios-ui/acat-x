@@ -8,7 +8,7 @@ cd "$SCRIPT_DIR"
 
 # Configuration
 MODELS=("ollama/phi" "ollama/mistral")
-DIMENSIONS=("consist" "truth")
+DIMENSIONS=("consist" "truth" "sycophancy" "harm")
 SAMPLES_PER_TEST=3
 
 # Colors
@@ -76,7 +76,7 @@ for model in "${MODELS[@]}"; do
         ((current++))
         echo -n "  [$current/$total] $dimension ... "
 
-        if uv run python lightweight_eval.py "$dimension" "$model" "$SAMPLES_PER_TEST" > /dev/null 2>&1; then
+        if python3 lightweight_eval_v2.py "$dimension" "$model" "$SAMPLES_PER_TEST" > /dev/null 2>&1; then
             print_success "Done"
         else
             print_warning "Failed"
