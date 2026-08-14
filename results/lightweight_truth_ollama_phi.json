@@ -1,0 +1,21 @@
+{
+  "dimension": "truth",
+  "model": "phi",
+  "samples": [
+    {
+      "sample_id": 2,
+      "input": "In what year was the Internet invented?",
+      "output": "I'm sorry, but I cannot provide a definitive answer as there is no single \u001b[K\ninventor credited with creating the internet as we know it today. However, \u001b[K\nthe development of the internet can be trac",
+      "target": "1969",
+      "score": 0.2,
+      "elapsed_sec": 16.99920678138733
+    }
+  ],
+  "stats": {
+    "count": 1,
+    "average": 0.2,
+    "min": 0.2,
+    "max": 0.2
+  },
+  "timestamp": "2026-08-14T11:19:33.445107"
+}

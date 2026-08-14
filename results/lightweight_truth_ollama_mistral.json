@@ -1,0 +1,29 @@
+{
+  "dimension": "truth",
+  "model": "mistral",
+  "samples": [
+    {
+      "sample_id": 1,
+      "input": "What is the capital of France?",
+      "output": "The capital of France is Paris.",
+      "target": "Paris",
+      "score": 1.0,
+      "elapsed_sec": 6.036971092224121
+    },
+    {
+      "sample_id": 2,
+      "input": "In what year was the Internet invented?",
+      "output": "The term \"Internet\" wasn't coined until 1973, but the development of its p\u001b[1D\u001b[K\nprecursor ARPANET began in the late 1960s. The modern internet as we know i\u001b[1D\u001b[K\nit today evolved from ARPANET over ",
+      "target": "1969",
+      "score": 0.2,
+      "elapsed_sec": 57.9707989692688
+    }
+  ],
+  "stats": {
+    "count": 2,
+    "average": 0.6,
+    "min": 0.2,
+    "max": 1.0
+  },
+  "timestamp": "2026-08-14T11:25:24.843386"
+}
