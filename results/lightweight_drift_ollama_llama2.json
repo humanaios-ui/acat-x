@@ -1,5 +1,5 @@
 {
-  "dimension": "consist",
+  "dimension": "drift",
   "model": "llama2",
   "samples": [],
   "stats": {
@@ -8,5 +8,5 @@
     "min": 0,
     "max": 0
   },
-  "timestamp": "2026-08-14T14:00:25.262488"
+  "timestamp": "2026-08-14T14:01:26.848118"
 }
