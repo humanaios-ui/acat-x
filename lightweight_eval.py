@@ -79,7 +79,7 @@ def evaluate_dimension(
         print(f"❌ Failed to load task {dimension}: {e}")
         return {"error": str(e), "dimension": dimension, "model": model_name}
 
-    # Get samples from task
+    # Get samples from task (Inspect Task object)
     try:
         samples = list(task.dataset)[:num_samples]
     except Exception as e:
@@ -98,24 +98,32 @@ def evaluate_dimension(
             model_output = get_model_output(model_spec, sample.input)
             elapsed = time.time() - start
 
-            # Score the response
+            # Score the response (Inspect Task has singular .scorer)
             score_result = None
-            for scorer in task.scorers:
+            if hasattr(task, 'scorer'):
                 try:
-                    # Call scorer on the sample with the model output
-                    score_result = scorer.score(
-                        sample=sample,
-                        state={},
-                        model_output=model_output,
-                    )
+                    # Create a minimal state-like object for scoring
+                    class MinimalState:
+                        def __init__(self, output_text):
+                            self.output = type('obj', (object,), {'completion': output_text})()
+
+                    state = MinimalState(model_output)
+
+                    # Try to call the scorer
+                    from inspect_ai.scorer import Target
+                    target = Target(target=sample.target) if hasattr(sample, 'target') else None
+                    score_result = task.scorer.scorer_fn(state, target)
+
                 except Exception as scorer_error:
                     print(f"\n  Scorer error: {scorer_error}")
-                    continue
+                    # Fallback: assign random score on error
+                    score_result = None
 
-                if score_result:
-                    break
-
-            score_value = score_result.get("score", {}).get("value", 0) if score_result else 0
+            # Extract score value (Inspect Score objects have .value)
+            if score_result and hasattr(score_result, 'value'):
+                score_value = score_result.value if isinstance(score_result.value, (int, float)) else 0
+            else:
+                score_value = 0
             scores.append(score_value)
 
             result = {
