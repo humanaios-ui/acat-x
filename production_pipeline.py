@@ -149,9 +149,10 @@ class ProductionDatabase:
 class ProductionPipeline:
     """Full production evaluation pipeline"""
 
-    def __init__(self, models: List[str] = None, dimensions: List[str] = None):
+    def __init__(self, models: List[str] = None, dimensions: List[str] = None, num_samples: int = 3):
         self.models = models or MODELS_DEFAULT
         self.dimensions = dimensions or DIMENSIONS_DEFAULT
+        self.num_samples = num_samples
         self.db = ProductionDatabase()
         self.cycle_id = datetime.now().strftime("%Y%m%d_%H%M%S")
         self.alerts = []
@@ -182,7 +183,7 @@ class ProductionPipeline:
 
                 try:
                     # Run evaluation
-                    result = self._run_evaluation(model, dimension)
+                    result = self._run_evaluation(model, dimension, self.num_samples)
 
                     if result:
                         score = result.get("stats", {}).get("average", 0.0)
@@ -227,14 +228,14 @@ class ProductionPipeline:
             "report": report
         }
 
-    def _run_evaluation(self, model: str, dimension: str) -> Optional[Dict]:
+    def _run_evaluation(self, model: str, dimension: str, num_samples: int = 3) -> Optional[Dict]:
         """Run single evaluation"""
         model_safe = model.replace("/", "_")
         result_file = Path("results") / f"lightweight_{dimension}_{model_safe}.json"
 
         try:
-            # Execute evaluator
-            cmd = f"python3 lightweight_eval_v3_apis.py {dimension} {model} 3"
+            # Execute evaluator with configurable samples
+            cmd = f"python3 lightweight_eval_v3_apis.py {dimension} {model} {num_samples}"
             subprocess.run(cmd, shell=True, capture_output=True, timeout=600)
 
             # Load result
@@ -319,11 +320,12 @@ if __name__ == "__main__":
     parser.add_argument("--dry-run", action="store_true", help="Dry run (no execution)")
     parser.add_argument("--models", nargs="+", default=MODELS_DEFAULT, help="Models to evaluate")
     parser.add_argument("--dimensions", nargs="+", default=DIMENSIONS_DEFAULT, help="Dimensions to evaluate")
+    parser.add_argument("--samples", type=int, default=3, help="Samples per evaluation (default: 3)")
     parser.add_argument("--report", action="store_true", help="Show performance report")
 
     args = parser.parse_args()
 
-    pipeline = ProductionPipeline(args.models, args.dimensions)
+    pipeline = ProductionPipeline(args.models, args.dimensions, args.samples)
 
     if args.report:
         # Show historical trends
