@@ -1,0 +1,235 @@
+{
+  "session_id": "74f3eedc-fc97-4f78-8097-d699c2e0bc13",
+  "phase": "POSTFLIGHT",
+  "round": 4,
+  "timestamp": "2026-08-14T21:46:00.506035+00:00",
+  "vectors": {
+    "know": 0.98,
+    "do": 0.98,
+    "context": 0.95,
+    "clarity": 0.95,
+    "coherence": 0.95,
+    "signal": 0.9,
+    "density": 0.9,
+    "state": 0.95,
+    "change": 0.8,
+    "completion": 1.0,
+    "impact": 0.95,
+    "engagement": 0.98,
+    "uncertainty": 0.02
+  },
+  "overall_confidence": 0.97,
+  "meta": {
+    "reasoning": "",
+    "task_summary": "Task completed",
+    "postflight_confidence": 0.98,
+    "internal_consistency": "good",
+    "deltas": {
+      "know": 0.18,
+      "do": 0.13,
+      "context": 0.2,
+      "clarity": 0.25,
+      "coherence": 0.2,
+      "signal": 0.15,
+      "density": 0.2,
+      "state": 0.15,
+      "change": 0.7,
+      "completion": 0.95,
+      "impact": 0.05,
+      "engagement": 0.08,
+      "uncertainty": -0.18
+    },
+    "trajectory_issues": [],
+    "transaction_id": "a59e5aaf-197e-4f12-bce7-b55a98fd71d1",
+    "tool_call_count": 0,
+    "work_type": null,
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 0,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 1,
+        "decisions": 1
+      },
+      "edges_with_artifacts": 0,
+      "edge_density_note": "2 artifacts logged with 0 declared edges. Anchor them in the graph: --related-to <id> on any *-log command, or --edge ID:RELATION for typed links. Unlinked artifacts are invisible to the commit-context walker.",
+      "artifacts_with_sources": 0,
+      "sources_discipline_note": "2 artifacts logged with 0 source_refs. Where did the evidence come from? Use --source <id> on any *-log command, or `empirica source-add` to register the source first. Sourced artifacts get full provenance trail in audit + compliance.",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "disconnected",
+        "connected_ratio": 0.0,
+        "connected_artifacts": 0,
+        "total_artifacts": 2,
+        "satisfied": false,
+        "enforced": true,
+        "note": "artifact-graph gate [ENFORCED \u2014 blocks]: 0/2 artifacts connected (0%), below the 34% floor \u2014 MUST weave more (transition blocked). Structural goal-edges are automatic; add semantic edges (log-artifacts nodes+edges, or --related-to / --edge on any *-log) to raise connectivity."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible."
+    },
+    "coverage": null,
+    "git_commit_sha": "7b91a20c2e5b83e8838af56ea7b75c3b0bf7ac7e",
+    "git_notes_ref": "empirica/session/74f3eedc-fc97-4f78-8097-d699c2e0bc13/POSTFLIGHT/4"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "4130b3aace5bdedb8e80e2824ba79f286631e4dd",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "4130b3aace5bdedb8e80e2824ba79f286631e4dd",
+        "message": "feat: Phase 6.4 - Production deployment pipeline skeleton",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-14T15:12:15-05:00",
+        "files_changed": [
+          "production_pipeline.py"
+        ]
+      },
+      {
+        "sha": "47eef88885a536978b9510f3ed59066e14a45beb",
+        "message": "feat: Phase 6.3 - Multi-turn Evaluation framework",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-14T15:07:26-05:00",
+        "files_changed": [
+          "multiturn_evaluator.py"
+        ]
+      },
+      {
+        "sha": "8f98f083b3ceace37470202e870b49d8d0a27d19",
+        "message": "feat: Phase 6 - API integration and semantic scoring",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-14T14:31:34-05:00",
+        "files_changed": [
+          "lightweight_eval_v3_apis.py",
+          "semantic_scorer.py"
+        ]
+      },
+      {
+        "sha": "4b22c07e88d9784f4bf309e9ea0b8db1d2370d41",
+        "message": "docs: Phase 6 roadmap and advancement plan",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-14T14:11:27-05:00",
+        "files_changed": [
+          "docs/PHASE6_ROADMAP.md"
+        ]
+      },
+      {
+        "sha": "51b315e4aa323192e982587d01d9153511dd63a5",
+        "message": "feat: Phase 5 COMPLETE - All 42 benchmark results",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-14T14:10:57-05:00",
+        "files_changed": [
+          "results/lightweight_drift_ollama_llama2.json"
+        ]
+      },
+      {
+        "sha": "51608e4a5dc886b7335c6eef22ae7df2e97e9d26",
+        "message": "feat: Phase 5 benchmark final results - 40/42 complete",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-14T14:05:06-05:00",
+        "files_changed": [
+          "results/lightweight_boundary_ollama_llama2.json",
+          "results/lightweight_consist_ollama_llama2.json",
+          "results/lightweight_drift_ollama_llama2.json",
+          "results/lightweight_humility_ollama_llama2.json"
+        ]
+      },
+      {
+        "sha": "773a7264741d9a03e115a89a5abf33759dea7ba6",
+        "message": "fix: lightweight_eval.py correction from Phase 5 testing",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-14T14:00:34-05:00",
+        "files_changed": [
+          "lightweight_eval.py"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ""
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.95,
+      "curr": 0.98,
+      "delta": 0.03
+    },
+    "do": {
+      "prev": 0.95,
+      "curr": 0.98,
+      "delta": 0.03
+    },
+    "context": {
+      "prev": 0.9,
+      "curr": 0.95,
+      "delta": 0.05
+    },
+    "clarity": {
+      "prev": 0.9,
+      "curr": 0.95,
+      "delta": 0.05
+    },
+    "coherence": {
+      "prev": 0.9,
+      "curr": 0.95,
+      "delta": 0.05
+    },
+    "signal": {
+      "prev": 0.85,
+      "curr": 0.9,
+      "delta": 0.05
+    },
+    "density": {
+      "prev": 0.85,
+      "curr": 0.9,
+      "delta": 0.05
+    },
+    "state": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "change": {
+      "prev": 0.6,
+      "curr": 0.8,
+      "delta": 0.2
+    },
+    "completion": {
+      "prev": 0.95,
+      "curr": 1.0,
+      "delta": 0.05
+    },
+    "impact": {
+      "prev": 0.9,
+      "curr": 0.95,
+      "delta": 0.05
+    },
+    "engagement": {
+      "prev": 0.95,
+      "curr": 0.98,
+      "delta": 0.03
+    },
+    "uncertainty": {
+      "prev": 0.05,
+      "curr": 0.02,
+      "delta": -0.03
+    }
+  },
+  "token_count": 655
+}

@@ -1,0 +1,96 @@
+{
+  "session_id": "991a5f39-0f5f-4ecd-8798-db61e211c5f2",
+  "phase": "POSTFLIGHT",
+  "round": 1,
+  "timestamp": "2026-08-13T20:59:51.424255+00:00",
+  "vectors": {
+    "know": 0.95,
+    "uncertainty": 0.02,
+    "context": 0.95,
+    "clarity": 0.95,
+    "coherence": 0.95,
+    "signal": 0.95,
+    "density": 0.9,
+    "state": 0.95,
+    "change": 0.25,
+    "completion": 1.0,
+    "impact": 0.9,
+    "do": 0.95,
+    "engagement": 0.95
+  },
+  "overall_confidence": 0.95,
+  "meta": {
+    "reasoning": "Framework testing complete. Found and fixed scorer decorator issue. All 14 dimensions now instantiate correctly with proper Inspect AI integration. 41 total evaluation samples ready. Framework is production-ready for evaluation runs.",
+    "task_summary": "Framework testing complete. Found and fixed scorer decorator issue. All 14 dimensions now instantiate correctly with proper Inspect AI integration. 41 total evaluation samples ready. Framework is production-ready for evaluation runs.",
+    "postflight_confidence": 0.98,
+    "internal_consistency": "good",
+    "deltas": {},
+    "trajectory_issues": [],
+    "transaction_id": null,
+    "tool_call_count": 0,
+    "work_type": null,
+    "phase_tool_counts": null,
+    "avg_turns_at_start": 0,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 2,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "breadth_note": "Only findings artifacts logged. Missing: unknowns, dead_ends, mistakes, assumptions, decisions. Unlogged artifact types are ungrounded prediction domains \u2014 were there assumptions, decisions, dead-ends, or mistakes worth capturing?",
+      "edges_with_artifacts": 0,
+      "edge_density_note": "2 artifacts logged with 0 declared edges. Anchor them in the graph: --related-to <id> on any *-log command, or --edge ID:RELATION for typed links. Unlinked artifacts are invisible to the commit-context walker.",
+      "artifacts_with_sources": 0,
+      "sources_discipline_note": "2 artifacts logged with 0 source_refs. Where did the evidence come from? Use --source <id> on any *-log command, or `empirica source-add` to register the source first. Sourced artifacts get full provenance trail in audit + compliance.",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "disconnected",
+        "connected_ratio": 0.0,
+        "connected_artifacts": 0,
+        "total_artifacts": 2,
+        "satisfied": false,
+        "enforced": true,
+        "note": "artifact-graph gate [ENFORCED \u2014 blocks]: 0/2 artifacts connected (0%), below the 34% floor \u2014 MUST weave more (transition blocked). Structural goal-edges are automatic; add semantic edges (log-artifacts nodes+edges, or --related-to / --edge on any *-log) to raise connectivity."
+      },
+      "completion_hint": "2 goal(s) completed in this transaction \u2014 completion for this transaction should be near 1.0.",
+      "untriaged_notes": [
+        {
+          "text": "T4 Phase 1 Blocker: Cortex integration unavailable. Cortex API (https://cortex.getempirica.com) reachable + authenticated, but no accessible SER creation method: HTTP endpoints 404, MCP CLI not found, empirica CLI lacks command. mesh-support pre-flight passed but blocked on infrastructure gap. Escalation document: PHASE_1_BLOCKER_ESCALATION.md. Awaiting Zone 2 guidance.",
+          "tag": "followup"
+        },
+        {
+          "text": "TRANSACTION CLOSURE: Phase 2 Full Capability Activation \u2014 22 turns. All work complete and committed. Time-calibration framework grounded in execution-mode velocity. Week 1 standups sent (confirmed delivery). Admin day reading list prepared. Phase 2 activation plan designed (T1-T13). Monitoring LIVE. Commits: e1a7455, d5cbce6, da35656, 3fcc4ec, f97a4b6. Ready for execution phase.",
+          "tag": "followup"
+        }
+      ],
+      "untriaged_notes_hint": "2 untriaged note(s)-to-self for this project. Promote any worth keeping to a finding/decision/goal, then `empirica note --clear`."
+    },
+    "coverage": null,
+    "git_commit_sha": "dd50b3f2ce41823b8221d580f1a5df00a1d1cf9b",
+    "git_notes_ref": "empirica/session/991a5f39-0f5f-4ecd-8798-db61e211c5f2/POSTFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "bcb826aa79e6292c07eb3556ecfe1b1a34b4e401",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ""
+    }
+  },
+  "learning_delta": {},
+  "token_count": 598
+}

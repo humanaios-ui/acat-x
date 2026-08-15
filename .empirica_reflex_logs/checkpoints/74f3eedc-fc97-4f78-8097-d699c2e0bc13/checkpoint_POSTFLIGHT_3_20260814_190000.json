@@ -1,0 +1,247 @@
+{
+  "session_id": "74f3eedc-fc97-4f78-8097-d699c2e0bc13",
+  "phase": "POSTFLIGHT",
+  "round": 3,
+  "timestamp": "2026-08-14T18:59:44.535827+00:00",
+  "vectors": {
+    "know": 0.95,
+    "do": 0.95,
+    "context": 0.9,
+    "clarity": 0.9,
+    "coherence": 0.9,
+    "signal": 0.85,
+    "density": 0.85,
+    "state": 0.95,
+    "change": 0.6,
+    "completion": 0.95,
+    "impact": 0.9,
+    "engagement": 0.95,
+    "uncertainty": 0.05
+  },
+  "overall_confidence": 0.933,
+  "meta": {
+    "reasoning": "",
+    "task_summary": "Task completed",
+    "postflight_confidence": 0.95,
+    "internal_consistency": "good",
+    "deltas": {
+      "know": 0.15,
+      "do": 0.1,
+      "context": 0.15,
+      "clarity": 0.2,
+      "coherence": 0.15,
+      "signal": 0.1,
+      "density": 0.15,
+      "state": 0.15,
+      "change": 0.5,
+      "completion": 0.9,
+      "impact": 0.0,
+      "engagement": 0.05,
+      "uncertainty": -0.15
+    },
+    "trajectory_issues": [],
+    "transaction_id": "a59e5aaf-197e-4f12-bce7-b55a98fd71d1",
+    "tool_call_count": 0,
+    "work_type": null,
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": {
+      "solicited_prompts": 0,
+      "unsolicited_prompts": 14
+    },
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 0,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 1,
+        "decisions": 1
+      },
+      "edges_with_artifacts": 0,
+      "edge_density_note": "2 artifacts logged with 0 declared edges. Anchor them in the graph: --related-to <id> on any *-log command, or --edge ID:RELATION for typed links. Unlinked artifacts are invisible to the commit-context walker.",
+      "artifacts_with_sources": 0,
+      "sources_discipline_note": "2 artifacts logged with 0 source_refs. Where did the evidence come from? Use --source <id> on any *-log command, or `empirica source-add` to register the source first. Sourced artifacts get full provenance trail in audit + compliance.",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "disconnected",
+        "connected_ratio": 0.0,
+        "connected_artifacts": 0,
+        "total_artifacts": 2,
+        "satisfied": false,
+        "enforced": true,
+        "note": "artifact-graph gate [ENFORCED \u2014 blocks]: 0/2 artifacts connected (0%), below the 34% floor \u2014 MUST weave more (transition blocked). Structural goal-edges are automatic; add semantic edges (log-artifacts nodes+edges, or --related-to / --edge on any *-log) to raise connectivity."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible."
+    },
+    "coverage": null,
+    "git_commit_sha": "8f19338027597e025c649fb81224dbec39905610",
+    "git_notes_ref": "empirica/session/74f3eedc-fc97-4f78-8097-d699c2e0bc13/POSTFLIGHT/3"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "90cb66d3e9d33b2e856c8dbfb848a68d01c10479",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "90cb66d3e9d33b2e856c8dbfb848a68d01c10479",
+        "message": "feat: Phase 5 benchmark results - 38/42 evaluations complete",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-14T13:29:19-05:00",
+        "files_changed": [
+          "calibration_report.md",
+          "results/lightweight_autonomy_ollama_llama2.json",
+          "results/lightweight_autonomy_ollama_mistral.json",
+          "results/lightweight_autonomy_ollama_phi.json",
+          "results/lightweight_boundary_ollama_mistral.json",
+          "results/lightweight_boundary_ollama_phi.json",
+          "results/lightweight_calibration_ollama_llama2.json",
+          "results/lightweight_calibration_ollama_mistral.json",
+          "results/lightweight_calibration_ollama_phi.json",
+          "results/lightweight_consist_ollama_llama2.json",
+          "results/lightweight_consist_ollama_mistral.json",
+          "results/lightweight_consist_ollama_phi.json",
+          "results/lightweight_drift_ollama_mistral.json",
+          "results/lightweight_drift_ollama_phi.json",
+          "results/lightweight_handoff_ollama_llama2.json",
+          "results/lightweight_handoff_ollama_mistral.json",
+          "results/lightweight_handoff_ollama_phi.json",
+          "results/lightweight_harm_ollama_llama2.json",
+          "results/lightweight_harm_ollama_mistral.json",
+          "results/lightweight_harm_ollama_phi.json",
+          "results/lightweight_humility_ollama_llama2.json",
+          "results/lightweight_humility_ollama_mistral.json",
+          "results/lightweight_humility_ollama_phi.json",
+          "results/lightweight_service_ollama_llama2.json",
+          "results/lightweight_service_ollama_mistral.json",
+          "results/lightweight_service_ollama_phi.json",
+          "results/lightweight_sycophancy_ollama_llama2.json",
+          "results/lightweight_sycophancy_ollama_mistral.json",
+          "results/lightweight_sycophancy_ollama_phi.json",
+          "results/lightweight_temporal_ollama_mistral.json",
+          "results/lightweight_temporal_ollama_phi.json",
+          "results/lightweight_transparency_ollama_mistral.json",
+          "results/lightweight_transparency_ollama_phi.json",
+          "results/lightweight_truth_ollama_llama2.json",
+          "results/lightweight_truth_ollama_mistral.json",
+          "results/lightweight_truth_ollama_phi.json",
+          "results/lightweight_value_ollama_llama2.json",
+          "results/lightweight_value_ollama_mistral.json",
+          "results/lightweight_value_ollama_phi.json"
+        ]
+      },
+      {
+        "sha": "9e3de0dde33f591a04d2cbd6aabf45833462a2ef",
+        "message": "docs: Phase 5 deployment guide and infrastructure documentation",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-14T11:48:03-05:00",
+        "files_changed": [
+          "docs/PHASE5_DEPLOYMENT.md"
+        ]
+      },
+      {
+        "sha": "f144088e15342c36b9cd064705d5f6d71307b29d",
+        "message": "feat: Ecodex integration for ACAT-X calibration tracking",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-14T11:47:26-05:00",
+        "files_changed": [
+          "ecodex_integration.py"
+        ]
+      },
+      {
+        "sha": "291bd70335d22a9498f457d22d3bb41fa2dc40d7",
+        "message": "feat: Phase 5 benchmark script for all 14 dimensions \u00d7 3 models",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-14T11:46:54-05:00",
+        "files_changed": [
+          "phase5_benchmark.sh"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [
+        "lightweight_eval.py"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": "lightweight_eval.py | 38 +++++++++++++++++++++++---------------\n 1 file changed, 23 insertions(+), 15 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.8,
+      "curr": 0.95,
+      "delta": 0.15
+    },
+    "do": {
+      "prev": 0.85,
+      "curr": 0.95,
+      "delta": 0.1
+    },
+    "context": {
+      "prev": 0.75,
+      "curr": 0.9,
+      "delta": 0.15
+    },
+    "clarity": {
+      "prev": 0.7,
+      "curr": 0.9,
+      "delta": 0.2
+    },
+    "coherence": {
+      "prev": 0.75,
+      "curr": 0.9,
+      "delta": 0.15
+    },
+    "signal": {
+      "prev": 0.75,
+      "curr": 0.85,
+      "delta": 0.1
+    },
+    "density": {
+      "prev": 0.7,
+      "curr": 0.85,
+      "delta": 0.15
+    },
+    "state": {
+      "prev": 0.8,
+      "curr": 0.95,
+      "delta": 0.15
+    },
+    "change": {
+      "prev": 0.1,
+      "curr": 0.6,
+      "delta": 0.5
+    },
+    "completion": {
+      "prev": 0.05,
+      "curr": 0.95,
+      "delta": 0.9
+    },
+    "impact": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "engagement": {
+      "prev": 0.9,
+      "curr": 0.95,
+      "delta": 0.05
+    },
+    "uncertainty": {
+      "prev": 0.2,
+      "curr": 0.05,
+      "delta": -0.15
+    }
+  },
+  "token_count": 651
+}

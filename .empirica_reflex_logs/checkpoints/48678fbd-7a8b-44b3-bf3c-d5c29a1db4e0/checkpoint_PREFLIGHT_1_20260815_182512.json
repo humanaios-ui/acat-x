@@ -1,0 +1,42 @@
+{
+  "session_id": "48678fbd-7a8b-44b3-bf3c-d5c29a1db4e0",
+  "phase": "PREFLIGHT",
+  "round": 1,
+  "timestamp": "2026-08-15T18:25:08.461103+00:00",
+  "vectors": {
+    "know": 0.85,
+    "do": 0.9,
+    "context": 0.8,
+    "clarity": 0.75,
+    "coherence": 0.8,
+    "signal": 0.85,
+    "density": 0.75,
+    "state": 0.8,
+    "change": 0.2,
+    "completion": 0.0,
+    "impact": 0.95,
+    "engagement": 0.9,
+    "uncertainty": 0.15
+  },
+  "overall_confidence": 0.85,
+  "meta": {
+    "reasoning": "Phase 5 complete with proven lightweight evaluator. Phase 6 has 3 skeleton files (v3_apis ~90%, multiturn ~30%, pipeline ~20%). Know: framework proven, skeleton structure clear. Do: API integration ready (Anthropic/OpenAI), can extend evaluator. Context: full roadmap in docs, sample models tested. Clarity: 4-milestone chain defined. Uncertainty: optimal semantic scorer integration strategy\u2014phasing gradually rather than replacing. Change: starting fresh on 6.1 test run with v3_apis. Impact: production-ready system with 5-model coverage + semantic scoring + temporal analysis + monitoring.",
+    "prompt": "Phase 5 complete with proven lightweight evaluator. Phase 6 has 3 skeleton files (v3_apis ~90%, multiturn ~30%, pipeline ~20%). Know: framework proven, skeleton structure clear. Do: API integration ready (Anthropic/OpenAI), can extend evaluator. Context: full roadmap in docs, sample models tested. Clarity: 4-milestone chain defined. Uncertainty: optimal semantic scorer integration strategy\u2014phasing gradually rather than replacing. Change: starting fresh on 6.1 test run with v3_apis. Impact: production-ready system with 5-model coverage + semantic scoring + temporal analysis + monitoring.",
+    "transaction_id": "fc3225af-7f59-4655-b174-7393cb745022",
+    "git_commit_sha": "7cea7499d5c3f0d287cf95552fbb8507b12bd3e9",
+    "git_notes_ref": "empirica/session/48678fbd-7a8b-44b3-bf3c-d5c29a1db4e0/PREFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "4130b3aace5bdedb8e80e2824ba79f286631e4dd",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ""
+    }
+  },
+  "learning_delta": {},
+  "token_count": 280
+}

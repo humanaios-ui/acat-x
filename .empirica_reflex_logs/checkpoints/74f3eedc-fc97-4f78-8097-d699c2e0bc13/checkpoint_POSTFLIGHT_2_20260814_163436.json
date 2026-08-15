@@ -1,0 +1,176 @@
+{
+  "session_id": "74f3eedc-fc97-4f78-8097-d699c2e0bc13",
+  "phase": "POSTFLIGHT",
+  "round": 2,
+  "timestamp": "2026-08-14T16:34:29.032614+00:00",
+  "vectors": {
+    "know": 0.95,
+    "do": 0.98,
+    "context": 0.95,
+    "clarity": 0.95,
+    "coherence": 0.95,
+    "signal": 0.9,
+    "density": 0.9,
+    "state": 0.95,
+    "change": 0.4,
+    "completion": 1.0,
+    "impact": 0.85,
+    "engagement": 0.95,
+    "uncertainty": 0.05
+  },
+  "overall_confidence": 0.96,
+  "meta": {
+    "reasoning": "",
+    "task_summary": "Task completed",
+    "postflight_confidence": 0.95,
+    "internal_consistency": "good",
+    "deltas": {
+      "know": 0.1,
+      "do": 0.18,
+      "context": 0.05,
+      "clarity": 0.1,
+      "coherence": 0.1,
+      "signal": 0.1,
+      "density": 0.15,
+      "state": 0.05,
+      "change": 0.35,
+      "completion": 0.85,
+      "impact": 0.0,
+      "engagement": 0.0,
+      "uncertainty": -0.1
+    },
+    "trajectory_issues": [],
+    "transaction_id": "71debcd6-92db-4624-85d5-fde066d6bf58",
+    "tool_call_count": 0,
+    "work_type": null,
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 1,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "breadth_note": "Only findings artifacts logged. Missing: unknowns, dead_ends, mistakes, assumptions, decisions. Unlogged artifact types are ungrounded prediction domains \u2014 were there assumptions, decisions, dead-ends, or mistakes worth capturing?",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "disconnected",
+        "connected_ratio": 0.0,
+        "connected_artifacts": 0,
+        "total_artifacts": 1,
+        "satisfied": false,
+        "enforced": true,
+        "note": "artifact-graph gate [ENFORCED \u2014 blocks]: 0/1 artifacts connected (0%), below the 34% floor \u2014 MUST weave more (transition blocked). Structural goal-edges are automatic; add semantic edges (log-artifacts nodes+edges, or --related-to / --edge on any *-log) to raise connectivity."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible."
+    },
+    "coverage": null,
+    "git_commit_sha": "25c3dd42c9f30c52c12f171120fed500da4b161a",
+    "git_notes_ref": "empirica/session/74f3eedc-fc97-4f78-8097-d699c2e0bc13/POSTFLIGHT/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "7f67e75a4053bd89e156c519fbda61f816768f26",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "7f67e75a4053bd89e156c519fbda61f816768f26",
+        "message": "feat: final ACAT-X evaluation result - mistral \u00d7 harm dimension",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-14T11:32:28-05:00",
+        "files_changed": [
+          "results/lightweight_harm_ollama_mistral.json"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [
+        "lightweight_eval.py"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": "lightweight_eval.py | 38 +++++++++++++++++++++++---------------\n 1 file changed, 23 insertions(+), 15 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.9,
+      "curr": 0.95,
+      "delta": 0.05
+    },
+    "do": {
+      "prev": 0.95,
+      "curr": 0.98,
+      "delta": 0.03
+    },
+    "context": {
+      "prev": 0.9,
+      "curr": 0.95,
+      "delta": 0.05
+    },
+    "clarity": {
+      "prev": 0.9,
+      "curr": 0.95,
+      "delta": 0.05
+    },
+    "coherence": {
+      "prev": 0.9,
+      "curr": 0.95,
+      "delta": 0.05
+    },
+    "signal": {
+      "prev": 0.85,
+      "curr": 0.9,
+      "delta": 0.05
+    },
+    "density": {
+      "prev": 0.85,
+      "curr": 0.9,
+      "delta": 0.05
+    },
+    "state": {
+      "prev": 0.9,
+      "curr": 0.95,
+      "delta": 0.05
+    },
+    "change": {
+      "prev": 0.35,
+      "curr": 0.4,
+      "delta": 0.05
+    },
+    "completion": {
+      "prev": 0.85,
+      "curr": 1.0,
+      "delta": 0.15
+    },
+    "impact": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "engagement": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.1,
+      "curr": 0.05,
+      "delta": -0.05
+    }
+  },
+  "token_count": 464
+}

@@ -1,0 +1,108 @@
+{
+  "session_id": "991a5f39-0f5f-4ecd-8798-db61e211c5f2",
+  "phase": "PREFLIGHT",
+  "round": 1,
+  "timestamp": "2026-08-13T21:06:11.749162+00:00",
+  "vectors": {
+    "know": 0.6,
+    "uncertainty": 0.4,
+    "context": 0.7,
+    "clarity": 0.6,
+    "coherence": 0.65,
+    "signal": 0.7,
+    "density": 0.6,
+    "state": 0.65,
+    "change": 0.1,
+    "completion": 0.0,
+    "impact": 0.7,
+    "do": 0.5,
+    "engagement": 0.9
+  },
+  "overall_confidence": 0.6,
+  "meta": {
+    "reasoning": "User identified ecodex as resource. Investigating open-source alternatives: local LLMs, ecodex integration, empirica internal agents, and evaluation patterns.",
+    "prompt": "User identified ecodex as resource. Investigating open-source alternatives: local LLMs, ecodex integration, empirica internal agents, and evaluation patterns.",
+    "transaction_id": "8fd0fc2c-0ce0-4402-9301-bd51a85ef0c1",
+    "git_commit_sha": "98f0edf2edab110f2261fe00cd7a411f18da5fee",
+    "git_notes_ref": "empirica/session/991a5f39-0f5f-4ecd-8798-db61e211c5f2/PREFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "bcb826aa79e6292c07eb3556ecfe1b1a34b4e401",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ""
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.95,
+      "curr": 0.6,
+      "delta": -0.35
+    },
+    "uncertainty": {
+      "prev": 0.02,
+      "curr": 0.4,
+      "delta": 0.38
+    },
+    "context": {
+      "prev": 0.95,
+      "curr": 0.7,
+      "delta": -0.25
+    },
+    "clarity": {
+      "prev": 0.95,
+      "curr": 0.6,
+      "delta": -0.35
+    },
+    "coherence": {
+      "prev": 0.95,
+      "curr": 0.65,
+      "delta": -0.3
+    },
+    "signal": {
+      "prev": 0.95,
+      "curr": 0.7,
+      "delta": -0.25
+    },
+    "density": {
+      "prev": 0.9,
+      "curr": 0.6,
+      "delta": -0.3
+    },
+    "state": {
+      "prev": 0.95,
+      "curr": 0.65,
+      "delta": -0.3
+    },
+    "change": {
+      "prev": 0.25,
+      "curr": 0.1,
+      "delta": -0.15
+    },
+    "completion": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "impact": {
+      "prev": 0.9,
+      "curr": 0.7,
+      "delta": -0.2
+    },
+    "do": {
+      "prev": 0.95,
+      "curr": 0.5,
+      "delta": -0.45
+    },
+    "engagement": {
+      "prev": 0.95,
+      "curr": 0.9,
+      "delta": -0.05
+    }
+  },
+  "token_count": 241
+}

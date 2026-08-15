@@ -1,0 +1,85 @@
+
+
+
+
+
+
+
+
+# Grounded calibration (auto-updated by Empirica post-test verification)
+# NOTE: These scores are drift indicators from deterministic proxies, not
+# ground truth. They detect systematic bias patterns over time but cannot
+# fully measure holistic epistemic state. Use alongside self-assessment,
+# not as a replacement. See dual-track calibration philosophy in docs.
+grounded_calibration:
+  last_updated: "2026-08-15T13:31:55.441178"
+  ai_id: acat-x
+  observations: 17
+  grounded_coverage: 0.67
+  divergence:
+    context: +0.33
+    uncertainty: -0.20
+    do: +0.17
+    change: -0.15
+    impact: +0.11
+    completion: -0.08
+    signal: -0.04
+    know: +0.04
+  ungrounded: [engagement]
+  grounded_bias_corrections:
+    signal: +0.08
+    uncertainty: -0.05
+  phase_weights:
+    noetic: 0.5
+    praxic: 0.5
+    source: no_tool_data
+  holistic_calibration_score: 0.1453
+  holistic_gaps:
+    context: +0.4500
+    uncertainty: -0.2882
+    do: +0.2500
+    change: -0.2000
+    impact: +0.1800
+    completion: -0.1000
+    know: +0.0800
+    signal: -0.0444
+# Learning trajectory (PREFLIGHT→POSTFLIGHT deltas — measures learning, NOT calibration bias)
+# For actual bias corrections see grounded_calibration.grounded_bias_corrections
+learning_trajectory:
+  last_updated: "2026-08-15T13:31:54.616710"
+  ai_id: acat-x
+  observations: 13
+  session_deltas:
+  readiness:
+    min_know: 0.70
+    max_uncertainty: 0.35
+  summary:
+    overestimates: []
+    underestimates: []
+    well_calibrated: []
+# Brier calibration (auto-updated by Empirica post-test verification)
+brier_calibration:
+  last_updated: "2026-08-14T16:46:19.938032"
+  ai_id: empirica-outreach
+  note: "Murphy (1973) decomposition: BS = Reliability - Resolution + Uncertainty"
+  noetic:
+    brier_score: 0.0611
+    reliability: 0.0357
+    resolution: 0.0090
+    uncertainty: 0.0344
+    n_predictions: 50
+    trend: degrading
+  praxic:
+    brier_score: 0.1984
+    reliability: 0.0883
+    resolution: 0.0045
+    uncertainty: 0.1146
+    n_predictions: 50
+    trend: degrading
+  combined:
+    brier_score: 0.3300
+    reliability: 0.2257
+    resolution: 0.0215
+    uncertainty: 0.1258
+    n_predictions: 50
+    trend: degrading

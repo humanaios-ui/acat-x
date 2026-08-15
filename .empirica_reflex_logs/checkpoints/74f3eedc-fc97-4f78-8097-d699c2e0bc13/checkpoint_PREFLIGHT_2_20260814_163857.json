@@ -1,0 +1,110 @@
+{
+  "session_id": "74f3eedc-fc97-4f78-8097-d699c2e0bc13",
+  "phase": "PREFLIGHT",
+  "round": 2,
+  "timestamp": "2026-08-14T16:38:52.657145+00:00",
+  "vectors": {
+    "know": 0.8,
+    "do": 0.85,
+    "context": 0.75,
+    "clarity": 0.7,
+    "coherence": 0.75,
+    "signal": 0.75,
+    "density": 0.7,
+    "state": 0.8,
+    "change": 0.1,
+    "completion": 0.05,
+    "impact": 0.9,
+    "engagement": 0.9,
+    "uncertainty": 0.2
+  },
+  "overall_confidence": 0.8,
+  "meta": {
+    "reasoning": "Phase 5 scope requires investigation - need to understand integration points with earlier phases and deployment strategy. Evaluation framework is proven and ready to integrate. Moderate uncertainty about Phase 5 specific objectives (20%) - should investigate requirements before implementation. High engagement and impact (Phase 5 is critical next milestone).",
+    "prompt": "Phase 5 scope requires investigation - need to understand integration points with earlier phases and deployment strategy. Evaluation framework is proven and ready to integrate. Moderate uncertainty about Phase 5 specific objectives (20%) - should investigate requirements before implementation. High engagement and impact (Phase 5 is critical next milestone).",
+    "transaction_id": "a59e5aaf-197e-4f12-bce7-b55a98fd71d1",
+    "git_commit_sha": "791311f9c85f2d9bc0395bfaab4217550d022947",
+    "git_notes_ref": "empirica/session/74f3eedc-fc97-4f78-8097-d699c2e0bc13/PREFLIGHT/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "7f67e75a4053bd89e156c519fbda61f816768f26",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        "lightweight_eval.py"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": "lightweight_eval.py | 38 +++++++++++++++++++++++---------------\n 1 file changed, 23 insertions(+), 15 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.95,
+      "curr": 0.8,
+      "delta": -0.15
+    },
+    "do": {
+      "prev": 0.98,
+      "curr": 0.85,
+      "delta": -0.13
+    },
+    "context": {
+      "prev": 0.95,
+      "curr": 0.75,
+      "delta": -0.2
+    },
+    "clarity": {
+      "prev": 0.95,
+      "curr": 0.7,
+      "delta": -0.25
+    },
+    "coherence": {
+      "prev": 0.95,
+      "curr": 0.75,
+      "delta": -0.2
+    },
+    "signal": {
+      "prev": 0.9,
+      "curr": 0.75,
+      "delta": -0.15
+    },
+    "density": {
+      "prev": 0.9,
+      "curr": 0.7,
+      "delta": -0.2
+    },
+    "state": {
+      "prev": 0.95,
+      "curr": 0.8,
+      "delta": -0.15
+    },
+    "change": {
+      "prev": 0.4,
+      "curr": 0.1,
+      "delta": -0.3
+    },
+    "completion": {
+      "prev": 1.0,
+      "curr": 0.05,
+      "delta": -0.95
+    },
+    "impact": {
+      "prev": 0.85,
+      "curr": 0.9,
+      "delta": 0.05
+    },
+    "engagement": {
+      "prev": 0.95,
+      "curr": 0.9,
+      "delta": -0.05
+    },
+    "uncertainty": {
+      "prev": 0.05,
+      "curr": 0.2,
+      "delta": 0.15
+    }
+  },
+  "token_count": 335
+}

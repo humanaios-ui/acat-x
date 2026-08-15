@@ -1,0 +1,187 @@
+{
+  "session_id": "991a5f39-0f5f-4ecd-8798-db61e211c5f2",
+  "phase": "POSTFLIGHT",
+  "round": 2,
+  "timestamp": "2026-08-13T21:08:17.545604+00:00",
+  "vectors": {
+    "know": 0.85,
+    "uncertainty": 0.1,
+    "context": 0.85,
+    "clarity": 0.85,
+    "coherence": 0.85,
+    "signal": 0.85,
+    "density": 0.8,
+    "state": 0.85,
+    "change": 0.35,
+    "completion": 1.0,
+    "impact": 0.85,
+    "do": 0.8,
+    "engagement": 0.95
+  },
+  "overall_confidence": 0.833,
+  "meta": {
+    "reasoning": "Successfully researched and documented open-source evaluation alternatives. Created comprehensive guide for Ollama, vLLM, HuggingFace integration. Built multi-model evaluation scripts and comparison framework. Verified Inspect AI native support for 7+ providers. ACAT-X now evaluable without API keys using local open-source models.",
+    "task_summary": "Successfully researched and documented open-source evaluation alternatives. Created comprehensive guide for Ollama, vLLM, HuggingFace integration. Built multi-model evaluation scripts and comparison framework. Verified Inspect AI native support for 7+ providers. ACAT-X now evaluable without API keys using local open-source models.",
+    "postflight_confidence": 0.9,
+    "internal_consistency": "good",
+    "deltas": {
+      "know": 0.25,
+      "uncertainty": -0.3,
+      "context": 0.15,
+      "clarity": 0.25,
+      "coherence": 0.2,
+      "signal": 0.15,
+      "density": 0.2,
+      "state": 0.2,
+      "change": 0.25,
+      "completion": 1.0,
+      "impact": 0.15,
+      "do": 0.3,
+      "engagement": 0.05
+    },
+    "trajectory_issues": [],
+    "transaction_id": null,
+    "tool_call_count": 0,
+    "work_type": null,
+    "phase_tool_counts": null,
+    "avg_turns_at_start": 0,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 4,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 1,
+        "decisions": 2
+      },
+      "edges_with_artifacts": 4,
+      "artifacts_with_sources": 0,
+      "sources_discipline_note": "7 artifacts logged with 0 source_refs. Where did the evidence come from? Use --source <id> on any *-log command, or `empirica source-add` to register the source first. Sourced artifacts get full provenance trail in audit + compliance.",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "partial",
+        "connected_ratio": 0.571,
+        "connected_artifacts": 4,
+        "total_artifacts": 7,
+        "satisfied": true,
+        "enforced": false,
+        "note": "artifact-graph gate [enforce, report-only]: 4/7 artifacts connected (57%) \u2014 meets the 34% floor."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "completion_hint": "2 goal(s) completed in this transaction \u2014 completion for this transaction should be near 1.0.",
+      "untriaged_notes": [
+        {
+          "text": "T4 Phase 1 Blocker: Cortex integration unavailable. Cortex API (https://cortex.getempirica.com) reachable + authenticated, but no accessible SER creation method: HTTP endpoints 404, MCP CLI not found, empirica CLI lacks command. mesh-support pre-flight passed but blocked on infrastructure gap. Escalation document: PHASE_1_BLOCKER_ESCALATION.md. Awaiting Zone 2 guidance.",
+          "tag": "followup"
+        },
+        {
+          "text": "TRANSACTION CLOSURE: Phase 2 Full Capability Activation \u2014 22 turns. All work complete and committed. Time-calibration framework grounded in execution-mode velocity. Week 1 standups sent (confirmed delivery). Admin day reading list prepared. Phase 2 activation plan designed (T1-T13). Monitoring LIVE. Commits: e1a7455, d5cbce6, da35656, 3fcc4ec, f97a4b6. Ready for execution phase.",
+          "tag": "followup"
+        }
+      ],
+      "untriaged_notes_hint": "2 untriaged note(s)-to-self for this project. Promote any worth keeping to a finding/decision/goal, then `empirica note --clear`."
+    },
+    "coverage": null,
+    "git_commit_sha": "c83c49d7243e29ec319cf5618f3afbdd25f2b429",
+    "git_notes_ref": "empirica/session/991a5f39-0f5f-4ecd-8798-db61e211c5f2/POSTFLIGHT/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "4fd1d51101fe7c15f2068812542e3f0747cf2d59",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "4fd1d51101fe7c15f2068812542e3f0747cf2d59",
+        "message": "Add comprehensive open-source evaluation guide and multi-model scripts",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-13T16:07:45-05:00",
+        "files_changed": [
+          "docs/EVALUATION_GUIDE.md",
+          "scripts/compare_evaluations.py",
+          "scripts/evaluate_multiple_models.sh"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ""
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.6,
+      "curr": 0.85,
+      "delta": 0.25
+    },
+    "uncertainty": {
+      "prev": 0.4,
+      "curr": 0.1,
+      "delta": -0.3
+    },
+    "context": {
+      "prev": 0.7,
+      "curr": 0.85,
+      "delta": 0.15
+    },
+    "clarity": {
+      "prev": 0.6,
+      "curr": 0.85,
+      "delta": 0.25
+    },
+    "coherence": {
+      "prev": 0.65,
+      "curr": 0.85,
+      "delta": 0.2
+    },
+    "signal": {
+      "prev": 0.7,
+      "curr": 0.85,
+      "delta": 0.15
+    },
+    "density": {
+      "prev": 0.6,
+      "curr": 0.8,
+      "delta": 0.2
+    },
+    "state": {
+      "prev": 0.65,
+      "curr": 0.85,
+      "delta": 0.2
+    },
+    "change": {
+      "prev": 0.1,
+      "curr": 0.35,
+      "delta": 0.25
+    },
+    "completion": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "impact": {
+      "prev": 0.7,
+      "curr": 0.85,
+      "delta": 0.15
+    },
+    "do": {
+      "prev": 0.5,
+      "curr": 0.8,
+      "delta": 0.3
+    },
+    "engagement": {
+      "prev": 0.9,
+      "curr": 0.95,
+      "delta": 0.05
+    }
+  },
+  "token_count": 709
+}
