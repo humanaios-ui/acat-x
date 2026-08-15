@@ -1,0 +1,188 @@
+{
+  "session_id": "48678fbd-7a8b-44b3-bf3c-d5c29a1db4e0",
+  "phase": "POSTFLIGHT",
+  "round": 2,
+  "timestamp": "2026-08-15T18:38:49.210085+00:00",
+  "vectors": {
+    "know": 0.88,
+    "do": 0.88,
+    "context": 0.88,
+    "clarity": 0.85,
+    "coherence": 0.87,
+    "signal": 0.85,
+    "density": 0.83,
+    "state": 0.87,
+    "change": 0.55,
+    "completion": 1.0,
+    "impact": 0.92,
+    "engagement": 0.9,
+    "uncertainty": 0.1
+  },
+  "overall_confidence": 0.88,
+  "meta": {
+    "reasoning": "",
+    "task_summary": "Task completed",
+    "postflight_confidence": 0.9,
+    "internal_consistency": "good",
+    "deltas": {
+      "know": 0.06,
+      "do": 0.03,
+      "context": 0.03,
+      "clarity": 0.07,
+      "coherence": 0.07,
+      "signal": 0.05,
+      "density": 0.08,
+      "state": 0.02,
+      "change": 0.45,
+      "completion": 1.0,
+      "impact": 0.0,
+      "engagement": 0.0,
+      "uncertainty": -0.05
+    },
+    "trajectory_issues": [],
+    "transaction_id": "0a1ec877-056c-492b-98cd-bb62427d5d83",
+    "tool_call_count": 0,
+    "work_type": null,
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 2,
+        "unknowns": 1,
+        "dead_ends": 1,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 1
+      },
+      "edges_with_artifacts": 5,
+      "artifacts_with_sources": 0,
+      "sources_discipline_note": "5 artifacts logged with 0 source_refs. Where did the evidence come from? Use --source <id> on any *-log command, or `empirica source-add` to register the source first. Sourced artifacts get full provenance trail in audit + compliance.",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "connected",
+        "connected_ratio": 1.0,
+        "connected_artifacts": 5,
+        "total_artifacts": 5,
+        "satisfied": true,
+        "enforced": false,
+        "note": "artifact-graph gate [enforce, report-only]: 5/5 artifacts connected (100%) \u2014 meets the 34% floor."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible."
+    },
+    "coverage": null,
+    "git_commit_sha": "dc0fb7889f21f22bdc3aab05d111055866a2ddba",
+    "git_notes_ref": "empirica/session/48678fbd-7a8b-44b3-bf3c-d5c29a1db4e0/POSTFLIGHT/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "3c66b0012cec119509936148065c7f6d80006533",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "3c66b0012cec119509936148065c7f6d80006533",
+        "message": "feat: Phase 6.4 - Production Deployment Pipeline (enhanced)",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-15T13:38:16-05:00",
+        "files_changed": [
+          "production_pipeline.py"
+        ]
+      },
+      {
+        "sha": "e8d1fcab5e3d15f09c8412f6e3ae83879961f56b",
+        "message": "feat: Phase 6.3 - Multi-turn Evaluation framework (enhanced)",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-15T13:36:54-05:00",
+        "files_changed": [
+          "multiturn_evaluator.py"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_8BB35D11-350C-41.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".../active_transaction_term_8BB35D11-350C-41.json  |   6 +++---\n .empirica/sessions/sessions.db                     | Bin 1355776 -> 1368064 bytes\n 2 files changed, 3 insertions(+), 3 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.82,
+      "curr": 0.88,
+      "delta": 0.06
+    },
+    "do": {
+      "prev": 0.85,
+      "curr": 0.88,
+      "delta": 0.03
+    },
+    "context": {
+      "prev": 0.85,
+      "curr": 0.88,
+      "delta": 0.03
+    },
+    "clarity": {
+      "prev": 0.78,
+      "curr": 0.85,
+      "delta": 0.07
+    },
+    "coherence": {
+      "prev": 0.8,
+      "curr": 0.87,
+      "delta": 0.07
+    },
+    "signal": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "density": {
+      "prev": 0.75,
+      "curr": 0.83,
+      "delta": 0.08
+    },
+    "state": {
+      "prev": 0.85,
+      "curr": 0.87,
+      "delta": 0.02
+    },
+    "change": {
+      "prev": 0.1,
+      "curr": 0.55,
+      "delta": 0.45
+    },
+    "completion": {
+      "prev": 0.0,
+      "curr": 1.0,
+      "delta": 1.0
+    },
+    "impact": {
+      "prev": 0.92,
+      "curr": 0.92,
+      "delta": 0.0
+    },
+    "engagement": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.15,
+      "curr": 0.1,
+      "delta": -0.05
+    }
+  },
+  "token_count": 481
+}

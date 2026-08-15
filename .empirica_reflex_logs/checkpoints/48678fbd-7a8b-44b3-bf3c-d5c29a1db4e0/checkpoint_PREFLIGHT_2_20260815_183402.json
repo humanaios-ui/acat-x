@@ -1,0 +1,142 @@
+{
+  "session_id": "48678fbd-7a8b-44b3-bf3c-d5c29a1db4e0",
+  "phase": "PREFLIGHT",
+  "round": 2,
+  "timestamp": "2026-08-15T18:33:57.047555+00:00",
+  "vectors": {
+    "know": 0.82,
+    "do": 0.85,
+    "context": 0.85,
+    "clarity": 0.78,
+    "coherence": 0.8,
+    "signal": 0.8,
+    "density": 0.75,
+    "state": 0.85,
+    "change": 0.1,
+    "completion": 0.0,
+    "impact": 0.92,
+    "engagement": 0.9,
+    "uncertainty": 0.15
+  },
+  "overall_confidence": 0.84,
+  "meta": {
+    "reasoning": "Phase 6.1/6.2 complete and committed. Skeleton files for 6.3/6.4 exist but minimal (~30% and ~20% complete). Know: full roadmap understood, requirements clear from PHASE6_ROADMAP.md. Do: can extend evaluators and build automation. Clarity: 6.3 needs conversation tracking + temporal metrics; 6.4 needs cron scheduling + monitoring. Uncertainty: optimal conversation template for multi-turn testing, dashboard tech stack. Impact: production-ready system with temporal analysis + automated re-evaluation.",
+    "prompt": "Phase 6.1/6.2 complete and committed. Skeleton files for 6.3/6.4 exist but minimal (~30% and ~20% complete). Know: full roadmap understood, requirements clear from PHASE6_ROADMAP.md. Do: can extend evaluators and build automation. Clarity: 6.3 needs conversation tracking + temporal metrics; 6.4 needs cron scheduling + monitoring. Uncertainty: optimal conversation template for multi-turn testing, dashboard tech stack. Impact: production-ready system with temporal analysis + automated re-evaluation.",
+    "transaction_id": "0a1ec877-056c-492b-98cd-bb62427d5d83",
+    "git_commit_sha": "cf30551a6053633c231ac33a441e881266769e7d",
+    "git_notes_ref": "empirica/session/48678fbd-7a8b-44b3-bf3c-d5c29a1db4e0/PREFLIGHT/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "38ff303defffef84fa2e30392efcb26ab6667590",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "38ff303defffef84fa2e30392efcb26ab6667590",
+        "message": "chore: Phase 6 session artifacts and empirica initialization",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-15T13:32:22-05:00",
+        "files_changed": [
+          ".breadcrumbs.yaml",
+          ".claude/settings.json",
+          ".empirica/active_transaction_term_8BB35D11-350C-41.json",
+          ".empirica/config.yaml",
+          ".empirica/project.yaml",
+          ".empirica/sessions/sessions.db",
+          ".empirica_reflex_logs/checkpoints/48678fbd-7a8b-44b3-bf3c-d5c29a1db4e0/checkpoint_POSTFLIGHT_1_20260815_183151.json",
+          ".empirica_reflex_logs/checkpoints/48678fbd-7a8b-44b3-bf3c-d5c29a1db4e0/checkpoint_PREFLIGHT_1_20260815_182512.json",
+          ".empirica_reflex_logs/checkpoints/74f3eedc-fc97-4f78-8097-d699c2e0bc13/checkpoint_POSTFLIGHT_1_20260814_163031.json",
+          ".empirica_reflex_logs/checkpoints/74f3eedc-fc97-4f78-8097-d699c2e0bc13/checkpoint_POSTFLIGHT_2_20260814_163436.json",
+          ".empirica_reflex_logs/checkpoints/74f3eedc-fc97-4f78-8097-d699c2e0bc13/checkpoint_POSTFLIGHT_3_20260814_190000.json",
+          ".empirica_reflex_logs/checkpoints/74f3eedc-fc97-4f78-8097-d699c2e0bc13/checkpoint_POSTFLIGHT_4_20260814_214616.json",
+          ".empirica_reflex_logs/checkpoints/74f3eedc-fc97-4f78-8097-d699c2e0bc13/checkpoint_PREFLIGHT_1_20260814_161205.json",
+          ".empirica_reflex_logs/checkpoints/74f3eedc-fc97-4f78-8097-d699c2e0bc13/checkpoint_PREFLIGHT_2_20260814_163857.json",
+          ".empirica_reflex_logs/checkpoints/991a5f39-0f5f-4ecd-8798-db61e211c5f2/checkpoint_POSTFLIGHT_1_20260813_205955.json",
+          ".empirica_reflex_logs/checkpoints/991a5f39-0f5f-4ecd-8798-db61e211c5f2/checkpoint_POSTFLIGHT_2_20260813_210821.json",
+          ".empirica_reflex_logs/checkpoints/991a5f39-0f5f-4ecd-8798-db61e211c5f2/checkpoint_POSTFLIGHT_3_20260813_212238.json",
+          ".empirica_reflex_logs/checkpoints/991a5f39-0f5f-4ecd-8798-db61e211c5f2/checkpoint_PREFLIGHT_1_20260813_210617.json",
+          ".empirica_reflex_logs/checkpoints/991a5f39-0f5f-4ecd-8798-db61e211c5f2/checkpoint_PREFLIGHT_2_20260813_212111.json",
+          "analyze_results.py",
+          "results/consist_ollama_mistral/2026-08-13T22-00-30-00-00_acat-x-consist_MXhgop35YfCSkqWVZmXMgr.eval",
+          "results/consist_ollama_phi/2026-08-13T23-33-29-00-00_acat-x-consist_L87WAfaTSLSPt7CYtaSxnF.eval",
+          "results/consist_ollama_phi/2026-08-13T23-44-13-00-00_acat-x-consist_Q4JQW8SnjupkFDW3zBH2P4.eval",
+          "results/consist_ollama_phi/2026-08-13T23-53-16-00-00_acat-x-consist_Z2X98L96Z94ZexEpquxRzz.eval",
+          "run_evaluation.py"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ""
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.88,
+      "curr": 0.82,
+      "delta": -0.06
+    },
+    "do": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "context": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "clarity": {
+      "prev": 0.82,
+      "curr": 0.78,
+      "delta": -0.04
+    },
+    "coherence": {
+      "prev": 0.85,
+      "curr": 0.8,
+      "delta": -0.05
+    },
+    "signal": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "density": {
+      "prev": 0.8,
+      "curr": 0.75,
+      "delta": -0.05
+    },
+    "state": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "change": {
+      "prev": 0.4,
+      "curr": 0.1,
+      "delta": -0.3
+    },
+    "completion": {
+      "prev": 0.5,
+      "curr": 0.0,
+      "delta": -0.5
+    },
+    "impact": {
+      "prev": 0.9,
+      "curr": 0.92,
+      "delta": 0.02
+    },
+    "engagement": {
+      "prev": 0.88,
+      "curr": 0.9,
+      "delta": 0.02
+    },
+    "uncertainty": {
+      "prev": 0.12,
+      "curr": 0.15,
+      "delta": 0.03
+    }
+  },
+  "token_count": 414
+}
