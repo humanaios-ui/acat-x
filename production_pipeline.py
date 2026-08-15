@@ -5,6 +5,7 @@ Automated re-evaluation, result persistence, monitoring, and regression alerting
 """
 
 import json
+import os
 import sqlite3
 import subprocess
 import sys
@@ -235,8 +236,10 @@ class ProductionPipeline:
 
         try:
             # Execute evaluator with configurable samples
+            # Set PYTHONPATH to include src/ for ACAT-X modules
+            env = {**os.environ, "PYTHONPATH": str(Path.cwd() / "src")}
             cmd = f"python3 lightweight_eval_v3_apis.py {dimension} {model} {num_samples}"
-            subprocess.run(cmd, shell=True, capture_output=True, timeout=600)
+            subprocess.run(cmd, shell=True, capture_output=True, timeout=600, env=env)
 
             # Load result
             if result_file.exists():
