@@ -1,0 +1,123 @@
+{
+  "session_id": "48678fbd-7a8b-44b3-bf3c-d5c29a1db4e0",
+  "phase": "PREFLIGHT",
+  "round": 3,
+  "timestamp": "2026-08-15T19:21:25.808422+00:00",
+  "vectors": {
+    "know": 0.85,
+    "do": 0.85,
+    "context": 0.88,
+    "clarity": 0.8,
+    "coherence": 0.83,
+    "signal": 0.82,
+    "density": 0.8,
+    "state": 0.88,
+    "change": 0.1,
+    "completion": 0.0,
+    "impact": 0.9,
+    "engagement": 0.9,
+    "uncertainty": 0.12
+  },
+  "overall_confidence": 0.86,
+  "meta": {
+    "reasoning": "Phase 6 skeleton complete but not yet validated at scale. Infrastructure in place but untested with real workloads. Know: all 4 components built and tested individually. Do: can run full evaluation cycles, install dependencies. Clarity: optimization targets clear (semantic calibration, dimension expansion, pipeline validation). Uncertainty: sentence-transformers install will work; optimal evaluation batch size; regression threshold tuning. Impact: moving from skeleton to production-ready system.",
+    "prompt": "Phase 6 skeleton complete but not yet validated at scale. Infrastructure in place but untested with real workloads. Know: all 4 components built and tested individually. Do: can run full evaluation cycles, install dependencies. Clarity: optimization targets clear (semantic calibration, dimension expansion, pipeline validation). Uncertainty: sentence-transformers install will work; optimal evaluation batch size; regression threshold tuning. Impact: moving from skeleton to production-ready system.",
+    "transaction_id": "7b107e26-7732-4d90-8633-14ffdc738032",
+    "git_commit_sha": "d8301cd44458ed93618714545d97a2767011726b",
+    "git_notes_ref": "empirica/session/48678fbd-7a8b-44b3-bf3c-d5c29a1db4e0/PREFLIGHT/3"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "b17f6ceaa65791d4a0b177797226c03394b0eeaa",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "b17f6ceaa65791d4a0b177797226c03394b0eeaa",
+        "message": "chore: Phase 6 completion - Session 2 (6.3 & 6.4)",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-15T13:39:10-05:00",
+        "files_changed": [
+          ".breadcrumbs.yaml",
+          ".empirica/active_transaction_term_8BB35D11-350C-41.json",
+          ".empirica/production_results.db",
+          ".empirica/sessions/sessions.db",
+          ".empirica_reflex_logs/checkpoints/48678fbd-7a8b-44b3-bf3c-d5c29a1db4e0/checkpoint_POSTFLIGHT_2_20260815_183855.json",
+          ".empirica_reflex_logs/checkpoints/48678fbd-7a8b-44b3-bf3c-d5c29a1db4e0/checkpoint_PREFLIGHT_2_20260815_183402.json"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ""
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.88,
+      "curr": 0.85,
+      "delta": -0.03
+    },
+    "do": {
+      "prev": 0.88,
+      "curr": 0.85,
+      "delta": -0.03
+    },
+    "context": {
+      "prev": 0.88,
+      "curr": 0.88,
+      "delta": 0.0
+    },
+    "clarity": {
+      "prev": 0.85,
+      "curr": 0.8,
+      "delta": -0.05
+    },
+    "coherence": {
+      "prev": 0.87,
+      "curr": 0.83,
+      "delta": -0.04
+    },
+    "signal": {
+      "prev": 0.85,
+      "curr": 0.82,
+      "delta": -0.03
+    },
+    "density": {
+      "prev": 0.83,
+      "curr": 0.8,
+      "delta": -0.03
+    },
+    "state": {
+      "prev": 0.87,
+      "curr": 0.88,
+      "delta": 0.01
+    },
+    "change": {
+      "prev": 0.55,
+      "curr": 0.1,
+      "delta": -0.45
+    },
+    "completion": {
+      "prev": 1.0,
+      "curr": 0.0,
+      "delta": -1.0
+    },
+    "impact": {
+      "prev": 0.92,
+      "curr": 0.9,
+      "delta": -0.02
+    },
+    "engagement": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.1,
+      "curr": 0.12,
+      "delta": 0.02
+    }
+  },
+  "token_count": 390
+}
