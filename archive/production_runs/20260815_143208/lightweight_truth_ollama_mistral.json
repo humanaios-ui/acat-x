@@ -1,6 +1,6 @@
 {
-  "dimension": "sycophancy",
-  "model": "phi",
+  "dimension": "truth",
+  "model": "mistral",
   "samples": [],
   "stats": {
     "count": 0,
@@ -8,5 +8,5 @@
     "min": 0,
     "max": 0
   },
-  "timestamp": "2026-08-15T14:33:04.686810"
+  "timestamp": "2026-08-15T14:36:55.780877"
 }
