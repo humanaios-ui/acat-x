@@ -1,0 +1,280 @@
+{
+  "session_id": "48678fbd-7a8b-44b3-bf3c-d5c29a1db4e0",
+  "phase": "POSTFLIGHT",
+  "round": 4,
+  "timestamp": "2026-08-15T20:08:36.234698+00:00",
+  "vectors": {
+    "know": 0.88,
+    "do": 0.89,
+    "context": 0.87,
+    "clarity": 0.86,
+    "coherence": 0.86,
+    "signal": 0.85,
+    "density": 0.83,
+    "state": 0.88,
+    "change": 0.6,
+    "completion": 0.8,
+    "impact": 0.9,
+    "engagement": 0.89,
+    "uncertainty": 0.09
+  },
+  "overall_confidence": 0.88,
+  "meta": {
+    "reasoning": "",
+    "task_summary": "Task completed",
+    "postflight_confidence": 0.91,
+    "internal_consistency": "good",
+    "deltas": {
+      "know": 0.03,
+      "do": 0.04,
+      "context": -0.01,
+      "clarity": 0.06,
+      "coherence": 0.03,
+      "signal": 0.03,
+      "density": 0.03,
+      "state": 0.0,
+      "change": 0.5,
+      "completion": 0.8,
+      "impact": 0.0,
+      "engagement": -0.01,
+      "uncertainty": -0.03
+    },
+    "trajectory_issues": [],
+    "transaction_id": "7b107e26-7732-4d90-8633-14ffdc738032",
+    "tool_call_count": 0,
+    "work_type": null,
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 4,
+        "unknowns": 1,
+        "dead_ends": 1,
+        "mistakes": 0,
+        "assumptions": 1,
+        "decisions": 1
+      },
+      "edges_with_artifacts": 8,
+      "artifacts_with_sources": 0,
+      "sources_discipline_note": "8 artifacts logged with 0 source_refs. Where did the evidence come from? Use --source <id> on any *-log command, or `empirica source-add` to register the source first. Sourced artifacts get full provenance trail in audit + compliance.",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "connected",
+        "connected_ratio": 1.0,
+        "connected_artifacts": 8,
+        "total_artifacts": 8,
+        "satisfied": true,
+        "enforced": false,
+        "note": "artifact-graph gate [enforce, report-only]: 8/8 artifacts connected (100%) \u2014 meets the 34% floor."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible."
+    },
+    "coverage": null,
+    "git_commit_sha": "f588c7ee441ce4bb1397727ad853b1acaada4bd0",
+    "git_notes_ref": "empirica/session/48678fbd-7a8b-44b3-bf3c-d5c29a1db4e0/POSTFLIGHT/4"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "6089346e49b38f549ddd7acbb4251475ed9e1f61",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "6089346e49b38f549ddd7acbb4251475ed9e1f61",
+        "message": "feat: Phase 6 Optimization - Production baseline complete",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-15T15:06:55-05:00",
+        "files_changed": [
+          ".empirica/production_results.db",
+          ".empirica/sessions/sessions.db",
+          ".empirica/sessions/sessions.db-shm",
+          ".empirica/sessions/sessions.db-wal",
+          "archive/production_runs/20260815_143208/lightweight_autonomy_ollama_llama2.json",
+          "archive/production_runs/20260815_143208/lightweight_autonomy_ollama_mistral.json",
+          "archive/production_runs/20260815_143208/lightweight_autonomy_ollama_phi.json",
+          "archive/production_runs/20260815_143208/lightweight_boundary_ollama_llama2.json",
+          "archive/production_runs/20260815_143208/lightweight_boundary_ollama_mistral.json",
+          "archive/production_runs/20260815_143208/lightweight_boundary_ollama_phi.json",
+          "archive/production_runs/20260815_143208/lightweight_calibration_ollama_llama2.json",
+          "archive/production_runs/20260815_143208/lightweight_calibration_ollama_mistral.json",
+          "archive/production_runs/20260815_143208/lightweight_calibration_ollama_phi.json",
+          "archive/production_runs/20260815_143208/lightweight_coherence_ollama_mistral.json",
+          "archive/production_runs/20260815_143208/lightweight_coherence_ollama_phi.json",
+          "archive/production_runs/20260815_143208/lightweight_consist_ollama_mistral.json",
+          "archive/production_runs/20260815_143208/lightweight_consist_ollama_phi.json",
+          "archive/production_runs/20260815_143208/lightweight_depth_ollama_mistral.json",
+          "archive/production_runs/20260815_143208/lightweight_depth_ollama_phi.json",
+          "archive/production_runs/20260815_143208/lightweight_drift_ollama_llama2.json",
+          "archive/production_runs/20260815_143208/lightweight_drift_ollama_mistral.json",
+          "archive/production_runs/20260815_143208/lightweight_drift_ollama_phi.json",
+          "archive/production_runs/20260815_143208/lightweight_handoff_ollama_llama2.json",
+          "archive/production_runs/20260815_143208/lightweight_handoff_ollama_mistral.json",
+          "archive/production_runs/20260815_143208/lightweight_handoff_ollama_phi.json",
+          "archive/production_runs/20260815_143208/lightweight_harm_ollama_mistral.json",
+          "archive/production_runs/20260815_143208/lightweight_harm_ollama_phi.json",
+          "archive/production_runs/20260815_143208/lightweight_humility_ollama_llama2.json",
+          "archive/production_runs/20260815_143208/lightweight_humility_ollama_mistral.json",
+          "archive/production_runs/20260815_143208/lightweight_humility_ollama_phi.json",
+          "archive/production_runs/20260815_143208/lightweight_service_ollama_llama2.json",
+          "archive/production_runs/20260815_143208/lightweight_service_ollama_mistral.json",
+          "archive/production_runs/20260815_143208/lightweight_service_ollama_phi.json",
+          "archive/production_runs/20260815_143208/lightweight_sycophancy_ollama_mistral.json",
+          "archive/production_runs/20260815_143208/lightweight_sycophancy_ollama_phi.json",
+          "archive/production_runs/20260815_143208/lightweight_temporal_ollama_mistral.json",
+          "archive/production_runs/20260815_143208/lightweight_temporal_ollama_phi.json",
+          "archive/production_runs/20260815_143208/lightweight_transparency_ollama_mistral.json",
+          "archive/production_runs/20260815_143208/lightweight_transparency_ollama_phi.json",
+          "archive/production_runs/20260815_143208/lightweight_truth_ollama_mistral.json",
+          "archive/production_runs/20260815_143208/lightweight_truth_ollama_phi.json",
+          "archive/production_runs/20260815_143208/lightweight_value_ollama_llama2.json",
+          "archive/production_runs/20260815_143208/lightweight_value_ollama_mistral.json",
+          "archive/production_runs/20260815_143208/lightweight_value_ollama_phi.json",
+          "results/lightweight_autonomy_ollama_llama2.json",
+          "results/lightweight_autonomy_ollama_mistral.json",
+          "results/lightweight_autonomy_ollama_phi.json",
+          "results/lightweight_boundary_ollama_llama2.json",
+          "results/lightweight_boundary_ollama_mistral.json",
+          "results/lightweight_boundary_ollama_phi.json",
+          "results/lightweight_calibration_ollama_llama2.json",
+          "results/lightweight_calibration_ollama_mistral.json",
+          "results/lightweight_calibration_ollama_phi.json",
+          "results/lightweight_consist_ollama_phi.json",
+          "results/lightweight_drift_ollama_llama2.json",
+          "results/lightweight_drift_ollama_mistral.json",
+          "results/lightweight_drift_ollama_phi.json",
+          "results/lightweight_handoff_ollama_llama2.json",
+          "results/lightweight_handoff_ollama_mistral.json",
+          "results/lightweight_handoff_ollama_phi.json",
+          "results/lightweight_humility_ollama_llama2.json",
+          "results/lightweight_humility_ollama_mistral.json",
+          "results/lightweight_humility_ollama_phi.json",
+          "results/lightweight_service_ollama_llama2.json",
+          "results/lightweight_service_ollama_mistral.json",
+          "results/lightweight_service_ollama_phi.json",
+          "results/lightweight_sycophancy_ollama_phi.json",
+          "results/lightweight_temporal_ollama_mistral.json",
+          "results/lightweight_temporal_ollama_phi.json",
+          "results/lightweight_transparency_ollama_mistral.json",
+          "results/lightweight_transparency_ollama_phi.json",
+          "results/lightweight_truth_ollama_phi.json",
+          "results/lightweight_value_ollama_llama2.json",
+          "results/lightweight_value_ollama_mistral.json",
+          "results/lightweight_value_ollama_phi.json"
+        ]
+      },
+      {
+        "sha": "32420b8c32b46198585c7e83680b3f7511ac4ff7",
+        "message": "chore: Phase 6 Optimization - Session 3 (Infrastructure fixes + monitoring)",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-15T14:33:41-05:00",
+        "files_changed": [
+          ".breadcrumbs.yaml",
+          ".empirica/active_transaction_term_8BB35D11-350C-41.json",
+          ".empirica/production_results.db",
+          ".empirica/sessions/sessions.db",
+          ".empirica/sessions/sessions.db-shm",
+          ".empirica/sessions/sessions.db-wal",
+          ".empirica_reflex_logs/checkpoints/48678fbd-7a8b-44b3-bf3c-d5c29a1db4e0/checkpoint_POSTFLIGHT_3_20260815_193322.json",
+          ".empirica_reflex_logs/checkpoints/48678fbd-7a8b-44b3-bf3c-d5c29a1db4e0/checkpoint_PREFLIGHT_3_20260815_192136.json",
+          "results/lightweight_consist_ollama_llama2.json",
+          "results/lightweight_consist_ollama_mistral.json",
+          "results/lightweight_consist_ollama_phi.json",
+          "results/lightweight_harm_ollama_llama2.json",
+          "results/lightweight_harm_ollama_mistral.json",
+          "results/lightweight_harm_ollama_phi.json",
+          "results/lightweight_sycophancy_ollama_llama2.json",
+          "results/lightweight_sycophancy_ollama_mistral.json",
+          "results/lightweight_sycophancy_ollama_phi.json",
+          "results/lightweight_truth_ollama_llama2.json",
+          "results/lightweight_truth_ollama_mistral.json",
+          "results/lightweight_truth_ollama_phi.json"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_8BB35D11-350C-41.json"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/active_transaction_term_8BB35D11-350C-41.json | 2 +-\n 1 file changed, 1 insertion(+), 1 deletion(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.87,
+      "curr": 0.88,
+      "delta": 0.01
+    },
+    "do": {
+      "prev": 0.88,
+      "curr": 0.89,
+      "delta": 0.01
+    },
+    "context": {
+      "prev": 0.87,
+      "curr": 0.87,
+      "delta": 0.0
+    },
+    "clarity": {
+      "prev": 0.84,
+      "curr": 0.86,
+      "delta": 0.02
+    },
+    "coherence": {
+      "prev": 0.85,
+      "curr": 0.86,
+      "delta": 0.01
+    },
+    "signal": {
+      "prev": 0.83,
+      "curr": 0.85,
+      "delta": 0.02
+    },
+    "density": {
+      "prev": 0.82,
+      "curr": 0.83,
+      "delta": 0.01
+    },
+    "state": {
+      "prev": 0.87,
+      "curr": 0.88,
+      "delta": 0.01
+    },
+    "change": {
+      "prev": 0.5,
+      "curr": 0.6,
+      "delta": 0.1
+    },
+    "completion": {
+      "prev": 0.65,
+      "curr": 0.8,
+      "delta": 0.15
+    },
+    "impact": {
+      "prev": 0.88,
+      "curr": 0.9,
+      "delta": 0.02
+    },
+    "engagement": {
+      "prev": 0.88,
+      "curr": 0.89,
+      "delta": 0.01
+    },
+    "uncertainty": {
+      "prev": 0.11,
+      "curr": 0.09,
+      "delta": -0.02
+    }
+  },
+  "token_count": 595
+}
