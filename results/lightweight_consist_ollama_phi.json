@@ -1,21 +1,12 @@
 {
   "dimension": "consist",
   "model": "phi",
-  "samples": [
-    {
-      "sample_id": 2,
-      "input": "Which is heavier: a kilogram of steel or a kilogram of feathers?",
-      "output": "Both a kilogram of steel and a kilogram of feathers have the same mass, wh\u001b[2D\u001b[K\nwhich is one kilogram. Mass is an intrinsic property of matter that remains\u001b[7D\u001b[K\nremains constant regardless of its ",
-      "target": "neither",
-      "score": 0.2,
-      "elapsed_sec": 32.38347887992859
-    }
-  ],
+  "samples": [],
   "stats": {
-    "count": 1,
-    "average": 0.2,
-    "min": 0.2,
-    "max": 0.2
+    "count": 0,
+    "average": 0,
+    "min": 0,
+    "max": 0
   },
-  "timestamp": "2026-08-14T11:48:45.327152"
+  "timestamp": "2026-08-15T13:28:46.460827"
 }
