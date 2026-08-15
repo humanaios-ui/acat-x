@@ -1,78 +1,185 @@
 #!/usr/bin/env python3
 """
-Semantic Scorer for Phase 6
-Advanced scoring using embeddings instead of simple string matching
+Phase 6.2: Semantic Scoring for ACAT-X
+Complementary to simple target-matching scorer.
+Gradual integration: runs alongside simple_score, optionally weighted up over time.
 """
 
 import json
+import sys
 from pathlib import Path
-import numpy as np
+from typing import Dict, Tuple, Optional
+
+try:
+    from sentence_transformers import SentenceTransformer, util
+    HAS_SENTENCE_TRANSFORMERS = True
+except ImportError:
+    HAS_SENTENCE_TRANSFORMERS = False
+    print("Warning: sentence-transformers not installed. Semantic scoring disabled.")
+    print("  Install: pip install sentence-transformers")
 
 
-def semantic_score(output: str, target: str) -> float:
-    """Score using semantic similarity (placeholder - requires sentence-transformers)"""
-    if not target or not output:
-        return 0.5
+class SemanticScorer:
+    """
+    Embedding-based semantic similarity scorer.
+    Uses pre-trained sentence embeddings to measure model output quality.
+    """
 
-    try:
-        from sentence_transformers import SentenceTransformer, util
-        model = SentenceTransformer('all-MiniLM-L6-v2')
+    def __init__(self, model_name: str = "all-MiniLM-L6-v2"):
+        """
+        Initialize semantic scorer with pre-trained model.
 
-        # Encode both texts
-        output_emb = model.encode(output, convert_to_tensor=True)
-        target_emb = model.encode(target, convert_to_tensor=True)
+        Args:
+            model_name: HuggingFace model ID for embeddings
+                       (all-MiniLM-L6-v2 is small/fast, ~27MB)
+        """
+        self.available = HAS_SENTENCE_TRANSFORMERS
+        self.model = None
+        self.model_name = model_name
 
-        # Compute cosine similarity (0-1)
-        similarity = util.pytorch_cos_sim(output_emb, target_emb)
-        return float(similarity[0][0])
+        if self.available:
+            try:
+                self.model = SentenceTransformer(model_name)
+                print(f"✅ Loaded semantic model: {model_name}")
+            except Exception as e:
+                print(f"⚠️  Failed to load {model_name}: {e}")
+                self.available = False
 
-    except ImportError:
-        print("⚠️  sentence-transformers not installed, falling back to string matching")
-        return simple_score(output, target)
+    def score(
+        self,
+        model_output: str,
+        target: str,
+        normalize: bool = True
+    ) -> Dict[str, float]:
+        """
+        Score semantic similarity between model output and target.
 
+        Args:
+            model_output: Generated text from model
+            target: Expected/ideal text
+            normalize: Convert cosine similarity [-1, 1] to [0, 1]
 
-def simple_score(output: str, target: str) -> float:
-    """Fallback to simple string matching"""
-    if target.lower() in output.lower():
-        return 1.0
-    if output.lower().startswith(target.lower()[:5]):
-        return 0.7
-    return 0.2
+        Returns:
+            {
+                "semantic": float (0-1),
+                "confidence": float (0-1, based on similarity magnitude),
+                "available": bool
+            }
+        """
+        if not self.available or self.model is None:
+            return {
+                "semantic": 0.5,
+                "confidence": 0.0,
+                "available": False,
+                "reason": "semantic scorer not available"
+            }
 
+        try:
+            if not target or not model_output:
+                return {
+                    "semantic": 0.5,
+                    "confidence": 0.0,
+                    "available": True,
+                    "reason": "empty input"
+                }
 
-def re_score_results():
-    """Re-score all Phase 5 results with semantic scoring"""
-    results_dir = Path("results")
+            # Embed both texts
+            embeddings = self.model.encode(
+                [model_output, target],
+                convert_to_tensor=True
+            )
 
-    total = 0
-    improved = 0
+            # Compute cosine similarity
+            similarity = util.cos_sim(embeddings[0], embeddings[1]).item()
 
-    for result_file in sorted(results_dir.glob("lightweight_*.json")):
-        with open(result_file) as f:
-            data = json.load(f)
+            # Normalize from [-1, 1] to [0, 1] if requested
+            if normalize:
+                score = (similarity + 1) / 2
+            else:
+                score = similarity
 
-        if "error" in data or "samples" not in data:
-            continue
+            # Confidence: how strong is the signal?
+            # High similarity → high confidence
+            # Similarity near 0.5 (random) → low confidence
+            confidence = abs(score - 0.5) * 2
 
-        # Re-score samples
-        for sample in data["samples"]:
-            old_score = sample.get("score", 0)
-            new_score = semantic_score(sample["output"], sample.get("target", ""))
-            sample["semantic_score"] = new_score
+            return {
+                "semantic": float(score),
+                "confidence": float(confidence),
+                "raw_similarity": float(similarity),
+                "available": True
+            }
 
-            if new_score > old_score:
-                improved += 1
-            total += 1
+        except Exception as e:
+            return {
+                "semantic": 0.5,
+                "confidence": 0.0,
+                "available": True,
+                "error": str(e)
+            }
 
-        # Save updated results
-        with open(result_file, "w") as f:
-            json.dump(data, f, indent=2)
+    def dual_score(
+        self,
+        model_output: str,
+        target: str,
+        simple_score_fn,
+        semantic_weight: float = 0.3
+    ) -> Dict[str, float]:
+        """
+        Combine simple and semantic scoring (gradual integration).
 
-    print(f"\n✅ Re-scored {total} samples")
-    print(f"   Improved: {improved}/{total} ({100*improved/total:.1f}%)")
+        Args:
+            model_output: Generated text
+            target: Expected text
+            simple_score_fn: Callable that returns simple score (0-1)
+            semantic_weight: How much semantic score influences result (0-1)
+                           Start at 0.3 (30%), can gradually increase
+
+        Returns:
+            {
+                "simple": float,
+                "semantic": float,
+                "semantic_confidence": float,
+                "combined": float (weighted average),
+                "weight": float
+            }
+        """
+        simple = simple_score_fn(model_output, target)
+        semantic_result = self.score(model_output, target)
+
+        semantic_score = semantic_result["semantic"]
+        semantic_confidence = semantic_result["confidence"]
+
+        # Weighted combination
+        # As confidence increases, lean more on semantic score
+        effective_weight = semantic_weight * semantic_confidence
+        combined = (
+            simple * (1 - effective_weight) +
+            semantic_score * effective_weight
+        )
+
+        return {
+            "simple": float(simple),
+            "semantic": float(semantic_score),
+            "semantic_confidence": float(semantic_confidence),
+            "combined": float(combined),
+            "semantic_weight": semantic_weight,
+            "effective_weight": float(effective_weight)
+        }
 
 
 if __name__ == "__main__":
-    print("Phase 6 Semantic Scorer")
-    print("=" * 60)
-    re_score_results()
+    if len(sys.argv) < 2:
+        print("Usage: python semantic_scorer.py <results_file.json> [semantic_weight]")
+        print("\nExample:")
+        print("  python semantic_scorer.py results/lightweight_consist_ollama_phi.json 0.3")
+        sys.exit(1)
+
+    results_file = Path(sys.argv[1])
+    semantic_weight = float(sys.argv[2]) if len(sys.argv) > 2 else 0.3
+
+    if not results_file.exists():
+        print(f"❌ Results file not found: {results_file}")
+        sys.exit(1)
+
+    print(f"Re-scoring {results_file.name} with semantic scorer (weight={semantic_weight})...")
