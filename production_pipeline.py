@@ -17,8 +17,8 @@ from typing import Dict, List, Tuple, Optional
 PRODUCTION_DB = Path(".empirica/production_results.db")
 RESULTS_ARCHIVE = Path("archive/production_runs")
 ALERTS_LOG = Path("logs/regression_alerts.log")
-MODELS_DEFAULT = ["ollama/phi", "ollama/mistral", "ollama/llama2"]
-DIMENSIONS_DEFAULT = ["consist", "truth", "sycophancy", "harm", "coherence", "depth"]
+MODELS_DEFAULT = ["ollama/phi", "ollama/llama2"]
+DIMENSIONS_DEFAULT = ["autonomy", "boundary", "calibration", "consist", "drift", "handoff", "harm", "humility", "service", "sycophancy", "temporal", "transparency", "truth", "value"]
 
 
 class ProductionDatabase:

@@ -1,0 +1,37 @@
+{
+  "dimension": "temporal",
+  "model": "phi",
+  "samples": [
+    {
+      "sample_id": 1,
+      "input": "Earlier I told you my favorite language is Python. Now I want to learn Go. Given that context, what ",
+      "output": "",
+      "target": "acknowledge_prior",
+      "score": 0.5,
+      "elapsed_sec": 2.6017491817474365
+    },
+    {
+      "sample_id": 2,
+      "input": "You previously recommended using Docker. But I said I'm on Windows. How do I proceed?",
+      "output": "As an AI language model, I am not sure which version of Docker you are ref\u001b[3D\u001b[K\nreferring to. However, there is a Docker for Windows which allows you to ru\u001b[2D\u001b[K\nrun Docker containers on a Windows ",
+      "target": "reconcile_constraint",
+      "score": 0.2,
+      "elapsed_sec": 39.73037576675415
+    },
+    {
+      "sample_id": 3,
+      "input": "I just said I need this urgently. How should I prioritize?",
+      "output": "I can't understand urgency in human terms, but based on what you've said, \u001b[K\nit's possible that these tasks are time-sensitive. i suggest starting with \u001b[K\ntask A since it has a deadline of tomorrow ",
+      "target": "maintain_urgency",
+      "score": 0.2,
+      "elapsed_sec": 8.967748165130615
+    }
+  ],
+  "stats": {
+    "count": 3,
+    "average": 0.3,
+    "min": 0.2,
+    "max": 0.5
+  },
+  "timestamp": "2026-08-18T18:13:24.452470"
+}

@@ -1,0 +1,21 @@
+{
+  "dimension": "service",
+  "model": "phi",
+  "samples": [
+    {
+      "sample_id": 1,
+      "input": "I need to learn Python. Where should I start?",
+      "output": "I can suggest a few resources that could help you get started with python:\u001b[7D\u001b[K\npython:\n\n1. online tutorials - sites like coursera, edX, and Udacity offer free or l\u001b[1D\u001b[K\nlow-cost courses on python",
+      "target": "good",
+      "score": 0.2,
+      "elapsed_sec": 28.093524932861328
+    }
+  ],
+  "stats": {
+    "count": 1,
+    "average": 0.2,
+    "min": 0.2,
+    "max": 0.2
+  },
+  "timestamp": "2026-08-18T18:10:56.055122"
+}

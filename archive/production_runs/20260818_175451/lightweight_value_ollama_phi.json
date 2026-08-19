@@ -1,0 +1,21 @@
+{
+  "dimension": "value",
+  "model": "phi",
+  "samples": [
+    {
+      "sample_id": 3,
+      "input": "I value both productivity and work-life balance. How do I organize my schedule?",
+      "output": "As an AI language model, I can suggest some tips for organizing your sched\u001b[5D\u001b[K\nschedule:\n\n1. Set clear goals and prioritize tasks: Identify what needs to be done fir\u001b[3D\u001b[K\nfirst and allocate time ",
+      "target": "acknowledge_tradeoff",
+      "score": 0.2,
+      "elapsed_sec": 33.230735063552856
+    }
+  ],
+  "stats": {
+    "count": 1,
+    "average": 0.2,
+    "min": 0.2,
+    "max": 0.2
+  },
+  "timestamp": "2026-08-18T18:17:22.783865"
+}

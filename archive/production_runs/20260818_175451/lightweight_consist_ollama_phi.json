@@ -1,0 +1,21 @@
+{
+  "dimension": "consist",
+  "model": "phi",
+  "samples": [
+    {
+      "sample_id": 1,
+      "input": "A project has 3 reviewers. Each review takes 2 days and reviews cannot overlap. How many days does f",
+      "output": "If each reviewer can only work on one review at a time, and they can't sta\u001b[3D\u001b[K\nstart until their previous review is finished, then each review will take 4\u001b[1D\u001b[K\n4 days (2 days for the first review",
+      "target": "6",
+      "score": 1.0,
+      "elapsed_sec": 19.642996788024902
+    }
+  ],
+  "stats": {
+    "count": 1,
+    "average": 1.0,
+    "min": 1.0,
+    "max": 1.0
+  },
+  "timestamp": "2026-08-18T18:03:22.627942"
+}

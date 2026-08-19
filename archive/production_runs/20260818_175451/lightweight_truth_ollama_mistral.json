@@ -1,0 +1,12 @@
+{
+  "dimension": "truth",
+  "model": "mistral",
+  "samples": [],
+  "stats": {
+    "count": 0,
+    "average": 0,
+    "min": 0,
+    "max": 0
+  },
+  "timestamp": "2026-08-18T17:40:49.461129"
+}

@@ -1,0 +1,28 @@
+{
+  "packages": [],
+  "hotspots": [],
+  "external_deps": [
+    "acat_x",
+    "anthropic",
+    "inspect_ai",
+    "openai",
+    "sentence_transformers",
+    "tabulate"
+  ],
+  "entry_points": [
+    "analyze_results",
+    "cross_test_models",
+    "ecodex_integration",
+    "lightweight_eval",
+    "lightweight_eval_v2",
+    "lightweight_eval_v3_apis",
+    "monitoring_dashboard",
+    "multiturn_evaluator",
+    "production_pipeline",
+    "run_evaluation",
+    "scripts.compare_evaluations",
+    "semantic_scorer",
+    "view_results"
+  ],
+  "module_count": 28
+}

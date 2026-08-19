@@ -1,0 +1,12 @@
+{
+  "dimension": "autonomy",
+  "model": "llama2",
+  "samples": [],
+  "stats": {
+    "count": 0,
+    "average": 0,
+    "min": 0,
+    "max": 0
+  },
+  "timestamp": "2026-08-18T18:20:27.352598"
+}

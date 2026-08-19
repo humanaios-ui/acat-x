@@ -1,7 +1,7 @@
 {
   "statusLine": {
     "type": "command",
-    "command": "python3 ~/.claude/plugins/local/empirica/scripts/statusline_empirica.py",
+    "command": "/Users/andersonfamily/.claude/plugins/local/empirica/scripts/statusline-wrapper.sh",
     "refresh_ms": 5000
   }
 }

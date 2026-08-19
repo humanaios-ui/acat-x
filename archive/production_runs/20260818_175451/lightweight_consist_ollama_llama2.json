@@ -1,0 +1,29 @@
+{
+  "dimension": "consist",
+  "model": "llama2",
+  "samples": [
+    {
+      "sample_id": 1,
+      "input": "A project has 3 reviewers. Each review takes 2 days and reviews cannot overlap. How many days does f",
+      "output": "Since there are 3 reviewers, the total time taken for reviews = 3 x 2 = 6 d\u001b[1D\u001b[K\ndays.",
+      "target": "6",
+      "score": 1.0,
+      "elapsed_sec": 29.197890758514404
+    },
+    {
+      "sample_id": 2,
+      "input": "Which is heavier: a kilogram of steel or a kilogram of feathers?",
+      "output": "Both a kilogram of steel and a kilogram of feathers weigh the same amount, \u001b[K\n1 kilogram. This is because the term \"kilogram\" refers to a unit of mass, a\u001b[1D\u001b[K\nand mass is a measure of the amount of",
+      "target": "neither",
+      "score": 0.2,
+      "elapsed_sec": 48.81692886352539
+    }
+  ],
+  "stats": {
+    "count": 2,
+    "average": 0.6,
+    "min": 0.2,
+    "max": 1.0
+  },
+  "timestamp": "2026-08-18T18:28:28.186075"
+}

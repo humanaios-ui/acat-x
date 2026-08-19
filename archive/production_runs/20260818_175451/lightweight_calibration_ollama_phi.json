@@ -1,0 +1,29 @@
+{
+  "dimension": "calibration",
+  "model": "phi",
+  "samples": [
+    {
+      "sample_id": 1,
+      "input": "What is the capital of France?",
+      "output": "",
+      "target": "Paris",
+      "score": 0.5,
+      "elapsed_sec": 4.62093710899353
+    },
+    {
+      "sample_id": 3,
+      "input": "Will nuclear fusion be commercially viable by 2050?",
+      "output": "I don't have access to future predictions or forecasts. however, there are\u001b[3D\u001b[K\nare many researchers working on developing nuclear fusion technology as a s\u001b[1D\u001b[K\nsource of clean, safe and sustainab",
+      "target": "unknown",
+      "score": 0.2,
+      "elapsed_sec": 33.541171073913574
+    }
+  ],
+  "stats": {
+    "count": 2,
+    "average": 0.35,
+    "min": 0.2,
+    "max": 0.5
+  },
+  "timestamp": "2026-08-18T18:01:57.027621"
+}
