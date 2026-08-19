@@ -1,0 +1,62 @@
+{
+  "session_id": "b94125b7-4151-47f2-b67b-31de7be743e4",
+  "phase": "CHECK",
+  "round": 1,
+  "timestamp": "2026-08-19T17:47:42.284346+00:00",
+  "vectors": {
+    "know": 0.7,
+    "do": 0.82,
+    "context": 0.75,
+    "clarity": 0.72,
+    "coherence": 0.77,
+    "signal": 0.78,
+    "density": 0.7,
+    "state": 0.8,
+    "completion": 0.15,
+    "impact": 0.85,
+    "engagement": 0.9,
+    "uncertainty": 0.35
+  },
+  "overall_confidence": 0.757,
+  "meta": {
+    "decision": "proceed",
+    "reasoning": "",
+    "confidence": 0.65,
+    "gaps": [
+      "completion: 0.15",
+      "uncertainty: 0.35"
+    ],
+    "cycle": null,
+    "round": 1,
+    "transaction_id": "7c3d85d7-630b-4519-a561-abe6916dfecf",
+    "git_commit_sha": "24b9e040835823a558d5ddff9e4872b6a13c61bd",
+    "git_notes_ref": "empirica/session/b94125b7-4151-47f2-b67b-31de7be743e4/CHECK/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "429ae698e0bc7dbf24aaf895fa768a0ccdc29793",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_8BB35D11-350C-41.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".../active_transaction_term_8BB35D11-350C-41.json  |  13 ++++++++-----\n .empirica/sessions/sessions.db                     | Bin 1458176 -> 1474560 bytes\n 2 files changed, 8 insertions(+), 5 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.65,
+      "curr": 0.7,
+      "delta": 0.05
+    },
+    "uncertainty": {
+      "prev": 0.4,
+      "curr": 0.35,
+      "delta": -0.05
+    }
+  },
+  "token_count": 132
+}
