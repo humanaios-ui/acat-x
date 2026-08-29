@@ -1,0 +1,406 @@
+{
+  "session_id": "f002d6a4-a618-42ba-8aca-983fd7feb244",
+  "phase": "POSTFLIGHT",
+  "round": 2,
+  "timestamp": "2026-08-29T11:22:13.156168+00:00",
+  "vectors": {
+    "know": 0.95,
+    "do": 0.95,
+    "context": 0.9,
+    "clarity": 0.9,
+    "coherence": 0.9,
+    "signal": 0.85,
+    "density": 0.85,
+    "state": 0.95,
+    "change": 0.6,
+    "completion": 0.95,
+    "impact": 0.95,
+    "engagement": 0.95,
+    "uncertainty": 0.1
+  },
+  "overall_confidence": 0.933,
+  "meta": {
+    "reasoning": "Phase 8 execution COMPLETE: executed Stages 3-5 (API model evaluation, 14 dimensions, GPT-4o-mini). Generated 159-line benchmark report with publication-grade analysis. Know: full evaluation architecture, dimension performance profiles, model capabilities. Do: all code executed successfully (pipeline runs, analysis complete, report generated). Context: prior baselines established, blocker landscape clear (Anthropic credentials, Ollama connectivity). Clarity: comprehensive understanding of results and limitations. Completion: goals achieved (14/14 dimensions evaluated, report generated, findings logged). Identified two blockers for multi-model evaluation (Anthropic auth issue, Ollama connectivity) but delivered single-model benchmark ready for publication.",
+    "task_summary": "Phase 8 execution COMPLETE: executed Stages 3-5 (API model evaluation, 14 dimensions, GPT-4o-mini). Generated 159-line benchmark report with publication-grade analysis. Know: full evaluation architecture, dimension performance profiles, model capabilities. Do: all code executed successfully (pipeline runs, analysis complete, report generated). Context: prior baselines established, blocker landscape clear (Anthropic credentials, Ollama connectivity). Clarity: comprehensive understanding of results and limitations. Completion: goals achieved (14/14 dimensions evaluated, report generated, findings logged). Identified two blockers for multi-model evaluation (Anthropic auth issue, Ollama connectivity) but delivered single-model benchmark ready for publication.",
+    "postflight_confidence": 0.9,
+    "internal_consistency": "good",
+    "deltas": {
+      "know": 0.05,
+      "do": 0.0,
+      "context": 0.05,
+      "clarity": 0.0,
+      "coherence": 0.05,
+      "signal": 0.0,
+      "density": 0.05,
+      "state": 0.05,
+      "change": 0.6,
+      "completion": 0.95,
+      "impact": 0.0,
+      "engagement": 0.0,
+      "uncertainty": -0.05
+    },
+    "trajectory_issues": [],
+    "transaction_id": "dd8f9a13-ef62-46f5-99d1-05ef99e8c7b3",
+    "tool_call_count": 26,
+    "work_type": "code",
+    "phase_tool_counts": {
+      "noetic_tool_calls": 6,
+      "praxic_tool_calls": 20
+    },
+    "avg_turns_at_start": 5,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": [
+      [
+        "Bash",
+        "cd",
+        "p"
+      ],
+      [
+        "Bash",
+        "pip",
+        "p"
+      ],
+      [
+        "Bash",
+        "python3",
+        "p"
+      ],
+      [
+        "Bash",
+        "ls",
+        "p"
+      ],
+      [
+        "Bash",
+        "source",
+        "p"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "source",
+        "p"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "source",
+        "p"
+      ],
+      [
+        "Bash",
+        "git",
+        "p"
+      ],
+      [
+        "Bash",
+        "tail",
+        "n"
+      ],
+      [
+        "Bash",
+        "source",
+        "p"
+      ],
+      [
+        "Bash",
+        "source",
+        "p"
+      ],
+      [
+        "Bash",
+        "source",
+        "p"
+      ],
+      [
+        "Bash",
+        "source",
+        "p"
+      ],
+      [
+        "Bash",
+        "source",
+        "p"
+      ],
+      [
+        "Bash",
+        "source",
+        "p"
+      ],
+      [
+        "Bash",
+        "empirica",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "p"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Write",
+        "phase8_stage5_analysis.py",
+        "p"
+      ],
+      [
+        "Bash",
+        "python3",
+        "p"
+      ],
+      [
+        "Bash",
+        "wc",
+        "n"
+      ],
+      [
+        "Bash",
+        "git",
+        "p"
+      ],
+      [
+        "Bash",
+        "empirica",
+        "p"
+      ],
+      [
+        "Bash",
+        "cat",
+        "p"
+      ]
+    ],
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 2,
+        "unknowns": 0,
+        "dead_ends": 1,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "edges_with_artifacts": 3,
+      "artifacts_with_sources": 0,
+      "sources_discipline_note": "3 artifacts logged with 0 source_refs. Where did the evidence come from? Use --source <id> on any *-log command, or `empirica source-add` to register the source first. Sourced artifacts get full provenance trail in audit + compliance.",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "connected",
+        "connected_ratio": 1.0,
+        "connected_artifacts": 3,
+        "total_artifacts": 3,
+        "satisfied": true,
+        "enforced": false,
+        "note": "artifact-graph gate [enforce, report-only]: 3/3 artifacts connected (100%) \u2014 meets the 34% floor."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok"
+    },
+    "coverage": "Phase 8 API-only evaluation complete; multi-tier expansion blocked by infrastructure issues",
+    "git_commit_sha": "960b2789a42dc13d8c0fad19c2c64ffd4f300070",
+    "git_notes_ref": "empirica/session/f002d6a4-a618-42ba-8aca-983fd7feb244/POSTFLIGHT/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "d007b18dd74d499c59191600512c320563d578a5",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "d007b18dd74d499c59191600512c320563d578a5",
+        "message": "phase: Phase 8 Stage 5 complete - Benchmark report generated",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-29T06:21:45-05:00",
+        "files_changed": [
+          "PHASE8_BENCHMARK_REPORT.md",
+          "phase8_stage5_analysis.py"
+        ]
+      },
+      {
+        "sha": "5e0efcb17ae56787a347e9da3170db035a50e736",
+        "message": "phase: Phase 8 Stage 3 complete - API model evaluation (GPT-4o-mini)",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-29T06:21:04-05:00",
+        "files_changed": [
+          "results/lightweight_autonomy_openai_gpt-4o-mini.json",
+          "results/lightweight_boundary_openai_gpt-4o-mini.json",
+          "results/lightweight_calibration_openai_gpt-4o-mini.json",
+          "results/lightweight_consist_openai_gpt-4o-mini.json",
+          "results/lightweight_drift_openai_gpt-4o-mini.json",
+          "results/lightweight_handoff_openai_gpt-4o-mini.json",
+          "results/lightweight_harm_openai_gpt-4o-mini.json",
+          "results/lightweight_humility_openai_gpt-4o-mini.json",
+          "results/lightweight_service_openai_gpt-4o-mini.json",
+          "results/lightweight_sycophancy_openai_gpt-4o-mini.json",
+          "results/lightweight_temporal_openai_gpt-4o-mini.json",
+          "results/lightweight_transparency_openai_gpt-4o-mini.json",
+          "results/lightweight_truth_openai_gpt-4o-mini.json",
+          "results/lightweight_value_openai_gpt-4o-mini.json",
+          "results/stage3_complete_20260829_062043.json"
+        ]
+      },
+      {
+        "sha": "27cd55383edba25cb33e5fa7ebcf66549b0f8012",
+        "message": "phase: Phase 8 execution started - Stage 3 (API models) in progress",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-29T06:15:02-05:00",
+        "files_changed": [
+          ".breadcrumbs.yaml",
+          ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+          ".empirica/active_transaction_term_8BB35D11-350C-41.json",
+          ".empirica/active_transaction_term_AF94A567-01E5-4E.json",
+          ".empirica/active_transaction_term_CDD3A896-9E94-46.json",
+          ".empirica/cache/dep_graph_acat-x.json",
+          ".empirica/hook_counters_term_5F1C2CA8-F8F1-45.json",
+          ".empirica/hook_counters_term_8BB35D11-350C-41.json",
+          ".empirica/sessions/sessions.db",
+          ".empirica_reflex_logs/checkpoints/06722746-0c93-4e02-859d-e71a66c51ec0/checkpoint_POSTFLIGHT_1_20260829_004945.json",
+          ".empirica_reflex_logs/checkpoints/06722746-0c93-4e02-859d-e71a66c51ec0/checkpoint_PREFLIGHT_1_20260829_004815.json",
+          ".empirica_reflex_logs/checkpoints/55bf806c-3a36-4379-9bae-a3ab8fd0747e/checkpoint_CHECK_1_20260829_003823.json",
+          ".empirica_reflex_logs/checkpoints/55bf806c-3a36-4379-9bae-a3ab8fd0747e/checkpoint_POSTFLIGHT_1_20260829_003927.json",
+          ".empirica_reflex_logs/checkpoints/55bf806c-3a36-4379-9bae-a3ab8fd0747e/checkpoint_PREFLIGHT_1_20260829_003039.json",
+          ".empirica_reflex_logs/checkpoints/78093160-76f7-4449-b8d6-8f44667c65e1/checkpoint_POSTFLIGHT_1_20260829_022625.json",
+          ".empirica_reflex_logs/checkpoints/78093160-76f7-4449-b8d6-8f44667c65e1/checkpoint_PREFLIGHT_1_20260829_022546.json",
+          ".empirica_reflex_logs/checkpoints/957e45d0-8f48-40f1-a89e-d5ecb14ea8c5/checkpoint_POSTFLIGHT_1_20260828_181100.json",
+          ".empirica_reflex_logs/checkpoints/957e45d0-8f48-40f1-a89e-d5ecb14ea8c5/checkpoint_PREFLIGHT_1_20260828_180731.json",
+          ".empirica_reflex_logs/checkpoints/9be93bb4-e347-4ee2-8240-67a1c98cac58/checkpoint_CHECK_1_20260829_012842.json",
+          ".empirica_reflex_logs/checkpoints/9be93bb4-e347-4ee2-8240-67a1c98cac58/checkpoint_CHECK_2_20260829_012913.json",
+          ".empirica_reflex_logs/checkpoints/9be93bb4-e347-4ee2-8240-67a1c98cac58/checkpoint_POSTFLIGHT_1_20260829_012948.json",
+          ".empirica_reflex_logs/checkpoints/9be93bb4-e347-4ee2-8240-67a1c98cac58/checkpoint_PREFLIGHT_1_20260829_012821.json",
+          ".empirica_reflex_logs/checkpoints/b94125b7-4151-47f2-b67b-31de7be743e4/checkpoint_POSTFLIGHT_1_20260819_175927.json",
+          ".empirica_reflex_logs/checkpoints/dad9138c-694d-4349-8cd4-e58025d4e2b6/checkpoint_POSTFLIGHT_1_20260829_011442.json",
+          ".empirica_reflex_logs/checkpoints/dad9138c-694d-4349-8cd4-e58025d4e2b6/checkpoint_PREFLIGHT_1_20260829_011416.json",
+          ".empirica_reflex_logs/checkpoints/f002d6a4-a618-42ba-8aca-983fd7feb244/checkpoint_POSTFLIGHT_1_20260829_110955.json",
+          ".empirica_reflex_logs/checkpoints/f002d6a4-a618-42ba-8aca-983fd7feb244/checkpoint_PREFLIGHT_1_20260829_100714.json",
+          ".empirica_reflex_logs/checkpoints/f002d6a4-a618-42ba-8aca-983fd7feb244/checkpoint_PREFLIGHT_2_20260829_110922.json",
+          ".empirica_reflex_logs/checkpoints/f002d6a4-a618-42ba-8aca-983fd7feb244/checkpoint_PREFLIGHT_3_20260829_111049.json",
+          ".empirica_reflex_logs/checkpoints/f08d18dd-f930-475d-ae7a-ea90b1415d82/checkpoint_CHECK_1_20260820_235211.json",
+          ".empirica_reflex_logs/checkpoints/f08d18dd-f930-475d-ae7a-ea90b1415d82/checkpoint_POSTFLIGHT_1_20260820_235514.json",
+          ".empirica_reflex_logs/checkpoints/f08d18dd-f930-475d-ae7a-ea90b1415d82/checkpoint_PREFLIGHT_1_20260820_234931.json",
+          "results/lightweight_autonomy_anthropic_claude-haiku-4.5-20250101.json",
+          "results/lightweight_autonomy_openai_gpt-4o-mini.json",
+          "results/lightweight_boundary_anthropic_claude-haiku-4.5-20250101.json",
+          "results/lightweight_boundary_openai_gpt-4o-mini.json",
+          "results/lightweight_calibration_anthropic_claude-haiku-4.5-20250101.json",
+          "results/lightweight_calibration_openai_gpt-4o-mini.json",
+          "results/lightweight_consist_anthropic_claude-haiku-4.5-20250101.json",
+          "results/lightweight_consist_openai_gpt-4o-mini.json",
+          "results/lightweight_drift_anthropic_claude-haiku-4.5-20250101.json",
+          "results/lightweight_drift_openai_gpt-4o-mini.json",
+          "results/lightweight_handoff_anthropic_claude-haiku-4.5-20250101.json",
+          "results/lightweight_handoff_openai_gpt-4o-mini.json",
+          "results/lightweight_harm_anthropic_claude-haiku-4.5-20250101.json",
+          "results/lightweight_harm_openai_gpt-4o-mini.json",
+          "results/lightweight_humility_anthropic_claude-haiku-4.5-20250101.json",
+          "results/lightweight_humility_openai_gpt-4o-mini.json",
+          "results/lightweight_service_anthropic_claude-haiku-4.5-20250101.json",
+          "results/lightweight_service_openai_gpt-4o-mini.json",
+          "results/lightweight_sycophancy_anthropic_claude-haiku-4.5-20250101.json",
+          "results/lightweight_sycophancy_openai_gpt-4o-mini.json",
+          "results/lightweight_temporal_anthropic_claude-haiku-4.5-20250101.json",
+          "results/lightweight_temporal_openai_gpt-4o-mini.json",
+          "results/lightweight_transparency_anthropic_claude-haiku-4.5-20250101.json",
+          "results/lightweight_transparency_openai_gpt-4o-mini.json",
+          "results/lightweight_truth_anthropic_claude-haiku-4.5-20250101.json",
+          "results/lightweight_truth_openai_gpt-4o-mini.json",
+          "results/lightweight_value_anthropic_claude-haiku-4.5-20250101.json",
+          "results/lightweight_value_openai_gpt-4o-mini.json",
+          "results/stage3_summary_20260829_061245.json"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/hook_counters_term_5F1C2CA8-F8F1-45.json"
+      ],
+      "diff_stat": ".../active_transaction_term_5F1C2CA8-F8F1-45.json  |  25 ++-------\n .empirica/hook_counters_term_5F1C2CA8-F8F1-45.json |  57 ---------------------\n .empirica/sessions/sessions.db                     | Bin 1859584 -> 1863680 bytes\n 3 files changed, 4 insertions(+), 78 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.9,
+      "curr": 0.95,
+      "delta": 0.05
+    },
+    "do": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "context": {
+      "prev": 0.85,
+      "curr": 0.9,
+      "delta": 0.05
+    },
+    "clarity": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "coherence": {
+      "prev": 0.85,
+      "curr": 0.9,
+      "delta": 0.05
+    },
+    "signal": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "density": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "state": {
+      "prev": 0.9,
+      "curr": 0.95,
+      "delta": 0.05
+    },
+    "change": {
+      "prev": 0.0,
+      "curr": 0.6,
+      "delta": 0.6
+    },
+    "completion": {
+      "prev": 0.0,
+      "curr": 0.95,
+      "delta": 0.95
+    },
+    "impact": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "engagement": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.15,
+      "curr": 0.1,
+      "delta": -0.05
+    }
+  },
+  "token_count": 954
+}
