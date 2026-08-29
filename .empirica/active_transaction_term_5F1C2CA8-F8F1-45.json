@@ -1,29 +1,15 @@
 {
-  "transaction_id": "550ef095-bd11-498e-b570-9d9e1ccb81d8",
-  "session_id": "f002d6a4-a618-42ba-8aca-983fd7feb244",
+  "transaction_id": "22bcf878-c9e0-4d9f-bac4-3ddfbc46410e",
+  "session_id": "751b2c6a-085f-49d2-a01e-239dda2ea9b5",
   "claude_session_id": "348bf2e6-b7ca-4860-8cb7-8521797dad62",
-  "preflight_timestamp": 1788011600.3502111,
+  "preflight_timestamp": 1788023934.9989781,
   "status": "open",
   "project_path": "/Users/andersonfamily/practices/acat-x",
-  "updated_at": 1788011600.350689,
-  "work_context": "iteration",
-  "work_type": "comms",
-  "task_context": "Push Phase 8 completed work to main branch",
-  "cascade_profile": "default",
-  "avg_turns": 15,
-  "preflight_pattern_count": 12,
-  "injection_budget": {
-    "injected_per_category": {
-      "eidetic_facts": 3,
-      "episodic_narratives": 3,
-      "related_goals": 2,
-      "unverified_assumptions": 1,
-      "prior_decisions": 3
-    },
-    "injected_total": 12,
-    "cap_per_category": null,
-    "cap_total": null,
-    "capped_per_category": 0,
-    "capped_total": 0
-  }
+  "updated_at": 1788023934.9993348,
+  "work_type": "research",
+  "domain": "empirica_mesh_coordination",
+  "criticality": "high",
+  "task_context": "Phase 3: Research Orchestration & Scoring Pipeline Coordination for acat-x. Execute research work, maintain ACAT-empirica scoring agreement, coordinate scoring inputs to aggregator. Resource allocation: 15 practice-hours.",
+  "cascade_profile": "exploratory",
+  "avg_turns": 0
 }
