@@ -1,0 +1,57 @@
+{
+  "tool_call_count": 10,
+  "praxic_tool_calls": 8,
+  "tool_trace": [
+    [
+      "Bash",
+      "cd",
+      "p"
+    ],
+    [
+      "Bash",
+      "pip",
+      "p"
+    ],
+    [
+      "Bash",
+      "python3",
+      "p"
+    ],
+    [
+      "Bash",
+      "ls",
+      "p"
+    ],
+    [
+      "Bash",
+      "source",
+      "p"
+    ],
+    [
+      "Bash",
+      "ls",
+      "n"
+    ],
+    [
+      "Bash",
+      "source",
+      "p"
+    ],
+    [
+      "Bash",
+      "ls",
+      "n"
+    ],
+    [
+      "Bash",
+      "source",
+      "p"
+    ],
+    [
+      "Bash",
+      "git",
+      "p"
+    ]
+  ],
+  "noetic_tool_calls": 2
+}

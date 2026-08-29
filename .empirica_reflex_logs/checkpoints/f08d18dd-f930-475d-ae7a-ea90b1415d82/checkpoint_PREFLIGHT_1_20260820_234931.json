@@ -1,0 +1,50 @@
+{
+  "session_id": "f08d18dd-f930-475d-ae7a-ea90b1415d82",
+  "phase": "PREFLIGHT",
+  "round": 1,
+  "timestamp": "2026-08-20T23:49:22.800368+00:00",
+  "vectors": {
+    "know": 0.75,
+    "uncertainty": 0.2,
+    "context": 0.85,
+    "clarity": 0.9,
+    "coherence": 0.8,
+    "signal": 0.85,
+    "density": 0.8,
+    "state": 0.75,
+    "change": 0.0,
+    "completion": 0.0,
+    "impact": 0.95,
+    "do": 0.9,
+    "engagement": 1.0
+  },
+  "overall_confidence": 0.833,
+  "meta": {
+    "reasoning": "Foundation structure known from org-prompt + memory. Audit scope is clear: 4-step local execution + git commit + mesh reply. Have all 17 practice canonical addresses available. Core risk: mesh coordination at scale \u2014 17 parallel collabs, aggregation complexity. Ready to decompose into tasks and execute.",
+    "prompt": "Foundation structure known from org-prompt + memory. Audit scope is clear: 4-step local execution + git commit + mesh reply. Have all 17 practice canonical addresses available. Core risk: mesh coordination at scale \u2014 17 parallel collabs, aggregation complexity. Ready to decompose into tasks and execute.",
+    "transaction_id": "661ca0a5-164e-4398-a583-476fb7c8965d",
+    "task_context": "Foundation-wide artifact synchronization audit. Execute 40-min local audit on all 17 practices, aggregate system maps into master orchestration document.",
+    "git_commit_sha": "a13f688d5d789f28e0f5d48b17c474254aa1bb36",
+    "git_notes_ref": "empirica/session/f08d18dd-f930-475d-ae7a-ea90b1415d82/PREFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "2d769a89ec5714acb6407895a9293fc2ea3ab7ba",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_8BB35D11-350C-41.json",
+        ".empirica/cache/dep_graph_acat-x.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/hook_counters_term_8BB35D11-350C-41.json"
+      ],
+      "diff_stat": ".breadcrumbs.yaml                                  | 128 +++++++++++++--------\n .../active_transaction_term_8BB35D11-350C-41.json  |   7 +-\n .empirica/cache/dep_graph_acat-x.json              |   3 +-\n .empirica/hook_counters_term_8BB35D11-350C-41.json |   3 -\n .empirica/sessions/sessions.db                     | Bin 1474560 -> 1536000 bytes\n 5 files changed, 85 insertions(+), 56 deletions(-)"
+    }
+  },
+  "learning_delta": {},
+  "token_count": 265
+}

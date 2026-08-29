@@ -18,11 +18,12 @@
     "lightweight_eval_v3_apis",
     "monitoring_dashboard",
     "multiturn_evaluator",
+    "phase7_analysis",
     "production_pipeline",
     "run_evaluation",
     "scripts.compare_evaluations",
     "semantic_scorer",
     "view_results"
   ],
-  "module_count": 28
+  "module_count": 29
 }

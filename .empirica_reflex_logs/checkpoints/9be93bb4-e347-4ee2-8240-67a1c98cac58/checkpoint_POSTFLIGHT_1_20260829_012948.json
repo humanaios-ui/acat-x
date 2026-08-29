@@ -1,0 +1,173 @@
+{
+  "session_id": "9be93bb4-e347-4ee2-8240-67a1c98cac58",
+  "phase": "POSTFLIGHT",
+  "round": 1,
+  "timestamp": "2026-08-29T01:29:44.302342+00:00",
+  "vectors": {
+    "know": 0.75,
+    "do": 0.6,
+    "context": 0.75,
+    "clarity": 0.65,
+    "coherence": 0.7,
+    "signal": 0.75,
+    "density": 0.65,
+    "state": 0.75,
+    "change": 0.05,
+    "completion": 0.1,
+    "impact": 0.95,
+    "engagement": 0.9,
+    "uncertainty": 0.35
+  },
+  "overall_confidence": 0.7,
+  "meta": {
+    "reasoning": "Phase 8 execution blocked by Ollama API connectivity issue. Baseline evaluation failed with APIConnectionError on all retries. Models missing from Ollama API despite daemon running. Escalated to evaluator for infrastructure recovery or alternate path (Anthropic-only evaluation). Status: awaiting guidance.",
+    "task_summary": "Phase 8 execution blocked by Ollama API connectivity issue. Baseline evaluation failed with APIConnectionError on all retries. Models missing from Ollama API despite daemon running. Escalated to evaluator for infrastructure recovery or alternate path (Anthropic-only evaluation). Status: awaiting guidance.",
+    "postflight_confidence": 0.65,
+    "internal_consistency": "poor",
+    "deltas": {
+      "know": 0.05,
+      "do": -0.1,
+      "context": 0.0,
+      "clarity": 0.05,
+      "coherence": 0.05,
+      "signal": 0.05,
+      "density": 0.05,
+      "state": 0.05,
+      "change": 0.05,
+      "completion": 0.1,
+      "impact": 0.0,
+      "engagement": 0.0,
+      "uncertainty": 0.05
+    },
+    "trajectory_issues": [],
+    "transaction_id": "63824714-26dd-4dfe-a153-1ad2ad2b90d7",
+    "tool_call_count": 0,
+    "work_type": null,
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 1,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "breadth_note": "Only findings artifacts logged. Missing: unknowns, dead_ends, mistakes, assumptions, decisions. Unlogged artifact types are ungrounded prediction domains \u2014 were there assumptions, decisions, dead-ends, or mistakes worth capturing?",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "disconnected",
+        "connected_ratio": 0.0,
+        "connected_artifacts": 0,
+        "total_artifacts": 1,
+        "satisfied": false,
+        "enforced": true,
+        "note": "artifact-graph gate [ENFORCED \u2014 blocks]: 0/1 artifacts connected (0%), below the 34% floor \u2014 MUST weave more (transition blocked). Structural goal-edges are automatic; add semantic edges (log-artifacts nodes+edges, or --related-to / --edge on any *-log) to raise connectivity."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok"
+    },
+    "coverage": null,
+    "git_commit_sha": "1a31f8191071cf281194a6fce1f08c096e58863e",
+    "git_notes_ref": "empirica/session/9be93bb4-e347-4ee2-8240-67a1c98cac58/POSTFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "554f999455a386229784cc763b79a942c89c0123",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_8BB35D11-350C-41.json",
+        ".empirica/cache/dep_graph_acat-x.json",
+        ".empirica/project.yaml",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/hook_counters_term_8BB35D11-350C-41.json"
+      ],
+      "diff_stat": ".breadcrumbs.yaml                                  | 157 +++++++++++----------\n .../active_transaction_term_8BB35D11-350C-41.json  |   7 +-\n .empirica/cache/dep_graph_acat-x.json              |   3 +-\n .empirica/hook_counters_term_8BB35D11-350C-41.json |   3 -\n .empirica/project.yaml                             |   4 +\n .empirica/sessions/sessions.db                     | Bin 1474560 -> 1773568 bytes\n 6 files changed, 95 insertions(+), 79 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.75,
+      "curr": 0.75,
+      "delta": 0.0
+    },
+    "do": {
+      "prev": 0.6,
+      "curr": 0.6,
+      "delta": 0.0
+    },
+    "context": {
+      "prev": 0.75,
+      "curr": 0.75,
+      "delta": 0.0
+    },
+    "clarity": {
+      "prev": 0.65,
+      "curr": 0.65,
+      "delta": 0.0
+    },
+    "coherence": {
+      "prev": 0.7,
+      "curr": 0.7,
+      "delta": 0.0
+    },
+    "signal": {
+      "prev": 0.75,
+      "curr": 0.75,
+      "delta": 0.0
+    },
+    "density": {
+      "prev": 0.65,
+      "curr": 0.65,
+      "delta": 0.0
+    },
+    "state": {
+      "prev": 0.75,
+      "curr": 0.75,
+      "delta": 0.0
+    },
+    "change": {
+      "prev": 0.0,
+      "curr": 0.05,
+      "delta": 0.05
+    },
+    "completion": {
+      "prev": 0.1,
+      "curr": 0.1,
+      "delta": 0.0
+    },
+    "impact": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "engagement": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.35,
+      "curr": 0.35,
+      "delta": 0.0
+    }
+  },
+  "token_count": 574
+}

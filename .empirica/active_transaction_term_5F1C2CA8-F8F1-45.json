@@ -1,0 +1,29 @@
+{
+  "transaction_id": "dd8f9a13-ef62-46f5-99d1-05ef99e8c7b3",
+  "session_id": "f002d6a4-a618-42ba-8aca-983fd7feb244",
+  "claude_session_id": "348bf2e6-b7ca-4860-8cb7-8521797dad62",
+  "preflight_timestamp": 1788001849.133214,
+  "status": "open",
+  "project_path": "/Users/andersonfamily/practices/acat-x",
+  "updated_at": 1788001849.13343,
+  "work_context": "iteration",
+  "work_type": "code",
+  "task_context": "Execute Phase 8 API-only evaluation: Stages 3-5 (4 API models \u00d7 14 dimensions = 56 data points) \u2192 benchmark report",
+  "cascade_profile": "default",
+  "avg_turns": 5,
+  "preflight_pattern_count": 13,
+  "injection_budget": {
+    "injected_per_category": {
+      "eidetic_facts": 3,
+      "episodic_narratives": 3,
+      "related_goals": 3,
+      "unverified_assumptions": 1,
+      "prior_decisions": 3
+    },
+    "injected_total": 13,
+    "cap_per_category": null,
+    "cap_total": null,
+    "capped_per_category": 0,
+    "capped_total": 0
+  }
+}

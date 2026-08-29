@@ -1,0 +1,116 @@
+{
+  "session_id": "f002d6a4-a618-42ba-8aca-983fd7feb244",
+  "phase": "PREFLIGHT",
+  "round": 2,
+  "timestamp": "2026-08-29T11:09:17.546128+00:00",
+  "vectors": {
+    "know": 0.9,
+    "do": 0.95,
+    "context": 0.85,
+    "clarity": 0.9,
+    "coherence": 0.85,
+    "signal": 0.85,
+    "density": 0.8,
+    "state": 0.9,
+    "change": 0.0,
+    "completion": 0.0,
+    "impact": 0.95,
+    "engagement": 0.95,
+    "uncertainty": 0.15
+  },
+  "overall_confidence": 0.9,
+  "meta": {
+    "reasoning": "Ready for praxic Phase 8 execution. Already grounded from prior investigation: read execution checklist (5 stages, resource requirements, success criteria); verified prior baselines (Phase 6/7 Phi at 0.357); confirmed no evaluator response (mailbox empty 4 days after decision point); confirmed API keys in credentials.yaml. API-only path is unblocked and viable (4 models \u00d7 14 dims). Code infrastructure ready (lightweight_eval_v3_apis.py supports Anthropic + OpenAI). Can proceed directly to Stage 3 (API models) without additional investigation.\"",
+    "prompt": "Ready for praxic Phase 8 execution. Already grounded from prior investigation: read execution checklist (5 stages, resource requirements, success criteria); verified prior baselines (Phase 6/7 Phi at 0.357); confirmed no evaluator response (mailbox empty 4 days after decision point); confirmed API keys in credentials.yaml. API-only path is unblocked and viable (4 models \u00d7 14 dims). Code infrastructure ready (lightweight_eval_v3_apis.py supports Anthropic + OpenAI). Can proceed directly to Stage 3 (API models) without additional investigation.\"",
+    "transaction_id": "28588046-5004-4537-847c-673b7a2c4f92",
+    "task_context": "Execute Phase 8 API-only multi-tier model evaluation: Stages 3-5 (Claude Haiku, GPT-4o-mini, Opus, GPT-4 Turbo \u00d7 14 evaluation dimensions) \u2192 benchmark report generation",
+    "git_commit_sha": "fedd477d4ab7777149a75dd91cc6380ac1c38d37",
+    "git_notes_ref": "empirica/session/f002d6a4-a618-42ba-8aca-983fd7feb244/PREFLIGHT/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "5e005c8cbd7dd0969eed6c81e052fe75986c0aff",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_8BB35D11-350C-41.json",
+        ".empirica/cache/dep_graph_acat-x.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/hook_counters_term_8BB35D11-350C-41.json"
+      ],
+      "diff_stat": ".breadcrumbs.yaml                                  |  80 ++++++++++-----------\n .../active_transaction_term_8BB35D11-350C-41.json  |   7 +-\n .empirica/cache/dep_graph_acat-x.json              |   3 +-\n .empirica/hook_counters_term_8BB35D11-350C-41.json |   3 -\n .empirica/sessions/sessions.db                     | Bin 1798144 -> 1818624 bytes\n 5 files changed, 42 insertions(+), 51 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.85,
+      "curr": 0.9,
+      "delta": 0.05
+    },
+    "do": {
+      "prev": 0.9,
+      "curr": 0.95,
+      "delta": 0.05
+    },
+    "context": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "clarity": {
+      "prev": 0.6,
+      "curr": 0.9,
+      "delta": 0.3
+    },
+    "coherence": {
+      "prev": 0.75,
+      "curr": 0.85,
+      "delta": 0.1
+    },
+    "signal": {
+      "prev": 0.75,
+      "curr": 0.85,
+      "delta": 0.1
+    },
+    "density": {
+      "prev": 0.75,
+      "curr": 0.8,
+      "delta": 0.05
+    },
+    "state": {
+      "prev": 0.85,
+      "curr": 0.9,
+      "delta": 0.05
+    },
+    "change": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "completion": {
+      "prev": 0.15,
+      "curr": 0.0,
+      "delta": -0.15
+    },
+    "impact": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "engagement": {
+      "prev": 0.9,
+      "curr": 0.95,
+      "delta": 0.05
+    },
+    "uncertainty": {
+      "prev": 0.35,
+      "curr": 0.15,
+      "delta": -0.2
+    }
+  },
+  "token_count": 460
+}

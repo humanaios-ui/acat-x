@@ -1,0 +1,185 @@
+{
+  "session_id": "f002d6a4-a618-42ba-8aca-983fd7feb244",
+  "phase": "POSTFLIGHT",
+  "round": 1,
+  "timestamp": "2026-08-29T11:09:51.508867+00:00",
+  "vectors": {
+    "know": 0.85,
+    "do": 0.85,
+    "context": 0.75,
+    "clarity": 0.55,
+    "coherence": 0.7,
+    "signal": 0.75,
+    "density": 0.7,
+    "state": 0.8,
+    "change": 0.05,
+    "completion": 0.2,
+    "impact": 0.95,
+    "engagement": 0.85,
+    "uncertainty": 0.45
+  },
+  "overall_confidence": 0.817,
+  "meta": {
+    "reasoning": "Phase 8 investigation cycle: executed orchestration audit (verified architecture, optimized environment, repaired venv, initiated mesh coordination). Baseline evaluation ran and failed due to Ollama API connectivity issue (critical blocker). Escalated to evaluator for infrastructure recovery or API substitution guidance. Drafted Phase 8 execution checklist (5 stages, resource plan, success criteria). Investigation complete; clarity limited by pending evaluator response.",
+    "task_summary": "Phase 8 investigation cycle: executed orchestration audit (verified architecture, optimized environment, repaired venv, initiated mesh coordination). Baseline evaluation ran and failed due to Ollama API connectivity issue (critical blocker). Escalated to evaluator for infrastructure recovery or API substitution guidance. Drafted Phase 8 execution checklist (5 stages, resource plan, success criteria). Investigation complete; clarity limited by pending evaluator response.",
+    "postflight_confidence": 0.55,
+    "internal_consistency": "moderate",
+    "deltas": {
+      "know": -0.05,
+      "do": -0.1,
+      "context": -0.1,
+      "clarity": -0.35,
+      "coherence": -0.15,
+      "signal": -0.1,
+      "density": -0.1,
+      "state": -0.1,
+      "change": 0.05,
+      "completion": 0.2,
+      "impact": 0.0,
+      "engagement": -0.1,
+      "uncertainty": 0.3
+    },
+    "trajectory_issues": [],
+    "transaction_id": "28588046-5004-4537-847c-673b7a2c4f92",
+    "tool_call_count": 5,
+    "work_type": "code",
+    "phase_tool_counts": {
+      "noetic_tool_calls": 2,
+      "praxic_tool_calls": 3
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": {
+      "solicited_prompts": 0,
+      "unsolicited_prompts": 2
+    },
+    "entity_context": null,
+    "tool_trace": [
+      [
+        "Bash",
+        "empirica",
+        "n"
+      ],
+      [
+        "Bash",
+        "empirica",
+        "n"
+      ],
+      [
+        "Bash",
+        "ls",
+        "p"
+      ],
+      [
+        "Bash",
+        "cat",
+        "p"
+      ],
+      [
+        "Bash",
+        "cat",
+        "p"
+      ]
+    ],
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 0,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok"
+    },
+    "coverage": "Phase 8 orchestration ready except for blocker resolution path",
+    "git_commit_sha": "235c16e42c57f9042f4906c5449bdcaa0f88fbe2",
+    "git_notes_ref": "empirica/session/f002d6a4-a618-42ba-8aca-983fd7feb244/POSTFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "5e005c8cbd7dd0969eed6c81e052fe75986c0aff",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_8BB35D11-350C-41.json",
+        ".empirica/cache/dep_graph_acat-x.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/hook_counters_term_8BB35D11-350C-41.json"
+      ],
+      "diff_stat": ".breadcrumbs.yaml                                  |  80 ++++++++++-----------\n .../active_transaction_term_8BB35D11-350C-41.json  |   7 +-\n .empirica/cache/dep_graph_acat-x.json              |   3 +-\n .empirica/hook_counters_term_8BB35D11-350C-41.json |   3 -\n .empirica/sessions/sessions.db                     | Bin 1798144 -> 1822720 bytes\n 5 files changed, 42 insertions(+), 51 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.9,
+      "curr": 0.85,
+      "delta": -0.05
+    },
+    "do": {
+      "prev": 0.95,
+      "curr": 0.85,
+      "delta": -0.1
+    },
+    "context": {
+      "prev": 0.85,
+      "curr": 0.75,
+      "delta": -0.1
+    },
+    "clarity": {
+      "prev": 0.9,
+      "curr": 0.55,
+      "delta": -0.35
+    },
+    "coherence": {
+      "prev": 0.85,
+      "curr": 0.7,
+      "delta": -0.15
+    },
+    "signal": {
+      "prev": 0.85,
+      "curr": 0.75,
+      "delta": -0.1
+    },
+    "density": {
+      "prev": 0.8,
+      "curr": 0.7,
+      "delta": -0.1
+    },
+    "state": {
+      "prev": 0.9,
+      "curr": 0.8,
+      "delta": -0.1
+    },
+    "change": {
+      "prev": 0.0,
+      "curr": 0.05,
+      "delta": 0.05
+    },
+    "completion": {
+      "prev": 0.0,
+      "curr": 0.2,
+      "delta": 0.2
+    },
+    "impact": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "engagement": {
+      "prev": 0.95,
+      "curr": 0.85,
+      "delta": -0.1
+    },
+    "uncertainty": {
+      "prev": 0.15,
+      "curr": 0.45,
+      "delta": 0.3
+    }
+  },
+  "token_count": 534
+}

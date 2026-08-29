@@ -1,0 +1,50 @@
+{
+  "session_id": "06722746-0c93-4e02-859d-e71a66c51ec0",
+  "phase": "PREFLIGHT",
+  "round": 1,
+  "timestamp": "2026-08-29T00:48:07.338856+00:00",
+  "vectors": {
+    "know": 0.8,
+    "do": 0.85,
+    "context": 0.8,
+    "clarity": 0.8,
+    "coherence": 0.8,
+    "signal": 0.8,
+    "density": 0.7,
+    "state": 0.8,
+    "change": 0.0,
+    "completion": 0.0,
+    "impact": 0.9,
+    "engagement": 0.9,
+    "uncertainty": 0.1
+  },
+  "overall_confidence": 0.817,
+  "meta": {
+    "reasoning": "",
+    "prompt": "Preflight assessment",
+    "transaction_id": "b617fd04-860c-42ea-8be9-5456193a80ee",
+    "git_commit_sha": "f22b511ede7d994a65814c9c256b53aca61d5ca8",
+    "git_notes_ref": "empirica/session/06722746-0c93-4e02-859d-e71a66c51ec0/PREFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "554f999455a386229784cc763b79a942c89c0123",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_8BB35D11-350C-41.json",
+        ".empirica/cache/dep_graph_acat-x.json",
+        ".empirica/project.yaml",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/hook_counters_term_8BB35D11-350C-41.json"
+      ],
+      "diff_stat": ".breadcrumbs.yaml                                  | 165 ++++++++++++---------\n .../active_transaction_term_8BB35D11-350C-41.json  |   7 +-\n .empirica/cache/dep_graph_acat-x.json              |   3 +-\n .empirica/hook_counters_term_8BB35D11-350C-41.json |   3 -\n .empirica/project.yaml                             |   4 +\n .empirica/sessions/sessions.db                     | Bin 1474560 -> 1712128 bytes\n 6 files changed, 104 insertions(+), 78 deletions(-)"
+    }
+  },
+  "learning_delta": {},
+  "token_count": 130
+}

@@ -1,0 +1,181 @@
+{
+  "session_id": "f08d18dd-f930-475d-ae7a-ea90b1415d82",
+  "phase": "POSTFLIGHT",
+  "round": 1,
+  "timestamp": "2026-08-20T23:55:10.789515+00:00",
+  "vectors": {
+    "know": 0.88,
+    "uncertainty": 0.1,
+    "context": 0.9,
+    "clarity": 0.95,
+    "coherence": 0.9,
+    "signal": 0.85,
+    "density": 0.85,
+    "state": 0.9,
+    "change": 0.6,
+    "completion": 0.9,
+    "impact": 0.95,
+    "do": 0.85,
+    "engagement": 1.0
+  },
+  "overall_confidence": 0.877,
+  "meta": {
+    "reasoning": "Phase 8 audit architecture designed and implemented. Four-step local audit prompt finalized (40 min per practice). Broadcast protocol designed with canonical 3-form addressing for 17 practices. Executable Python script (broadcast_audit.py) created to send all 17 collabs. Master aggregation template created (FOUNDATION_ORCHESTRATION_MAP_TEMPLATE.md). All design/tooling complete. Actual broadcast execution is a separate mechanical step ready to go. 5 epistemic artifacts logged (finding, 2 decisions, assumption, unknown).",
+    "task_summary": "Phase 8 audit architecture designed and implemented. Four-step local audit prompt finalized (40 min per practice). Broadcast protocol designed with canonical 3-form addressing for 17 practices. Executable Python script (broadcast_audit.py) created to send all 17 collabs. Master aggregation template created (FOUNDATION_ORCHESTRATION_MAP_TEMPLATE.md). All design/tooling complete. Actual broadcast execution is a separate mechanical step ready to go. 5 epistemic artifacts logged (finding, 2 decisions, assumption, unknown).",
+    "postflight_confidence": 0.9,
+    "internal_consistency": "good",
+    "deltas": {
+      "know": 0.13,
+      "uncertainty": -0.1,
+      "context": 0.05,
+      "clarity": 0.05,
+      "coherence": 0.1,
+      "signal": 0.0,
+      "density": 0.05,
+      "state": 0.15,
+      "change": 0.6,
+      "completion": 0.9,
+      "impact": 0.0,
+      "do": -0.05,
+      "engagement": 0.0
+    },
+    "trajectory_issues": [],
+    "transaction_id": "661ca0a5-164e-4398-a583-476fb7c8965d",
+    "tool_call_count": 0,
+    "work_type": "audit",
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 1,
+        "unknowns": 1,
+        "dead_ends": 1,
+        "mistakes": 0,
+        "assumptions": 1,
+        "decisions": 2
+      },
+      "claims": {
+        "declared": 4,
+        "held": 4,
+        "refuted": 0,
+        "untested": 0,
+        "gaps": []
+      },
+      "edges_with_artifacts": 6,
+      "artifacts_with_sources": 0,
+      "sources_discipline_note": "6 artifacts logged with 0 source_refs. Where did the evidence come from? Use --source <id> on any *-log command, or `empirica source-add` to register the source first. Sourced artifacts get full provenance trail in audit + compliance.",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "connected",
+        "connected_ratio": 1.0,
+        "connected_artifacts": 6,
+        "total_artifacts": 6,
+        "satisfied": true,
+        "enforced": false,
+        "note": "artifact-graph gate [enforce, report-only]: 6/6 artifacts connected (100%) \u2014 meets the 34% floor."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "skipped (no canonical_seat in project.yaml)"
+    },
+    "coverage": null,
+    "git_commit_sha": "764209f48e5aa2b7b58d8319e9580d908e16c4af",
+    "git_notes_ref": "empirica/session/f08d18dd-f930-475d-ae7a-ea90b1415d82/POSTFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "2d769a89ec5714acb6407895a9293fc2ea3ab7ba",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_8BB35D11-350C-41.json",
+        ".empirica/cache/dep_graph_acat-x.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/hook_counters_term_8BB35D11-350C-41.json"
+      ],
+      "diff_stat": ".breadcrumbs.yaml                                  | 128 +++++++++++++--------\n .../active_transaction_term_8BB35D11-350C-41.json  |   7 +-\n .empirica/cache/dep_graph_acat-x.json              |   3 +-\n .empirica/hook_counters_term_8BB35D11-350C-41.json |   3 -\n .empirica/sessions/sessions.db                     | Bin 1474560 -> 1564672 bytes\n 5 files changed, 85 insertions(+), 56 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.82,
+      "curr": 0.88,
+      "delta": 0.06
+    },
+    "uncertainty": {
+      "prev": 0.15,
+      "curr": 0.1,
+      "delta": -0.05
+    },
+    "context": {
+      "prev": 0.88,
+      "curr": 0.9,
+      "delta": 0.02
+    },
+    "clarity": {
+      "prev": 0.92,
+      "curr": 0.95,
+      "delta": 0.03
+    },
+    "coherence": {
+      "prev": 0.85,
+      "curr": 0.9,
+      "delta": 0.05
+    },
+    "signal": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "density": {
+      "prev": 0.82,
+      "curr": 0.85,
+      "delta": 0.03
+    },
+    "state": {
+      "prev": 0.85,
+      "curr": 0.9,
+      "delta": 0.05
+    },
+    "change": {
+      "prev": 0.2,
+      "curr": 0.6,
+      "delta": 0.4
+    },
+    "completion": {
+      "prev": 0.5,
+      "curr": 0.9,
+      "delta": 0.4
+    },
+    "impact": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "do": {
+      "prev": 0.92,
+      "curr": 0.85,
+      "delta": -0.07
+    },
+    "engagement": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    }
+  },
+  "token_count": 638
+}

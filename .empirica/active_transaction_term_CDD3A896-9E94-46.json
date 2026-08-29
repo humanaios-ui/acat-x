@@ -1,0 +1,14 @@
+{
+  "transaction_id": "661ca0a5-164e-4398-a583-476fb7c8965d",
+  "session_id": "f08d18dd-f930-475d-ae7a-ea90b1415d82",
+  "claude_session_id": "3e338670-b3bb-4811-b362-6286ae934e7b",
+  "preflight_timestamp": 1787269771.99865,
+  "status": "closed",
+  "project_path": "/Users/andersonfamily/practices/acat-x",
+  "updated_at": 1787270110.626103,
+  "domain": "mesh",
+  "criticality": "high",
+  "work_type": "audit",
+  "work_context": "greenfield",
+  "cascade_profile": "exploratory"
+}

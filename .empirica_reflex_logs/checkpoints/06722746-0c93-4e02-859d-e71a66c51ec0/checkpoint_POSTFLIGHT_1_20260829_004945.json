@@ -1,0 +1,173 @@
+{
+  "session_id": "06722746-0c93-4e02-859d-e71a66c51ec0",
+  "phase": "POSTFLIGHT",
+  "round": 1,
+  "timestamp": "2026-08-29T00:49:36.177204+00:00",
+  "vectors": {
+    "know": 0.8,
+    "do": 0.85,
+    "context": 0.8,
+    "clarity": 0.8,
+    "coherence": 0.8,
+    "signal": 0.8,
+    "density": 0.7,
+    "state": 0.8,
+    "change": 0.0,
+    "completion": 0.95,
+    "impact": 0.9,
+    "engagement": 0.9,
+    "uncertainty": 0.1
+  },
+  "overall_confidence": 0.817,
+  "meta": {
+    "reasoning": "Evaluator mailbox poll complete: no response yet to Phase 8 coordination proposal. Baseline evaluation ready for review. Phase 8 staged and awaiting evaluator confirmation to proceed with full multi-tier evaluation.",
+    "task_summary": "Evaluator mailbox poll complete: no response yet to Phase 8 coordination proposal. Baseline evaluation ready for review. Phase 8 staged and awaiting evaluator confirmation to proceed with full multi-tier evaluation.",
+    "postflight_confidence": 0.9,
+    "internal_consistency": "good",
+    "deltas": {
+      "know": 0.0,
+      "do": 0.0,
+      "context": 0.0,
+      "clarity": 0.0,
+      "coherence": 0.0,
+      "signal": 0.0,
+      "density": 0.0,
+      "state": 0.0,
+      "change": 0.0,
+      "completion": 0.95,
+      "impact": 0.0,
+      "engagement": 0.0,
+      "uncertainty": 0.0
+    },
+    "trajectory_issues": [],
+    "transaction_id": "b617fd04-860c-42ea-8be9-5456193a80ee",
+    "tool_call_count": 0,
+    "work_type": null,
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 1,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "breadth_note": "Only findings artifacts logged. Missing: unknowns, dead_ends, mistakes, assumptions, decisions. Unlogged artifact types are ungrounded prediction domains \u2014 were there assumptions, decisions, dead-ends, or mistakes worth capturing?",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "disconnected",
+        "connected_ratio": 0.0,
+        "connected_artifacts": 0,
+        "total_artifacts": 1,
+        "satisfied": false,
+        "enforced": true,
+        "note": "artifact-graph gate [ENFORCED \u2014 blocks]: 0/1 artifacts connected (0%), below the 34% floor \u2014 MUST weave more (transition blocked). Structural goal-edges are automatic; add semantic edges (log-artifacts nodes+edges, or --related-to / --edge on any *-log) to raise connectivity."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok"
+    },
+    "coverage": null,
+    "git_commit_sha": "f914b756cb87ff12cd3b95ec0ec182e9199e5615",
+    "git_notes_ref": "empirica/session/06722746-0c93-4e02-859d-e71a66c51ec0/POSTFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "554f999455a386229784cc763b79a942c89c0123",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_8BB35D11-350C-41.json",
+        ".empirica/cache/dep_graph_acat-x.json",
+        ".empirica/project.yaml",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/hook_counters_term_8BB35D11-350C-41.json"
+      ],
+      "diff_stat": ".breadcrumbs.yaml                                  | 165 ++++++++++++---------\n .../active_transaction_term_8BB35D11-350C-41.json  |   7 +-\n .empirica/cache/dep_graph_acat-x.json              |   3 +-\n .empirica/hook_counters_term_8BB35D11-350C-41.json |   3 -\n .empirica/project.yaml                             |   4 +\n .empirica/sessions/sessions.db                     | Bin 1474560 -> 1716224 bytes\n 6 files changed, 104 insertions(+), 78 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "do": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "context": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "clarity": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "coherence": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "signal": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "density": {
+      "prev": 0.7,
+      "curr": 0.7,
+      "delta": 0.0
+    },
+    "state": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "change": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "completion": {
+      "prev": 0.0,
+      "curr": 0.95,
+      "delta": 0.95
+    },
+    "impact": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "engagement": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.1,
+      "curr": 0.1,
+      "delta": 0.0
+    }
+  },
+  "token_count": 551
+}

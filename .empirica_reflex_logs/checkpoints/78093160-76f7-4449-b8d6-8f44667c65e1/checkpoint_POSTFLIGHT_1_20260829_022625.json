@@ -1,0 +1,155 @@
+{
+  "session_id": "78093160-76f7-4449-b8d6-8f44667c65e1",
+  "phase": "POSTFLIGHT",
+  "round": 1,
+  "timestamp": "2026-08-29T02:26:16.300807+00:00",
+  "vectors": {
+    "know": 0.8,
+    "do": 0.7,
+    "context": 0.8,
+    "clarity": 0.75,
+    "coherence": 0.75,
+    "signal": 0.8,
+    "density": 0.7,
+    "state": 0.8,
+    "change": 0.1,
+    "completion": 0.75,
+    "impact": 0.95,
+    "engagement": 0.9,
+    "uncertainty": 0.25
+  },
+  "overall_confidence": 0.767,
+  "meta": {
+    "reasoning": "Phase 8 orchestration audit executed and committed. Infrastructure blocker (Ollama connectivity) identified and escalated to evaluator. Architecture, code, and environment verified ready. Baseline evaluation infrastructure tested. All work committed. Session closing with blocker escalation pending evaluator response.",
+    "task_summary": "Phase 8 orchestration audit executed and committed. Infrastructure blocker (Ollama connectivity) identified and escalated to evaluator. Architecture, code, and environment verified ready. Baseline evaluation infrastructure tested. All work committed. Session closing with blocker escalation pending evaluator response.",
+    "postflight_confidence": 0.75,
+    "internal_consistency": "good",
+    "deltas": {
+      "know": 0.0,
+      "do": 0.0,
+      "context": 0.0,
+      "clarity": 0.0,
+      "coherence": 0.0,
+      "signal": 0.0,
+      "density": 0.0,
+      "state": 0.0,
+      "change": 0.0,
+      "completion": 0.0,
+      "impact": 0.0,
+      "engagement": 0.0,
+      "uncertainty": 0.0
+    },
+    "trajectory_issues": [],
+    "transaction_id": "1ba2a80d-aba1-4d43-a37a-4674eff45a69",
+    "tool_call_count": 0,
+    "work_type": null,
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 0,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok"
+    },
+    "coverage": null,
+    "git_commit_sha": "80ee4db29e190f9712c768e1e74a27f0ab0fea1e",
+    "git_notes_ref": "empirica/session/78093160-76f7-4449-b8d6-8f44667c65e1/POSTFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "5e005c8cbd7dd0969eed6c81e052fe75986c0aff",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_8BB35D11-350C-41.json",
+        ".empirica/cache/dep_graph_acat-x.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/hook_counters_term_8BB35D11-350C-41.json"
+      ],
+      "diff_stat": ".../active_transaction_term_8BB35D11-350C-41.json  |   7 +++----\n .empirica/cache/dep_graph_acat-x.json              |   3 ++-\n .empirica/hook_counters_term_8BB35D11-350C-41.json |   3 ---\n .empirica/sessions/sessions.db                     | Bin 1798144 -> 1802240 bytes\n 4 files changed, 5 insertions(+), 8 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "do": {
+      "prev": 0.7,
+      "curr": 0.7,
+      "delta": 0.0
+    },
+    "context": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "clarity": {
+      "prev": 0.75,
+      "curr": 0.75,
+      "delta": 0.0
+    },
+    "coherence": {
+      "prev": 0.75,
+      "curr": 0.75,
+      "delta": 0.0
+    },
+    "signal": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "density": {
+      "prev": 0.7,
+      "curr": 0.7,
+      "delta": 0.0
+    },
+    "state": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "change": {
+      "prev": 0.1,
+      "curr": 0.1,
+      "delta": 0.0
+    },
+    "completion": {
+      "prev": 0.75,
+      "curr": 0.75,
+      "delta": 0.0
+    },
+    "impact": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "engagement": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.25,
+      "curr": 0.25,
+      "delta": 0.0
+    }
+  },
+  "token_count": 440
+}

@@ -4,22 +4,22 @@
 # fully measure holistic epistemic state. Use alongside self-assessment,
 # not as a replacement. See dual-track calibration philosophy in docs.
 grounded_calibration:
-  last_updated: "2026-08-28T20:29:52.421655"
+  last_updated: "2026-08-29T06:09:57.623597"
   ai_id: acat-x
   observations: 271
   grounded_coverage: 0.92
   divergence:
+    impact: +0.49
     do: +0.48
-    impact: +0.48
-    uncertainty: -0.35
     context: +0.34
-    completion: +0.33
+    uncertainty: -0.33
     know: +0.32
+    completion: +0.29
+    change: -0.21
+    state: -0.17
     signal: +0.17
-    change: -0.16
-    state: -0.16
-    density: -0.05
-    clarity: -0.01
+    density: -0.06
+    clarity: -0.03
   ungrounded: [engagement]
   grounded_bias_corrections:
     know: -0.25
@@ -28,21 +28,15 @@ grounded_calibration:
     completion: -0.25
     impact: -0.25
     uncertainty: +0.25
+    change: +0.21
     signal: -0.17
-    change: +0.16
     state: +0.13
-    density: +0.05
-    clarity: +0.01
+    density: +0.06
+    clarity: +0.02
   phase_weights:
-    noetic: 0.5
-    praxic: 0.5
-    source: no_tool_data
-  holistic_calibration_score: 0.1289
-  holistic_gaps:
-    context: +0.3500
-    uncertainty: -0.1555
-    know: +0.0833
-    signal: +0.0611
+    noetic: 0.4
+    praxic: 0.6
+    source: tool_classification
   insights:
     - vector: signal
       phase: both
@@ -77,43 +71,43 @@ grounded_calibration:
 # Learning trajectory (PREFLIGHT→POSTFLIGHT deltas — measures learning, NOT calibration bias)
 # For actual bias corrections see grounded_calibration.grounded_bias_corrections
 learning_trajectory:
-  last_updated: "2026-08-28T20:29:51.041564"
+  last_updated: "2026-08-29T06:09:57.120792"
   ai_id: acat-x
-  observations: 132
+  observations: 158
   session_deltas:
     completion: +0.25
     change: +0.25
-    clarity: +0.20
-    coherence: +0.16
-    density: +0.15
-    uncertainty: -0.13
-    state: +0.12
-    know: +0.11
-    do: +0.11
-    signal: +0.10
-    impact: -0.07
-    context: +0.07
-    engagement: -0.02
+    do: -0.15
+    clarity: -0.12
+    know: -0.09
+    state: -0.08
+    engagement: -0.07
+    impact: -0.06
+    signal: -0.06
+    density: -0.06
+    coherence: -0.05
+    uncertainty: +0.05
+    context: -0.04
   readiness:
     min_know: 0.70
     max_uncertainty: 0.35
   summary:
-    overestimates: [uncertainty]
-    underestimates: [completion, change, state, density, coherence, clarity, do, know]
-    well_calibrated: [impact, signal, context, engagement]
+    overestimates: [clarity, do]
+    underestimates: [completion, change]
+    well_calibrated: [uncertainty, impact, state, density, signal]
 
 # Brier calibration (auto-updated by Empirica post-test verification)
 brier_calibration:
-  last_updated: "2026-08-28T20:29:51.158963"
+  last_updated: "2026-08-29T06:09:57.180382"
   ai_id: acat-x
   note: "Murphy (1973) decomposition: BS = Reliability - Resolution + Uncertainty"
   noetic:
-    brier_score: 0.1060
-    reliability: 0.0977
-    resolution: 0.0020
-    uncertainty: 0.0103
-    n_predictions: 12
-    trend: degrading
+    brier_score: 0.0893
+    reliability: 0.0799
+    resolution: 0.0018
+    uncertainty: 0.0113
+    n_predictions: 16
+    trend: improving
   praxic:
     brier_score: 0.1244
     reliability: 0.0653
@@ -122,9 +116,9 @@ brier_calibration:
     n_predictions: 30
     trend: degrading
   combined:
-    brier_score: 0.1356
-    reliability: 0.0776
-    resolution: 0.0106
-    uncertainty: 0.0686
+    brier_score: 0.1308
+    reliability: 0.0727
+    resolution: 0.0064
+    uncertainty: 0.0645
     n_predictions: 50
-    trend: degrading
+    trend: stable

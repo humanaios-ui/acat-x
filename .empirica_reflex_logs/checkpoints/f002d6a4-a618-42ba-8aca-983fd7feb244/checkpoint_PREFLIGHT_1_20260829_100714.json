@@ -1,0 +1,50 @@
+{
+  "session_id": "f002d6a4-a618-42ba-8aca-983fd7feb244",
+  "phase": "PREFLIGHT",
+  "round": 1,
+  "timestamp": "2026-08-29T10:07:06.166984+00:00",
+  "vectors": {
+    "know": 0.85,
+    "do": 0.9,
+    "context": 0.8,
+    "clarity": 0.6,
+    "coherence": 0.75,
+    "signal": 0.75,
+    "density": 0.75,
+    "state": 0.85,
+    "change": 0.0,
+    "completion": 0.15,
+    "impact": 0.95,
+    "engagement": 0.9,
+    "uncertainty": 0.35
+  },
+  "overall_confidence": 0.85,
+  "meta": {
+    "reasoning": "Phase 8 audit complete, infrastructure ready except Ollama connectivity issue. Know the evaluation architecture and 5-stage plan. Do: can execute pipeline and handle APIs. Context: prior baselines successful (Phi 0.357), evaluator consulted on Ollama vs API path. Clarity moderate\u2014awaiting strategy decision. Signal good from artifacts. Main uncertainty: evaluator response status and recommendation.\"",
+    "prompt": "Phase 8 audit complete, infrastructure ready except Ollama connectivity issue. Know the evaluation architecture and 5-stage plan. Do: can execute pipeline and handle APIs. Context: prior baselines successful (Phi 0.357), evaluator consulted on Ollama vs API path. Clarity moderate\u2014awaiting strategy decision. Signal good from artifacts. Main uncertainty: evaluator response status and recommendation.\"",
+    "transaction_id": "7ee933c6-f628-4d3d-b4b4-bf851b4655c5",
+    "task_context": "Resume Phase 8 execution: clarify evaluator response on Ollama blocker; proceed with evaluation execution per approved 5-stage plan",
+    "git_commit_sha": "df86fda2a0eae0339cb5874d666342296a94164b",
+    "git_notes_ref": "empirica/session/f002d6a4-a618-42ba-8aca-983fd7feb244/PREFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "5e005c8cbd7dd0969eed6c81e052fe75986c0aff",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_8BB35D11-350C-41.json",
+        ".empirica/cache/dep_graph_acat-x.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/hook_counters_term_8BB35D11-350C-41.json"
+      ],
+      "diff_stat": ".breadcrumbs.yaml                                  |  80 ++++++++++-----------\n .../active_transaction_term_8BB35D11-350C-41.json  |   7 +-\n .empirica/cache/dep_graph_acat-x.json              |   3 +-\n .empirica/hook_counters_term_8BB35D11-350C-41.json |   3 -\n .empirica/sessions/sessions.db                     | Bin 1798144 -> 1814528 bytes\n 5 files changed, 42 insertions(+), 51 deletions(-)"
+    }
+  },
+  "learning_delta": {},
+  "token_count": 279
+}

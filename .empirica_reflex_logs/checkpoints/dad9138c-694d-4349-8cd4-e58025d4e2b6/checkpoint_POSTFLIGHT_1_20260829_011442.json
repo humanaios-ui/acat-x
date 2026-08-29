@@ -1,0 +1,157 @@
+{
+  "session_id": "dad9138c-694d-4349-8cd4-e58025d4e2b6",
+  "phase": "POSTFLIGHT",
+  "round": 1,
+  "timestamp": "2026-08-29T01:14:36.967740+00:00",
+  "vectors": {
+    "know": 0.8,
+    "do": 0.85,
+    "context": 0.8,
+    "clarity": 0.8,
+    "coherence": 0.8,
+    "signal": 0.8,
+    "density": 0.7,
+    "state": 0.8,
+    "change": 0.0,
+    "completion": 0.95,
+    "impact": 0.9,
+    "engagement": 0.9,
+    "uncertainty": 0.1
+  },
+  "overall_confidence": 0.817,
+  "meta": {
+    "reasoning": "Mailbox poll: still no evaluator response. Phase 8 baseline ready and awaiting confirmation.",
+    "task_summary": "Mailbox poll: still no evaluator response. Phase 8 baseline ready and awaiting confirmation.",
+    "postflight_confidence": 0.9,
+    "internal_consistency": "good",
+    "deltas": {
+      "know": 0.0,
+      "do": 0.0,
+      "context": 0.0,
+      "clarity": 0.0,
+      "coherence": 0.0,
+      "signal": 0.0,
+      "density": 0.0,
+      "state": 0.0,
+      "change": 0.0,
+      "completion": 0.95,
+      "impact": 0.0,
+      "engagement": 0.0,
+      "uncertainty": 0.0
+    },
+    "trajectory_issues": [],
+    "transaction_id": "22ad94b9-aa0b-4796-8819-85d7dd70d196",
+    "tool_call_count": 0,
+    "work_type": null,
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 0,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok"
+    },
+    "coverage": null,
+    "git_commit_sha": "b4de4f16f1b44ae1ff4716c3c9edf655229ba14f",
+    "git_notes_ref": "empirica/session/dad9138c-694d-4349-8cd4-e58025d4e2b6/POSTFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "554f999455a386229784cc763b79a942c89c0123",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_8BB35D11-350C-41.json",
+        ".empirica/cache/dep_graph_acat-x.json",
+        ".empirica/project.yaml",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/hook_counters_term_8BB35D11-350C-41.json"
+      ],
+      "diff_stat": ".breadcrumbs.yaml                                  | 163 ++++++++++++---------\n .../active_transaction_term_8BB35D11-350C-41.json  |   7 +-\n .empirica/cache/dep_graph_acat-x.json              |   3 +-\n .empirica/hook_counters_term_8BB35D11-350C-41.json |   3 -\n .empirica/project.yaml                             |   4 +\n .empirica/sessions/sessions.db                     | Bin 1474560 -> 1761280 bytes\n 6 files changed, 103 insertions(+), 77 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "do": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "context": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "clarity": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "coherence": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "signal": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "density": {
+      "prev": 0.7,
+      "curr": 0.7,
+      "delta": 0.0
+    },
+    "state": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "change": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "completion": {
+      "prev": 0.0,
+      "curr": 0.95,
+      "delta": 0.95
+    },
+    "impact": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "engagement": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.1,
+      "curr": 0.1,
+      "delta": 0.0
+    }
+  },
+  "token_count": 391
+}

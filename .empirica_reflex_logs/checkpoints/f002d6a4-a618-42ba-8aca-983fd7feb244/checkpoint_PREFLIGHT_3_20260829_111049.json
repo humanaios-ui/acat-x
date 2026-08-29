@@ -1,0 +1,116 @@
+{
+  "session_id": "f002d6a4-a618-42ba-8aca-983fd7feb244",
+  "phase": "PREFLIGHT",
+  "round": 3,
+  "timestamp": "2026-08-29T11:10:44.520129+00:00",
+  "vectors": {
+    "know": 0.9,
+    "do": 0.95,
+    "context": 0.85,
+    "clarity": 0.9,
+    "coherence": 0.85,
+    "signal": 0.85,
+    "density": 0.8,
+    "state": 0.9,
+    "change": 0.0,
+    "completion": 0.0,
+    "impact": 0.95,
+    "engagement": 0.95,
+    "uncertainty": 0.15
+  },
+  "overall_confidence": 0.9,
+  "meta": {
+    "reasoning": "Ready for Phase 8 praxic execution. Already grounded from investigation: (1) read PHASE8_EXECUTION_CHECKLIST.md\u20145 stages drafted with resource/success criteria, (2) verified baseline code (lightweight_eval_v3_apis.py exists, 6.8KB, ready), (3) confirmed no evaluator response (mailbox empty), (4) evaluated viable API-only path (4 models \u00d7 14 dims, unblocked, costs <$1). API keys in credentials.yaml. Can proceed directly to Stage 3 execution without additional CHECK.\"",
+    "prompt": "Ready for Phase 8 praxic execution. Already grounded from investigation: (1) read PHASE8_EXECUTION_CHECKLIST.md\u20145 stages drafted with resource/success criteria, (2) verified baseline code (lightweight_eval_v3_apis.py exists, 6.8KB, ready), (3) confirmed no evaluator response (mailbox empty), (4) evaluated viable API-only path (4 models \u00d7 14 dims, unblocked, costs <$1). API keys in credentials.yaml. Can proceed directly to Stage 3 execution without additional CHECK.\"",
+    "transaction_id": "dd8f9a13-ef62-46f5-99d1-05ef99e8c7b3",
+    "task_context": "Execute Phase 8 API-only evaluation: Stages 3-5 (4 API models \u00d7 14 dimensions = 56 data points) \u2192 benchmark report",
+    "git_commit_sha": "b736f487569e8e428403dcfd153275c02763c433",
+    "git_notes_ref": "empirica/session/f002d6a4-a618-42ba-8aca-983fd7feb244/PREFLIGHT/3"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "5e005c8cbd7dd0969eed6c81e052fe75986c0aff",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_8BB35D11-350C-41.json",
+        ".empirica/cache/dep_graph_acat-x.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/hook_counters_term_8BB35D11-350C-41.json"
+      ],
+      "diff_stat": ".breadcrumbs.yaml                                  |  90 ++++++++++-----------\n .../active_transaction_term_8BB35D11-350C-41.json  |   7 +-\n .empirica/cache/dep_graph_acat-x.json              |   3 +-\n .empirica/hook_counters_term_8BB35D11-350C-41.json |   3 -\n .empirica/sessions/sessions.db                     | Bin 1798144 -> 1843200 bytes\n 5 files changed, 47 insertions(+), 56 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "do": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "context": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "clarity": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "coherence": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "signal": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "density": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "state": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "change": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "completion": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "impact": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "engagement": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.15,
+      "curr": 0.15,
+      "delta": 0.0
+    }
+  },
+  "token_count": 419
+}

@@ -3,10 +3,9 @@
   "session_id": "b94125b7-4151-47f2-b67b-31de7be743e4",
   "claude_session_id": null,
   "preflight_timestamp": 1787159870.771265,
-  "status": "open",
+  "status": "closed",
   "project_path": "/Users/andersonfamily/practices/acat-x",
-  "updated_at": 1787159870.7716632,
+  "updated_at": 1787162358.9977531,
   "work_type": "audit",
-  "cascade_profile": "rigorous",
-  "avg_turns": 0
+  "cascade_profile": "rigorous"
 }
