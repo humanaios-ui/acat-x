@@ -1,15 +1,28 @@
 {
-  "transaction_id": "22bcf878-c9e0-4d9f-bac4-3ddfbc46410e",
+  "transaction_id": "01f9c9ac-c7de-430c-bf7f-66bb597289bd",
   "session_id": "751b2c6a-085f-49d2-a01e-239dda2ea9b5",
   "claude_session_id": "348bf2e6-b7ca-4860-8cb7-8521797dad62",
-  "preflight_timestamp": 1788023934.9989781,
+  "preflight_timestamp": 1788026361.532406,
   "status": "open",
   "project_path": "/Users/andersonfamily/practices/acat-x",
-  "updated_at": 1788023934.9993348,
+  "updated_at": 1788026361.53914,
   "work_type": "research",
-  "domain": "empirica_mesh_coordination",
-  "criticality": "high",
-  "task_context": "Phase 3: Research Orchestration & Scoring Pipeline Coordination for acat-x. Execute research work, maintain ACAT-empirica scoring agreement, coordinate scoring inputs to aggregator. Resource allocation: 15 practice-hours.",
+  "task_context": "Phase 3 Stage 3c: Re-log high-impact findings with shared visibility for evaluator discovery. Target: 15 findings marked shared for cortex search.",
   "cascade_profile": "exploratory",
-  "avg_turns": 0
+  "avg_turns": 0,
+  "preflight_pattern_count": 13,
+  "injection_budget": {
+    "injected_per_category": {
+      "eidetic_facts": 3,
+      "episodic_narratives": 3,
+      "related_goals": 2,
+      "unverified_assumptions": 2,
+      "prior_decisions": 3
+    },
+    "injected_total": 13,
+    "cap_per_category": null,
+    "cap_total": null,
+    "capped_per_category": 0,
+    "capped_total": 0
+  }
 }

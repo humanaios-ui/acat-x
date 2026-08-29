@@ -1,0 +1,65 @@
+{
+  "session_id": "751b2c6a-085f-49d2-a01e-239dda2ea9b5",
+  "phase": "PREFLIGHT",
+  "round": 2,
+  "timestamp": "2026-08-29T17:59:01.126429+00:00",
+  "vectors": {
+    "know": 0.9,
+    "uncertainty": 0.1,
+    "context": 0.92,
+    "engagement": 0.88,
+    "coherence": 0.9
+  },
+  "overall_confidence": 0.773,
+  "meta": {
+    "reasoning": "Graph discipline complete (Stage 3a+3b). Ready to update visibility on high-impact findings identified in telemetry schema. Will mark 15 local findings as shared for evaluator access. Then register canonical sources.",
+    "prompt": "Graph discipline complete (Stage 3a+3b). Ready to update visibility on high-impact findings identified in telemetry schema. Will mark 15 local findings as shared for evaluator access. Then register canonical sources.",
+    "transaction_id": "01f9c9ac-c7de-430c-bf7f-66bb597289bd",
+    "task_context": "Phase 3 Stage 3c: Re-log high-impact findings with shared visibility for evaluator discovery. Target: 15 findings marked shared for cortex search.",
+    "git_commit_sha": "2b2aa05b8e004c6a4575fe94fd66f948e9772284",
+    "git_notes_ref": "empirica/session/751b2c6a-085f-49d2-a01e-239dda2ea9b5/PREFLIGHT/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "7ec85c92fe77814eabe4cb5102880b81870aa85c",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".breadcrumbs.yaml                                  | 121 +++++++++++----------\n .../active_transaction_term_5F1C2CA8-F8F1-45.json  |  10 +-\n .empirica/sessions/sessions.db                     | Bin 2191360 -> 2220032 bytes\n 3 files changed, 65 insertions(+), 66 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.92,
+      "curr": 0.9,
+      "delta": -0.02
+    },
+    "uncertainty": {
+      "prev": 0.08,
+      "curr": 0.1,
+      "delta": 0.02
+    },
+    "context": {
+      "prev": 0.95,
+      "curr": 0.92,
+      "delta": -0.03
+    },
+    "engagement": {
+      "prev": 0.9,
+      "curr": 0.88,
+      "delta": -0.02
+    },
+    "coherence": {
+      "prev": 0.93,
+      "curr": 0.9,
+      "delta": -0.03
+    }
+  },
+  "token_count": 237
+}
