@@ -1,0 +1,65 @@
+{
+  "session_id": "751b2c6a-085f-49d2-a01e-239dda2ea9b5",
+  "phase": "PREFLIGHT",
+  "round": 4,
+  "timestamp": "2026-08-29T18:21:29.086354+00:00",
+  "vectors": {
+    "know": 0.85,
+    "uncertainty": 0.15,
+    "context": 0.88,
+    "engagement": 0.85,
+    "coherence": 0.87
+  },
+  "overall_confidence": 0.743,
+  "meta": {
+    "reasoning": "Set up listener to monitor for evaluator responses. Enable push-based notifications so SER and signal integration can proceed as soon as evaluator responds.",
+    "prompt": "Set up listener to monitor for evaluator responses. Enable push-based notifications so SER and signal integration can proceed as soon as evaluator responds.",
+    "transaction_id": "9973ff3b-35b4-4b99-812d-8e04f064d07f",
+    "task_context": "Activate cortex mailbox listener for Phase 3c evaluator coordination. Poll inbox for responses and arm listener for real-time notifications.",
+    "git_commit_sha": "d8f6c5473d801d3967fa8e0dbdcd21bab39d0ea1",
+    "git_notes_ref": "empirica/session/751b2c6a-085f-49d2-a01e-239dda2ea9b5/PREFLIGHT/4"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "f0031ec0aee4b6c9661d67b9ae2c256e77ffa65e",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".breadcrumbs.yaml                                  | 112 ++++++++++-----------\n .../active_transaction_term_5F1C2CA8-F8F1-45.json  |  23 +----\n .empirica/sessions/sessions.db                     | Bin 2252800 -> 2281472 bytes\n 3 files changed, 59 insertions(+), 76 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.88,
+      "curr": 0.85,
+      "delta": -0.03
+    },
+    "uncertainty": {
+      "prev": 0.12,
+      "curr": 0.15,
+      "delta": 0.03
+    },
+    "context": {
+      "prev": 0.9,
+      "curr": 0.88,
+      "delta": -0.02
+    },
+    "engagement": {
+      "prev": 0.82,
+      "curr": 0.85,
+      "delta": 0.03
+    },
+    "coherence": {
+      "prev": 0.88,
+      "curr": 0.87,
+      "delta": -0.01
+    }
+  },
+  "token_count": 217
+}
