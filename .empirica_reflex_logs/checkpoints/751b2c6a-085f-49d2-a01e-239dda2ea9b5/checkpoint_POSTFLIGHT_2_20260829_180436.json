@@ -1,0 +1,141 @@
+{
+  "session_id": "751b2c6a-085f-49d2-a01e-239dda2ea9b5",
+  "phase": "POSTFLIGHT",
+  "round": 2,
+  "timestamp": "2026-08-29T18:04:24.287947+00:00",
+  "vectors": {
+    "know": 0.93,
+    "uncertainty": 0.07,
+    "context": 0.94,
+    "engagement": 0.88,
+    "coherence": 0.92,
+    "clarity": 0.91,
+    "signal": 0.9,
+    "completion": 0.95,
+    "impact": 0.9,
+    "change": 0.88
+  },
+  "overall_confidence": 0.79,
+  "meta": {
+    "reasoning": "Phase 3 Stage 3c complete: updated 15 high-impact findings to shared visibility (31 shared total, 34 discoverable artifacts). Registered 3 canonical sources for mesh integration. Awaiting evaluator response for SER and signal integration. Completion 0.95 \u2014 all Stage 3 objectives achieved except evaluator coordination closure (not blocking). Phase 3 core research orchestration complete, ready for Phase 4.",
+    "task_summary": "Phase 3 Stage 3c complete: updated 15 high-impact findings to shared visibility (31 shared total, 34 discoverable artifacts). Registered 3 canonical sources for mesh integration. Awaiting evaluator response for SER and signal integration. Completion 0.95 \u2014 all Stage 3 objectives achieved except evaluator coordination closure (not blocking). Phase 3 core research orchestration complete, ready for Phase 4.",
+    "postflight_confidence": 0.9299999999999999,
+    "internal_consistency": "good",
+    "deltas": {
+      "know": 0.03,
+      "uncertainty": -0.03,
+      "context": 0.02,
+      "engagement": 0.0,
+      "coherence": 0.02
+    },
+    "trajectory_issues": [],
+    "transaction_id": "01f9c9ac-c7de-430c-bf7f-66bb597289bd",
+    "tool_call_count": 0,
+    "work_type": "research",
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 2,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 1
+      },
+      "claims": {
+        "declared": 0,
+        "held": 0,
+        "refuted": 0,
+        "untested": 0,
+        "gaps": [],
+        "dropped_adjudications": 4,
+        "note": "4 verdict(s) submitted but no claims were declared in this transaction \u2014 nothing was recorded. Declare claims at PREFLIGHT or CHECK for POSTFLIGHT to adjudicate."
+      },
+      "edges_with_artifacts": 3,
+      "artifacts_with_sources": 0,
+      "sources_discipline_note": "3 artifacts logged with 0 source_refs. Where did the evidence come from? Use --source <id> on any *-log command, or `empirica source-add` to register the source first. Sourced artifacts get full provenance trail in audit + compliance.",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "connected",
+        "connected_ratio": 1.0,
+        "connected_artifacts": 3,
+        "total_artifacts": 3,
+        "satisfied": true,
+        "enforced": false,
+        "note": "artifact-graph gate [enforce, report-only]: 3/3 artifacts connected (100%) \u2014 meets the 34% floor."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok"
+    },
+    "coverage": null,
+    "git_commit_sha": "ba106b66ed90d4893b6e9958a714eccb64b860a3",
+    "git_notes_ref": "empirica/session/751b2c6a-085f-49d2-a01e-239dda2ea9b5/POSTFLIGHT/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "76af93835fa9aceee1beaa28d7ef97d57f78d0ef",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "76af93835fa9aceee1beaa28d7ef97d57f78d0ef",
+        "message": "phase-3: Stage 3c complete - Shared visibility enabled, canonical sources registered",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-29T13:04:05-05:00",
+        "files_changed": [
+          ".breadcrumbs.yaml",
+          ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+          ".empirica/sessions/sessions.db",
+          ".empirica_reflex_logs/checkpoints/751b2c6a-085f-49d2-a01e-239dda2ea9b5/checkpoint_POSTFLIGHT_1_20260829_175333.json",
+          ".empirica_reflex_logs/checkpoints/751b2c6a-085f-49d2-a01e-239dda2ea9b5/checkpoint_PREFLIGHT_2_20260829_175920.json"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".../active_transaction_term_5F1C2CA8-F8F1-45.json  | 23 +++-------------------\n 1 file changed, 3 insertions(+), 20 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.9,
+      "curr": 0.93,
+      "delta": 0.03
+    },
+    "uncertainty": {
+      "prev": 0.1,
+      "curr": 0.07,
+      "delta": -0.03
+    },
+    "context": {
+      "prev": 0.92,
+      "curr": 0.94,
+      "delta": 0.02
+    },
+    "engagement": {
+      "prev": 0.88,
+      "curr": 0.88,
+      "delta": 0.0
+    },
+    "coherence": {
+      "prev": 0.9,
+      "curr": 0.92,
+      "delta": 0.02
+    }
+  },
+  "token_count": 552
+}
