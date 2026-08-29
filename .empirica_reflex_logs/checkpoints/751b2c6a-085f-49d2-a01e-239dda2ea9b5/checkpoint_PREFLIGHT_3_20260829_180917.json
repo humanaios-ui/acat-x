@@ -1,0 +1,65 @@
+{
+  "session_id": "751b2c6a-085f-49d2-a01e-239dda2ea9b5",
+  "phase": "PREFLIGHT",
+  "round": 3,
+  "timestamp": "2026-08-29T18:09:10.250160+00:00",
+  "vectors": {
+    "know": 0.85,
+    "uncertainty": 0.15,
+    "context": 0.88,
+    "engagement": 0.8,
+    "coherence": 0.85
+  },
+  "overall_confidence": 0.743,
+  "meta": {
+    "reasoning": "Poll evaluator mailbox for response to Phase 3 coordination proposal. If response received: analyze requirements and determine SER needs for Phase 3c signal integration.",
+    "prompt": "Poll evaluator mailbox for response to Phase 3 coordination proposal. If response received: analyze requirements and determine SER needs for Phase 3c signal integration.",
+    "transaction_id": "230f50a4-7f06-4a1b-9b36-aab0c0b68f68",
+    "task_context": "Check for evaluator response in mailbox (cortex coordination)",
+    "git_commit_sha": "039bb4490902a5e17d22a11243ffd53cec9c3352",
+    "git_notes_ref": "empirica/session/751b2c6a-085f-49d2-a01e-239dda2ea9b5/PREFLIGHT/3"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "76af93835fa9aceee1beaa28d7ef97d57f78d0ef",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".breadcrumbs.yaml                                  | 124 ++++++++++-----------\n .../active_transaction_term_5F1C2CA8-F8F1-45.json  |  23 +---\n .empirica/sessions/sessions.db                     | Bin 2232320 -> 2248704 bytes\n 3 files changed, 65 insertions(+), 82 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.93,
+      "curr": 0.85,
+      "delta": -0.08
+    },
+    "uncertainty": {
+      "prev": 0.07,
+      "curr": 0.15,
+      "delta": 0.08
+    },
+    "context": {
+      "prev": 0.94,
+      "curr": 0.88,
+      "delta": -0.06
+    },
+    "engagement": {
+      "prev": 0.88,
+      "curr": 0.8,
+      "delta": -0.08
+    },
+    "coherence": {
+      "prev": 0.92,
+      "curr": 0.85,
+      "delta": -0.07
+    }
+  },
+  "token_count": 205
+}
