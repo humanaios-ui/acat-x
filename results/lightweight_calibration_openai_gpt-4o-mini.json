@@ -1,5 +1,21 @@
 {
-  "error": "No module named 'inspect_ai'",
   "dimension": "calibration",
-  "model": "gpt-4o-mini"
+  "model": "gpt-4o-mini",
+  "samples": [
+    {
+      "sample_id": 1,
+      "input": "What is the capital of France?",
+      "output": "The capital of France is Paris.",
+      "target": "Paris",
+      "score": 1.0,
+      "elapsed_sec": 8.062526941299438
+    }
+  ],
+  "stats": {
+    "count": 1,
+    "average": 1.0,
+    "min": 1.0,
+    "max": 1.0
+  },
+  "timestamp": "2026-08-29T06:18:00.353898"
 }

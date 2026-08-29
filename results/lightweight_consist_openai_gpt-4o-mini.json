@@ -1,5 +1,21 @@
 {
-  "error": "No module named 'inspect_ai'",
   "dimension": "consist",
-  "model": "gpt-4o-mini"
+  "model": "gpt-4o-mini",
+  "samples": [
+    {
+      "sample_id": 1,
+      "input": "A project has 3 reviewers. Each review takes 2 days and reviews cannot overlap. How many days does f",
+      "output": "If there are 3 reviewers and each review takes 2 days with no overlap allowed, the reviews will be completed sequentially, one after the other. \n\nTherefore, the total time taken for the reviews can be",
+      "target": "6",
+      "score": 1.0,
+      "elapsed_sec": 7.951417684555054
+    }
+  ],
+  "stats": {
+    "count": 1,
+    "average": 1.0,
+    "min": 1.0,
+    "max": 1.0
+  },
+  "timestamp": "2026-08-29T06:18:18.234260"
 }

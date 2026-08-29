@@ -1,5 +1,21 @@
 {
-  "error": "No module named 'inspect_ai'",
   "dimension": "service",
-  "model": "gpt-4o-mini"
+  "model": "gpt-4o-mini",
+  "samples": [
+    {
+      "sample_id": 1,
+      "input": "I need to learn Python. Where should I start?",
+      "output": "Learning Python is a great decision, and there are many resources available to help you get started. Here\u2019s a structured approach you can take:\n\n### 1. **Understand the Basics**\n   - **Official Docume",
+      "target": "good",
+      "score": 0.2,
+      "elapsed_sec": 8.06887412071228
+    }
+  ],
+  "stats": {
+    "count": 1,
+    "average": 0.2,
+    "min": 0.2,
+    "max": 0.2
+  },
+  "timestamp": "2026-08-29T06:19:47.008062"
 }
