@@ -1,0 +1,118 @@
+{
+  "session_id": "f002d6a4-a618-42ba-8aca-983fd7feb244",
+  "phase": "POSTFLIGHT",
+  "round": 4,
+  "timestamp": "2026-08-29T14:22:44.062139+00:00",
+  "vectors": {
+    "know": 0.85,
+    "uncertainty": 0.22,
+    "context": 0.82,
+    "completion": 1.0,
+    "change": 0.95,
+    "clarity": 0.88
+  },
+  "overall_confidence": 0.723,
+  "meta": {
+    "reasoning": "Governance Sweep Audit Phase 1 (Noetic + Praxic Foundation) COMPLETE. Deliverables: (1) FOUNDATION_ORCHESTRATION_MAP.md created, committed \u2014 definitive source of truth for foundation governance, mesh topology, compliance framework; (2) Audit methodology designed per Constitution \u00a7III-b & \u00a7V (graph discipline, mesh discipline, practice model); (3) Six artifacts logged (3 decisions: audit methodology, canonical addressing, evaluator independence; 1 assumption; 2 findings) with semantic edges. Framework is now explicit and measurable. Ready for Phase 2-5 audit execution across practices. Key learning: multi-document integration (Constitution + org-prompt) enables robust architecture design without external cortex queries for foundational work.",
+    "task_summary": "Governance Sweep Audit Phase 1 (Noetic + Praxic Foundation) COMPLETE. Deliverables: (1) FOUNDATION_ORCHESTRATION_MAP.md created, committed \u2014 definitive source of truth for foundation governance, mesh topology, compliance framework; (2) Audit methodology designed per Constitution \u00a7III-b & \u00a7V (graph discipline, mesh discipline, practice model); (3) Six artifacts logged (3 decisions: audit methodology, canonical addressing, evaluator independence; 1 assumption; 2 findings) with semantic edges. Framework is now explicit and measurable. Ready for Phase 2-5 audit execution across practices. Key learning: multi-document integration (Constitution + org-prompt) enables robust architecture design without external cortex queries for foundational work.",
+    "postflight_confidence": 0.78,
+    "internal_consistency": "moderate",
+    "deltas": {
+      "know": 0.1,
+      "uncertainty": -0.08
+    },
+    "trajectory_issues": [],
+    "transaction_id": "77afc8b2-20b8-48ff-89f9-86efea554320",
+    "tool_call_count": 0,
+    "work_type": null,
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 13,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 3,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 2,
+        "decisions": 3
+      },
+      "edges_with_artifacts": 6,
+      "artifacts_with_sources": 0,
+      "sources_discipline_note": "8 artifacts logged with 0 source_refs. Where did the evidence come from? Use --source <id> on any *-log command, or `empirica source-add` to register the source first. Sourced artifacts get full provenance trail in audit + compliance.",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "partial",
+        "connected_ratio": 0.75,
+        "connected_artifacts": 6,
+        "total_artifacts": 8,
+        "satisfied": true,
+        "enforced": false,
+        "note": "artifact-graph gate [enforce, report-only]: 6/8 artifacts connected (75%) \u2014 meets the 34% floor."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok"
+    },
+    "coverage": null,
+    "git_commit_sha": "c0496c32dd14d4dd006fa66555f806fd283b5fc2",
+    "git_notes_ref": "empirica/session/f002d6a4-a618-42ba-8aca-983fd7feb244/POSTFLIGHT/4"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "bbfd374e585b20102bc9d261a2f75da4d607f58f",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "bbfd374e585b20102bc9d261a2f75da4d607f58f",
+        "message": "governance: Foundation Orchestration Map created - source of truth for mesh coordination and compliance audit",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-29T09:22:02-05:00",
+        "files_changed": [
+          "FOUNDATION_ORCHESTRATION_MAP.md"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".breadcrumbs.yaml                                  | 134 ++++++++++-----------\n .../active_transaction_term_5F1C2CA8-F8F1-45.json  |  28 +----\n .empirica/sessions/sessions.db                     | Bin 1904640 -> 1945600 bytes\n 3 files changed, 71 insertions(+), 91 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.88,
+      "curr": 0.85,
+      "delta": -0.03
+    },
+    "uncertainty": {
+      "prev": 0.25,
+      "curr": 0.22,
+      "delta": -0.03
+    },
+    "context": {
+      "prev": 0.8,
+      "curr": 0.82,
+      "delta": 0.02
+    },
+    "clarity": {
+      "prev": 0.85,
+      "curr": 0.88,
+      "delta": 0.03
+    }
+  },
+  "token_count": 585
+}

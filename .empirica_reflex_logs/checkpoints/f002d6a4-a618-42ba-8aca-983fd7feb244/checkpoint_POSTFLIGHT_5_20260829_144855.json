@@ -1,0 +1,116 @@
+{
+  "session_id": "f002d6a4-a618-42ba-8aca-983fd7feb244",
+  "phase": "POSTFLIGHT",
+  "round": 5,
+  "timestamp": "2026-08-29T14:48:47.725575+00:00",
+  "vectors": {
+    "know": 0.85,
+    "uncertainty": 0.18,
+    "context": 0.88,
+    "completion": 1.0,
+    "change": 0.92,
+    "clarity": 0.87
+  },
+  "overall_confidence": 0.743,
+  "meta": {
+    "reasoning": "Phase 1 Triage COMPLETE for acat-x (Practice 8). Execution: Artifact logging audit (41 total, breadth gaps identified), Phase 2 migration status (v2.0\u2192v3.0 blocker, pre-commit hook absent), repository state verified (12 empirica-generated uncommitted files, 0 user code uncommitted, active commits), status verification (claimed=observed, ACTIVE status confirmed). Deliverables: PHASE_1_TRIAGE.md (comprehensive 4-section checklist), triage summary prepared for collab_brief delivery to evaluator. Four critical blockers identified for Phase 2 resolution (Phase 2 migration, pre-commit hook, artifact breadth, Ollama offline). Async delivery format ready for immediate submission to empirica-foundation-evaluator.",
+    "task_summary": "Phase 1 Triage COMPLETE for acat-x (Practice 8). Execution: Artifact logging audit (41 total, breadth gaps identified), Phase 2 migration status (v2.0\u2192v3.0 blocker, pre-commit hook absent), repository state verified (12 empirica-generated uncommitted files, 0 user code uncommitted, active commits), status verification (claimed=observed, ACTIVE status confirmed). Deliverables: PHASE_1_TRIAGE.md (comprehensive 4-section checklist), triage summary prepared for collab_brief delivery to evaluator. Four critical blockers identified for Phase 2 resolution (Phase 2 migration, pre-commit hook, artifact breadth, Ollama offline). Async delivery format ready for immediate submission to empirica-foundation-evaluator.",
+    "postflight_confidence": 0.8200000000000001,
+    "internal_consistency": "good",
+    "deltas": {
+      "know": 0.1,
+      "uncertainty": -0.17
+    },
+    "trajectory_issues": [],
+    "transaction_id": "62a90de2-8e1d-40ba-9b32-3c949c056bf4",
+    "tool_call_count": 0,
+    "work_type": null,
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 13,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 1,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "breadth_note": "Only findings artifacts logged. Missing: unknowns, dead_ends, mistakes, assumptions, decisions. Unlogged artifact types are ungrounded prediction domains \u2014 were there assumptions, decisions, dead-ends, or mistakes worth capturing?",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "disconnected",
+        "connected_ratio": 0.0,
+        "connected_artifacts": 0,
+        "total_artifacts": 1,
+        "satisfied": false,
+        "enforced": true,
+        "note": "artifact-graph gate [ENFORCED \u2014 blocks]: 0/1 artifacts connected (0%), below the 34% floor \u2014 MUST weave more (transition blocked). Structural goal-edges are automatic; add semantic edges (log-artifacts nodes+edges, or --related-to / --edge on any *-log) to raise connectivity."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok"
+    },
+    "coverage": null,
+    "git_commit_sha": "eeae74d6ceb0cbb20031816c95e2e6e4217cbff2",
+    "git_notes_ref": "empirica/session/f002d6a4-a618-42ba-8aca-983fd7feb244/POSTFLIGHT/5"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "437cbab58e0671aa89cf73363f6931d51b8e4250",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "437cbab58e0671aa89cf73363f6931d51b8e4250",
+        "message": "phase-1: Governance Sweep Phase 1 Triage executed for acat-x",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-29T09:48:18-05:00",
+        "files_changed": [
+          "PHASE_1_TRIAGE.md"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".breadcrumbs.yaml                                  | 126 ++++++++++-----------\n .../active_transaction_term_5F1C2CA8-F8F1-45.json  |  28 +----\n .empirica/sessions/sessions.db                     | Bin 1904640 -> 1974272 bytes\n 3 files changed, 67 insertions(+), 87 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.82,
+      "curr": 0.85,
+      "delta": 0.03
+    },
+    "uncertainty": {
+      "prev": 0.2,
+      "curr": 0.18,
+      "delta": -0.02
+    },
+    "context": {
+      "prev": 0.85,
+      "curr": 0.88,
+      "delta": 0.03
+    },
+    "clarity": {
+      "prev": 0.8,
+      "curr": 0.87,
+      "delta": 0.07
+    }
+  },
+  "token_count": 568
+}

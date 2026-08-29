@@ -1,0 +1,170 @@
+{
+  "session_id": "f002d6a4-a618-42ba-8aca-983fd7feb244",
+  "phase": "POSTFLIGHT",
+  "round": 9,
+  "timestamp": "2026-08-29T16:38:48.154863+00:00",
+  "vectors": {
+    "know": 0.85,
+    "uncertainty": 0.2,
+    "context": 0.85,
+    "impact": 0.85,
+    "clarity": 0.85,
+    "coherence": 0.8,
+    "signal": 0.8,
+    "state": 0.8,
+    "completion": 0.9,
+    "density": 0.8,
+    "engagement": 0.75,
+    "change": 0.8,
+    "do": 0.8
+  },
+  "overall_confidence": 0.833,
+  "meta": {
+    "reasoning": "Phase 3 audit framework and practice reports completed. Deliverables: (1) PHASE_3_AUDIT_FRAMEWORK.md documenting three-stage approach aligned with constitution \u00a7III-b (graph discipline) and \u00a7V (mesh discipline), (2) PHASE_3_PRACTICE_AUDIT.md with detailed execution plan for schema migration, type audit, and evaluator coordination, (3) 4 findings + 1 decision logged as artifacts with edges. Timeline: 8 hours (2a+3b+2c+1h validation). Blocker risk: LOW. Foundation integration target: 2026-08-31. Ready for Phase 3 stage execution.",
+    "task_summary": "Phase 3 audit framework and practice reports completed. Deliverables: (1) PHASE_3_AUDIT_FRAMEWORK.md documenting three-stage approach aligned with constitution \u00a7III-b (graph discipline) and \u00a7V (mesh discipline), (2) PHASE_3_PRACTICE_AUDIT.md with detailed execution plan for schema migration, type audit, and evaluator coordination, (3) 4 findings + 1 decision logged as artifacts with edges. Timeline: 8 hours (2a+3b+2c+1h validation). Blocker risk: LOW. Foundation integration target: 2026-08-31. Ready for Phase 3 stage execution.",
+    "postflight_confidence": 0.8,
+    "internal_consistency": "good",
+    "deltas": {
+      "know": 0.15,
+      "uncertainty": -0.2,
+      "context": 0.1,
+      "impact": 0.2,
+      "clarity": 0.15,
+      "coherence": 0.15,
+      "signal": 0.2,
+      "state": 0.15,
+      "completion": 0.8,
+      "density": 0.2,
+      "engagement": 0.05,
+      "change": 0.5,
+      "do": 0.3
+    },
+    "trajectory_issues": [],
+    "transaction_id": "089b9de7-6a12-4bb2-b6f4-3e862e6e06c0",
+    "tool_call_count": 0,
+    "work_type": "audit",
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 13,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 3,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 1
+      },
+      "edges_with_artifacts": 4,
+      "artifacts_with_sources": 0,
+      "sources_discipline_note": "4 artifacts logged with 0 source_refs. Where did the evidence come from? Use --source <id> on any *-log command, or `empirica source-add` to register the source first. Sourced artifacts get full provenance trail in audit + compliance.",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "connected",
+        "connected_ratio": 1.0,
+        "connected_artifacts": 4,
+        "total_artifacts": 4,
+        "satisfied": true,
+        "enforced": false,
+        "note": "artifact-graph gate [enforce, report-only]: 4/4 artifacts connected (100%) \u2014 meets the 34% floor."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok"
+    },
+    "coverage": null,
+    "git_commit_sha": "afb0ab447da97d8c01f1da9078e5e9f70ea2cf9a",
+    "git_notes_ref": "empirica/session/f002d6a4-a618-42ba-8aca-983fd7feb244/POSTFLIGHT/9"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "b29e9bd13d38b776b8b15654f28b5906714cea58",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".../active_transaction_term_5F1C2CA8-F8F1-45.json  |  31 +++++----------------\n .empirica/sessions/sessions.db                     | Bin 1904640 -> 2138112 bytes\n 2 files changed, 7 insertions(+), 24 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "uncertainty": {
+      "prev": 0.25,
+      "curr": 0.2,
+      "delta": -0.05
+    },
+    "context": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "impact": {
+      "prev": 0.75,
+      "curr": 0.85,
+      "delta": 0.1
+    },
+    "clarity": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "coherence": {
+      "prev": 0.75,
+      "curr": 0.8,
+      "delta": 0.05
+    },
+    "signal": {
+      "prev": 0.7,
+      "curr": 0.8,
+      "delta": 0.1
+    },
+    "state": {
+      "prev": 0.75,
+      "curr": 0.8,
+      "delta": 0.05
+    },
+    "completion": {
+      "prev": 0.3,
+      "curr": 0.9,
+      "delta": 0.6
+    },
+    "density": {
+      "prev": 0.75,
+      "curr": 0.8,
+      "delta": 0.05
+    },
+    "engagement": {
+      "prev": 0.7,
+      "curr": 0.75,
+      "delta": 0.05
+    },
+    "change": {
+      "prev": 0.45,
+      "curr": 0.8,
+      "delta": 0.35
+    },
+    "do": {
+      "prev": 0.65,
+      "curr": 0.8,
+      "delta": 0.15
+    }
+  },
+  "token_count": 608
+}

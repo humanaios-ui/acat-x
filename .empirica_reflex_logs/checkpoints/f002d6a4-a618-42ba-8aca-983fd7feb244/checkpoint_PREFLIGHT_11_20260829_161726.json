@@ -1,0 +1,78 @@
+{
+  "session_id": "f002d6a4-a618-42ba-8aca-983fd7feb244",
+  "phase": "PREFLIGHT",
+  "round": 11,
+  "timestamp": "2026-08-29T16:17:23.341731+00:00",
+  "vectors": {
+    "know": 0.75,
+    "uncertainty": 0.35,
+    "context": 0.8,
+    "impact": 0.7,
+    "clarity": 0.75,
+    "coherence": 0.7,
+    "signal": 0.65,
+    "state": 0.7,
+    "completion": 0.2,
+    "density": 0.65,
+    "engagement": 0.7,
+    "change": 0.4,
+    "do": 0.6
+  },
+  "overall_confidence": 0.717,
+  "meta": {
+    "reasoning": "Phase 2 Deep Audit (Stream B) identified critical artifact schema v2.0\u2192v3.0 migration blocker. Graph discipline gaps found: 19% orphan rate across 42 artifacts, type collapse affecting findings/decisions/assumptions/unknowns. ACAT-X readiness confirmed for Phase 3 with blocker resolution in stage 1\u20132. Writing Phase 2 audit practice report, then closing transaction for Phase 3 initiation.",
+    "prompt": "Phase 2 Deep Audit (Stream B) identified critical artifact schema v2.0\u2192v3.0 migration blocker. Graph discipline gaps found: 19% orphan rate across 42 artifacts, type collapse affecting findings/decisions/assumptions/unknowns. ACAT-X readiness confirmed for Phase 3 with blocker resolution in stage 1\u20132. Writing Phase 2 audit practice report, then closing transaction for Phase 3 initiation.",
+    "transaction_id": "23a903a1-eb21-4f2f-92e1-ff17e5de30d8",
+    "task_context": "Phase 2\u21923 transition: audit practice reports and epistemic closure before Phase 3 stage initiation",
+    "git_commit_sha": "0b765f2155730e9d503c9125ad292afb799c40bf",
+    "git_notes_ref": "empirica/session/f002d6a4-a618-42ba-8aca-983fd7feb244/PREFLIGHT/11"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "04a3c146073452ca9a4500fb1071ca7bcd9a3cba",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".breadcrumbs.yaml                                  | 160 ++++++++++-----------\n .../active_transaction_term_5F1C2CA8-F8F1-45.json  |  28 +---\n .empirica/sessions/sessions.db                     | Bin 1904640 -> 2064384 bytes\n 3 files changed, 84 insertions(+), 104 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.8,
+      "curr": 0.75,
+      "delta": -0.05
+    },
+    "uncertainty": {
+      "prev": 0.25,
+      "curr": 0.35,
+      "delta": 0.1
+    },
+    "context": {
+      "prev": 0.82,
+      "curr": 0.8,
+      "delta": -0.02
+    },
+    "clarity": {
+      "prev": 0.84,
+      "curr": 0.75,
+      "delta": -0.09
+    },
+    "completion": {
+      "prev": 1.0,
+      "curr": 0.2,
+      "delta": -0.8
+    },
+    "change": {
+      "prev": 0.88,
+      "curr": 0.4,
+      "delta": -0.48
+    }
+  },
+  "token_count": 315
+}

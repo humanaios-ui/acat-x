@@ -1,0 +1,46 @@
+{
+  "session_id": "f002d6a4-a618-42ba-8aca-983fd7feb244",
+  "phase": "PREFLIGHT",
+  "round": 8,
+  "timestamp": "2026-08-29T14:35:45.676631+00:00",
+  "vectors": {
+    "know": 0.75,
+    "uncertainty": 0.35
+  },
+  "overall_confidence": 0.583,
+  "meta": {
+    "reasoning": "",
+    "prompt": "Preflight assessment",
+    "transaction_id": "62a90de2-8e1d-40ba-9b32-3c949c056bf4",
+    "git_commit_sha": "8ebe528451e578af4c73ab6f4aff2aa7c923a6d2",
+    "git_notes_ref": "empirica/session/f002d6a4-a618-42ba-8aca-983fd7feb244/PREFLIGHT/8"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "bbfd374e585b20102bc9d261a2f75da4d607f58f",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".breadcrumbs.yaml                                  | 126 ++++++++++-----------\n .../active_transaction_term_5F1C2CA8-F8F1-45.json  |  28 +----\n .empirica/sessions/sessions.db                     | Bin 1904640 -> 1966080 bytes\n 3 files changed, 67 insertions(+), 87 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.85,
+      "curr": 0.75,
+      "delta": -0.1
+    },
+    "uncertainty": {
+      "prev": 0.22,
+      "curr": 0.35,
+      "delta": 0.13
+    }
+  },
+  "token_count": 100
+}

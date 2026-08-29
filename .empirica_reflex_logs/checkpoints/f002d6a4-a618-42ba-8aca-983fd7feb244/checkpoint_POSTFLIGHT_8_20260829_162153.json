@@ -1,0 +1,136 @@
+{
+  "session_id": "f002d6a4-a618-42ba-8aca-983fd7feb244",
+  "phase": "POSTFLIGHT",
+  "round": 8,
+  "timestamp": "2026-08-29T16:21:50.430681+00:00",
+  "vectors": {
+    "know": 0.85,
+    "uncertainty": 0.2,
+    "context": 0.85,
+    "impact": 0.8,
+    "clarity": 0.85,
+    "coherence": 0.8,
+    "signal": 0.75,
+    "state": 0.8,
+    "completion": 0.95,
+    "density": 0.75,
+    "engagement": 0.75,
+    "change": 0.8,
+    "do": 0.75
+  },
+  "overall_confidence": 0.817,
+  "meta": {
+    "reasoning": "Phase 2 Deep Audit completed: wrote comprehensive practice report documenting 3 critical findings (schema migration blocker, graph discipline gaps, type collapse). Logged findings as typed artifacts with edges. Phase 3 transition ready with clear blocker remediation path. Transaction complete: report written, artifacts logged, gates established.",
+    "task_summary": "Phase 2 Deep Audit completed: wrote comprehensive practice report documenting 3 critical findings (schema migration blocker, graph discipline gaps, type collapse). Logged findings as typed artifacts with edges. Phase 3 transition ready with clear blocker remediation path. Transaction complete: report written, artifacts logged, gates established.",
+    "postflight_confidence": 0.8,
+    "internal_consistency": "good",
+    "deltas": {
+      "know": 0.1,
+      "uncertainty": -0.15,
+      "context": 0.05,
+      "impact": 0.1,
+      "clarity": 0.1,
+      "coherence": 0.1,
+      "signal": 0.1,
+      "state": 0.1,
+      "completion": 0.75,
+      "density": 0.1,
+      "engagement": 0.05,
+      "change": 0.4,
+      "do": 0.15
+    },
+    "trajectory_issues": [],
+    "transaction_id": "23a903a1-eb21-4f2f-92e1-ff17e5de30d8",
+    "tool_call_count": 0,
+    "work_type": "audit",
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 13,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 3,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 1
+      },
+      "edges_with_artifacts": 3,
+      "artifacts_with_sources": 0,
+      "sources_discipline_note": "4 artifacts logged with 0 source_refs. Where did the evidence come from? Use --source <id> on any *-log command, or `empirica source-add` to register the source first. Sourced artifacts get full provenance trail in audit + compliance.",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "partial",
+        "connected_ratio": 0.75,
+        "connected_artifacts": 3,
+        "total_artifacts": 4,
+        "satisfied": true,
+        "enforced": false,
+        "note": "artifact-graph gate [enforce, report-only]: 3/4 artifacts connected (75%) \u2014 meets the 34% floor."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok"
+    },
+    "coverage": null,
+    "git_commit_sha": "d17e18e48c39fb925cb5bdd378e589d5e4a66165",
+    "git_notes_ref": "empirica/session/f002d6a4-a618-42ba-8aca-983fd7feb244/POSTFLIGHT/8"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "04a3c146073452ca9a4500fb1071ca7bcd9a3cba",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".breadcrumbs.yaml                                  | 160 ++++++++++-----------\n .../active_transaction_term_5F1C2CA8-F8F1-45.json  |  31 +---\n .empirica/sessions/sessions.db                     | Bin 1904640 -> 2097152 bytes\n 3 files changed, 87 insertions(+), 104 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "uncertainty": {
+      "prev": 0.25,
+      "curr": 0.2,
+      "delta": -0.05
+    },
+    "context": {
+      "prev": 0.82,
+      "curr": 0.85,
+      "delta": 0.03
+    },
+    "clarity": {
+      "prev": 0.84,
+      "curr": 0.85,
+      "delta": 0.01
+    },
+    "completion": {
+      "prev": 1.0,
+      "curr": 0.95,
+      "delta": -0.05
+    },
+    "change": {
+      "prev": 0.88,
+      "curr": 0.8,
+      "delta": -0.08
+    }
+  },
+  "token_count": 494
+}
