@@ -1,0 +1,119 @@
+{
+  "session_id": "f002d6a4-a618-42ba-8aca-983fd7feb244",
+  "phase": "CHECK",
+  "round": 6,
+  "timestamp": "2026-08-29T16:36:53.105506+00:00",
+  "vectors": {
+    "know": 0.8,
+    "uncertainty": 0.25,
+    "context": 0.85,
+    "impact": 0.75,
+    "clarity": 0.8,
+    "coherence": 0.75,
+    "signal": 0.7,
+    "state": 0.75,
+    "completion": 0.3,
+    "density": 0.75,
+    "engagement": 0.7,
+    "change": 0.45,
+    "do": 0.65
+  },
+  "overall_confidence": 0.767,
+  "meta": {
+    "decision": "proceed",
+    "reasoning": "Phase 3 audit framework grounded in Phase 2 findings (schema blocker identified, graph discipline gaps measured, type collapse documented). Three-stage approach (3a: schema migration, 3b: type audit, 3c: evaluator coordination) aligned with constitution \u00a7III-b and \u00a7V. Proceeding to write audit framework document + practice-specific reports.",
+    "confidence": 0.75,
+    "gaps": [
+      "uncertainty: 0.25",
+      "completion: 0.30",
+      "change: 0.45"
+    ],
+    "cycle": null,
+    "round": 6,
+    "transaction_id": "089b9de7-6a12-4bb2-b6f4-3e862e6e06c0",
+    "git_commit_sha": "73a08c78182673bd62e4339af214f1f9a9c8de8c",
+    "git_notes_ref": "empirica/session/f002d6a4-a618-42ba-8aca-983fd7feb244/CHECK/6"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "b29e9bd13d38b776b8b15654f28b5906714cea58",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".../active_transaction_term_5F1C2CA8-F8F1-45.json  |  30 ++++++++++-----------\n .empirica/sessions/sessions.db                     | Bin 1904640 -> 2129920 bytes\n 2 files changed, 15 insertions(+), 15 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.7,
+      "curr": 0.8,
+      "delta": 0.1
+    },
+    "uncertainty": {
+      "prev": 0.4,
+      "curr": 0.25,
+      "delta": -0.15
+    },
+    "context": {
+      "prev": 0.75,
+      "curr": 0.85,
+      "delta": 0.1
+    },
+    "impact": {
+      "prev": 0.65,
+      "curr": 0.75,
+      "delta": 0.1
+    },
+    "clarity": {
+      "prev": 0.7,
+      "curr": 0.8,
+      "delta": 0.1
+    },
+    "coherence": {
+      "prev": 0.65,
+      "curr": 0.75,
+      "delta": 0.1
+    },
+    "signal": {
+      "prev": 0.6,
+      "curr": 0.7,
+      "delta": 0.1
+    },
+    "state": {
+      "prev": 0.65,
+      "curr": 0.75,
+      "delta": 0.1
+    },
+    "completion": {
+      "prev": 0.1,
+      "curr": 0.3,
+      "delta": 0.2
+    },
+    "density": {
+      "prev": 0.6,
+      "curr": 0.75,
+      "delta": 0.15
+    },
+    "engagement": {
+      "prev": 0.7,
+      "curr": 0.7,
+      "delta": 0.0
+    },
+    "change": {
+      "prev": 0.3,
+      "curr": 0.45,
+      "delta": 0.15
+    },
+    "do": {
+      "prev": 0.5,
+      "curr": 0.65,
+      "delta": 0.15
+    }
+  },
+  "token_count": 295
+}

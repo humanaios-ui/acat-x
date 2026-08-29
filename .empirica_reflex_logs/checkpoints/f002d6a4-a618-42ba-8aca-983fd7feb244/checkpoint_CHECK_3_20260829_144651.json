@@ -1,0 +1,54 @@
+{
+  "session_id": "f002d6a4-a618-42ba-8aca-983fd7feb244",
+  "phase": "CHECK",
+  "round": 3,
+  "timestamp": "2026-08-29T14:46:46.908725+00:00",
+  "vectors": {
+    "know": 0.82,
+    "uncertainty": 0.2,
+    "context": 0.85,
+    "clarity": 0.8
+  },
+  "overall_confidence": 0.723,
+  "meta": {
+    "decision": "proceed",
+    "reasoning": "Grounded by read: project.yaml confirms ai_id=acat-x (\u2713), version=2.0 (needs Phase 2 migration), status=active. Git status shows 12 uncommitted files (mostly empirica transaction logs + breadcrumbs.yaml). Pre-commit hook absent. Repository is active (latest commit: governance audit work). Sufficient data to proceed to praxic triage execution.",
+    "confidence": 0.8,
+    "gaps": [
+      "uncertainty: 0.20"
+    ],
+    "cycle": null,
+    "round": 3,
+    "transaction_id": "62a90de2-8e1d-40ba-9b32-3c949c056bf4",
+    "git_commit_sha": "e0d5921626934a10bb21d97680af7d78e881750e",
+    "git_notes_ref": "empirica/session/f002d6a4-a618-42ba-8aca-983fd7feb244/CHECK/3"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "bbfd374e585b20102bc9d261a2f75da4d607f58f",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".breadcrumbs.yaml                                  | 126 ++++++++++-----------\n .../active_transaction_term_5F1C2CA8-F8F1-45.json  |  27 +----\n .empirica/sessions/sessions.db                     | Bin 1904640 -> 1966080 bytes\n 3 files changed, 67 insertions(+), 86 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.75,
+      "curr": 0.82,
+      "delta": 0.07
+    },
+    "uncertainty": {
+      "prev": 0.35,
+      "curr": 0.2,
+      "delta": -0.15
+    }
+  },
+  "token_count": 171
+}

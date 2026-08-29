@@ -1,0 +1,85 @@
+{
+  "session_id": "f002d6a4-a618-42ba-8aca-983fd7feb244",
+  "phase": "CHECK",
+  "round": 5,
+  "timestamp": "2026-08-29T16:19:45.766995+00:00",
+  "vectors": {
+    "know": 0.8,
+    "uncertainty": 0.25,
+    "context": 0.85,
+    "impact": 0.75,
+    "clarity": 0.8,
+    "coherence": 0.75,
+    "signal": 0.7,
+    "state": 0.75,
+    "completion": 0.3,
+    "density": 0.7,
+    "engagement": 0.7,
+    "change": 0.45,
+    "do": 0.65
+  },
+  "overall_confidence": 0.767,
+  "meta": {
+    "decision": "proceed",
+    "reasoning": "Phase 2 audit findings are grounded in prior noetic work (memory review, empirica CLI verification). Proceeding to praxic: write Phase 2 Deep Audit report with 3 critical findings (schema migration blocker, graph discipline gaps, type collapse). Gate: migrate artifacts v2.0\u2192v3.0 before Phase 3 logging.",
+    "confidence": 0.75,
+    "gaps": [
+      "uncertainty: 0.25",
+      "completion: 0.30",
+      "change: 0.45"
+    ],
+    "cycle": null,
+    "round": 5,
+    "transaction_id": "23a903a1-eb21-4f2f-92e1-ff17e5de30d8",
+    "git_commit_sha": "596443d3740d9d21088bfee8453d8a1fcd6da28f",
+    "git_notes_ref": "empirica/session/f002d6a4-a618-42ba-8aca-983fd7feb244/CHECK/5"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "04a3c146073452ca9a4500fb1071ca7bcd9a3cba",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".breadcrumbs.yaml                                  | 160 ++++++++++-----------\n .../active_transaction_term_5F1C2CA8-F8F1-45.json  |  30 ++--\n .empirica/sessions/sessions.db                     | Bin 1904640 -> 2080768 bytes\n 3 files changed, 95 insertions(+), 95 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.25,
+      "curr": 0.25,
+      "delta": 0.0
+    },
+    "context": {
+      "prev": 0.82,
+      "curr": 0.85,
+      "delta": 0.03
+    },
+    "clarity": {
+      "prev": 0.84,
+      "curr": 0.8,
+      "delta": -0.04
+    },
+    "completion": {
+      "prev": 1.0,
+      "curr": 0.3,
+      "delta": -0.7
+    },
+    "change": {
+      "prev": 0.88,
+      "curr": 0.45,
+      "delta": -0.43
+    }
+  },
+  "token_count": 236
+}

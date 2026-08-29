@@ -1,0 +1,69 @@
+{
+  "session_id": "751b2c6a-085f-49d2-a01e-239dda2ea9b5",
+  "phase": "CHECK",
+  "round": 1,
+  "timestamp": "2026-08-29T17:23:55.877239+00:00",
+  "vectors": {
+    "know": 0.88,
+    "uncertainty": 0.12,
+    "context": 0.9,
+    "engagement": 0.85,
+    "coherence": 0.87
+  },
+  "overall_confidence": 0.76,
+  "meta": {
+    "decision": "proceed",
+    "reasoning": "All three stages have executable scope. Stage 3a removes schema blocker. Phase 3 targets governance compliance (\u00a7III-b graph, \u00a7V mesh) and foundation integration by 2026-08-31.",
+    "confidence": 0.88,
+    "gaps": [
+      "uncertainty: 0.12"
+    ],
+    "cycle": null,
+    "round": 1,
+    "transaction_id": "22bcf878-c9e0-4d9f-bac4-3ddfbc46410e",
+    "git_commit_sha": "68c54096addfb58a56950714b7c394a09c9f124a",
+    "git_notes_ref": "empirica/session/751b2c6a-085f-49d2-a01e-239dda2ea9b5/CHECK/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "8e956f4f75a138970ee4167ef4360959d04c596e",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".../active_transaction_term_5F1C2CA8-F8F1-45.json  |  34 ++++++---------------\n .empirica/sessions/sessions.db                     | Bin 1904640 -> 2187264 bytes\n 2 files changed, 10 insertions(+), 24 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.65,
+      "curr": 0.88,
+      "delta": 0.23
+    },
+    "uncertainty": {
+      "prev": 0.35,
+      "curr": 0.12,
+      "delta": -0.23
+    },
+    "context": {
+      "prev": 0.75,
+      "curr": 0.9,
+      "delta": 0.15
+    },
+    "engagement": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "coherence": {
+      "prev": 0.7,
+      "curr": 0.87,
+      "delta": 0.17
+    }
+  },
+  "token_count": 170
+}

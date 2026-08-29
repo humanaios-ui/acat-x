@@ -1,0 +1,124 @@
+{
+  "session_id": "f002d6a4-a618-42ba-8aca-983fd7feb244",
+  "phase": "PREFLIGHT",
+  "round": 4,
+  "timestamp": "2026-08-29T13:52:05.106682+00:00",
+  "vectors": {
+    "know": 1.0,
+    "do": 1.0,
+    "context": 1.0,
+    "clarity": 1.0,
+    "coherence": 1.0,
+    "signal": 1.0,
+    "density": 1.0,
+    "state": 1.0,
+    "change": 0.0,
+    "completion": 0.0,
+    "impact": 0.95,
+    "engagement": 0.95,
+    "uncertainty": 0.0
+  },
+  "overall_confidence": 1.0,
+  "meta": {
+    "reasoning": "Finalization step: push completed Phase 8 work to main. All commits already staged and ready (verified via git status). No investigation needed. Direct action.",
+    "prompt": "Finalization step: push completed Phase 8 work to main. All commits already staged and ready (verified via git status). No investigation needed. Direct action.",
+    "transaction_id": "88cb534b-645a-475a-bf99-70fbe8ad9d62",
+    "task_context": "Push Phase 8 completed work to main branch",
+    "git_commit_sha": "7c37c3fdf08776bfdfea916a1dfaf6257b22b877",
+    "git_notes_ref": "empirica/session/f002d6a4-a618-42ba-8aca-983fd7feb244/PREFLIGHT/4"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "7cae538c69f3aa03c31689c7316bc3604f29cb5b",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "7cae538c69f3aa03c31689c7316bc3604f29cb5b",
+        "message": "session: Phase 8 COMPLETE - Benchmark evaluation and reporting finished",
+        "author": "Carly Anderson",
+        "timestamp": "2026-08-29T08:42:51-05:00",
+        "files_changed": [
+          ".breadcrumbs.yaml",
+          ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+          ".empirica/hook_counters_term_5F1C2CA8-F8F1-45.json",
+          ".empirica/sessions/sessions.db",
+          ".empirica_reflex_logs/checkpoints/f002d6a4-a618-42ba-8aca-983fd7feb244/checkpoint_POSTFLIGHT_2_20260829_112218.json",
+          ".env.phase8"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ""
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.95,
+      "curr": 1.0,
+      "delta": 0.05
+    },
+    "do": {
+      "prev": 0.95,
+      "curr": 1.0,
+      "delta": 0.05
+    },
+    "context": {
+      "prev": 0.9,
+      "curr": 1.0,
+      "delta": 0.1
+    },
+    "clarity": {
+      "prev": 0.9,
+      "curr": 1.0,
+      "delta": 0.1
+    },
+    "coherence": {
+      "prev": 0.9,
+      "curr": 1.0,
+      "delta": 0.1
+    },
+    "signal": {
+      "prev": 0.85,
+      "curr": 1.0,
+      "delta": 0.15
+    },
+    "density": {
+      "prev": 0.85,
+      "curr": 1.0,
+      "delta": 0.15
+    },
+    "state": {
+      "prev": 0.95,
+      "curr": 1.0,
+      "delta": 0.05
+    },
+    "change": {
+      "prev": 0.6,
+      "curr": 0.0,
+      "delta": -0.6
+    },
+    "completion": {
+      "prev": 0.95,
+      "curr": 0.0,
+      "delta": -0.95
+    },
+    "impact": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "engagement": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.1,
+      "curr": 0.0,
+      "delta": -0.1
+    }
+  },
+  "token_count": 300
+}

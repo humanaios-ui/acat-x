@@ -1,0 +1,112 @@
+{
+  "session_id": "f002d6a4-a618-42ba-8aca-983fd7feb244",
+  "phase": "PREFLIGHT",
+  "round": 6,
+  "timestamp": "2026-08-29T13:53:17.237052+00:00",
+  "vectors": {
+    "know": 1.0,
+    "do": 1.0,
+    "context": 1.0,
+    "clarity": 1.0,
+    "coherence": 1.0,
+    "signal": 1.0,
+    "density": 1.0,
+    "state": 1.0,
+    "change": 0.0,
+    "completion": 0.0,
+    "impact": 0.95,
+    "engagement": 0.95,
+    "uncertainty": 0.0
+  },
+  "overall_confidence": 1.0,
+  "meta": {
+    "reasoning": "Verified: Phase 8 commits ready for push. Grounded from git log inspection (3 commits staged) and git status verification (clean working tree). Push is final step for session completion.",
+    "prompt": "Verified: Phase 8 commits ready for push. Grounded from git log inspection (3 commits staged) and git status verification (clean working tree). Push is final step for session completion.",
+    "transaction_id": "550ef095-bd11-498e-b570-9d9e1ccb81d8",
+    "task_context": "Push Phase 8 completed work to main branch",
+    "git_commit_sha": "94c707f3688413eff13767f1395d0e4456015ee6",
+    "git_notes_ref": "empirica/session/f002d6a4-a618-42ba-8aca-983fd7feb244/PREFLIGHT/6"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "7cae538c69f3aa03c31689c7316bc3604f29cb5b",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".../active_transaction_term_5F1C2CA8-F8F1-45.json  |  29 ++++++++++++++++-----\n .empirica/sessions/sessions.db                     | Bin 1884160 -> 1888256 bytes\n 2 files changed, 23 insertions(+), 6 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "do": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "context": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "clarity": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "coherence": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "signal": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "density": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "state": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "change": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "completion": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "impact": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "engagement": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    }
+  },
+  "token_count": 305
+}

@@ -1,0 +1,54 @@
+{
+  "session_id": "f002d6a4-a618-42ba-8aca-983fd7feb244",
+  "phase": "CHECK",
+  "round": 4,
+  "timestamp": "2026-08-29T14:54:21.962272+00:00",
+  "vectors": {
+    "know": 0.75,
+    "uncertainty": 0.35,
+    "context": 0.78,
+    "clarity": 0.72
+  },
+  "overall_confidence": 0.677,
+  "meta": {
+    "decision": "proceed",
+    "reasoning": "Phase 2 Deep Audit (Stream B) scoped: acat-x is Practice 8 in HumanAIOS Core stream (Practices 5-10). Audit criteria: project.yaml v3.0 compliance, goals/completion tracking, artifact quality (breadth/orphan rate/edges), mesh coordination (inbox/outbox), reporting line verification, discipline gaps. Additionally: priority investigation of Practice 7 (opportunity-aggregator BLOCKED status) per Stream C guidance. Grounded by Phase 1 triage data + prior artifacts. Proceeding to deep audit execution.",
+    "confidence": 0.65,
+    "gaps": [
+      "uncertainty: 0.35"
+    ],
+    "cycle": null,
+    "round": 4,
+    "transaction_id": "c5e1d209-ff8b-4808-8831-6047affe498a",
+    "git_commit_sha": "31308e53c5723f14d845c87faa7401f868c8fa19",
+    "git_notes_ref": "empirica/session/f002d6a4-a618-42ba-8aca-983fd7feb244/CHECK/4"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "437cbab58e0671aa89cf73363f6931d51b8e4250",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".breadcrumbs.yaml                                  | 158 ++++++++++-----------\n .../active_transaction_term_5F1C2CA8-F8F1-45.json  |  27 +---\n .empirica/sessions/sessions.db                     | Bin 1904640 -> 2035712 bytes\n 3 files changed, 83 insertions(+), 102 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.72,
+      "curr": 0.75,
+      "delta": 0.03
+    },
+    "uncertainty": {
+      "prev": 0.4,
+      "curr": 0.35,
+      "delta": -0.05
+    }
+  },
+  "token_count": 196
+}

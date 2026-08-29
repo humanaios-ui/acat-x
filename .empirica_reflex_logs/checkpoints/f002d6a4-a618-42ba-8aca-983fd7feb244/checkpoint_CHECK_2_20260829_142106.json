@@ -1,0 +1,54 @@
+{
+  "session_id": "f002d6a4-a618-42ba-8aca-983fd7feb244",
+  "phase": "CHECK",
+  "round": 2,
+  "timestamp": "2026-08-29T14:21:02.766508+00:00",
+  "vectors": {
+    "know": 0.88,
+    "uncertainty": 0.25,
+    "context": 0.8,
+    "clarity": 0.85
+  },
+  "overall_confidence": 0.727,
+  "meta": {
+    "decision": "proceed",
+    "reasoning": "Noetic phase grounded by: (1) Constitution \u00a7III-b & \u00a7V criteria read and documented; (2) Foundation practice roster verified from org-prompt; (3) Governance audit methodology designed and recorded in FOUNDATION_ORCHESTRATION_MAP.md. Sufficient epistemic grounding to proceed to praxic audit execution. Residual uncertainty: per-practice artifact metrics require queries against cortex; those will be collected during praxic phase.",
+    "confidence": 0.75,
+    "gaps": [
+      "uncertainty: 0.25"
+    ],
+    "cycle": null,
+    "round": 2,
+    "transaction_id": "77afc8b2-20b8-48ff-89f9-86efea554320",
+    "git_commit_sha": "99531b85a2691ba789063534f8bc0bc879dd5905",
+    "git_notes_ref": "empirica/session/f002d6a4-a618-42ba-8aca-983fd7feb244/CHECK/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "7b408029bb5b629eb78bf6d8219f9dc35b16898b",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".breadcrumbs.yaml                                  | 134 ++++++++++-----------\n .../active_transaction_term_5F1C2CA8-F8F1-45.json  |  27 +----\n .empirica/sessions/sessions.db                     | Bin 1904640 -> 1937408 bytes\n 3 files changed, 71 insertions(+), 90 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.75,
+      "curr": 0.88,
+      "delta": 0.13
+    },
+    "uncertainty": {
+      "prev": 0.3,
+      "curr": 0.25,
+      "delta": -0.05
+    }
+  },
+  "token_count": 184
+}
