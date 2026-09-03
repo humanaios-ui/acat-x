@@ -1,0 +1,35 @@
+{
+  "session_id": "b8460877-bd29-4c9d-b625-f750b00cf845",
+  "phase": "PREFLIGHT",
+  "round": 1,
+  "timestamp": "2026-08-30T22:46:09.945758+00:00",
+  "vectors": {
+    "know": 0.85,
+    "uncertainty": 0.15
+  },
+  "overall_confidence": 0.617,
+  "meta": {
+    "reasoning": "Three goals at 100% task completion ready to close (artifact sync 4/4, telemetry audit 1/1, API integration 4/4). Phase 8 spec grounded (7 models, 14 dims, 4-day timeline). Dependencies clear: foundational audit done, evaluator coordination in flight. Task decomposition for Phase 8 straightforward.",
+    "prompt": "Three goals at 100% task completion ready to close (artifact sync 4/4, telemetry audit 1/1, API integration 4/4). Phase 8 spec grounded (7 models, 14 dims, 4-day timeline). Dependencies clear: foundational audit done, evaluator coordination in flight. Task decomposition for Phase 8 straightforward.",
+    "transaction_id": "7042a8e6-f02e-48df-8688-31d9de6ce270",
+    "task_context": "Complete 3 pending goals + launch Phase 8 evaluation",
+    "git_commit_sha": "57b7616a039066506b1307a61ff0e77f9f72f9d8",
+    "git_notes_ref": "empirica/session/b8460877-bd29-4c9d-b625-f750b00cf845/PREFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "6223b331e0bdd32a69e079c91c225a51027549af",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".../active_transaction_term_5F1C2CA8-F8F1-45.json  |  34 ++++++++++++++++-----\n .empirica/sessions/sessions.db                     | Bin 2314240 -> 2408448 bytes\n 2 files changed, 26 insertions(+), 8 deletions(-)"
+    }
+  },
+  "learning_delta": {},
+  "token_count": 197
+}

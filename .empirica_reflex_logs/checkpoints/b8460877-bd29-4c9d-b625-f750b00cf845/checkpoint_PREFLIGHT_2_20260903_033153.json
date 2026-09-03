@@ -1,0 +1,45 @@
+{
+  "session_id": "b8460877-bd29-4c9d-b625-f750b00cf845",
+  "phase": "PREFLIGHT",
+  "round": 2,
+  "timestamp": "2026-09-03T03:31:44.669002+00:00",
+  "vectors": {
+    "know": 0.85,
+    "context": 0.8,
+    "signal": 0.88,
+    "uncertainty": 0.15,
+    "do": 0.0,
+    "change": 0.0,
+    "state": 0.7,
+    "completion": 0.0,
+    "impact": 0.85,
+    "clarity": 0.82,
+    "coherence": 0.78,
+    "density": 0.75
+  },
+  "overall_confidence": 0.55,
+  "meta": {
+    "reasoning": "Evaluator collab briefs in inbox. Constitution and mailbox-poll loaded. Ready to process inbox and execute Phase 3 work.",
+    "prompt": "Evaluator collab briefs in inbox. Constitution and mailbox-poll loaded. Ready to process inbox and execute Phase 3 work.",
+    "transaction_id": "cd1f737c-f678-487f-a1cb-ccb711701232",
+    "git_commit_sha": "e62de8e4224528227709419b45d758d6483c0c53",
+    "git_notes_ref": "empirica/session/b8460877-bd29-4c9d-b625-f750b00cf845/PREFLIGHT/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "6223b331e0bdd32a69e079c91c225a51027549af",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".breadcrumbs.yaml                                  | 143 ++++++++++-----------\n .../active_transaction_term_5F1C2CA8-F8F1-45.json  |  33 +++--\n .empirica/sessions/sessions.db                     | Bin 2314240 -> 2592768 bytes\n 3 files changed, 96 insertions(+), 80 deletions(-)"
+    }
+  },
+  "learning_delta": {},
+  "token_count": 152
+}
