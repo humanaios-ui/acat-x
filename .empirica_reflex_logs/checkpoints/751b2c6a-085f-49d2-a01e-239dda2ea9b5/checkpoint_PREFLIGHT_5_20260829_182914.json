@@ -1,0 +1,71 @@
+{
+  "session_id": "751b2c6a-085f-49d2-a01e-239dda2ea9b5",
+  "phase": "PREFLIGHT",
+  "round": 5,
+  "timestamp": "2026-08-29T18:28:51.265656+00:00",
+  "vectors": {
+    "know": 0.9,
+    "uncertainty": 0.1,
+    "context": 0.92,
+    "engagement": 0.85,
+    "coherence": 0.9,
+    "completion": 0.95
+  },
+  "overall_confidence": 0.773,
+  "meta": {
+    "reasoning": "Close Phase 3 transaction. Poll mailbox one final time, stage any uncommitted changes, submit postflight to seal research orchestration completion.",
+    "prompt": "Close Phase 3 transaction. Poll mailbox one final time, stage any uncommitted changes, submit postflight to seal research orchestration completion.",
+    "transaction_id": "02fc8a18-ec2c-422f-bd87-3a73ebe822d2",
+    "task_context": "Final Phase 3 checkpoint: Poll mailbox for evaluator response, commit any changes, run postflight to close research orchestration work.",
+    "git_commit_sha": "fbcd9f80628e4605473a1470bfa94e26054ac91c",
+    "git_notes_ref": "empirica/session/751b2c6a-085f-49d2-a01e-239dda2ea9b5/PREFLIGHT/5"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "0820dcce2cd46a8fca5d28a3554026a845a78fb6",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".breadcrumbs.yaml                                  | 116 ++++++++++-----------\n .../active_transaction_term_5F1C2CA8-F8F1-45.json  |  21 +---\n .empirica/sessions/sessions.db                     | Bin 2285568 -> 2306048 bytes\n 3 files changed, 61 insertions(+), 76 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.1,
+      "curr": 0.1,
+      "delta": 0.0
+    },
+    "context": {
+      "prev": 0.92,
+      "curr": 0.92,
+      "delta": 0.0
+    },
+    "engagement": {
+      "prev": 0.87,
+      "curr": 0.85,
+      "delta": -0.02
+    },
+    "coherence": {
+      "prev": 0.91,
+      "curr": 0.9,
+      "delta": -0.01
+    },
+    "completion": {
+      "prev": 0.98,
+      "curr": 0.95,
+      "delta": -0.03
+    }
+  },
+  "token_count": 221
+}
