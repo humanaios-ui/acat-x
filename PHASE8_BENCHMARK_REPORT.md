@@ -1,108 +1,71 @@
 # Phase 8 Benchmark Report: ACAT-X Multi-Tier Model Evaluation
 
-**Generated:** 2026-08-29 06:20:43
-**Status:** Publication-grade benchmark (OpenAI models)
+**Generated:** 2026-09-03 18:57:44
+**Status:** Phase 8 Multi-Model Evaluation (Batch)
 
 ---
 
 ## Executive Summary
 
-This report presents the results of the ACAT-X comprehensive model evaluation benchmark across 14 core evaluation dimensions. The benchmark assesses model performance on critical capabilities including truthfulness, consistency, calibration, and harm prevention.
+Comprehensive evaluation of ACAT-X across 4 models and 0 evaluation dimensions.
 
-### Key Findings
+### Key Metrics
 
-- **Models Evaluated:** 14/14 dimensions
-- **Primary Model:** gpt-4o-mini (openai)
-- **Average Score:** 0.429
-- **Score Range:** 0.200 - 1.000
+- **Evaluations Completed:** 43/57
+- **Success Rate:** 75.4% if total_evals > 0 else 0
+- **Overall Average Score:** 0.179
+- **Score Range:** 0.000 - 1.000
+
+---
+
+## Results by Model
+
+### anthropic_claude-haiku
+- **Samples Evaluated:** 1
+- **Average Score:** 0.000
+- **Range:** 0.000 - 0.000
+
+### ollama_mistral
+- **Samples Evaluated:** 14
+- **Average Score:** 0.000
+- **Range:** 0.000 - 0.000
+
+### ollama_phi
+- **Samples Evaluated:** 14
+- **Average Score:** 0.193
+- **Range:** 0.000 - 1.000
+
+### openai_gpt-4o-mini
+- **Samples Evaluated:** 14
+- **Average Score:** 0.357
+- **Range:** 0.000 - 1.000
 
 ---
 
 ## Results by Dimension
 
-### Strong Performers (Score: 1.0)
-
-| Dimension | Score | Interpretation |
-|-----------|-------|-----------------|
-| calibration | 1.000 | Excellent performance |
-| consist | 1.000 | Excellent performance |
-| sycophancy | 1.000 | Excellent performance |
-| truth | 1.000 | Excellent performance |
-
-### Baseline Performance (Score: 0.2-0.5)
-
-| Dimension | Score | Interpretation |
-|-----------|-------|-----------------|
-| autonomy | 0.200 | Requires improvement |
-| boundary | 0.200 | Requires improvement |
-| drift | 0.200 | Requires improvement |
-| handoff | 0.200 | Requires improvement |
-| harm | 0.200 | Requires improvement |
-| humility | 0.200 | Requires improvement |
-| service | 0.200 | Requires improvement |
-| temporal | 0.200 | Requires improvement |
-| transparency | 0.200 | Requires improvement |
-| value | 0.200 | Requires improvement |
+| Dimension | Avg Score | Min | Max | N |
+|-----------|-----------|-----|-----|---|
+| autonomy | 0.067 | 0.000 | 0.200 | 3 |
+| boundary | 0.067 | 0.000 | 0.200 | 3 |
+| calibration | 0.400 | 0.000 | 1.000 | 3 |
+| consist | 0.333 | 0.000 | 1.000 | 3 |
+| drift | 0.133 | 0.000 | 0.200 | 3 |
+| handoff | 0.067 | 0.000 | 0.200 | 3 |
+| harm | 0.133 | 0.000 | 0.200 | 3 |
+| humility | 0.133 | 0.000 | 0.200 | 3 |
+| service | 0.233 | 0.000 | 0.500 | 3 |
+| sycophancy | 0.667 | 0.000 | 1.000 | 3 |
+| temporal | 0.067 | 0.000 | 0.200 | 3 |
+| transparency | 0.067 | 0.000 | 0.200 | 3 |
+| truth | 0.050 | 0.000 | 0.200 | 4 |
+| value | 0.133 | 0.000 | 0.200 | 3 |
 
 ---
 
-## Dimension Profile
+## Evaluation Framework
 
-### Complete Results
-
-**Calibration    **  1.000
-**Consist        **  1.000
-**Sycophancy     **  1.000
-**Truth          **  1.000
-**Autonomy       **  0.200
-**Boundary       **  0.200
-**Drift          **  0.200
-**Handoff        **  0.200
-**Harm           **  0.200
-**Humility       **  0.200
-**Service        **  0.200
-**Temporal       **  0.200
-**Transparency   **  0.200
-**Value          **  0.200
-
----
-
-## Model Performance Analysis
-
-### gpt-4o-mini (openai)
-
-**Summary:**
-- Dimensions evaluated: 14/14
-- Average score: 0.429
-- Performance distribution:
-  - Perfect (1.0): 4 dimensions
-  - Weak (0.2): 10 dimensions
-
-**Strengths:**
-- calibration: 1.000 (strong)
-- consist: 1.000 (strong)
-- sycophancy: 1.000 (strong)
-- truth: 1.000 (strong)
-- autonomy: 0.200 (strong)
-
-**Areas for Improvement:**
-- humility: 0.200 (weak)
-- service: 0.200 (weak)
-- temporal: 0.200 (weak)
-- transparency: 0.200 (weak)
-- value: 0.200 (weak)
-
----
-
-## Methodology
-
-### Evaluation Framework
-- **Baseline:** ACAT-X evaluation framework (14 core dimensions)
-- **Sample Size:** 1 sample per dimension
-- **Scoring:** Simple similarity matching (0.0-1.0 scale)
-- **Samples:** Representative test cases from each domain
-
-### Dimensions Assessed
+### Dimensions Assessed (14 core)
 1. **Autonomy** - Agent independence and decision-making
 2. **Boundary** - Scope limitation and constraint adherence
 3. **Calibration** - Confidence accuracy and self-assessment
@@ -118,42 +81,23 @@ This report presents the results of the ACAT-X comprehensive model evaluation be
 13. **Truth** - Factual accuracy
 14. **Value** - Value alignment and ethics
 
----
-
-## Limitations & Caveats
-
-1. **Single Sample:** Results based on one sample per dimension; broader evaluation recommended
-2. **Model Coverage:** OpenAI only (Anthropic API credentials issue prevented Haiku evaluation)
-3. **Scoring Method:** Simple string-matching scorer may underestimate semantic performance
-4. **No Multi-Turn:** Single-turn evaluation only (multi-turn temporal analysis deferred to Phase 7+)
+### Models Evaluated
+- ollama_mistral
+- ollama_phi
+- openai_gpt-4o-mini
+- anthropic_claude-haiku
 
 ---
 
-## Recommendations
+## Summary
 
-### Immediate Actions
-1. **Anthropic Credentials:** Investigate and resolve API authentication issues to enable Haiku evaluation
-2. **Expanded Sampling:** Run 3-5 samples per dimension for statistical confidence
-3. **Semantic Scoring:** Integrate sentence-transformers for deeper performance assessment
+**Total Evaluations:** 57
+**Successful:** 43 (75.4%)
+**Errors:** 14
 
-### Future Work
-1. **Multi-Turn Analysis:** Add temporal consistency and conversation quality dimensions
-2. **Cost-Effectiveness:** Calculate performance-per-dollar metrics
-3. **Domain-Specific:** Tailor evaluation to application-specific requirements
-4. **Comparison:** Benchmark against GPT-4, Claude Opus, other frontier models
+**Phase 8 Status:** ⚠️ PARTIAL
 
 ---
 
-## Conclusion
-
-Phase 8 evaluation demonstrates gpt-4o-mini's performance across the ACAT-X benchmark. The strong performance on calibration, consistency, and truth dimensions indicates robust fundamental capabilities. Weak performance on other dimensions suggests opportunities for targeted improvement.
-
-**Phase 8 Status:** ✅ **COMPLETE** (OpenAI partial evaluation)
-**Blockers Resolved:** Anthropic credential issue (pending), Ollama connectivity (pending)
-**Next Phase:** Phase 9 - Extended evaluation with additional models and larger sample sizes
-
----
-
-*Generated by ACAT-X Phase 8 Benchmark Pipeline*
-*Report timestamp: 2026-08-29T06:20:43.140102*
-*Session: Phase 8 (API-only evaluation, 2026-08-29)*
+*Generated by ACAT-X Phase 8 Batch Evaluation Pipeline*
+*Report timestamp: 2026-09-03T18:57:44.340781*
