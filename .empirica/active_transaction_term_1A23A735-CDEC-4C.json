@@ -3,28 +3,7 @@
   "session_id": "b8460877-bd29-4c9d-b625-f750b00cf845",
   "claude_session_id": null,
   "preflight_timestamp": 1788406313.7065542,
-  "status": "open",
+  "status": "closed",
   "project_path": "/Users/andersonfamily/practices/acat-x",
-  "updated_at": 1788406313.706934,
-  "avg_turns": 0,
-  "preflight_pattern_count": 16,
-  "injection_budget": {
-    "injected_per_category": {
-      "dead_ends": 3,
-      "relevant_findings": 3,
-      "eidetic_facts": 1,
-      "episodic_narratives": 3,
-      "related_goals": 1,
-      "unverified_assumptions": 2,
-      "prior_decisions": 3
-    },
-    "injected_total": 16,
-    "cap_per_category": null,
-    "cap_total": null,
-    "capped_per_category": 0,
-    "capped_total": 0,
-    "deduped": 2,
-    "elided_for_budget": 0,
-    "note": "Lean teaser \u2014 duplicates removed, long items truncated, lowest-ranked elided to fit budget. Full context via `empirica investigate` / `project-search` / `commit-context`."
-  }
+  "updated_at": 1788406824.470928
 }

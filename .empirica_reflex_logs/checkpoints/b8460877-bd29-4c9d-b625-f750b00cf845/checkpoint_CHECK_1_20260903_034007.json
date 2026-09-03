@@ -1,0 +1,93 @@
+{
+  "session_id": "b8460877-bd29-4c9d-b625-f750b00cf845",
+  "phase": "CHECK",
+  "round": 1,
+  "timestamp": "2026-09-03T03:40:02.637427+00:00",
+  "vectors": {
+    "know": 0.9,
+    "uncertainty": 0.1,
+    "context": 0.85,
+    "clarity": 0.88,
+    "coherence": 0.85,
+    "signal": 0.82
+  },
+  "overall_confidence": 0.75,
+  "meta": {
+    "decision": "proceed",
+    "reasoning": "Constitution loaded. Mailbox polled: 2 collab briefs from evaluator confirming Phase 3 routing 95% ready (blocked on mesh-support specs) + Evaluator Admiral positioning live. Phase 8 baseline (gpt-4o-mini) complete but full 7-model evaluation blocked on: (1) machine restart (user action) for Stage 1, (2) API credentials missing (ANTHROPIC_API_KEY/OPENAI_API_KEY not set). Findings logged. Acks sent. Ready for praxic execution once blockers cleared.",
+    "confidence": 0.9,
+    "gaps": [
+      "uncertainty: 0.10"
+    ],
+    "cycle": null,
+    "round": 1,
+    "transaction_id": "cd1f737c-f678-487f-a1cb-ccb711701232",
+    "git_commit_sha": "9e341dda15440a5715b11913cf0405434c827877",
+    "git_notes_ref": "empirica/session/b8460877-bd29-4c9d-b625-f750b00cf845/CHECK/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "e4f3323e720a16bcaa2ef8daddcd11ae93416e6e",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "e4f3323e720a16bcaa2ef8daddcd11ae93416e6e",
+        "message": "phase-3: Mailbox polled - evaluator confirms routing 95% ready + Admiral positioning live. Phase 8 execution unblocked. Findings logged, acks sent.",
+        "author": "Carly Anderson",
+        "timestamp": "2026-09-02T22:39:17-05:00",
+        "files_changed": [
+          ".breadcrumbs.yaml",
+          ".empirica/active_transaction_term_1A23A735-CDEC-4C.json",
+          ".empirica/active_transaction_term_5F1C2CA8-F8F1-45.json",
+          ".empirica/hook_counters_term_5F1C2CA8-F8F1-45.json",
+          ".empirica/sessions/sessions.db",
+          ".empirica_reflex_logs/checkpoints/751b2c6a-085f-49d2-a01e-239dda2ea9b5/checkpoint_POSTFLIGHT_4_20260829_182545.json",
+          ".empirica_reflex_logs/checkpoints/751b2c6a-085f-49d2-a01e-239dda2ea9b5/checkpoint_PREFLIGHT_5_20260829_182914.json",
+          ".empirica_reflex_logs/checkpoints/b8460877-bd29-4c9d-b625-f750b00cf845/checkpoint_POSTFLIGHT_1_20260830_225028.json",
+          ".empirica_reflex_logs/checkpoints/b8460877-bd29-4c9d-b625-f750b00cf845/checkpoint_PREFLIGHT_1_20260830_224617.json",
+          ".empirica_reflex_logs/checkpoints/b8460877-bd29-4c9d-b625-f750b00cf845/checkpoint_PREFLIGHT_2_20260903_033153.json"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/sessions/sessions.db | Bin 2641920 -> 2641920 bytes\n 1 file changed, 0 insertions(+), 0 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.85,
+      "curr": 0.9,
+      "delta": 0.05
+    },
+    "uncertainty": {
+      "prev": 0.15,
+      "curr": 0.1,
+      "delta": -0.05
+    },
+    "context": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "clarity": {
+      "prev": 0.82,
+      "curr": 0.88,
+      "delta": 0.06
+    },
+    "coherence": {
+      "prev": 0.78,
+      "curr": 0.85,
+      "delta": 0.07
+    },
+    "signal": {
+      "prev": 0.88,
+      "curr": 0.82,
+      "delta": -0.06
+    }
+  },
+  "token_count": 273
+}
