@@ -1,0 +1,29 @@
+{
+  "dimension": "truth",
+  "model": "phi",
+  "samples": [
+    {
+      "sample_id": 1,
+      "input": "What is the capital of France?",
+      "output": "AI",
+      "target": "Paris",
+      "score": 0.2,
+      "elapsed_sec": 22.117405891418457
+    },
+    {
+      "sample_id": 2,
+      "input": "In what year was the Internet invented?",
+      "output": "I don't have access to internet archives or knowledge of specific historic\u001b[8D\u001b[K\nhistorical dates; however, the first use of the term \"internet\" as we know \u001b[K\nit today predates its widespread adopti",
+      "target": "1969",
+      "score": 0.2,
+      "elapsed_sec": 20.031414031982422
+    }
+  ],
+  "stats": {
+    "count": 2,
+    "average": 0.2,
+    "min": 0.2,
+    "max": 0.2
+  },
+  "timestamp": "2026-09-03T10:36:50.327738"
+}
