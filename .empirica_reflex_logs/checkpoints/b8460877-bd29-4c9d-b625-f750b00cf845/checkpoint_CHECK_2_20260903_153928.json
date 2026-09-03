@@ -1,0 +1,90 @@
+{
+  "session_id": "b8460877-bd29-4c9d-b625-f750b00cf845",
+  "phase": "CHECK",
+  "round": 2,
+  "timestamp": "2026-09-03T15:39:22.530370+00:00",
+  "vectors": {
+    "know": 0.92,
+    "uncertainty": 0.08,
+    "context": 0.88,
+    "clarity": 0.9,
+    "coherence": 0.88,
+    "signal": 0.85
+  },
+  "overall_confidence": 0.767,
+  "meta": {
+    "decision": "proceed",
+    "reasoning": "Phase 8 pipeline architecture verified: lightweight_eval_v3_apis.py executable, credential loading functional, result structure confirmed. Execution blocked by three infrastructure blockers: (1) Anthropic API out of credits, (2) System Python externally managed (Homebrew) prevents openai package install, (3) Ollama models need machine restart. Code paths are correct; external dependencies are the limiting factor. Ready to execute once blockers cleared.",
+    "confidence": 0.92,
+    "gaps": [
+      "uncertainty: 0.08"
+    ],
+    "cycle": null,
+    "round": 2,
+    "transaction_id": "49a4cd85-709d-49ed-8831-f41f8e05cd23",
+    "git_commit_sha": "34493768a19518392c8482f087f7c75ef7479828",
+    "git_notes_ref": "empirica/session/b8460877-bd29-4c9d-b625-f750b00cf845/CHECK/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "943fbc8b6f42ee450acceaa639c6afd13a599791",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "943fbc8b6f42ee450acceaa639c6afd13a599791",
+        "message": "phase-3: Phase 8 execution attempted - pipeline verified but blocked on: (1) Anthropic API credits, (2) System Python restrictions, (3) Ollama restart needed.",
+        "author": "Carly Anderson",
+        "timestamp": "2026-09-03T10:39:14-05:00",
+        "files_changed": [
+          ".empirica/active_transaction_term_1A23A735-CDEC-4C.json",
+          ".empirica/hook_counters_term_5F1C2CA8-F8F1-45.json",
+          ".empirica/sessions/sessions.db",
+          ".empirica/sessions/sessions.db-shm",
+          ".empirica/sessions/sessions.db-wal",
+          ".empirica_reflex_logs/checkpoints/b8460877-bd29-4c9d-b625-f750b00cf845/checkpoint_PREFLIGHT_3_20260903_153525.json",
+          "results/lightweight_truth_anthropic_claude-haiku.json",
+          "results/lightweight_truth_ollama_phi.json",
+          "results/lightweight_truth_openai_gpt-4o-mini.json"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ""
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.9,
+      "curr": 0.92,
+      "delta": 0.02
+    },
+    "uncertainty": {
+      "prev": 0.08,
+      "curr": 0.08,
+      "delta": 0.0
+    },
+    "context": {
+      "prev": 0.85,
+      "curr": 0.88,
+      "delta": 0.03
+    },
+    "clarity": {
+      "prev": 0.88,
+      "curr": 0.9,
+      "delta": 0.02
+    },
+    "coherence": {
+      "prev": 0.85,
+      "curr": 0.88,
+      "delta": 0.03
+    },
+    "signal": {
+      "prev": 0.88,
+      "curr": 0.85,
+      "delta": -0.03
+    }
+  },
+  "token_count": 252
+}
