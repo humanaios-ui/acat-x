@@ -1,0 +1,135 @@
+{
+  "session_id": "b8460877-bd29-4c9d-b625-f750b00cf845",
+  "phase": "POSTFLIGHT",
+  "round": 3,
+  "timestamp": "2026-09-03T15:39:49.009579+00:00",
+  "vectors": {
+    "know": 0.92,
+    "context": 0.88,
+    "signal": 0.85,
+    "uncertainty": 0.08,
+    "do": 0.25,
+    "change": 0.15,
+    "state": 0.85,
+    "completion": 0.4,
+    "impact": 0.85,
+    "clarity": 0.9,
+    "coherence": 0.88,
+    "density": 0.82
+  },
+  "overall_confidence": 0.683,
+  "meta": {
+    "reasoning": "Phase 8 execution: pipeline verified (code paths sound), infrastructure blockers identified (Anthropic API credits, System Python managed by Homebrew preventing openai install, Ollama needs restart). Baseline evaluation previously complete, evaluation architecture confirmed functional. Findings logged (pipeline verification), unknowns logged (infrastructure blockers). Ready to proceed once external dependencies resolved.",
+    "task_summary": "Phase 8 execution: pipeline verified (code paths sound), infrastructure blockers identified (Anthropic API credits, System Python managed by Homebrew preventing openai install, Ollama needs restart). Baseline evaluation previously complete, evaluation architecture confirmed functional. Findings logged (pipeline verification), unknowns logged (infrastructure blockers). Ready to proceed once external dependencies resolved.",
+    "postflight_confidence": 0.92,
+    "internal_consistency": "poor",
+    "deltas": {
+      "know": 0.02,
+      "context": 0.03,
+      "signal": -0.03,
+      "uncertainty": 0.0,
+      "do": -0.2,
+      "change": 0.15,
+      "state": 0.1,
+      "completion": 0.4,
+      "impact": -0.05,
+      "clarity": 0.02,
+      "coherence": 0.03,
+      "density": 0.02
+    },
+    "trajectory_issues": [],
+    "transaction_id": "49a4cd85-709d-49ed-8831-f41f8e05cd23",
+    "tool_call_count": 0,
+    "work_type": null,
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 1,
+        "unknowns": 1,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "edges_with_artifacts": 2,
+      "artifacts_with_sources": 0,
+      "sources_discipline_note": "2 artifacts logged with 0 source_refs. Where did the evidence come from? Use --source <id> on any *-log command, or `empirica source-add` to register the source first. Sourced artifacts get full provenance trail in audit + compliance.",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "connected",
+        "connected_ratio": 1.0,
+        "connected_artifacts": 2,
+        "total_artifacts": 2,
+        "satisfied": true,
+        "enforced": false,
+        "note": "artifact-graph gate [enforce, report-only]: 2/2 artifacts connected (100%) \u2014 meets the 34% floor."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok",
+      "stale_artifacts_in_scope": 1,
+      "stale_artifacts_note": "Gardening is one call, not a separate pass \u2014 scoped to the active goal(s), not the whole graph.\n1 open unknown(s) under the goal(s) in play, logged before this transaction and still unresolved. If your work answered any, resolve them (`empirica unknown-resolve <id> --resolved-by \"...\"`); if still genuinely open, leave them.\n  - bdf12848: Phase 8 execution blocked: (1) Machine restart required for Stage 1 (local Llama2/Mistral "
+    },
+    "coverage": null,
+    "git_commit_sha": "d5610c3e2a9c2cfe9ba2c2512a670bce202a11a5",
+    "git_notes_ref": "empirica/session/b8460877-bd29-4c9d-b625-f750b00cf845/POSTFLIGHT/3"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "943fbc8b6f42ee450acceaa639c6afd13a599791",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_1A23A735-CDEC-4C.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".../active_transaction_term_1A23A735-CDEC-4C.json  |  25 ++-------------------\n .empirica/sessions/sessions.db                     | Bin 2686976 -> 2699264 bytes\n 2 files changed, 2 insertions(+), 23 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.92,
+      "curr": 0.92,
+      "delta": 0.0
+    },
+    "context": {
+      "prev": 0.88,
+      "curr": 0.88,
+      "delta": 0.0
+    },
+    "signal": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.08,
+      "curr": 0.08,
+      "delta": 0.0
+    },
+    "clarity": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "coherence": {
+      "prev": 0.88,
+      "curr": 0.88,
+      "delta": 0.0
+    }
+  },
+  "token_count": 579
+}
