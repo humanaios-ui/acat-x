@@ -1,0 +1,50 @@
+{
+  "session_id": "991195db-dcb0-47e7-9b7a-792393880b0f",
+  "phase": "CHECK",
+  "round": 1,
+  "timestamp": "2026-09-04T19:50:18.916925+00:00",
+  "vectors": {
+    "know": 0.92,
+    "uncertainty": 0.08
+  },
+  "overall_confidence": 0.64,
+  "meta": {
+    "decision": "proceed",
+    "reasoning": "Noetic phase complete: Phase 8 verified end-to-end, critical path blocker identified (mesh-support specs), evaluator alignment confirmed, escalation strategy grounded in mesh responses. Two serial gates (specs + Admiral audit). Monitoring Sep 4-18 with Sep 25 hard stop. Ready for praxic escalation if needed. High confidence in blocker ID; moderate uncertainty in timing (dependent on external mesh-support + Admiral responsiveness).",
+    "confidence": 0.92,
+    "gaps": [
+      "uncertainty: 0.08"
+    ],
+    "cycle": null,
+    "round": 1,
+    "transaction_id": "008ca3c7-e6df-41f4-b954-d28ee70376dd",
+    "git_commit_sha": "07d81073060a56d724628f477dbc377a122e071b",
+    "git_notes_ref": "empirica/session/991195db-dcb0-47e7-9b7a-792393880b0f/CHECK/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "fb98c0fbfc07dce8cfe321e73699d2cc5cfc4744",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/sessions/sessions.db | Bin 2883584 -> 3022848 bytes\n 1 file changed, 0 insertions(+), 0 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.85,
+      "curr": 0.92,
+      "delta": 0.07
+    },
+    "uncertainty": {
+      "prev": 0.15,
+      "curr": 0.08,
+      "delta": -0.07
+    }
+  },
+  "token_count": 172
+}
