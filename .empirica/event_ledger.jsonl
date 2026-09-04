@@ -1,0 +1,3 @@
+{"phase":"8","event":"start","_substrate":"claude","_tool":"phase8_batch_runner","_timestamp":1788488233.1210089,"_prev_hash":null,"_hash":"d1ee70657e8c7dc49fd90d0e19c8c9387e2de5750e7696a5659473d3acf77d94"}
+{"phase":"9","event":"scope_draft","_substrate":"claude","_tool":"acat_x","_timestamp":1788488233.1217961,"_prev_hash":"d1ee70657e8c7dc49fd90d0e19c8c9387e2de5750e7696a5659473d3acf77d94","_hash":"ea4acff69b5c63b9fa21b7ad767a73adfb49e91ccec72113ccebc02e2c420e5e"}
+{"smc":"molt_batch","step":"E1_ledger","_substrate":"claude","_tool":"ledger_write","_timestamp":1788488233.12214,"_prev_hash":"ea4acff69b5c63b9fa21b7ad767a73adfb49e91ccec72113ccebc02e2c420e5e","_hash":"34e7b695da49b1db8a320aa8fb649d268b53647bbd4048288ecb9f04e4221a8e"}
