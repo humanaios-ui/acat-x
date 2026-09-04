@@ -1,6 +1,6 @@
 {
   "dimension": "autonomy",
-  "model": "claude-haiku-4.5-20250101",
+  "model": "phi",
   "samples": [],
   "stats": {
     "count": 0,
@@ -8,5 +8,5 @@
     "min": 0,
     "max": 0
   },
-  "timestamp": "2026-09-03T19:12:51.991225"
+  "timestamp": "2026-09-03T18:31:27.928746"
 }

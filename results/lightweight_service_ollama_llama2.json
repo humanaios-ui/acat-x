@@ -1,6 +1,6 @@
 {
   "dimension": "service",
-  "model": "claude-haiku-4.5-20250101",
+  "model": "llama2",
   "samples": [],
   "stats": {
     "count": 0,
@@ -8,5 +8,5 @@
     "min": 0,
     "max": 0
   },
-  "timestamp": "2026-09-03T19:13:19.413441"
+  "timestamp": "2026-09-03T19:07:24.888282"
 }

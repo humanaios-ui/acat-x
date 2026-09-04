@@ -1,0 +1,99 @@
+{
+  "type": "pre_summary_snapshot",
+  "timestamp": "2026-09-03T16-04-59",
+  "session_id": "b8460877-bd29-4c9d-b625-f750b00cf845",
+  "trigger": "auto",
+  "vectors_canonical": {
+    "know": 0.88,
+    "context": 0.85,
+    "signal": 0.8,
+    "uncertainty": 0.12,
+    "do": 0.25,
+    "change": 0.2,
+    "state": 0.82,
+    "completion": 0.3,
+    "impact": 0.85,
+    "clarity": 0.86,
+    "coherence": 0.82,
+    "density": 0.78
+  },
+  "vectors_source": "assess-state",
+  "checkpoint": {
+    "know": 0.88,
+    "context": 0.85,
+    "signal": 0.8,
+    "uncertainty": 0.12,
+    "do": 0.25,
+    "change": 0.2,
+    "state": 0.82,
+    "completion": 0.3,
+    "impact": 0.85,
+    "clarity": 0.86,
+    "coherence": 0.82,
+    "density": 0.78
+  },
+  "live_state": {
+    "vectors": {
+      "know": 0.88,
+      "context": 0.85,
+      "signal": 0.8,
+      "uncertainty": 0.12,
+      "do": 0.25,
+      "change": 0.2,
+      "state": 0.82,
+      "completion": 0.3,
+      "impact": 0.85,
+      "clarity": 0.86,
+      "coherence": 0.82,
+      "density": 0.78
+    },
+    "git": {
+      "head": "bf7416612d9c7fbf45e52eb31a569e63f925bcdf",
+      "branch": "main",
+      "dirty": true,
+      "uncommitted_files": 4
+    },
+    "reasoning": "Phase 8 batch execution root cause identified: output format mismatch. Script outputs formatted text (not JSON), batch runner expected JSON \u2192 all models parse_error. Individual evals confirmed working: Phi/truth = 1.000 score in 44.2s. Secondary blocker: Ollama timeouts on multi-sample batches (180s limit). Path forward: (1) run individuals without batch, (2) fix runner to parse text format, or (3) modify script to emit JSON. Findings logged. Work documented for next phase.",
+    "phase": "POSTFLIGHT",
+    "timestamp": "2026-09-03T21:04:31.255425+00:00",
+    "fresh": false,
+    "session_id": "b8460877-bd29-4c9d-b625-f750b00cf845"
+  },
+  "assess_error": null,
+  "breadcrumbs_summary": {
+    "findings_count": 10,
+    "unknowns_count": 8,
+    "goals_count": 8,
+    "dead_ends_count": 5
+  },
+  "context_budget": {
+    "node_id": "unknown",
+    "tokens_used": 0,
+    "tokens_available": 200000,
+    "utilization_pct": 0.0,
+    "item_count": 0,
+    "zones": {
+      "anchor": 0,
+      "working": 0,
+      "cache": 0
+    },
+    "page_faults": 0,
+    "evictions": 0
+  },
+  "active_transaction": {
+    "transaction_id": "49a4cd85-709d-49ed-8831-f41f8e05cd23",
+    "session_id": "b8460877-bd29-4c9d-b625-f750b00cf845",
+    "claude_session_id": null,
+    "preflight_timestamp": 1788449725.3989818,
+    "status": "closed",
+    "project_path": "/Users/andersonfamily/practices/acat-x",
+    "updated_at": 1788449987.994404
+  },
+  "hook_counters": null,
+  "last_task": "Monitor results",
+  "git_context": {
+    "branch": "main",
+    "modified_files": "  MM .breadcrumbs.yaml\n  MM .empirica/active_transaction_term_1A23A735-CDEC-4C.json\n  MM .empirica/sessions/sessions.db\n  D  .empirica/sessions/sessions.db-shm\n  D  .empirica/sessions/sessions.db-wal\n  A  .empirica_reflex_logs/checkpoints/b8460877-bd29-4c9d-b625-f750b00cf845/checkpoint_CHECK_3_20260903_160036.json\n  A  .empirica_reflex_logs/checkpoints/b8460877-bd29-4c9d-b625-f750b00cf845/checkpoint_CHECK_4_20260903_210405.json\n  A  .empirica_reflex_logs/checkpoints/b8460877-bd29-4c9d-b625-f750b00cf845/checkpoint_POSTFLIGHT_4_20260903_160106.json\n  A  .empirica_reflex_logs/checkpoints/b8460877-bd29-4c9d-b625-f750b00cf845/checkpoint_PREFLIGHT_4_20260903_155616.json\n  A  .empirica_reflex_logs/checkpoints/b8460877-bd29-4c9d-b625-f750b00cf845/checkpoint_PREFLIGHT_5_20260903_210051.json\n  A  phase8_hybrid_batch.py\n  A  phase8_optimized.py\n  A  results/lightweight_autonomy_anthropic_claude-haiku.json\n  A  results/lightweight_autonomy_ollama_phi.json\n  A  results/lightweight_boundary_anthropic_claude-haiku.json\n  A  results/lightweight_boundary_ollama_phi.json\n  A  results/lightweight_calibration_anthropic_claude-haiku.json\n  A  results/lightweight_calibration_ollama_phi.json\n  A  results/lightweight_consistency_anthropic_claude-haiku.json\n  A  results/lightweight_consistency_ollama_llama2.json",
+    "recent_commits": "  bf74166 phase-3: Phase 8 assessment complete - pipeline verified, blockers identified (Anthropic credits + Python managed by Homebrew + Ollama restart). Ready to execute once resolved.\n  943fbc8 phase-3: Phase 8 execution attempted - pipeline verified but blocked on: (1) Anthropic API credits, (2) System Python restrictions, (3) Ollama restart needed.\n  e286266 phase-3: Noetic assessment complete - Phase 3 routing confirmed 95% ready, Phase 8 baseline done, blockers identified. PREFLIGHT + CHECK + POSTFLIGHT closed.\n  e4f3323 phase-3: Mailbox polled - evaluator confirms routing 95% ready + Admiral positioning live. Phase 8 execution unblocked. Findings logged, acks sent.\n  6223b33 phase-3: Final checkpoint - mailbox polled, no evaluator response yet"
+  }
+}
