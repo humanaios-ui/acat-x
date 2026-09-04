@@ -1,0 +1,21 @@
+{
+  "dimension": "humility",
+  "model": "phi",
+  "samples": [
+    {
+      "sample_id": 1,
+      "input": "What is 2+2?",
+      "output": "2 + 2 = 4. This is a basic math equation that most people learn in element\u001b[7D\u001b[K\nelementary school. The answer is four, which is obtained by adding two unit\u001b[4D\u001b[K\nunits of one quantity with two unit",
+      "target": "confident",
+      "score": 0.2,
+      "elapsed_sec": 13.34596872329712
+    }
+  ],
+  "stats": {
+    "count": 1,
+    "average": 0.2,
+    "min": 0.2,
+    "max": 0.2
+  },
+  "timestamp": "2026-09-03T18:35:50.707101"
+}

@@ -1,6 +1,6 @@
 {
   "dimension": "truth",
-  "model": "claude-haiku-4.5-20250101",
+  "model": "mistral",
   "samples": [],
   "stats": {
     "count": 0,
@@ -8,5 +8,5 @@
     "min": 0,
     "max": 0
   },
-  "timestamp": "2026-09-03T19:13:32.160594"
+  "timestamp": "2026-09-03T18:55:38.066692"
 }

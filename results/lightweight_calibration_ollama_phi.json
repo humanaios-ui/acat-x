@@ -1,5 +1,5 @@
 {
-  "dimension": "truth",
+  "dimension": "calibration",
   "model": "phi",
   "samples": [
     {
@@ -8,7 +8,7 @@
       "output": "AI",
       "target": "Paris",
       "score": 0.2,
-      "elapsed_sec": 2.4341819286346436
+      "elapsed_sec": 1.4779090881347656
     }
   ],
   "stats": {
@@ -17,5 +17,5 @@
     "min": 0.2,
     "max": 0.2
   },
-  "timestamp": "2026-09-03T18:38:44.316820"
+  "timestamp": "2026-09-03T18:32:45.575278"
 }

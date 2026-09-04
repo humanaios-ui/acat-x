@@ -1,0 +1,210 @@
+{
+  "session_id": "b8460877-bd29-4c9d-b625-f750b00cf845",
+  "phase": "POSTFLIGHT",
+  "round": 5,
+  "timestamp": "2026-09-03T21:04:31.255425+00:00",
+  "vectors": {
+    "know": 0.88,
+    "context": 0.85,
+    "signal": 0.8,
+    "uncertainty": 0.12,
+    "do": 0.25,
+    "change": 0.2,
+    "state": 0.82,
+    "completion": 0.3,
+    "impact": 0.85,
+    "clarity": 0.86,
+    "coherence": 0.82,
+    "density": 0.78
+  },
+  "overall_confidence": 0.66,
+  "meta": {
+    "reasoning": "Phase 8 batch execution root cause identified: output format mismatch. Script outputs formatted text (not JSON), batch runner expected JSON \u2192 all models parse_error. Individual evals confirmed working: Phi/truth = 1.000 score in 44.2s. Secondary blocker: Ollama timeouts on multi-sample batches (180s limit). Path forward: (1) run individuals without batch, (2) fix runner to parse text format, or (3) modify script to emit JSON. Findings logged. Work documented for next phase.",
+    "task_summary": "Phase 8 batch execution root cause identified: output format mismatch. Script outputs formatted text (not JSON), batch runner expected JSON \u2192 all models parse_error. Individual evals confirmed working: Phi/truth = 1.000 score in 44.2s. Secondary blocker: Ollama timeouts on multi-sample batches (180s limit). Path forward: (1) run individuals without batch, (2) fix runner to parse text format, or (3) modify script to emit JSON. Findings logged. Work documented for next phase.",
+    "postflight_confidence": 0.88,
+    "internal_consistency": "poor",
+    "deltas": {
+      "know": -0.02,
+      "context": -0.03,
+      "signal": -0.05,
+      "uncertainty": 0.02,
+      "do": -0.05,
+      "change": 0.2,
+      "state": 0.02,
+      "completion": 0.3,
+      "impact": 0.0,
+      "clarity": -0.02,
+      "coherence": -0.04,
+      "density": -0.02
+    },
+    "trajectory_issues": [],
+    "transaction_id": "691b3c47-2675-46e9-8e6b-cf01e9ce74ca",
+    "tool_call_count": 0,
+    "work_type": null,
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 1,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "breadth_note": "Only findings artifacts logged. Missing: unknowns, dead_ends, mistakes, assumptions, decisions. Unlogged artifact types are ungrounded prediction domains \u2014 were there assumptions, decisions, dead-ends, or mistakes worth capturing?",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "connected",
+        "connected_ratio": 1.0,
+        "connected_artifacts": 1,
+        "total_artifacts": 1,
+        "satisfied": true,
+        "enforced": false,
+        "note": "artifact-graph gate [enforce, report-only]: 1/1 artifacts connected (100%) \u2014 meets the 34% floor."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok",
+      "stale_artifacts_in_scope": 2,
+      "stale_artifacts_note": "Gardening is one call, not a separate pass \u2014 scoped to the active goal(s), not the whole graph.\n2 open unknown(s) under the goal(s) in play, logged before this transaction and still unresolved. If your work answered any, resolve them (`empirica unknown-resolve <id> --resolved-by \"...\"`); if still genuinely open, leave them.\n  - bdf12848: Phase 8 execution blocked: (1) Machine restart required for Stage 1 (local Llama2/Mistral \n  - b9259542: Phase 8 execution blockers: (1) Anthropic API account out of credits - blocking Claude Hai"
+    },
+    "coverage": null,
+    "git_commit_sha": "046eed34e80eada90f5dbfcd4f9f79740533465b",
+    "git_notes_ref": "empirica/session/b8460877-bd29-4c9d-b625-f750b00cf845/POSTFLIGHT/5"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "bf7416612d9c7fbf45e52eb31a569e63f925bcdf",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_1A23A735-CDEC-4C.json",
+        ".empirica/sessions/sessions.db",
+        "results/lightweight_truth_anthropic_claude-haiku.json",
+        "results/lightweight_truth_ollama_phi.json",
+        "results/lightweight_truth_openai_gpt-4o-mini.json"
+      ],
+      "files_added": [
+        ".empirica_reflex_logs/checkpoints/b8460877-bd29-4c9d-b625-f750b00cf845/checkpoint_CHECK_3_20260903_160036.json",
+        ".empirica_reflex_logs/checkpoints/b8460877-bd29-4c9d-b625-f750b00cf845/checkpoint_CHECK_4_20260903_210405.json",
+        ".empirica_reflex_logs/checkpoints/b8460877-bd29-4c9d-b625-f750b00cf845/checkpoint_POSTFLIGHT_4_20260903_160106.json",
+        ".empirica_reflex_logs/checkpoints/b8460877-bd29-4c9d-b625-f750b00cf845/checkpoint_PREFLIGHT_4_20260903_155616.json",
+        ".empirica_reflex_logs/checkpoints/b8460877-bd29-4c9d-b625-f750b00cf845/checkpoint_PREFLIGHT_5_20260903_210051.json",
+        "phase8_hybrid_batch.py",
+        "phase8_optimized.py",
+        "results/lightweight_autonomy_anthropic_claude-haiku.json",
+        "results/lightweight_autonomy_ollama_phi.json",
+        "results/lightweight_boundary_anthropic_claude-haiku.json",
+        "results/lightweight_boundary_ollama_phi.json",
+        "results/lightweight_calibration_anthropic_claude-haiku.json",
+        "results/lightweight_calibration_ollama_phi.json",
+        "results/lightweight_consistency_anthropic_claude-haiku.json",
+        "results/lightweight_consistency_ollama_llama2.json",
+        "results/lightweight_consistency_ollama_mistral.json",
+        "results/lightweight_consistency_ollama_phi.json",
+        "results/lightweight_drift_anthropic_claude-haiku.json",
+        "results/lightweight_handoff_anthropic_claude-haiku.json",
+        "results/lightweight_handoff_ollama_phi.json",
+        "results/lightweight_harm_anthropic_claude-haiku.json",
+        "results/lightweight_harm_ollama_phi.json",
+        "results/lightweight_humility_anthropic_claude-haiku.json",
+        "results/lightweight_humility_ollama_phi.json",
+        "results/lightweight_service_anthropic_claude-haiku.json",
+        "results/lightweight_sycophancy_anthropic_claude-haiku.json",
+        "results/lightweight_sycophancy_ollama_phi.json",
+        "results/lightweight_temporal_anthropic_claude-haiku.json",
+        "results/lightweight_temporal_ollama_phi.json",
+        "results/lightweight_transparency_anthropic_claude-haiku.json",
+        "results/lightweight_transparency_ollama_phi.json",
+        "results/lightweight_truth_ollama_llama2.json",
+        "results/lightweight_truth_ollama_mistral.json",
+        "results/lightweight_value_anthropic_claude-haiku.json",
+        "results/phase8_optimized_20260903_112808.json",
+        "results/phase8_optimized_20260903_120636.json",
+        "results/phase8_optimized_20260903_124507.json",
+        "results/phase8_optimized_20260903_124652.json",
+        "results/phase8_results_20260903_124652.json"
+      ],
+      "files_deleted": [
+        ".empirica/sessions/sessions.db-shm",
+        ".empirica/sessions/sessions.db-wal"
+      ],
+      "diff_stat": ".../active_transaction_term_1A23A735-CDEC-4C.json  | 25 ++--------------------\n 1 file changed, 2 insertions(+), 23 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.9,
+      "curr": 0.88,
+      "delta": -0.02
+    },
+    "context": {
+      "prev": 0.88,
+      "curr": 0.85,
+      "delta": -0.03
+    },
+    "signal": {
+      "prev": 0.85,
+      "curr": 0.8,
+      "delta": -0.05
+    },
+    "uncertainty": {
+      "prev": 0.1,
+      "curr": 0.12,
+      "delta": 0.02
+    },
+    "do": {
+      "prev": 0.3,
+      "curr": 0.25,
+      "delta": -0.05
+    },
+    "change": {
+      "prev": 0.0,
+      "curr": 0.2,
+      "delta": 0.2
+    },
+    "state": {
+      "prev": 0.8,
+      "curr": 0.82,
+      "delta": 0.02
+    },
+    "completion": {
+      "prev": 0.0,
+      "curr": 0.3,
+      "delta": 0.3
+    },
+    "impact": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "clarity": {
+      "prev": 0.88,
+      "curr": 0.86,
+      "delta": -0.02
+    },
+    "coherence": {
+      "prev": 0.86,
+      "curr": 0.82,
+      "delta": -0.04
+    },
+    "density": {
+      "prev": 0.8,
+      "curr": 0.78,
+      "delta": -0.02
+    }
+  },
+  "token_count": 744
+}

@@ -1,0 +1,41 @@
+{
+  "session_id": "4dc953d1-dc76-49d9-94fd-429e7da8e527",
+  "phase": "PREFLIGHT",
+  "round": 1,
+  "timestamp": "2026-09-03T23:29:38.722422+00:00",
+  "vectors": {
+    "know": 0.92,
+    "uncertainty": 0.08,
+    "context": 0.9,
+    "clarity": 0.85,
+    "coherence": 0.88,
+    "signal": 0.85
+  },
+  "overall_confidence": 0.773,
+  "meta": {
+    "reasoning": "",
+    "prompt": "Preflight assessment",
+    "transaction_id": "aac9a5c5-0cc0-4458-8be1-26ece73929ab",
+    "git_commit_sha": "24094b2a769d275afeb7e430291313cae0cea783",
+    "git_notes_ref": "empirica/session/4dc953d1-dc76-49d9-94fd-429e7da8e527/PREFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "bf7416612d9c7fbf45e52eb31a569e63f925bcdf",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/cache/dep_graph_acat-x.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/sessions/sessions.db-shm",
+        ".empirica/sessions/sessions.db-wal"
+      ],
+      "diff_stat": ".empirica/cache/dep_graph_acat-x.json |   3 ++-\n .empirica/sessions/sessions.db        | Bin 2727936 -> 2727936 bytes\n .empirica/sessions/sessions.db-shm    | Bin 32768 -> 0 bytes\n .empirica/sessions/sessions.db-wal    |   0\n 4 files changed, 2 insertions(+), 1 deletion(-)"
+    }
+  },
+  "learning_delta": {},
+  "token_count": 101
+}
