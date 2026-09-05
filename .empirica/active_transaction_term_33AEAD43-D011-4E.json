@@ -1,34 +1,16 @@
 {
-  "transaction_id": "f8ed08fb-ce3a-4979-a757-0c34099261c8",
+  "transaction_id": "b9bd4d37-e8b2-4451-b604-e33a4a77f6e7",
   "session_id": "8549c8e2-cf70-4eb3-8a53-5113932ed120",
   "claude_session_id": null,
-  "preflight_timestamp": 1788643902.957967,
+  "preflight_timestamp": 1788652383.0669188,
   "status": "open",
   "project_path": "/Users/andersonfamily/practices/acat-x",
-  "updated_at": 1788643902.958379,
-  "work_type": "research",
-  "domain": "intent-os-p1-coordination",
+  "updated_at": 1788652383.070305,
+  "work_type": "comms",
+  "domain": "coordination",
   "criticality": "high",
-  "cascade_profile": "exploratory",
+  "task_context": "Poll mailbox (inbox + outbox) for pending proposals and SERs. Respond to all SERs (acknowledge transitions, state updates). Archive processed proposals. Commit coordination work. Close with POSTFLIGHT.",
+  "cascade_profile": "default",
   "avg_turns": 0,
-  "preflight_pattern_count": 21,
-  "injection_budget": {
-    "injected_per_category": {
-      "dead_ends": 4,
-      "relevant_findings": 3,
-      "eidetic_facts": 1,
-      "episodic_narratives": 4,
-      "related_goals": 3,
-      "unverified_assumptions": 3,
-      "prior_decisions": 3
-    },
-    "injected_total": 21,
-    "cap_per_category": null,
-    "cap_total": null,
-    "capped_per_category": 0,
-    "capped_total": 0,
-    "deduped": 3,
-    "elided_for_budget": 0,
-    "note": "Lean teaser \u2014 duplicates removed, long items truncated, lowest-ranked elided to fit budget. Full context via `empirica investigate` / `project-search` / `commit-context`."
-  }
+  "preflight_pattern_count": 0
 }

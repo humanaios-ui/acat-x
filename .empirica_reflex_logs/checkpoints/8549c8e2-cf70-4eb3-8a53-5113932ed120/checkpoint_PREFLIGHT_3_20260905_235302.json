@@ -1,0 +1,65 @@
+{
+  "session_id": "8549c8e2-cf70-4eb3-8a53-5113932ed120",
+  "phase": "PREFLIGHT",
+  "round": 3,
+  "timestamp": "2026-09-05T23:52:45.637480+00:00",
+  "vectors": {
+    "know": 0.8,
+    "do": 0.75,
+    "uncertainty": 0.15,
+    "context": 0.85,
+    "engagement": 0.9
+  },
+  "overall_confidence": 0.8,
+  "meta": {
+    "reasoning": "Mailbox cleanup + SER coordination closeout. Workflow (wf_52ff52e8-e09) completed: 15/15 P1 investigations collected from all foundation practices. Phase 3 blocker coordination prepared. Current task: poll inbox/outbox, respond to SERs, commit work, close transaction.",
+    "prompt": "Mailbox cleanup + SER coordination closeout. Workflow (wf_52ff52e8-e09) completed: 15/15 P1 investigations collected from all foundation practices. Phase 3 blocker coordination prepared. Current task: poll inbox/outbox, respond to SERs, commit work, close transaction.",
+    "transaction_id": "b9bd4d37-e8b2-4451-b604-e33a4a77f6e7",
+    "task_context": "Poll mailbox (inbox + outbox) for pending proposals and SERs. Respond to all SERs (acknowledge transitions, state updates). Archive processed proposals. Commit coordination work. Close with POSTFLIGHT.",
+    "git_commit_sha": "817018e7f83d37a6ef16bc15fe505e603d19c47a",
+    "git_notes_ref": "empirica/session/8549c8e2-cf70-4eb3-8a53-5113932ed120/PREFLIGHT/3"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "2b48871d903596131da0290cecba69b22abee4ae",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/hook_counters_term_33AEAD43-D011-4E.json",
+        ".empirica/sessions/sessions.db",
+        ".empirica/subagent_sessions/workflow-subagent_20260905_163654.json"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/hook_counters_term_33AEAD43-D011-4E.json | 529 ++++++++++++++++++++-\n .empirica/sessions/sessions.db                     | Bin 3145728 -> 3153920 bytes\n .../workflow-subagent_20260905_163654.json         |  14 +-\n 3 files changed, 538 insertions(+), 5 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.85,
+      "curr": 0.8,
+      "delta": -0.05
+    },
+    "do": {
+      "prev": 0.88,
+      "curr": 0.75,
+      "delta": -0.13
+    },
+    "uncertainty": {
+      "prev": 0.12,
+      "curr": 0.15,
+      "delta": 0.03
+    },
+    "context": {
+      "prev": 0.9,
+      "curr": 0.85,
+      "delta": -0.05
+    },
+    "engagement": {
+      "prev": 0.95,
+      "curr": 0.9,
+      "delta": -0.05
+    }
+  },
+  "token_count": 253
+}
