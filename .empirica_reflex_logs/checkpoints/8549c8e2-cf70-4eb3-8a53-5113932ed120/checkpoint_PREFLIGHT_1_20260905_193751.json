@@ -1,0 +1,42 @@
+{
+  "session_id": "8549c8e2-cf70-4eb3-8a53-5113932ed120",
+  "phase": "PREFLIGHT",
+  "round": 1,
+  "timestamp": "2026-09-05T19:37:43.302398+00:00",
+  "vectors": {
+    "know": 0.75,
+    "do": 0.8,
+    "context": 0.85,
+    "engagement": 0.9,
+    "uncertainty": 0.2,
+    "completion": 0.1
+  },
+  "overall_confidence": 0.8,
+  "meta": {
+    "reasoning": "Phase 7 shipped, Phase 8 planned. Phase 3 is the critical blocker \u2014 awaiting mesh-support specs (identified as universal critical path). 4 collab_brief proposals from evaluator in inbox re: Phase 3 routing. M2 gate Sep 25 (20 days). I understand the project trajectory, Empirica discipline, and what unblocking requires (understanding spec requirements + coordinating solution). Main unknown: what specifically mesh-support specs need to address for Phase 3. Engagement is high because this gate affects the entire practice roadmap.",
+    "prompt": "Phase 7 shipped, Phase 8 planned. Phase 3 is the critical blocker \u2014 awaiting mesh-support specs (identified as universal critical path). 4 collab_brief proposals from evaluator in inbox re: Phase 3 routing. M2 gate Sep 25 (20 days). I understand the project trajectory, Empirica discipline, and what unblocking requires (understanding spec requirements + coordinating solution). Main unknown: what specifically mesh-support specs need to address for Phase 3. Engagement is high because this gate affects the entire practice roadmap.",
+    "transaction_id": "5689f408-3d6f-47bd-b21b-1ba72d1a573e",
+    "git_commit_sha": "4723569f7def247b8d10407f2fee9c121c0721a2",
+    "git_notes_ref": "empirica/session/8549c8e2-cf70-4eb3-8a53-5113932ed120/PREFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "b9d2ba155931578c3633a91738bc17fc7e1f275c",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_570D03C5-F8FD-47.json",
+        ".empirica/cache/dep_graph_acat-x.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/hook_counters_term_570D03C5-F8FD-47.json"
+      ],
+      "diff_stat": ".breadcrumbs.yaml                                  | 150 +++++++++++----------\n .../active_transaction_term_570D03C5-F8FD-47.json  |  11 +-\n .empirica/cache/dep_graph_acat-x.json              |   4 +-\n .empirica/hook_counters_term_570D03C5-F8FD-47.json |   3 -\n .empirica/sessions/sessions.db                     | Bin 3043328 -> 3063808 bytes\n 5 files changed, 83 insertions(+), 85 deletions(-)"
+    }
+  },
+  "learning_delta": {},
+  "token_count": 304
+}

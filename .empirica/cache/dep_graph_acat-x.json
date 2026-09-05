@@ -19,6 +19,8 @@
     "monitoring_dashboard",
     "multiturn_evaluator",
     "phase7_analysis",
+    "phase8_analysis",
+    "phase8_batch_runner",
     "phase8_stage5_analysis",
     "production_pipeline",
     "run_evaluation",
@@ -26,5 +28,5 @@
     "semantic_scorer",
     "view_results"
   ],
-  "module_count": 30
+  "module_count": 33
 }

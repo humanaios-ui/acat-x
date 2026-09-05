@@ -4,22 +4,22 @@
 # fully measure holistic epistemic state. Use alongside self-assessment,
 # not as a replacement. See dual-track calibration philosophy in docs.
 grounded_calibration:
-  last_updated: "2026-09-03T18:59:42.509779"
+  last_updated: "2026-09-04T15:21:25.572861"
   ai_id: acat-x
-  observations: 953
+  observations: 1121
   grounded_coverage: 0.92
   divergence:
-    impact: +0.72
-    uncertainty: -0.42
-    do: +0.36
-    completion: +0.31
+    impact: +0.75
+    uncertainty: -0.41
+    do: +0.37
+    completion: +0.36
     know: +0.25
-    context: +0.20
-    change: -0.14
-    state: -0.10
+    context: +0.19
+    change: -0.16
+    state: -0.12
     signal: +0.05
     density: -0.04
-    clarity: +0.03
+    clarity: -0.00
   ungrounded: [engagement]
   grounded_bias_corrections:
     do: -0.25
@@ -27,109 +27,111 @@ grounded_calibration:
     impact: -0.25
     uncertainty: +0.25
     know: -0.25
-    context: -0.20
-    change: +0.14
-    state: +0.10
+    context: -0.19
+    change: +0.16
+    state: +0.12
     signal: -0.05
     density: +0.04
-    clarity: -0.03
+    clarity: +0.00
   phase_weights:
-    noetic: 0.7059
-    praxic: 0.2941
-    source: tool_classification
-  holistic_calibration_score: 0.1764
+    noetic: 0.5
+    praxic: 0.5
+    source: no_tool_data
+  holistic_calibration_score: 0.2697
   holistic_gaps:
-    uncertainty: -0.4672
-    know: +0.3206
-    context: +0.2633
-    do: +0.1529
-    change: +0.1323
-    signal: +0.0943
-    density: -0.0899
-    state: -0.0294
-    clarity: -0.0265
+    know: +0.6533
+    clarity: -0.5000
+    state: -0.5000
+    completion: +0.5000
+    impact: +0.5000
+    density: -0.4383
+    uncertainty: -0.2533
+    do: +0.2000
+    context: -0.1889
+    change: -0.1000
+    signal: +0.0667
   insights:
-    - vector: know
-      phase: both
-      pattern: chronic_overestimate
-      severity: 0.69
-      description: "know overestimated in 8/10 calibrations (mean gap +0.23)"
-      suggestion: "reduce_self_assessment:know"
     - vector: clarity
       phase: both
-      pattern: chronic_overestimate
-      severity: 0.78
-      description: "clarity overestimated in 4/5 calibrations (mean gap +0.26)"
-      suggestion: "reduce_self_assessment:clarity"
+      pattern: chronic_underestimate
+      severity: 1.00
+      description: "clarity underestimated in 6/6 calibrations (mean gap -0.38)"
+      suggestion: "increase_self_assessment:clarity"
+    - vector: density
+      phase: both
+      pattern: chronic_underestimate
+      severity: 0.88
+      description: "density underestimated in 6/6 calibrations (mean gap -0.29)"
+      suggestion: "increase_self_assessment:density"
     - vector: do
       phase: both
       pattern: chronic_overestimate
       severity: 1.00
-      description: "do overestimated in 4/5 calibrations (mean gap +0.40)"
+      description: "do overestimated in 6/6 calibrations (mean gap +0.36)"
       suggestion: "reduce_self_assessment:do"
-    - vector: uncertainty
+    - vector: state
       phase: both
       pattern: chronic_underestimate
       severity: 1.00
-      description: "uncertainty underestimated in 10/10 calibrations (mean gap -0.45)"
-      suggestion: "increase_self_assessment:uncertainty"
-    - vector: coherence
+      description: "state underestimated in 6/6 calibrations (mean gap -0.41)"
+      suggestion: "increase_self_assessment:state"
+    - vector: completion
       phase: both
-      pattern: evidence_gap
-      severity: 0.70
-      description: "coherence has evidence in only 0/10 verifications (mean coverage 0.50)"
-      suggestion: "add_evidence_source:coherence"
+      pattern: chronic_overestimate
+      severity: 1.00
+      description: "completion overestimated in 5/5 calibrations (mean gap +0.78)"
+      suggestion: "reduce_self_assessment:completion"
 # Learning trajectory (PREFLIGHT→POSTFLIGHT deltas — measures learning, NOT calibration bias)
 # For actual bias corrections see grounded_calibration.grounded_bias_corrections
 learning_trajectory:
-  last_updated: "2026-09-03T18:59:39.691621"
+  last_updated: "2026-09-04T15:21:14.921281"
   ai_id: acat-x
-  observations: 324
+  observations: 350
   session_deltas:
+    impact: +0.25
     completion: +0.25
     change: +0.25
+    state: +0.25
+    density: +0.25
+    signal: +0.25
+    coherence: +0.25
+    context: +0.25
     do: +0.25
-    state: +0.09
-    uncertainty: +0.07
-    know: -0.06
-    coherence: -0.04
-    context: -0.04
-    engagement: -0.04
-    impact: -0.03
-    density: -0.03
-    signal: -0.02
-    clarity: -0.01
+    clarity: +0.23
+    engagement: -0.06
+    know: +0.02
+    uncertainty: -0.01
   readiness:
     min_know: 0.70
     max_uncertainty: 0.35
   summary:
     overestimates: []
-    underestimates: [completion, change, do]
-    well_calibrated: [uncertainty, signal, coherence, clarity, context]
+    underestimates: [impact, completion, change, state, density, signal, coherence, clarity, context, do]
+    well_calibrated: [uncertainty, know, engagement]
 
 # Brier calibration (auto-updated by Empirica post-test verification)
 brier_calibration:
-  last_updated: "2026-09-03T18:59:40.021484"
+  last_updated: "2026-09-04T15:21:15.216673"
   ai_id: acat-x
   note: "Murphy (1973) decomposition: BS = Reliability - Resolution + Uncertainty"
   noetic:
-    brier_score: 0.1077
-    reliability: 0.0903
-    resolution: 0.0169
-    uncertainty: 0.0343
+    brier_score: 0.1100
+    reliability: 0.0896
+    resolution: 0.0179
+    uncertainty: 0.0383
     n_predictions: 50
     trend: stable
   praxic:
-    brier_score: 0.1972
-    reliability: 0.1046
-    resolution: 0.0186
-    uncertainty: 0.1111
+    brier_score: 0.1773
+    reliability: 0.0981
+    resolution: 0.0203
+    uncertainty: 0.0995
     n_predictions: 50
-    trend: improving
+    trend: degrading
   combined:
-    brier_score: 0.1571
-    reliability: 0.0856
-    resolution: 0.0287
-    uncertainty: 0.1002
+    brier_score: 0.1749
+    reliability: 0.0949
+    resolution: 0.0202
+    uncertainty: 0.1003
     n_predictions: 50
     trend: improving

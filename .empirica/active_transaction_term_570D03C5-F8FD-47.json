@@ -3,14 +3,11 @@
   "session_id": "991195db-dcb0-47e7-9b7a-792393880b0f",
   "claude_session_id": null,
   "preflight_timestamp": 1788548249.501348,
-  "status": "open",
+  "status": "closed",
   "project_path": "/Users/andersonfamily/practices/acat-x",
-  "updated_at": 1788548249.501581,
-  "work_type": "comms",
+  "updated_at": 1788553236.7317572,
   "domain": "phase-3-launch",
   "criticality": "high",
-  "task_context": "Contact mesh-support for Phase 3 blocker specs; escalate HIGH severity acat-x coordination gaps if not received by Sep 18 (Sep 25 deadline)",
-  "cascade_profile": "default",
-  "avg_turns": 0,
-  "preflight_pattern_count": 0
+  "work_type": "comms",
+  "cascade_profile": "default"
 }

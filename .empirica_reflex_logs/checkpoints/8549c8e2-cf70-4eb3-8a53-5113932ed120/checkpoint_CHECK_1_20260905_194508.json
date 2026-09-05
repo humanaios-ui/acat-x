@@ -1,0 +1,61 @@
+{
+  "session_id": "8549c8e2-cf70-4eb3-8a53-5113932ed120",
+  "phase": "CHECK",
+  "round": 1,
+  "timestamp": "2026-09-05T19:44:58.668066+00:00",
+  "vectors": {
+    "know": 0.8,
+    "do": 0.85,
+    "uncertainty": 0.15
+  },
+  "overall_confidence": 0.717,
+  "meta": {
+    "decision": "proceed",
+    "reasoning": "NOETIC PHASE FINDINGS:\n\n## Phase 3 Blocker Root Cause Analysis\nPhase 3 routing confirmed blocked on 'mesh-support blocker specs' (evaluator coordination prop_pbummlc3evhnvnbnm6i3eske3a explicitly requests submission). Primary blocker is unclear mesh-support specs definition (infrastructure constraints? outreach blockers?). Secondary blocker is Admiral red-team audit decision (governance gate). M2 gate Sep 25 (20 days). Phase 7 shipped (75.4%), Phase 8 ready to launch pending Phase 3 unblock.\n\n## Transition to Praxic\nClear path: (1) cortex_collab to mesh-support pulling specs clarification (ungated, auto-accept), (2) if unresponsive, escalate to Admiral via propose, (3) log goals for Phase 3 coordination + Phase 8 readiness. Confident proceeding with coordination + execution.",
+    "confidence": 0.85,
+    "gaps": [
+      "uncertainty: 0.15"
+    ],
+    "cycle": null,
+    "round": 1,
+    "transaction_id": "5689f408-3d6f-47bd-b21b-1ba72d1a573e",
+    "git_commit_sha": "9e67127c660bbdbe1d9524d540fb114f2682b08d",
+    "git_notes_ref": "empirica/session/8549c8e2-cf70-4eb3-8a53-5113932ed120/CHECK/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "b9d2ba155931578c3633a91738bc17fc7e1f275c",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_570D03C5-F8FD-47.json",
+        ".empirica/cache/dep_graph_acat-x.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/hook_counters_term_570D03C5-F8FD-47.json"
+      ],
+      "diff_stat": ".breadcrumbs.yaml                                  | 150 +++++++++++----------\n .../active_transaction_term_570D03C5-F8FD-47.json  |  11 +-\n .empirica/cache/dep_graph_acat-x.json              |   4 +-\n .empirica/hook_counters_term_570D03C5-F8FD-47.json |   3 -\n .empirica/sessions/sessions.db                     | Bin 3043328 -> 3072000 bytes\n 5 files changed, 83 insertions(+), 85 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.75,
+      "curr": 0.8,
+      "delta": 0.05
+    },
+    "do": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "uncertainty": {
+      "prev": 0.2,
+      "curr": 0.15,
+      "delta": -0.05
+    }
+  },
+  "token_count": 262
+}
