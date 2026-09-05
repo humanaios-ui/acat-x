@@ -1,0 +1,122 @@
+{
+  "session_id": "8549c8e2-cf70-4eb3-8a53-5113932ed120",
+  "phase": "POSTFLIGHT",
+  "round": 1,
+  "timestamp": "2026-09-05T19:52:22.720320+00:00",
+  "vectors": {
+    "know": 0.82,
+    "do": 0.88,
+    "uncertainty": 0.12,
+    "completion": 0.75,
+    "context": 0.85,
+    "engagement": 0.9
+  },
+  "overall_confidence": 0.85,
+  "meta": {
+    "reasoning": "POSTFLIGHT: Phase 3 Blocker Analysis Complete\n\nOBJECTIVE MET: Understood Phase 3 blocker and identified resolution pathway.\n\n\u2713 Blocker root cause: mesh-support must submit 'blocker specs' (definition TBD \u2014 infrastructure? outreach? prerequisites?)\n\u2713 Secondary blocker: Admiral red-team audit decision (governance gate, status unknown)\n\u2713 Routing verified: Evaluator\u2192assessment, Autonomy\u2192execution, Mesh-Support\u2192infrastructure\n\u2713 Prepared cortex_collab payload (ungated, auto-accept) pulling for clarification\n\u2713 Created Phase 3 coordination goal (42a69392) with critical tasks\n\u2713 Logged finding (d2b88108, impact=0.85), wired to active goals\n\u2713 All changes committed (bc1f179)\n\nEPISTEMIC DELTA:\n- know: +0.02 (identified both blockers, routing structure clear)\n- do: +0.03 (action path defined, cortex_collab prepared)\n- uncertainty: -0.03 (specs definition TBD but path clear)\n- completion: 0.75 (this transaction blocker analysis done; execution phase next)\n\nCONTEXT: M2 gate Sep 25 (20 days). Phase 7 shipped (75.4%). Phase 8 ready. Phase 3 is critical gate.\n\nRESIDUAL UNKNOWNS (into next session):\n1. What exactly are mesh-support blocker specs? (infrastructure constraints? outreach blockers? prerequisites?)\n2. What is Admiral audit decision status? (timeline? criteria?)\n3. Will mesh-support respond within 24-48h, or escalate to Admiral?\n\nNEXT TRANSACTION: Emit cortex_collab to mesh-support \u2192 monitor for response \u2192 escalate if needed.",
+    "task_summary": "POSTFLIGHT: Phase 3 Blocker Analysis Complete\n\nOBJECTIVE MET: Understood Phase 3 blocker and identified resolution pathway.\n\n\u2713 Blocker root cause: mesh-support must submit 'blocker specs' (definition TBD \u2014 infrastructure? outreach? prerequisites?)\n\u2713 Secondary blocker: Admiral red-team audit decision (governance gate, status unknown)\n\u2713 Routing verified: Evaluator\u2192assessment, Autonomy\u2192execution, Mesh-Support\u2192infrastructure\n\u2713 Prepared cortex_collab payload (ungated, auto-accept) pulling for clarification\n\u2713 Created Phase 3 coordination goal (42a69392) with critical tasks\n\u2713 Logged finding (d2b88108, impact=0.85), wired to active goals\n\u2713 All changes committed (bc1f179)\n\nEPISTEMIC DELTA:\n- know: +0.02 (identified both blockers, routing structure clear)\n- do: +0.03 (action path defined, cortex_collab prepared)\n- uncertainty: -0.03 (specs definition TBD but path clear)\n- completion: 0.75 (this transaction blocker analysis done; execution phase next)\n\nCONTEXT: M2 gate Sep 25 (20 days). Phase 7 shipped (75.4%). Phase 8 ready. Phase 3 is critical gate.\n\nRESIDUAL UNKNOWNS (into next session):\n1. What exactly are mesh-support blocker specs? (infrastructure constraints? outreach blockers? prerequisites?)\n2. What is Admiral audit decision status? (timeline? criteria?)\n3. Will mesh-support respond within 24-48h, or escalate to Admiral?\n\nNEXT TRANSACTION: Emit cortex_collab to mesh-support \u2192 monitor for response \u2192 escalate if needed.",
+    "postflight_confidence": 0.88,
+    "internal_consistency": "good",
+    "deltas": {
+      "know": 0.07,
+      "do": 0.08,
+      "uncertainty": -0.08,
+      "completion": 0.65,
+      "context": 0.0,
+      "engagement": 0.0
+    },
+    "trajectory_issues": [],
+    "transaction_id": "5689f408-3d6f-47bd-b21b-1ba72d1a573e",
+    "tool_call_count": 0,
+    "work_type": "comms",
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 1,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "breadth_note": "Only findings artifacts logged. Missing: unknowns, dead_ends, mistakes, assumptions, decisions. Unlogged artifact types are ungrounded prediction domains \u2014 were there assumptions, decisions, dead-ends, or mistakes worth capturing?",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "connected",
+        "connected_ratio": 1.0,
+        "connected_artifacts": 1,
+        "total_artifacts": 1,
+        "satisfied": true,
+        "enforced": false,
+        "note": "artifact-graph gate [enforce, report-only]: 1/1 artifacts connected (100%) \u2014 meets the 34% floor."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok"
+    },
+    "coverage": null,
+    "git_commit_sha": "7d15fccb0f19e39582c1e0782f95d8e0bfad7f63",
+    "git_notes_ref": "empirica/session/8549c8e2-cf70-4eb3-8a53-5113932ed120/POSTFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "bc1f179d0a0006c9c9d8f87ff085bd2152308dcf",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "bc1f179d0a0006c9c9d8f87ff085bd2152308dcf",
+        "message": "Phase 3 unblocking: analyze mesh-support blocker specs requirement",
+        "author": "Carly Anderson",
+        "timestamp": "2026-09-05T14:51:15-05:00",
+        "files_changed": [
+          ".breadcrumbs.yaml",
+          ".empirica/active_transaction_term_33AEAD43-D011-4E.json",
+          ".empirica/active_transaction_term_570D03C5-F8FD-47.json",
+          ".empirica/cache/dep_graph_acat-x.json",
+          ".empirica/hook_counters_term_570D03C5-F8FD-47.json",
+          ".empirica/sessions/sessions.db",
+          ".empirica_reflex_logs/checkpoints/8549c8e2-cf70-4eb3-8a53-5113932ed120/checkpoint_CHECK_1_20260905_194508.json",
+          ".empirica_reflex_logs/checkpoints/8549c8e2-cf70-4eb3-8a53-5113932ed120/checkpoint_CHECK_2_20260905_194745.json",
+          ".empirica_reflex_logs/checkpoints/8549c8e2-cf70-4eb3-8a53-5113932ed120/checkpoint_PREFLIGHT_1_20260905_193751.json",
+          ".empirica_reflex_logs/checkpoints/991195db-dcb0-47e7-9b7a-792393880b0f/checkpoint_POSTFLIGHT_1_20260904_202049.json"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_33AEAD43-D011-4E.json"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".../active_transaction_term_33AEAD43-D011-4E.json  | 28 ++++------------------\n 1 file changed, 4 insertions(+), 24 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.8,
+      "curr": 0.82,
+      "delta": 0.02
+    },
+    "do": {
+      "prev": 0.85,
+      "curr": 0.88,
+      "delta": 0.03
+    },
+    "uncertainty": {
+      "prev": 0.15,
+      "curr": 0.12,
+      "delta": -0.03
+    }
+  },
+  "token_count": 754
+}

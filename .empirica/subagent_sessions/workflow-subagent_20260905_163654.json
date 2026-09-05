@@ -1,0 +1,16 @@
+{
+  "agent_name": "workflow-subagent",
+  "child_session_id": "03798cca-64bb-4d6c-b8b1-f25d8f5563a6",
+  "parent_session_id": "8549c8e2-cf70-4eb3-8a53-5113932ed120",
+  "started_at": "2026-09-05T16:36:54.479017",
+  "status": "active",
+  "budget": {
+    "budget_id": "21bd80b8-db88-424b-9b37-ff2bfee1dc9b",
+    "budget_remaining": 20,
+    "strategy": "spontaneous",
+    "domain": "general",
+    "domain_budget": 20,
+    "expected_gain": 0.5,
+    "priority": 0.5
+  }
+}
