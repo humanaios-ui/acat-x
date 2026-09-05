@@ -1,0 +1,33 @@
+{
+  "transaction_id": "5689f408-3d6f-47bd-b21b-1ba72d1a573e",
+  "session_id": "8549c8e2-cf70-4eb3-8a53-5113932ed120",
+  "claude_session_id": null,
+  "preflight_timestamp": 1788637072.112192,
+  "status": "open",
+  "project_path": "/Users/andersonfamily/practices/acat-x",
+  "updated_at": 1788637072.112405,
+  "work_type": "comms",
+  "domain": "phase-3-unblock",
+  "criticality": "high",
+  "cascade_profile": "default",
+  "avg_turns": 0,
+  "preflight_pattern_count": 19,
+  "injection_budget": {
+    "injected_per_category": {
+      "dead_ends": 4,
+      "relevant_findings": 3,
+      "episodic_narratives": 3,
+      "related_goals": 3,
+      "unverified_assumptions": 3,
+      "prior_decisions": 3
+    },
+    "injected_total": 19,
+    "cap_per_category": null,
+    "cap_total": null,
+    "capped_per_category": 0,
+    "capped_total": 0,
+    "deduped": 3,
+    "elided_for_budget": 0,
+    "note": "Lean teaser \u2014 duplicates removed, long items truncated, lowest-ranked elided to fit budget. Full context via `empirica investigate` / `project-search` / `commit-context`."
+  }
+}

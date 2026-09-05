@@ -1,0 +1,172 @@
+{
+  "session_id": "991195db-dcb0-47e7-9b7a-792393880b0f",
+  "phase": "POSTFLIGHT",
+  "round": 1,
+  "timestamp": "2026-09-04T20:20:39.053777+00:00",
+  "vectors": {
+    "know": 0.92,
+    "uncertainty": 0.08
+  },
+  "overall_confidence": 0.64,
+  "meta": {
+    "reasoning": "Task objective met: Phase 3 blocker coordination established with both mesh-support and evaluator. Critical path blocker identified and confirmed by independent sources. Escalation strategy grounded in mesh responses. Two serial gates clearly defined. Completion = 1.0 for this transaction. Next phase: autonomous monitoring Sep 4-18 via mailbox polling loop (3m base, 15m max), escalation if specs not received by Sep 18, hard stop M2 gate Sep 25.",
+    "task_summary": "Task objective met: Phase 3 blocker coordination established with both mesh-support and evaluator. Critical path blocker identified and confirmed by independent sources. Escalation strategy grounded in mesh responses. Two serial gates clearly defined. Completion = 1.0 for this transaction. Next phase: autonomous monitoring Sep 4-18 via mailbox polling loop (3m base, 15m max), escalation if specs not received by Sep 18, hard stop M2 gate Sep 25.",
+    "postflight_confidence": 0.92,
+    "internal_consistency": "poor",
+    "deltas": {
+      "know": 0.07,
+      "uncertainty": -0.07
+    },
+    "trajectory_issues": [],
+    "transaction_id": "008ca3c7-e6df-41f4-b954-d28ee70376dd",
+    "tool_call_count": 0,
+    "work_type": "comms",
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": {
+      "solicited_prompts": 0,
+      "unsolicited_prompts": 6
+    },
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 0,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "claims": {
+        "declared": 4,
+        "held": 0,
+        "refuted": 0,
+        "untested": 4,
+        "gaps": [
+          {
+            "claim": "mesh-support blocker specs is the universal critical path blocker for Phase 3 launch. Both ACAT-X and Evaluator independently identified this as the single item blocking Phase 3 completion (M2 gate Sep 25).",
+            "grounding": "ran",
+            "note": "declared at CHECK, never adjudicated \u2014 acted on, never checked"
+          },
+          {
+            "claim": "Two serial gates required: (1) mesh-support blocker specs, (2) Admiral red-team audit decision. Both independent, both required before Phase 3 execution.",
+            "grounding": "ran",
+            "note": "declared at CHECK, never adjudicated \u2014 acted on, never checked"
+          },
+          {
+            "claim": "Phase 8 complete and publication-ready: 43/57 successful (75.4%), all findings registered shared. Phase 8\u21929 transition ready pending Phase 3 specs.",
+            "grounding": "retrieved",
+            "note": "declared as retrieved and never checked"
+          },
+          {
+            "claim": "Escalation path established: Sep 4-18 monitoring window. If specs not received by Sep 18, SER escalation to Admiral + Evaluator with 4h re-ping. Sep 25 M2 gate is hard stop.",
+            "grounding": "ran",
+            "note": "declared at CHECK, never adjudicated \u2014 acted on, never checked"
+          }
+        ],
+        "adjudication": {
+          "applied": 0,
+          "unmatched": 4,
+          "entries": [
+            {
+              "reason": "no_matching_claim",
+              "keys_seen": [
+                "claim",
+                "evidence",
+                "verdict"
+              ]
+            },
+            {
+              "reason": "no_matching_claim",
+              "keys_seen": [
+                "claim",
+                "evidence",
+                "verdict"
+              ]
+            },
+            {
+              "reason": "no_matching_claim",
+              "keys_seen": [
+                "claim",
+                "evidence",
+                "verdict"
+              ]
+            },
+            {
+              "reason": "no_matching_claim",
+              "keys_seen": [
+                "claim",
+                "evidence",
+                "verdict"
+              ]
+            }
+          ],
+          "hint": "each entry needs 'verdict' (held|refuted|untested) plus one of 'claim' (the declared text), 'index' (1-based), or 'id'"
+        },
+        "adjudication_warning": "4 of 4 submitted verdict(s) were NOT applied \u2014 the claims they targeted are counted as 'untested' below, which understates what you actually checked. Fix the entry shape and the untested count will drop."
+      },
+      "claim_adjudication_warning": "4 of 4 submitted verdict(s) were NOT applied \u2014 the claims they targeted are counted as 'untested' below, which understates what you actually checked. Fix the entry shape and the untested count will drop.",
+      "claim_gap_note": "4 of 4 claims declared at CHECK were never adjudicated \u2014 recorded as UNTESTED. These are beliefs the praxic work rested on that nothing verified; they are exactly what a single `know` score averages away.",
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok"
+    },
+    "coverage": "Phase 3 blocker coordination: autonomous task execution, critical path identification, escalation strategy, mesh coordination, CHECK gate certification.",
+    "git_commit_sha": "11e67a41215cdc6eff79c1ba9d4ff76618dedb2b",
+    "git_notes_ref": "empirica/session/991195db-dcb0-47e7-9b7a-792393880b0f/POSTFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "b9d2ba155931578c3633a91738bc17fc7e1f275c",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "b9d2ba155931578c3633a91738bc17fc7e1f275c",
+        "message": "Phase 3 blocker coordination: mesh-support specs identified as universal critical path",
+        "author": "Carly Anderson",
+        "timestamp": "2026-09-04T15:19:30-05:00",
+        "files_changed": [
+          ".empirica/active_transaction_term_424919E5-73AA-45.json",
+          ".empirica/active_transaction_term_570D03C5-F8FD-47.json",
+          ".empirica/hook_counters_term_570D03C5-F8FD-47.json",
+          ".empirica/sessions/sessions.db",
+          ".empirica/subagent_sessions/workflow-subagent_20260904_112646.json",
+          ".empirica/subagent_sessions/workflow-subagent_20260904_112722.json",
+          ".empirica/subagent_sessions/workflow-subagent_20260904_113053.json",
+          ".empirica/subagent_sessions/workflow-subagent_20260904_115202.json",
+          ".empirica/subagent_sessions/workflow-subagent_20260904_115304.json",
+          ".empirica/subagent_sessions/workflow-subagent_20260904_115306.json",
+          ".empirica/subagent_sessions/workflow-subagent_20260904_120807.json",
+          ".empirica_reflex_logs/checkpoints/991195db-dcb0-47e7-9b7a-792393880b0f/checkpoint_CHECK_1_20260904_195102.json",
+          ".empirica_reflex_logs/checkpoints/991195db-dcb0-47e7-9b7a-792393880b0f/checkpoint_PREFLIGHT_1_20260904_185729.json"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_570D03C5-F8FD-47.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/hook_counters_term_570D03C5-F8FD-47.json"
+      ],
+      "diff_stat": ".../active_transaction_term_570D03C5-F8FD-47.json  |  11 ++++-------\n .empirica/hook_counters_term_570D03C5-F8FD-47.json |   3 ---\n .empirica/sessions/sessions.db                     | Bin 3043328 -> 3043328 bytes\n 3 files changed, 4 insertions(+), 10 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.92,
+      "curr": 0.92,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.08,
+      "curr": 0.08,
+      "delta": 0.0
+    }
+  },
+  "token_count": 834
+}
