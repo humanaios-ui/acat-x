@@ -1,0 +1,183 @@
+{
+  "session_id": "8549c8e2-cf70-4eb3-8a53-5113932ed120",
+  "phase": "POSTFLIGHT",
+  "round": 3,
+  "timestamp": "2026-09-06T22:30:30.215819+00:00",
+  "vectors": {
+    "know": 0.8,
+    "uncertainty": 0.15,
+    "context": 0.85,
+    "clarity": 0.8,
+    "coherence": 0.8,
+    "signal": 0.85,
+    "density": 0.8,
+    "state": 0.85,
+    "change": 0.25,
+    "completion": 0.4,
+    "impact": 0.95,
+    "do": 0.85,
+    "engagement": 0.85
+  },
+  "overall_confidence": 0.833,
+  "meta": {
+    "reasoning": "Phase 3 mesh coordination blocker: cortex_collab sent to mesh-support requesting clarification on blocker specs definition. INTENT-OS P1 complete (15/15 investigations confirmed). Task 1/3 complete. Awaiting mesh-support response. M2 gate is 20 days out. Identified secondary blocker (Admiral audit decision) but defer 48h per protocol before escalation.",
+    "task_summary": "Phase 3 mesh coordination blocker: cortex_collab sent to mesh-support requesting clarification on blocker specs definition. INTENT-OS P1 complete (15/15 investigations confirmed). Task 1/3 complete. Awaiting mesh-support response. M2 gate is 20 days out. Identified secondary blocker (Admiral audit decision) but defer 48h per protocol before escalation.",
+    "postflight_confidence": 0.85,
+    "internal_consistency": "poor",
+    "deltas": {
+      "know": 0.2,
+      "uncertainty": -0.2,
+      "context": 0.15,
+      "clarity": 0.3,
+      "coherence": 0.15,
+      "signal": 0.15,
+      "density": 0.2,
+      "state": 0.15,
+      "change": 0.05,
+      "completion": 0.4,
+      "impact": 0.0,
+      "do": 0.15,
+      "engagement": 0.05
+    },
+    "trajectory_issues": [],
+    "transaction_id": "c21bc0aa-f0e9-4bb6-8ece-fe082fb71b0c",
+    "tool_call_count": 0,
+    "work_type": "comms",
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 449,
+    "context_shifts": {
+      "solicited_prompts": 0,
+      "unsolicited_prompts": 2
+    },
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 1,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "claims": {
+        "declared": 4,
+        "held": 4,
+        "refuted": 0,
+        "untested": 0,
+        "gaps": []
+      },
+      "breadth_note": "Only findings artifacts logged. Missing: unknowns, dead_ends, mistakes, assumptions, decisions. Unlogged artifact types are ungrounded prediction domains \u2014 were there assumptions, decisions, dead-ends, or mistakes worth capturing?",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "connected",
+        "connected_ratio": 1.0,
+        "connected_artifacts": 1,
+        "total_artifacts": 1,
+        "satisfied": true,
+        "enforced": false,
+        "note": "artifact-graph gate [enforce, report-only]: 1/1 artifacts connected (100%) \u2014 meets the 34% floor."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok",
+      "stale_artifacts_in_scope": 1,
+      "stale_artifacts_note": "Gardening is one call, not a separate pass \u2014 scoped to the active goal(s), not the whole graph.\n1 open unknown(s) under the goal(s) in play, logged before this transaction and still unresolved. If your work answered any, resolve them (`empirica unknown-resolve <id> --resolved-by \"...\"`); if still genuinely open, leave them.\n  - 78d68650: Phase 3 secondary blocker: Admiral red-team audit decision status and timeline. Evaluator "
+    },
+    "coverage": null,
+    "git_commit_sha": "fa2026c1b72d52b8cbfca1cb7c6569e73d28d317",
+    "git_notes_ref": "empirica/session/8549c8e2-cf70-4eb3-8a53-5113932ed120/POSTFLIGHT/3"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "64654eb54180ed1584ba6526dc5208738a3b0a4b",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_33AEAD43-D011-4E.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/hook_counters_term_33AEAD43-D011-4E.json"
+      ],
+      "diff_stat": ".breadcrumbs.yaml                                  | 126 ++---\n .../active_transaction_term_33AEAD43-D011-4E.json  |  20 +-\n .empirica/hook_counters_term_33AEAD43-D011-4E.json | 625 ---------------------\n .empirica/sessions/sessions.db                     | Bin 3158016 -> 3207168 bytes\n 4 files changed, 72 insertions(+), 699 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.75,
+      "curr": 0.8,
+      "delta": 0.05
+    },
+    "uncertainty": {
+      "prev": 0.2,
+      "curr": 0.15,
+      "delta": -0.05
+    },
+    "context": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "clarity": {
+      "prev": 0.7,
+      "curr": 0.8,
+      "delta": 0.1
+    },
+    "coherence": {
+      "prev": 0.75,
+      "curr": 0.8,
+      "delta": 0.05
+    },
+    "signal": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "density": {
+      "prev": 0.75,
+      "curr": 0.8,
+      "delta": 0.05
+    },
+    "state": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "change": {
+      "prev": 0.2,
+      "curr": 0.25,
+      "delta": 0.05
+    },
+    "completion": {
+      "prev": 0.0,
+      "curr": 0.4,
+      "delta": 0.4
+    },
+    "impact": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "do": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "engagement": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    }
+  },
+  "token_count": 653
+}

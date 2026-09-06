@@ -1,0 +1,771 @@
+{
+  "session_id": "8549c8e2-cf70-4eb3-8a53-5113932ed120",
+  "phase": "POSTFLIGHT",
+  "round": 2,
+  "timestamp": "2026-09-05T23:58:37.194579+00:00",
+  "vectors": {
+    "know": 0.82,
+    "do": 0.8,
+    "uncertainty": 0.12,
+    "context": 0.88,
+    "engagement": 0.85
+  },
+  "overall_confidence": 0.833,
+  "meta": {
+    "reasoning": "Mailbox cleanup and coordination closeout complete. Workflow (wf_52ff52e8-e09) verified: 15/15 P1 investigations delivered successfully across all foundation practices. Inbox polled: 6 active collabs including new Phase 1 self-audit task (deadline Sep 7). Outbox polled: 5 collabs tracking Phase 3-9 coordination state. No SERs created yet (Phase 1 ratification pending evaluator). Critical path confirmed: mesh-support blocker specs (pending since Sep 4 19:51, Sep 18 escalation threshold active), Admiral red-team audit decision (timeline unknown, governance blocker). Artifact connectivity: pre-commit identified 11 orphaned findings, prioritize wiring. Committed coordination work to main (commit 64654eb). Pre-commit validation passed.",
+    "task_summary": "Mailbox cleanup and coordination closeout complete. Workflow (wf_52ff52e8-e09) verified: 15/15 P1 investigations delivered successfully across all foundation practices. Inbox polled: 6 active collabs including new Phase 1 self-audit task (deadline Sep 7). Outbox polled: 5 collabs tracking Phase 3-9 coordination state. No SERs created yet (Phase 1 ratification pending evaluator). Critical path confirmed: mesh-support blocker specs (pending since Sep 4 19:51, Sep 18 escalation threshold active), Admiral red-team audit decision (timeline unknown, governance blocker). Artifact connectivity: pre-commit identified 11 orphaned findings, prioritize wiring. Committed coordination work to main (commit 64654eb). Pre-commit validation passed.",
+    "postflight_confidence": 0.88,
+    "internal_consistency": "moderate",
+    "deltas": {
+      "know": 0.02,
+      "do": 0.05,
+      "uncertainty": -0.03,
+      "context": 0.03,
+      "engagement": -0.05
+    },
+    "trajectory_issues": [],
+    "transaction_id": "b9bd4d37-e8b2-4451-b604-e33a4a77f6e7",
+    "tool_call_count": 449,
+    "work_type": "comms",
+    "phase_tool_counts": {
+      "noetic_tool_calls": 111,
+      "praxic_tool_calls": 12
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": {
+      "solicited_prompts": 0,
+      "unsolicited_prompts": 3
+    },
+    "entity_context": null,
+    "tool_trace": [
+      [
+        "Bash",
+        "empirica",
+        "p"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "grep",
+        "n"
+      ],
+      [
+        "Bash",
+        "git",
+        "n"
+      ],
+      [
+        "Bash",
+        "git",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "p"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "empirica",
+        "p"
+      ],
+      [
+        "Bash",
+        "git",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "grep",
+        "n"
+      ],
+      [
+        "Bash",
+        "cat",
+        "p"
+      ],
+      [
+        "Bash",
+        "empirica",
+        "p"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "git",
+        "p"
+      ],
+      [
+        "Bash",
+        "cd",
+        "p"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "grep",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "wc",
+        "n"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "grep",
+        "n"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "p"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "cat",
+        "n"
+      ],
+      [
+        "Bash",
+        "cat",
+        "p"
+      ],
+      [
+        "Bash",
+        "cat",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "cat",
+        "p"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "grep",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "grep",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "grep",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "p"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "p"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "ls",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "cd",
+        "n"
+      ],
+      [
+        "Bash",
+        "find",
+        "n"
+      ]
+    ],
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 1,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "claims": {
+        "declared": 0,
+        "held": 0,
+        "refuted": 0,
+        "untested": 0,
+        "gaps": [],
+        "dropped_adjudications": 3,
+        "note": "3 verdict(s) submitted but no claims were declared in this transaction \u2014 nothing was recorded. Declare claims at PREFLIGHT or CHECK for POSTFLIGHT to adjudicate."
+      },
+      "breadth_note": "Only findings artifacts logged. Missing: unknowns, dead_ends, mistakes, assumptions, decisions. Unlogged artifact types are ungrounded prediction domains \u2014 were there assumptions, decisions, dead-ends, or mistakes worth capturing?",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "connected",
+        "connected_ratio": 1.0,
+        "connected_artifacts": 1,
+        "total_artifacts": 1,
+        "satisfied": true,
+        "enforced": false,
+        "note": "artifact-graph gate [enforce, report-only]: 1/1 artifacts connected (100%) \u2014 meets the 34% floor."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok",
+      "stale_artifacts_in_scope": 1,
+      "stale_artifacts_note": "Gardening is one call, not a separate pass \u2014 scoped to the active goal(s), not the whole graph.\n1 open unknown(s) under the goal(s) in play, logged before this transaction and still unresolved. If your work answered any, resolve them (`empirica unknown-resolve <id> --resolved-by \"...\"`); if still genuinely open, leave them.\n  - 78d68650: Phase 3 secondary blocker: Admiral red-team audit decision status and timeline. Evaluator "
+    },
+    "coverage": "Mailbox polling complete (inbox + outbox). Workflow execution verified. Phase 3 blocker monitoring active. Phase 1 self-audit task acknowledged. Artifact gardening gap identified (11 orphaned findings to wire). Ready for Phase 1-2 transition + parallel Phase 3 blocker coordination.",
+    "git_commit_sha": "5c618ab8a4cadc545e336488b90c323962acef1a",
+    "git_notes_ref": "empirica/session/8549c8e2-cf70-4eb3-8a53-5113932ed120/POSTFLIGHT/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "64654eb54180ed1584ba6526dc5208738a3b0a4b",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "64654eb54180ed1584ba6526dc5208738a3b0a4b",
+        "message": "Mesh coordination checkpoint: Phase 3 blocker specs monitoring active, Phase 1 P1 investigations complete (15/15), mailbox cleanup and SER tracking prepared for Phase 3-9 transition.",
+        "author": "Carly Anderson",
+        "timestamp": "2026-09-05T18:56:54-05:00",
+        "files_changed": [
+          ".empirica/active_transaction_term_33AEAD43-D011-4E.json",
+          ".empirica/hook_counters_term_33AEAD43-D011-4E.json",
+          ".empirica/sessions/sessions.db",
+          ".empirica/subagent_sessions/workflow-subagent_20260905_163654.json",
+          ".empirica/subagent_sessions/workflow-subagent_20260905_164312.json",
+          ".empirica/subagent_sessions/workflow-subagent_20260905_164917.json",
+          ".empirica/subagent_sessions/workflow-subagent_20260905_165408.json",
+          ".empirica/subagent_sessions/workflow-subagent_20260905_165422.json",
+          ".empirica/subagent_sessions/workflow-subagent_20260905_170015.json",
+          ".empirica/subagent_sessions/workflow-subagent_20260905_170855.json",
+          ".empirica/subagent_sessions/workflow-subagent_20260905_172511.json",
+          ".empirica/subagent_sessions/workflow-subagent_20260905_172559.json",
+          ".empirica/subagent_sessions/workflow-subagent_20260905_172710.json",
+          ".empirica/subagent_sessions/workflow-subagent_20260905_181709.json",
+          ".empirica/subagent_sessions/workflow-subagent_20260905_181742.json",
+          ".empirica/subagent_sessions/workflow-subagent_20260905_184241.json",
+          ".empirica_reflex_logs/checkpoints/8549c8e2-cf70-4eb3-8a53-5113932ed120/checkpoint_POSTFLIGHT_2_20260905_213747.json",
+          ".empirica_reflex_logs/checkpoints/8549c8e2-cf70-4eb3-8a53-5113932ed120/checkpoint_PREFLIGHT_3_20260905_235302.json"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_33AEAD43-D011-4E.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/hook_counters_term_33AEAD43-D011-4E.json"
+      ],
+      "diff_stat": ".../active_transaction_term_33AEAD43-D011-4E.json  |  11 +-\n .empirica/hook_counters_term_33AEAD43-D011-4E.json | 625 ---------------------\n .empirica/sessions/sessions.db                     | Bin 3158016 -> 3162112 bytes\n 3 files changed, 4 insertions(+), 632 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.8,
+      "curr": 0.82,
+      "delta": 0.02
+    },
+    "do": {
+      "prev": 0.75,
+      "curr": 0.8,
+      "delta": 0.05
+    },
+    "uncertainty": {
+      "prev": 0.15,
+      "curr": 0.12,
+      "delta": -0.03
+    },
+    "context": {
+      "prev": 0.85,
+      "curr": 0.88,
+      "delta": 0.03
+    },
+    "engagement": {
+      "prev": 0.9,
+      "curr": 0.85,
+      "delta": -0.05
+    }
+  },
+  "token_count": 1285
+}

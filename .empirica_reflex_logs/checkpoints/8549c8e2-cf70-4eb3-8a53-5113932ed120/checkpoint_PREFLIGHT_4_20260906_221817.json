@@ -1,0 +1,75 @@
+{
+  "session_id": "8549c8e2-cf70-4eb3-8a53-5113932ed120",
+  "phase": "PREFLIGHT",
+  "round": 4,
+  "timestamp": "2026-09-06T22:18:00.920041+00:00",
+  "vectors": {
+    "know": 0.6,
+    "uncertainty": 0.35,
+    "context": 0.7,
+    "clarity": 0.5,
+    "coherence": 0.65,
+    "signal": 0.7,
+    "density": 0.6,
+    "state": 0.7,
+    "change": 0.2,
+    "completion": 0.0,
+    "impact": 0.95,
+    "do": 0.7,
+    "engagement": 0.8
+  },
+  "overall_confidence": 0.667,
+  "meta": {
+    "reasoning": "INTENT-OS P1 investigations complete. Phase 3 routing is now blocked on mesh-support's outreach blocker specifications and Admiral's audit decision. High urgency: M2 gate is 20 days out. Know the goal (Phase 3 specs) and the blocker location (mesh-support SER ser_31f97ce0da3f4239869a09a7), but unclear on spec structure and Admiral's current status. Plan: cortex_collab mesh-support for clarification, then propose Admiral if needed.",
+    "prompt": "INTENT-OS P1 investigations complete. Phase 3 routing is now blocked on mesh-support's outreach blocker specifications and Admiral's audit decision. High urgency: M2 gate is 20 days out. Know the goal (Phase 3 specs) and the blocker location (mesh-support SER ser_31f97ce0da3f4239869a09a7), but unclear on spec structure and Admiral's current status. Plan: cortex_collab mesh-support for clarification, then propose Admiral if needed.",
+    "transaction_id": "c21bc0aa-f0e9-4bb6-8ece-fe082fb71b0c",
+    "task_context": "Phase 3 mesh coordination: Obtain mesh-support blocker specs + resolve Admiral audit decision. Critical path for M2 gate (Sep 25). INTENT-OS P1 (15/15) complete.",
+    "git_commit_sha": "8d3b2fc24e3b77fe43413711140f4d521ed6010a",
+    "git_notes_ref": "empirica/session/8549c8e2-cf70-4eb3-8a53-5113932ed120/PREFLIGHT/4"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "64654eb54180ed1584ba6526dc5208738a3b0a4b",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_33AEAD43-D011-4E.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/hook_counters_term_33AEAD43-D011-4E.json"
+      ],
+      "diff_stat": ".breadcrumbs.yaml                                  | 126 ++---\n .../active_transaction_term_33AEAD43-D011-4E.json  |  11 +-\n .empirica/hook_counters_term_33AEAD43-D011-4E.json | 625 ---------------------\n .empirica/sessions/sessions.db                     | Bin 3158016 -> 3194880 bytes\n 4 files changed, 67 insertions(+), 695 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.82,
+      "curr": 0.6,
+      "delta": -0.22
+    },
+    "uncertainty": {
+      "prev": 0.12,
+      "curr": 0.35,
+      "delta": 0.23
+    },
+    "context": {
+      "prev": 0.88,
+      "curr": 0.7,
+      "delta": -0.18
+    },
+    "do": {
+      "prev": 0.8,
+      "curr": 0.7,
+      "delta": -0.1
+    },
+    "engagement": {
+      "prev": 0.85,
+      "curr": 0.8,
+      "delta": -0.05
+    }
+  },
+  "token_count": 343
+}

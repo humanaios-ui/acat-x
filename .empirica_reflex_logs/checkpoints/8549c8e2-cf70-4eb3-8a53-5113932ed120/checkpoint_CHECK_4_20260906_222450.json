@@ -1,0 +1,121 @@
+{
+  "session_id": "8549c8e2-cf70-4eb3-8a53-5113932ed120",
+  "phase": "CHECK",
+  "round": 4,
+  "timestamp": "2026-09-06T22:24:19.113201+00:00",
+  "vectors": {
+    "know": 0.75,
+    "uncertainty": 0.2,
+    "context": 0.8,
+    "clarity": 0.7,
+    "coherence": 0.75,
+    "signal": 0.8,
+    "density": 0.75,
+    "state": 0.8,
+    "change": 0.2,
+    "completion": 0.0,
+    "impact": 0.95,
+    "do": 0.8,
+    "engagement": 0.85
+  },
+  "overall_confidence": 0.783,
+  "meta": {
+    "decision": "proceed",
+    "reasoning": "Read 4 active goals (Phase 3 mesh coordination, Phase 8\u21929 transition, Phase 8 evaluation, mesh-support blocker specs). INTENT-OS P1 (15/15) is confirmed complete per memory. Phase 3 is blocked on mesh-support's detailed outreach blocker specifications; SER ser_31f97ce0da3f4239869a09a7 is the coordination record. Goals show the blocker is defined but spec structure is unclear. Ready to send cortex_collab to mesh-support for clarification.",
+    "confidence": 0.8,
+    "gaps": [
+      "uncertainty: 0.20",
+      "change: 0.20",
+      "completion: 0.00"
+    ],
+    "cycle": null,
+    "round": 4,
+    "transaction_id": "c21bc0aa-f0e9-4bb6-8ece-fe082fb71b0c",
+    "git_commit_sha": "35a49a619b8d5832381d3e2ae059ebb6c4f8232c",
+    "git_notes_ref": "empirica/session/8549c8e2-cf70-4eb3-8a53-5113932ed120/CHECK/4"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "64654eb54180ed1584ba6526dc5208738a3b0a4b",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_33AEAD43-D011-4E.json",
+        ".empirica/hook_counters_term_33AEAD43-D011-4E.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".breadcrumbs.yaml                                  | 126 ++---\n .../active_transaction_term_33AEAD43-D011-4E.json  |  28 +-\n .empirica/hook_counters_term_33AEAD43-D011-4E.json | 624 +--------------------\n .empirica/sessions/sessions.db                     | Bin 3158016 -> 3198976 bytes\n 4 files changed, 84 insertions(+), 694 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.6,
+      "curr": 0.75,
+      "delta": 0.15
+    },
+    "uncertainty": {
+      "prev": 0.35,
+      "curr": 0.2,
+      "delta": -0.15
+    },
+    "context": {
+      "prev": 0.7,
+      "curr": 0.8,
+      "delta": 0.1
+    },
+    "clarity": {
+      "prev": 0.5,
+      "curr": 0.7,
+      "delta": 0.2
+    },
+    "coherence": {
+      "prev": 0.65,
+      "curr": 0.75,
+      "delta": 0.1
+    },
+    "signal": {
+      "prev": 0.7,
+      "curr": 0.8,
+      "delta": 0.1
+    },
+    "density": {
+      "prev": 0.6,
+      "curr": 0.75,
+      "delta": 0.15
+    },
+    "state": {
+      "prev": 0.7,
+      "curr": 0.8,
+      "delta": 0.1
+    },
+    "change": {
+      "prev": 0.2,
+      "curr": 0.2,
+      "delta": 0.0
+    },
+    "completion": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "impact": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "do": {
+      "prev": 0.7,
+      "curr": 0.8,
+      "delta": 0.1
+    },
+    "engagement": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    }
+  },
+  "token_count": 327
+}
