@@ -1,16 +1,14 @@
 {
-  "transaction_id": "b9bd4d37-e8b2-4451-b604-e33a4a77f6e7",
+  "transaction_id": "c21bc0aa-f0e9-4bb6-8ece-fe082fb71b0c",
   "session_id": "8549c8e2-cf70-4eb3-8a53-5113932ed120",
-  "claude_session_id": null,
-  "preflight_timestamp": 1788652383.0669188,
-  "status": "open",
+  "claude_session_id": "650abebb-93aa-4bba-b09b-d587fc563e9c",
+  "preflight_timestamp": 1788733098.031841,
+  "status": "closed",
   "project_path": "/Users/andersonfamily/practices/acat-x",
-  "updated_at": 1788652383.070305,
-  "work_type": "comms",
-  "domain": "coordination",
+  "updated_at": 1788733828.7400022,
+  "domain": "default",
   "criticality": "high",
-  "task_context": "Poll mailbox (inbox + outbox) for pending proposals and SERs. Respond to all SERs (acknowledge transitions, state updates). Archive processed proposals. Commit coordination work. Close with POSTFLIGHT.",
-  "cascade_profile": "default",
-  "avg_turns": 0,
-  "preflight_pattern_count": 0
+  "work_type": "comms",
+  "work_context": "iteration",
+  "cascade_profile": "default"
 }
