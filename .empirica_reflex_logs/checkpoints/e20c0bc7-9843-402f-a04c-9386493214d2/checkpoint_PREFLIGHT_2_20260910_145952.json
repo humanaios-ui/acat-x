@@ -1,0 +1,59 @@
+{
+  "session_id": "e20c0bc7-9843-402f-a04c-9386493214d2",
+  "phase": "PREFLIGHT",
+  "round": 2,
+  "timestamp": "2026-09-10T14:59:42.003145+00:00",
+  "vectors": {
+    "know": 0.85,
+    "uncertainty": 0.15
+  },
+  "overall_confidence": 0.617,
+  "meta": {
+    "reasoning": "Mailbox poll shows 1 accepted collab_brief from mesh-support on Phase 3 Wave 1 status. Transaction scope: receive + reply to collab (noetic), enumerate and triage open goals. Resource estimate: 0.25-0.5 hours labor. Grounded: empirica CLI operational, prior session context loaded, mesh-support coordination known.",
+    "prompt": "Mailbox poll shows 1 accepted collab_brief from mesh-support on Phase 3 Wave 1 status. Transaction scope: receive + reply to collab (noetic), enumerate and triage open goals. Resource estimate: 0.25-0.5 hours labor. Grounded: empirica CLI operational, prior session context loaded, mesh-support coordination known.",
+    "transaction_id": "109840da-c445-4ea5-8e30-d8a3f855a5dc",
+    "git_commit_sha": "67e3006152fc48d5dbe951e4cd7c5a3558cdfdb6",
+    "git_notes_ref": "empirica/session/e20c0bc7-9843-402f-a04c-9386493214d2/PREFLIGHT/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "c50ba3773438f494798417d2e1b50316e747f437",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "c50ba3773438f494798417d2e1b50316e747f437",
+        "message": "Phase 3.1 integration complete: Job Discovery & Matching + Interview Platform verified operational",
+        "author": "Carly Anderson",
+        "timestamp": "2026-09-10T07:06:33-05:00",
+        "files_changed": [
+          ".breadcrumbs.yaml",
+          ".empirica/active_transaction_term_D79198A7-3CBB-45.json",
+          ".empirica/hook_counters_term_D79198A7-3CBB-45.json",
+          ".empirica/sessions/sessions.db",
+          ".empirica_reflex_logs/checkpoints/e20c0bc7-9843-402f-a04c-9386493214d2/checkpoint_CHECK_1_20260910_033910.json",
+          ".empirica_reflex_logs/checkpoints/e20c0bc7-9843-402f-a04c-9386493214d2/checkpoint_CHECK_2_20260910_120309.json",
+          ".empirica_reflex_logs/checkpoints/e20c0bc7-9843-402f-a04c-9386493214d2/checkpoint_POSTFLIGHT_1_20260910_120618.json",
+          ".empirica_reflex_logs/checkpoints/e20c0bc7-9843-402f-a04c-9386493214d2/checkpoint_PREFLIGHT_1_20260910_033710.json"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ""
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.9,
+      "curr": 0.85,
+      "delta": -0.05
+    },
+    "uncertainty": {
+      "prev": 0.1,
+      "curr": 0.15,
+      "delta": 0.05
+    }
+  },
+  "token_count": 215
+}
