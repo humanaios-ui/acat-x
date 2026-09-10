@@ -1,0 +1,64 @@
+{
+  "session_id": "e20c0bc7-9843-402f-a04c-9386493214d2",
+  "phase": "CHECK",
+  "round": 1,
+  "timestamp": "2026-09-10T03:39:01.658858+00:00",
+  "vectors": {
+    "know": 0.4,
+    "uncertainty": 0.7,
+    "context": 0.6,
+    "engagement": 0.9
+  },
+  "overall_confidence": 0.5,
+  "meta": {
+    "decision": "investigate",
+    "reasoning": "Cannot proceed to praxic execution without understanding what Phase 3.1 actually requires. Task names create ambiguity about scope. Admiral authorized this but the tasks need clarification before deployment.",
+    "confidence": 0.30000000000000004,
+    "gaps": [
+      "know: 0.40"
+    ],
+    "cycle": null,
+    "round": 1,
+    "transaction_id": "adafc615-3a0e-4f85-9e50-58501d9c139e",
+    "git_commit_sha": "b58aadc20cd7a31423224a1d10cb6bde9cff0491",
+    "git_notes_ref": "empirica/session/e20c0bc7-9843-402f-a04c-9386493214d2/CHECK/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "5a16cba1137ffc4ba1f880ab74260a599a580c44",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_D79198A7-3CBB-45.json",
+        ".empirica/hook_counters_term_D79198A7-3CBB-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".../active_transaction_term_D79198A7-3CBB-45.json  |  35 ++++++++++++++++++---\n .empirica/hook_counters_term_D79198A7-3CBB-45.json |   2 +-\n .empirica/sessions/sessions.db                     | Bin 3301376 -> 3305472 bytes\n 3 files changed, 31 insertions(+), 6 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.7,
+      "curr": 0.4,
+      "delta": -0.3
+    },
+    "uncertainty": {
+      "prev": 0.3,
+      "curr": 0.7,
+      "delta": 0.4
+    },
+    "context": {
+      "prev": 0.8,
+      "curr": 0.6,
+      "delta": -0.2
+    },
+    "engagement": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    }
+  },
+  "token_count": 169
+}

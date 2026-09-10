@@ -1,0 +1,37 @@
+{
+  "session_id": "e20c0bc7-9843-402f-a04c-9386493214d2",
+  "phase": "PREFLIGHT",
+  "round": 1,
+  "timestamp": "2026-09-10T03:37:02.286457+00:00",
+  "vectors": {
+    "know": 0.7,
+    "uncertainty": 0.3,
+    "context": 0.8,
+    "engagement": 0.9
+  },
+  "overall_confidence": 0.667,
+  "meta": {
+    "reasoning": "Phase 3.1 is authorized (Admiral 2026-09-02) with no blockers. Two verification tasks: (1) Job Discovery & Matching service operational + test data seeding, (2) Interview Platform operational. Task scope is clear. Uncertainty: what systems are actually live/deployed, API endpoints, test infrastructure readiness. Moving from authorization to execution.",
+    "prompt": "Phase 3.1 is authorized (Admiral 2026-09-02) with no blockers. Two verification tasks: (1) Job Discovery & Matching service operational + test data seeding, (2) Interview Platform operational. Task scope is clear. Uncertainty: what systems are actually live/deployed, API endpoints, test infrastructure readiness. Moving from authorization to execution.",
+    "transaction_id": "adafc615-3a0e-4f85-9e50-58501d9c139e",
+    "task_context": "Deploy Phase 1-2 integration work to production; verify job discovery, matching, and interview platform systems operational.",
+    "git_commit_sha": "14fab1af0cdd3cd003dc2adb2f49ac725423f402",
+    "git_notes_ref": "empirica/session/e20c0bc7-9843-402f-a04c-9386493214d2/PREFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "5a16cba1137ffc4ba1f880ab74260a599a580c44",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/hook_counters_term_D79198A7-3CBB-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/hook_counters_term_D79198A7-3CBB-45.json |   2 +-\n .empirica/sessions/sessions.db                     | Bin 3301376 -> 3301376 bytes\n 2 files changed, 1 insertion(+), 1 deletion(-)"
+    }
+  },
+  "learning_delta": {},
+  "token_count": 222
+}
