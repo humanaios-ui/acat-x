@@ -1,0 +1,64 @@
+{
+  "session_id": "e20c0bc7-9843-402f-a04c-9386493214d2",
+  "phase": "CHECK",
+  "round": 2,
+  "timestamp": "2026-09-10T12:03:01.986642+00:00",
+  "vectors": {
+    "know": 0.8,
+    "uncertainty": 0.2,
+    "context": 0.85,
+    "engagement": 0.9
+  },
+  "overall_confidence": 0.717,
+  "meta": {
+    "decision": "proceed",
+    "reasoning": "Scope now clear. Phase 3.1 requires: (1) Verify evaluation core system (model discovery + output matching) operational with test data seeding, (2) Verify eval platform infrastructure operational. Admiral authorized 2026-09-02, no blockers. Ready for praxic execution.",
+    "confidence": 0.8,
+    "gaps": [
+      "uncertainty: 0.20"
+    ],
+    "cycle": null,
+    "round": 2,
+    "transaction_id": "adafc615-3a0e-4f85-9e50-58501d9c139e",
+    "git_commit_sha": "a466ff3efa0ef439579d6038a1ee193df0300629",
+    "git_notes_ref": "empirica/session/e20c0bc7-9843-402f-a04c-9386493214d2/CHECK/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "5a16cba1137ffc4ba1f880ab74260a599a580c44",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_D79198A7-3CBB-45.json",
+        ".empirica/hook_counters_term_D79198A7-3CBB-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".../active_transaction_term_D79198A7-3CBB-45.json  |  35 ++++++++++++++++++---\n .empirica/hook_counters_term_D79198A7-3CBB-45.json |   2 +-\n .empirica/sessions/sessions.db                     | Bin 3301376 -> 3305472 bytes\n 3 files changed, 31 insertions(+), 6 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.4,
+      "curr": 0.8,
+      "delta": 0.4
+    },
+    "uncertainty": {
+      "prev": 0.7,
+      "curr": 0.2,
+      "delta": -0.5
+    },
+    "context": {
+      "prev": 0.6,
+      "curr": 0.85,
+      "delta": 0.25
+    },
+    "engagement": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    }
+  },
+  "token_count": 179
+}
