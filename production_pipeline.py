@@ -5,7 +5,6 @@ Automated re-evaluation, result persistence, monitoring, and regression alerting
 """
 
 import json
-import os
 import sqlite3
 import subprocess
 import sys
@@ -82,6 +81,16 @@ class ProductionDatabase:
                 (cycle_id, start_time, status, models_count, dimensions_count, results_count)
                 VALUES (?, ?, ?, 0, 0, 0)
             """, (cycle_id, start_time, status))
+            conn.commit()
+
+    def set_cycle_counts(self, cycle_id: str, models_count: int, dimensions_count: int):
+        """Persist model/dimension counts for cycle telemetry."""
+        with sqlite3.connect(self.db_path) as conn:
+            conn.execute("""
+                UPDATE evaluation_cycles
+                SET models_count = ?, dimensions_count = ?
+                WHERE cycle_id = ?
+            """, (models_count, dimensions_count, cycle_id))
             conn.commit()
 
     def record_result(
@@ -169,6 +178,7 @@ class ProductionPipeline:
 
         start_time = datetime.now().isoformat()
         self.db.record_cycle(self.cycle_id, start_time)
+        self.db.set_cycle_counts(self.cycle_id, len(self.models), len(self.dimensions))
 
         if dry_run:
             print("(DRY RUN - not executing)")
@@ -235,11 +245,20 @@ class ProductionPipeline:
         result_file = Path("results") / f"lightweight_{dimension}_{model_safe}.json"
 
         try:
-            # Execute evaluator with configurable samples
-            # Set PYTHONPATH to include src/ for ACAT-X modules
-            env = {**os.environ, "PYTHONPATH": str(Path.cwd() / "src")}
-            cmd = f"python3 lightweight_eval_v3_apis.py {dimension} {model} {num_samples}"
-            subprocess.run(cmd, shell=True, capture_output=True, timeout=600, env=env)
+            cmd = [
+                sys.executable,
+                "lightweight_eval.py",
+                dimension,
+                model,
+                str(num_samples),
+                "--seed",
+                "42",
+                "--retries",
+                "2",
+                "--timeout",
+                "90",
+            ]
+            subprocess.run(cmd, capture_output=True, timeout=600, check=False)
 
             # Load result
             if result_file.exists():
@@ -273,7 +292,19 @@ class ProductionPipeline:
                     self.cycle_id, model, dimension, "regression",
                     baseline, current_score
                 )
+                self._write_alert_log(alert)
                 print(f"\n⚠️  REGRESSION ALERT: {model}/{dimension} {baseline:.3f} → {current_score:.3f}")
+
+    def _write_alert_log(self, alert: Dict) -> None:
+        """Append alert to persistent log and optional webhook sink."""
+        ALERTS_LOG.parent.mkdir(parents=True, exist_ok=True)
+        line = (
+            f"{datetime.now().isoformat()} cycle={self.cycle_id} model={alert['model']} "
+            f"dimension={alert['dimension']} baseline={alert['baseline']:.3f} "
+            f"current={alert['current']:.3f} regression_pct={alert['regression_pct']:.2f}\n"
+        )
+        with open(ALERTS_LOG, "a", encoding="utf-8") as f:
+            f.write(line)
 
     def _archive_results(self):
         """Archive cycle results"""

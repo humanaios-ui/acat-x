@@ -2,10 +2,11 @@
 # ACAT-X Multi-Model Evaluation Script
 # Usage: ./scripts/evaluate_multiple_models.sh [dimensions] [--quick]
 
-set -e
+set -euo pipefail
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT_ROOT="$( dirname "$SCRIPT_DIR" )"
+source "$SCRIPT_DIR/common.sh"
 
 # Default dimensions (can override with arguments)
 DIMENSIONS="${1:-consist truth sycophancy harm service autonomy value humility}"
@@ -59,24 +60,24 @@ evaluate_model() {
         fi
     fi
 
-    # Build eval command
-    local eval_cmd="uv run inspect eval-set"
+    # Build eval command safely as array
+    local eval_cmd=(uv run inspect eval-set)
     for dim in $DIMENSIONS; do
-        eval_cmd="$eval_cmd src/acat_x/$dim"
+        eval_cmd+=("src/acat_x/$dim")
     done
-    eval_cmd="$eval_cmd --model $model_spec --log-dir $RESULTS_DIR/$model_id"
+    eval_cmd+=(--model "$model_spec" --log-dir "$RESULTS_DIR/$model_id")
 
     # Add quick mode limits
     if [[ -n "$QUICK_MODE" ]] && [[ "$QUICK_MODE" == "--quick" ]]; then
-        eval_cmd="$eval_cmd --max-samples 1"
+        eval_cmd+=(--max-samples 1)
     fi
 
-    echo "Command: $eval_cmd"
+    echo "Command: ${eval_cmd[*]}"
     echo ""
 
     # Run evaluation
     cd "$PROJECT_ROOT"
-    if $eval_cmd; then
+    if "${eval_cmd[@]}"; then
         echo "✅ $display_name completed successfully"
         echo "Results: $RESULTS_DIR/$model_id"
     else

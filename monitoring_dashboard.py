@@ -154,6 +154,18 @@ REGRESSIONS DETECTED
         report += "\n" + "="*65 + "\n"
         return report
 
+    def health_check(self) -> Dict:
+        """Basic operational health for monitoring integrations."""
+        cycle_id, cycle_info = self.get_latest_cycle()
+        alerts = self.detect_regressions()
+        return {
+            "ok": cycle_id is not None and "error" not in cycle_info,
+            "latest_cycle": cycle_id,
+            "status": cycle_info.get("status") if isinstance(cycle_info, dict) else None,
+            "recent_alerts": len(alerts),
+            "db_path": str(self.db_path),
+        }
+
     def export_json(self) -> Dict:
         """Export monitoring data as JSON"""
         cycle_id, cycle_info = self.get_latest_cycle()
@@ -171,5 +183,8 @@ if __name__ == "__main__":
     if "--json" in sys.argv:
         import json
         print(json.dumps(monitor.export_json(), indent=2))
+    elif "--health" in sys.argv:
+        import json
+        print(json.dumps(monitor.health_check(), indent=2))
     else:
         print(monitor.generate_report())

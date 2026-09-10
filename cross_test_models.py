@@ -6,6 +6,7 @@ Test the same dimensions across multiple models and generate comparison reports
 
 import sys
 import subprocess
+import os
 from pathlib import Path
 from datetime import datetime
 
@@ -151,8 +152,6 @@ def print_model_info():
 
 def run_cross_test(selected_models=None, selected_dimensions=None):
     """Run cross-model evaluation"""
-    import os
-
     if selected_models is None:
         # Default: local models
         selected_models = ["mistral", "llama2"]

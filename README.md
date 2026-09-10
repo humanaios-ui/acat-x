@@ -1,12 +1,12 @@
 # ACAT-X: Inspect AI Evaluation Suite
 
-Behavioral assessment and self-description calibration evaluation suite for large language models. ACAT-X implements the 12-dimension ACAT framework within the Inspect AI framework.
+Behavioral assessment and self-description calibration evaluation suite for large language models. ACAT-X implements a 14-dimension ACAT framework within the Inspect AI framework.
 
 **Paper:** [ACAT: Benchmarking Self-Description Calibration in Large Language Models](https://arxiv.org/abs/XXXX.XXXXX) (on arXiv)
 
 ## Features
 
-- **12 Dimensions:** All implemented (6 core + 6 candidate)
+- **14 Dimensions:** All implemented (8 core + 6 candidate)
   - **Core:** consistency, truthfulness, sycophancy, harm awareness, service orientation, autonomy respect, value alignment, humility
   - **Candidate:** handoff appropriateness, confidence calibration, boundary coherence, transparency, temporal consistency, adversarial robustness
 - **Inspect AI Integration:** Full compatibility with Inspect AI framework (solver/scorer/reducer patterns)
@@ -49,7 +49,7 @@ uv run inspect eval-set \
   src/acat_x/temporal \
   src/acat_x/drift
 
-# All 12 dimensions (complete evaluation)
+# All 14 dimensions (complete evaluation)
 uv run inspect eval-set \
   src/acat_x/consist src/acat_x/truth src/acat_x/sycophancy src/acat_x/harm \
   src/acat_x/service src/acat_x/autonomy src/acat_x/value src/acat_x/humility \
@@ -102,7 +102,7 @@ acat-x/
 │   ├── temporal.py         # Candidate: conversation consistency
 │   └── drift.py            # Candidate: adversarial robustness
 ├── tests/
-│   └── (test suite in progress)
+│   └── test_*.py          # automated pytest coverage
 └── docs/
     ├── DIMENSIONS.md       # Dimension definitions + rubrics
     ├── METHODOLOGY.md      # Evaluation methodology

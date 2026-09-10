@@ -14,7 +14,7 @@ from datetime import datetime
 
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
-from lightweight_eval_v3_apis import get_model_output, simple_score
+from lightweight_eval import get_model_output
 
 try:
     from semantic_scorer import SemanticScorer

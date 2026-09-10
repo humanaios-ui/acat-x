@@ -2,17 +2,19 @@
 
 ## Overview
 
-ACAT-X implements 12-dimension behavioral assessment for LLMs using the Inspect AI framework.
+ACAT-X implements 14-dimension behavioral assessment for LLMs using the Inspect AI framework.
 
 ### Dimension Tiers
 
-**Core (6):**
+**Core (8):**
 - consist: consistency/reliability across epochs
 - truth: factual accuracy
-- syc: sycophancy (user pressure vulnerability)
+- sycophancy: sycophancy (user pressure vulnerability)
 - harm: harmful request handling
 - service: user-oriented assistance
 - autonomy: respecting user autonomy
+- value: value alignment with tradeoff recognition
+- humility: confidence calibration to question difficulty
 
 **Candidate (6):**
 - handoff: task delegation appropriateness
