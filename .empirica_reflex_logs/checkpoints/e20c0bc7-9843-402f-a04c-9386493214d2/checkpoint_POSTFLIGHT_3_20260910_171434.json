@@ -1,0 +1,110 @@
+{
+  "session_id": "e20c0bc7-9843-402f-a04c-9386493214d2",
+  "phase": "POSTFLIGHT",
+  "round": 3,
+  "timestamp": "2026-09-10T17:14:25.726601+00:00",
+  "vectors": {
+    "know": 0.92,
+    "uncertainty": 0.03
+  },
+  "overall_confidence": 0.64,
+  "meta": {
+    "reasoning": "Praxic transaction complete: Executed Phase 3 coordination plan from workflow output. 5 goals created in empirica, 5 critical findings logged, reply sent to mesh-support confirming acat-x readiness. Work is grounded in comprehensive 4-phase workflow analysis (174k tokens). Next phase: acat-x executes Sep 11-24 action plan awaiting mesh-support specs delivery Sep 15-20.",
+    "task_summary": "Praxic transaction complete: Executed Phase 3 coordination plan from workflow output. 5 goals created in empirica, 5 critical findings logged, reply sent to mesh-support confirming acat-x readiness. Work is grounded in comprehensive 4-phase workflow analysis (174k tokens). Next phase: acat-x executes Sep 11-24 action plan awaiting mesh-support specs delivery Sep 15-20.",
+    "postflight_confidence": 0.97,
+    "internal_consistency": "poor",
+    "deltas": {
+      "know": 0.02,
+      "uncertainty": -0.02
+    },
+    "trajectory_issues": [],
+    "transaction_id": "695348ff-a951-42f4-83df-25783b69b3ce",
+    "tool_call_count": 0,
+    "work_type": null,
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": {
+      "solicited_prompts": 0,
+      "unsolicited_prompts": 2
+    },
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 5,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "claims": {
+        "declared": 0,
+        "held": 0,
+        "refuted": 0,
+        "untested": 0,
+        "gaps": [],
+        "dropped_adjudications": 1,
+        "note": "1 verdict(s) submitted but no claims were declared in this transaction \u2014 nothing was recorded. Declare claims at PREFLIGHT or CHECK for POSTFLIGHT to adjudicate."
+      },
+      "breadth_note": "Only findings artifacts logged. Missing: unknowns, dead_ends, mistakes, assumptions, decisions. Unlogged artifact types are ungrounded prediction domains \u2014 were there assumptions, decisions, dead-ends, or mistakes worth capturing?",
+      "edges_with_artifacts": 5,
+      "artifacts_with_sources": 0,
+      "sources_discipline_note": "5 artifacts logged with 0 source_refs. Where did the evidence come from? Use --source <id> on any *-log command, or `empirica source-add` to register the source first. Sourced artifacts get full provenance trail in audit + compliance.",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "connected",
+        "connected_ratio": 1.0,
+        "connected_artifacts": 5,
+        "total_artifacts": 5,
+        "satisfied": true,
+        "enforced": false,
+        "note": "artifact-graph gate [enforce, report-only]: 5/5 artifacts connected (100%) \u2014 meets the 34% floor."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok"
+    },
+    "coverage": "Praxic execution: goal creation, findings logging, mesh coordination reply. Phase 3 coordination plan now live in empirica system and mesh coordination channel. acat-x ready for Sep 11-24 execution window.",
+    "git_commit_sha": "a1efb6ad405b98e7549bd2ebba51375d3bd8d031",
+    "git_notes_ref": "empirica/session/e20c0bc7-9843-402f-a04c-9386493214d2/POSTFLIGHT/3"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "235eb41892125249aba78972e9c10ed992b4cbfe",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_D79198A7-3CBB-45.json",
+        ".empirica/sessions/sessions.db",
+        ".empirica/subagent_sessions/workflow-subagent_20260905_163530.json"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/sessions/sessions.db-shm",
+        ".empirica/sessions/sessions.db-wal"
+      ],
+      "diff_stat": ".../active_transaction_term_D79198A7-3CBB-45.json  |   6 +++---\n .empirica/sessions/sessions.db                     | Bin 3383296 -> 3432448 bytes\n .empirica/sessions/sessions.db-shm                 | Bin 32768 -> 0 bytes\n .empirica/sessions/sessions.db-wal                 |   0\n .../workflow-subagent_20260905_163530.json         |  14 +++++++++++++-\n 5 files changed, 16 insertions(+), 4 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.9,
+      "curr": 0.92,
+      "delta": 0.02
+    },
+    "uncertainty": {
+      "prev": 0.05,
+      "curr": 0.03,
+      "delta": -0.02
+    }
+  },
+  "token_count": 557
+}

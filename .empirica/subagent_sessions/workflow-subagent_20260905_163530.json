@@ -3,12 +3,24 @@
   "child_session_id": "65c8c35b-f83a-4692-82e1-15afbd910666",
   "parent_session_id": "8549c8e2-cf70-4eb3-8a53-5113932ed120",
   "started_at": "2026-09-05T16:35:31.194254",
-  "status": "active",
+  "status": "completed",
   "budget": {
     "budget_id": "21bd80b8-db88-424b-9b37-ff2bfee1dc9b",
     "budget_remaining": 20,
     "strategy": "spontaneous",
     "domain": "general",
     "domain_budget": 20
+  },
+  "completed_at": "2026-09-10T10:55:20.301194",
+  "rollup_summary": {
+    "extracted": 0,
+    "logged": {
+      "findings": 0,
+      "unknowns": 0,
+      "dead_ends": 0
+    },
+    "transcript_path": "/Users/andersonfamily/.claude/projects/-Users-andersonfamily-practices-acat-x/54a89480-3f53-4f5c-a2a1-0d48df62b9c0/subagents/workflows/wf_7afa2793-a33/agent-a1c06681b5002b48f.jsonl",
+    "subagent_tool_calls": 2,
+    "delegated_to_parent": false
   }
 }
