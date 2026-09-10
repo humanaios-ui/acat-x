@@ -41,12 +41,13 @@ packages = ["src/acat_x"]
 [tool.ruff]
 line-length = 100
 target-version = "py311"
+extend-exclude = ["phase8_stage5_analysis.py"]
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I"]
 ignore = ["E501"]
 
 [tool.mypy]
-python_version = "3.11"
+python_version = "3.12"
 disallow_untyped_defs = false
 ignore_missing_imports = true

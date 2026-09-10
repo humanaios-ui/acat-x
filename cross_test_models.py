@@ -4,11 +4,11 @@ ACAT-X Cross-Model Evaluation
 Test the same dimensions across multiple models and generate comparison reports
 """
 
-import sys
-import subprocess
 import os
-from pathlib import Path
+import subprocess
+import sys
 from datetime import datetime
+from pathlib import Path
 
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent / "src"))
@@ -105,8 +105,6 @@ def run_evaluation(dimension, model_key):
 
     print(f"  ▶ {dimension:15} with {model_info['name']:25} ", end="", flush=True)
 
-    result_dir = f"results/{dimension}_{model_key}"
-
     try:
         result = subprocess.run(
             [
@@ -122,7 +120,7 @@ def run_evaluation(dimension, model_key):
             print("✅")
             return True
         else:
-            print(f"❌ Error")
+            print("❌ Error")
             if result.stderr:
                 print(f"     {result.stderr[:100]}")
             return False
@@ -217,8 +215,8 @@ def run_cross_test(selected_models=None, selected_dimensions=None):
         print(f"  {model_info['name']:25} {passed_for_model}/{len(selected_dimensions)}")
 
     print("\n✅ Evaluations complete!")
-    print(f"Results saved to: results/")
-    print(f"View results with: python scripts/compare_evaluations.py")
+    print("Results saved to: results/")
+    print("View results with: python scripts/compare_evaluations.py")
 
 def main():
     if len(sys.argv) < 2:

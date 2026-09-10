@@ -6,8 +6,9 @@ Generates benchmark report from evaluation results
 
 import json
 import sys
-from pathlib import Path
 from datetime import datetime
+from pathlib import Path
+
 
 def load_stage3_results():
     """Load Stage 3 evaluation results"""

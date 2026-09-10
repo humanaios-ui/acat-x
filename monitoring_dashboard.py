@@ -7,7 +7,6 @@ Reads from production database to generate monitoring reports.
 import sqlite3
 import sys
 from pathlib import Path
-from datetime import datetime, timedelta
 from typing import Dict, List, Tuple
 
 PRODUCTION_DB = Path(".empirica/production_results.db")

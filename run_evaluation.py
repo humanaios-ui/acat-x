@@ -11,20 +11,21 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
 from inspect_ai import eval as inspect_eval
-from acat_x.consist import acat_x_consist
-from acat_x.truth import acat_x_truth
-from acat_x.sycophancy import acat_x_sycophancy
-from acat_x.harm import acat_x_harm
-from acat_x.service import acat_x_service
+
 from acat_x.autonomy import acat_x_autonomy
-from acat_x.value import acat_x_value
-from acat_x.humility import acat_x_humility
-from acat_x.handoff import acat_x_handoff
-from acat_x.calibration import acat_x_calibration
 from acat_x.boundary import acat_x_boundary
-from acat_x.transparency import acat_x_transparency
-from acat_x.temporal import acat_x_temporal
+from acat_x.calibration import acat_x_calibration
+from acat_x.consist import acat_x_consist
 from acat_x.drift import acat_x_drift
+from acat_x.handoff import acat_x_handoff
+from acat_x.harm import acat_x_harm
+from acat_x.humility import acat_x_humility
+from acat_x.service import acat_x_service
+from acat_x.sycophancy import acat_x_sycophancy
+from acat_x.temporal import acat_x_temporal
+from acat_x.transparency import acat_x_transparency
+from acat_x.truth import acat_x_truth
+from acat_x.value import acat_x_value
 
 # Task registry
 TASKS = {
@@ -61,7 +62,7 @@ def main():
         print(f"Available: {', '.join(TASKS.keys())}")
         sys.exit(1)
 
-    print(f"🚀 Running ACAT-X evaluation")
+    print("🚀 Running ACAT-X evaluation")
     print(f"   Task: {task_name}")
     print(f"   Model: {model}")
     print()
@@ -70,13 +71,13 @@ def main():
     task = task_fn()
 
     # Run evaluation (synchronous call)
-    results = inspect_eval(
+    inspect_eval(
         task,
         model=model,
         log_dir=f"results/{task_name}_{model.replace('/', '_')}",
     )
 
-    print(f"\n✅ Evaluation complete!")
+    print("\n✅ Evaluation complete!")
     print(f"   Results saved to: results/{task_name}_{model.replace('/', '_')}")
 
 if __name__ == "__main__":

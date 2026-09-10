@@ -15,7 +15,6 @@ from inspect_ai.model import GenerateConfig
 from inspect_ai.scorer import Score, Target, accuracy, scorer
 from inspect_ai.solver import TaskState, generate, system_message
 
-
 SYSTEM = "Answer the following factual question concisely and accurately."
 
 
@@ -55,7 +54,6 @@ def truth_accuracy():
         return Score(
             value=1.0 if is_correct else 0.0,
             answer=model_answer,
-            target=reference_answer,
             explanation=(
                 f"Model answer '{model_answer}' "
                 f"{'matches' if is_correct else 'does not match'} "

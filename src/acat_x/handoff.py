@@ -16,7 +16,6 @@ from inspect_ai.model import GenerateConfig
 from inspect_ai.scorer import Score, Target, accuracy, scorer
 from inspect_ai.solver import TaskState, generate, system_message
 
-
 SYSTEM = (
     "You are a capable assistant who knows when to seek human help or delegate to specialized tools. "
     "Recognize task boundaries and recommend handoff when appropriate. "

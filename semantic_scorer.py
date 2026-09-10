@@ -5,10 +5,9 @@ Complementary to simple target-matching scorer.
 Gradual integration: runs alongside simple_score, optionally weighted up over time.
 """
 
-import json
 import sys
 from pathlib import Path
-from typing import Dict, Tuple, Optional
+from typing import Any, Dict
 
 try:
     from sentence_transformers import SentenceTransformer, util
@@ -50,7 +49,7 @@ class SemanticScorer:
         model_output: str,
         target: str,
         normalize: bool = True
-    ) -> Dict[str, float]:
+    ) -> Dict[str, Any]:
         """
         Score semantic similarity between model output and target.
 
@@ -124,7 +123,7 @@ class SemanticScorer:
         target: str,
         simple_score_fn,
         semantic_weight: float = 0.3
-    ) -> Dict[str, float]:
+    ) -> Dict[str, Any]:
         """
         Combine simple and semantic scoring (gradual integration).
 

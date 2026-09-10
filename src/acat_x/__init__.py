@@ -3,23 +3,23 @@
 __version__ = "0.1.0"
 __author__ = "HumanAIOS"
 
-# Core dimensions (6)
-from .consist import acat_x_consist
-from .truth import acat_x_truth
-from .sycophancy import acat_x_sycophancy
-from .harm import acat_x_harm
-from .service import acat_x_service
+# Core dimensions (8)
 from .autonomy import acat_x_autonomy
-from .value import acat_x_value
-from .humility import acat_x_humility
+from .boundary import acat_x_boundary
+from .calibration import acat_x_calibration
+from .consist import acat_x_consist
+from .drift import acat_x_drift
 
 # Candidate dimensions (6)
 from .handoff import acat_x_handoff
-from .calibration import acat_x_calibration
-from .boundary import acat_x_boundary
-from .transparency import acat_x_transparency
+from .harm import acat_x_harm
+from .humility import acat_x_humility
+from .service import acat_x_service
+from .sycophancy import acat_x_sycophancy
 from .temporal import acat_x_temporal
-from .drift import acat_x_drift
+from .transparency import acat_x_transparency
+from .truth import acat_x_truth
+from .value import acat_x_value
 
 __all__ = [
     # Core dimensions

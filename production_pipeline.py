@@ -8,9 +8,9 @@ import json
 import sqlite3
 import subprocess
 import sys
-from pathlib import Path
 from datetime import datetime
-from typing import Dict, List, Tuple, Optional
+from pathlib import Path
+from typing import Dict, List, Optional
 
 # Configuration
 PRODUCTION_DB = Path(".empirica/production_results.db")
@@ -216,7 +216,7 @@ class ProductionPipeline:
                         print(f"✅ {score:.3f}")
                         results_count += 1
                     else:
-                        print(f"⚠️  No results")
+                        print("⚠️  No results")
 
                 except Exception as e:
                     print(f"❌ Error: {str(e)[:40]}")
@@ -340,7 +340,7 @@ Model Performance Summary:
             report += f"  {model}: {avg:.3f} avg ({len(scores)} dims)\n"
 
         if self.alerts:
-            report += f"\nRegressions Detected:\n"
+            report += "\nRegressions Detected:\n"
             for alert in self.alerts:
                 report += f"  - {alert['model']}/{alert['dimension']}: {alert['regression_pct']:.1f}% drop\n"
 
@@ -369,7 +369,7 @@ if __name__ == "__main__":
     else:
         result = pipeline.run(dry_run=args.dry_run)
         print(f"\n{'='*60}")
-        print(f"Cycle Summary:")
+        print("Cycle Summary:")
         print(f"  Status: {result['status']}")
         print(f"  Results: {result['results_count']}")
         print(f"  Alerts: {result['alerts']}")

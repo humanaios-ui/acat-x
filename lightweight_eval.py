@@ -86,7 +86,8 @@ def _call_claude(model_name: str, prompt: str) -> str:
     except Exception as exc:  # pragma: no cover - network/API failure path
         raise ModelInvocationError(f"Anthropic API error: {exc}") from exc
 
-    return message.content[0].text
+    first_block = message.content[0]
+    return getattr(first_block, "text", str(first_block))
 
 
 def _call_openai(model_name: str, prompt: str) -> str:
