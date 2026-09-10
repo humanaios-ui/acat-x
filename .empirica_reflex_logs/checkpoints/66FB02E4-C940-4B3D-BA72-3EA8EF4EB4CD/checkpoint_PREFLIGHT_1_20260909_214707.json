@@ -1,0 +1,41 @@
+{
+  "session_id": "66FB02E4-C940-4B3D-BA72-3EA8EF4EB4CD",
+  "phase": "PREFLIGHT",
+  "round": 1,
+  "timestamp": "2026-09-09T21:47:01.199080+00:00",
+  "vectors": {
+    "know": 0.9,
+    "context": 0.85,
+    "signal": 0.8,
+    "uncertainty": 0.4,
+    "do": 0.5,
+    "change": 0.5,
+    "state": 0.4,
+    "completion": 0.4,
+    "impact": 0.85,
+    "clarity": 0.85,
+    "coherence": 0.8,
+    "density": 0.7
+  },
+  "overall_confidence": 0.75,
+  "meta": {
+    "reasoning": null,
+    "prompt": "Preflight assessment",
+    "transaction_id": "2a22f025-ae85-4f01-85af-84cf0bd7bf8e",
+    "git_commit_sha": "919a44f28b7ba4cd5804831f0d83664be56cd993",
+    "git_notes_ref": "empirica/session/66FB02E4-C940-4B3D-BA72-3EA8EF4EB4CD/PREFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "aac8aaaea5572da376b0120bbe843c578108aec7",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ""
+    }
+  },
+  "learning_delta": {},
+  "token_count": 79
+}
