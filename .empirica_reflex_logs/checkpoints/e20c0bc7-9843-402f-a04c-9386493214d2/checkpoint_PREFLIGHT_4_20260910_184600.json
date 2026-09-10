@@ -1,0 +1,65 @@
+{
+  "session_id": "e20c0bc7-9843-402f-a04c-9386493214d2",
+  "phase": "PREFLIGHT",
+  "round": 4,
+  "timestamp": "2026-09-10T18:45:25.086799+00:00",
+  "vectors": {
+    "know": 0.88,
+    "uncertainty": 0.08
+  },
+  "overall_confidence": 0.627,
+  "meta": {
+    "reasoning": "Final transaction: Poll mailbox for any new coordination items post-workflow, respond to any waiting items, commit work, close session. Grounded in current mailbox state and prior Phase 3 coordination completion.",
+    "prompt": "Final transaction: Poll mailbox for any new coordination items post-workflow, respond to any waiting items, commit work, close session. Grounded in current mailbox state and prior Phase 3 coordination completion.",
+    "transaction_id": "8164cb74-ef63-402a-9180-774e926d7301",
+    "git_commit_sha": "45baf7299d3bc4ddf74a997b78972a1c45b7fa6c",
+    "git_notes_ref": "empirica/session/e20c0bc7-9843-402f-a04c-9386493214d2/PREFLIGHT/4"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "036f1a53c51c5b095ae5f2a6300a29b930726055",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "036f1a53c51c5b095ae5f2a6300a29b930726055",
+        "message": "Phase 3 coordination plan execution: Goals created, findings logged, mesh-support reply sent",
+        "author": "Carly Anderson",
+        "timestamp": "2026-09-10T12:15:09-05:00",
+        "files_changed": [
+          ".breadcrumbs.yaml",
+          ".empirica/active_transaction_term_D79198A7-3CBB-45.json",
+          ".empirica/sessions/sessions.db",
+          ".empirica/subagent_sessions/workflow-subagent_20260905_163530.json",
+          ".empirica/subagent_sessions/workflow-subagent_20260910_104439.json",
+          ".empirica/subagent_sessions/workflow-subagent_20260910_105743.json",
+          ".empirica/subagent_sessions/workflow-subagent_20260910_105929.json",
+          ".empirica_reflex_logs/checkpoints/e20c0bc7-9843-402f-a04c-9386493214d2/checkpoint_POSTFLIGHT_3_20260910_171434.json",
+          ".empirica_reflex_logs/checkpoints/e20c0bc7-9843-402f-a04c-9386493214d2/checkpoint_PREFLIGHT_3_20260910_160524.json"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/sessions/sessions.db-shm",
+        ".empirica/sessions/sessions.db-wal"
+      ],
+      "diff_stat": ".empirica/sessions/sessions.db     | Bin 3452928 -> 3452928 bytes\n .empirica/sessions/sessions.db-shm | Bin 32768 -> 0 bytes\n .empirica/sessions/sessions.db-wal |   0\n 3 files changed, 0 insertions(+), 0 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.92,
+      "curr": 0.88,
+      "delta": -0.04
+    },
+    "uncertainty": {
+      "prev": 0.03,
+      "curr": 0.08,
+      "delta": 0.05
+    }
+  },
+  "token_count": 213
+}

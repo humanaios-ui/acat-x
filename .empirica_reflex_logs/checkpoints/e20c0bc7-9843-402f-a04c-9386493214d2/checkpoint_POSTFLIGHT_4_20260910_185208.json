@@ -1,0 +1,81 @@
+{
+  "session_id": "e20c0bc7-9843-402f-a04c-9386493214d2",
+  "phase": "POSTFLIGHT",
+  "round": 4,
+  "timestamp": "2026-09-10T18:51:53.740704+00:00",
+  "vectors": {
+    "know": 0.9,
+    "uncertainty": 0.05
+  },
+  "overall_confidence": 0.633,
+  "meta": {
+    "reasoning": "Final session close: Mailbox polled (0 new items, clear). Phase 3 coordination plan execution complete across 3 transactions (mailbox \u2192 workflow \u2192 goal execution). Work committed and ready for Sep 11-24 execution window.",
+    "task_summary": "Final session close: Mailbox polled (0 new items, clear). Phase 3 coordination plan execution complete across 3 transactions (mailbox \u2192 workflow \u2192 goal execution). Work committed and ready for Sep 11-24 execution window.",
+    "postflight_confidence": 0.95,
+    "internal_consistency": "poor",
+    "deltas": {
+      "know": 0.02,
+      "uncertainty": -0.03
+    },
+    "trajectory_issues": [],
+    "transaction_id": "8164cb74-ef63-402a-9180-774e926d7301",
+    "tool_call_count": 0,
+    "work_type": null,
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": {
+      "solicited_prompts": 0,
+      "unsolicited_prompts": 2
+    },
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 0,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok"
+    },
+    "coverage": "Session complete: mailbox current, Phase 3 coordination plan delivered and committed, acat-x ready for execution window.",
+    "git_commit_sha": "4dd665bacd0250fef1a7d3cda5e66aa943e18ade",
+    "git_notes_ref": "empirica/session/e20c0bc7-9843-402f-a04c-9386493214d2/POSTFLIGHT/4"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "036f1a53c51c5b095ae5f2a6300a29b930726055",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_D79198A7-3CBB-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [
+        ".empirica/sessions/sessions.db-shm",
+        ".empirica/sessions/sessions.db-wal"
+      ],
+      "diff_stat": ".../active_transaction_term_D79198A7-3CBB-45.json  |   6 +++---\n .empirica/sessions/sessions.db                     | Bin 3452928 -> 3461120 bytes\n .empirica/sessions/sessions.db-shm                 | Bin 32768 -> 0 bytes\n .empirica/sessions/sessions.db-wal                 |   0\n 4 files changed, 3 insertions(+), 3 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.88,
+      "curr": 0.9,
+      "delta": 0.02
+    },
+    "uncertainty": {
+      "prev": 0.08,
+      "curr": 0.05,
+      "delta": -0.03
+    }
+  },
+  "token_count": 299
+}
