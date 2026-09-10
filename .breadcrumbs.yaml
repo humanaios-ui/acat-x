@@ -4,22 +4,22 @@
 # fully measure holistic epistemic state. Use alongside self-assessment,
 # not as a replacement. See dual-track calibration philosophy in docs.
 grounded_calibration:
-  last_updated: "2026-09-10T10:05:33.975843"
+  last_updated: "2026-09-10T12:14:47.940526"
   ai_id: acat-x
-  observations: 1366
+  observations: 1403
   grounded_coverage: 0.92
   divergence:
     impact: +0.72
-    do: +0.41
-    uncertainty: -0.40
+    do: +0.42
+    uncertainty: -0.41
     completion: +0.38
     know: +0.24
-    context: +0.17
+    context: +0.16
     change: -0.14
     state: -0.12
-    signal: +0.06
+    signal: +0.05
     density: -0.05
-    clarity: +0.00
+    clarity: -0.00
   ungrounded: [engagement]
   grounded_bias_corrections:
     do: -0.25
@@ -27,41 +27,41 @@ grounded_calibration:
     impact: -0.25
     uncertainty: +0.25
     know: -0.24
-    context: -0.17
+    context: -0.16
     change: +0.14
     state: +0.12
-    signal: -0.06
+    signal: -0.05
     density: +0.05
-    clarity: -0.00
+    clarity: +0.00
   phase_weights:
     noetic: 0.5
     praxic: 0.5
     source: no_tool_data
-  holistic_calibration_score: 0.2134
+  holistic_calibration_score: 0.3159
   holistic_gaps:
-    uncertainty: -0.3766
-    context: -0.2875
+    uncertainty: -0.5435
+    signal: -0.4028
+    context: -0.4000
+    impact: +0.2500
     state: -0.2500
     clarity: -0.2500
-    impact: +0.2500
     completion: +0.2500
-    signal: -0.1873
-    density: -0.1838
-    do: +0.1750
-    know: +0.1625
-    change: +0.1000
+    density: -0.1996
+    change: -0.1500
+    do: +0.1167
+    know: -0.0400
   insights:
     - vector: uncertainty
       phase: both
       pattern: chronic_underestimate
       severity: 1.00
-      description: "uncertainty underestimated in 10/10 calibrations (mean gap -0.35)"
+      description: "uncertainty underestimated in 10/10 calibrations (mean gap -0.37)"
       suggestion: "increase_self_assessment:uncertainty"
     - vector: do
       phase: both
       pattern: chronic_overestimate
       severity: 1.00
-      description: "do overestimated in 5/5 calibrations (mean gap +0.51)"
+      description: "do overestimated in 5/5 calibrations (mean gap +0.41)"
       suggestion: "reduce_self_assessment:do"
     - vector: state
       phase: both
@@ -84,9 +84,9 @@ grounded_calibration:
 # Learning trajectory (PREFLIGHT→POSTFLIGHT deltas — measures learning, NOT calibration bias)
 # For actual bias corrections see grounded_calibration.grounded_bias_corrections
 learning_trajectory:
-  last_updated: "2026-09-10T10:05:33.428626"
+  last_updated: "2026-09-10T12:14:46.559831"
   ai_id: acat-x
-  observations: 393
+  observations: 395
   session_deltas:
     completion: +0.25
     clarity: +0.25
@@ -96,11 +96,11 @@ learning_trajectory:
     state: +0.13
     signal: +0.13
     do: +0.10
+    uncertainty: +0.09
     impact: -0.08
     context: +0.07
-    know: +0.01
+    know: -0.03
     engagement: -0.01
-    uncertainty: -0.01
   readiness:
     min_know: 0.70
     max_uncertainty: 0.35
@@ -111,27 +111,27 @@ learning_trajectory:
 
 # Brier calibration (auto-updated by Empirica post-test verification)
 brier_calibration:
-  last_updated: "2026-09-10T10:05:33.462098"
+  last_updated: "2026-09-10T12:14:46.626530"
   ai_id: acat-x
   note: "Murphy (1973) decomposition: BS = Reliability - Resolution + Uncertainty"
   noetic:
-    brier_score: 0.0895
-    reliability: 0.0683
-    resolution: 0.0160
-    uncertainty: 0.0372
+    brier_score: 0.0905
+    reliability: 0.0676
+    resolution: 0.0137
+    uncertainty: 0.0366
     n_predictions: 50
     trend: improving
   praxic:
-    brier_score: 0.1722
-    reliability: 0.0988
-    resolution: 0.0212
-    uncertainty: 0.0945
+    brier_score: 0.1566
+    reliability: 0.0875
+    resolution: 0.0184
+    uncertainty: 0.0875
     n_predictions: 50
-    trend: stable
+    trend: degrading
   combined:
-    brier_score: 0.1371
-    reliability: 0.0736
-    resolution: 0.0199
-    uncertainty: 0.0834
+    brier_score: 0.1235
+    reliability: 0.0698
+    resolution: 0.0197
+    uncertainty: 0.0735
     n_predictions: 50
-    trend: improving
+    trend: degrading

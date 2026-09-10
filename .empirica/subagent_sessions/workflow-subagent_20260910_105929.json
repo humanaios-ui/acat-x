@@ -1,0 +1,28 @@
+{
+  "agent_name": "workflow-subagent",
+  "child_session_id": "98394f32-6cbb-4f99-9fc4-25ed9b83164f",
+  "parent_session_id": "e20c0bc7-9843-402f-a04c-9386493214d2",
+  "started_at": "2026-09-10T10:59:29.722899",
+  "status": "completed",
+  "budget": {
+    "budget_id": "b5e13cca-92cf-46b7-a0fa-e7829f726290",
+    "budget_remaining": 20,
+    "strategy": "spontaneous",
+    "domain": "general",
+    "domain_budget": 20,
+    "expected_gain": 0.5,
+    "priority": 0.5
+  },
+  "completed_at": "2026-09-10T11:00:56.845088",
+  "rollup_summary": {
+    "extracted": 0,
+    "logged": {
+      "findings": 0,
+      "unknowns": 0,
+      "dead_ends": 0
+    },
+    "transcript_path": "/Users/andersonfamily/.claude/projects/-Users-andersonfamily-practices-acat-x/54a89480-3f53-4f5c-a2a1-0d48df62b9c0/subagents/workflows/wf_7afa2793-a33/agent-ac8eba65dae7acbe0.jsonl",
+    "subagent_tool_calls": 0,
+    "delegated_to_parent": false
+  }
+}
