@@ -1,0 +1,143 @@
+{
+  "session_id": "e20c0bc7-9843-402f-a04c-9386493214d2",
+  "phase": "POSTFLIGHT",
+  "round": 2,
+  "timestamp": "2026-09-10T15:05:27.949744+00:00",
+  "vectors": {
+    "know": 0.8,
+    "uncertainty": 0.12
+  },
+  "overall_confidence": 0.6,
+  "meta": {
+    "reasoning": "Transaction complete: Mailbox polled successfully (1 collab_brief from mesh-support on Phase 3 Wave 1 Blocker Specs). Response received and logged. Phase 3 mesh coordination status documented. Receive-side work done; praxic updates deferred pending full proposal content access.",
+    "task_summary": "Transaction complete: Mailbox polled successfully (1 collab_brief from mesh-support on Phase 3 Wave 1 Blocker Specs). Response received and logged. Phase 3 mesh coordination status documented. Receive-side work done; praxic updates deferred pending full proposal content access.",
+    "postflight_confidence": 0.88,
+    "internal_consistency": "moderate",
+    "deltas": {
+      "know": -0.05,
+      "uncertainty": -0.03
+    },
+    "trajectory_issues": [],
+    "transaction_id": "109840da-c445-4ea5-8e30-d8a3f855a5dc",
+    "tool_call_count": 0,
+    "work_type": null,
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 2,
+        "unknowns": 0,
+        "dead_ends": 3,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "claims": {
+        "declared": 3,
+        "held": 0,
+        "refuted": 0,
+        "untested": 3,
+        "gaps": [
+          {
+            "claim": "Mesh-support has responded to Phase 3 Wave 1 blocker specs inquiry (collab_brief, Sep 10 02:03 UTC). Status message logged.",
+            "grounding": null,
+            "note": "declared at CHECK, never adjudicated \u2014 acted on, never checked"
+          },
+          {
+            "claim": "Phase 3 mesh coordination goal (in_progress) now has empirical data point on mesh-support's response status.",
+            "grounding": null,
+            "note": "declared at CHECK, never adjudicated \u2014 acted on, never checked"
+          },
+          {
+            "claim": "Mailbox contains no ECO-gated proposals requiring decision-gate involvement.",
+            "grounding": null,
+            "note": "declared at CHECK, never adjudicated \u2014 acted on, never checked"
+          }
+        ],
+        "adjudication": {
+          "applied": 1,
+          "unmatched": 2,
+          "entries": [
+            {
+              "reason": "unrecognized_verdict",
+              "keys_seen": [
+                "claim",
+                "evidence",
+                "index",
+                "verdict"
+              ]
+            },
+            {
+              "reason": "unrecognized_verdict",
+              "keys_seen": [
+                "claim",
+                "evidence",
+                "index",
+                "verdict"
+              ]
+            }
+          ],
+          "hint": "each entry needs 'verdict' (held|refuted|untested) plus one of 'claim' (the declared text), 'index' (1-based), or 'id'"
+        },
+        "adjudication_warning": "2 of 3 submitted verdict(s) were NOT applied \u2014 the claims they targeted are counted as 'untested' below, which understates what you actually checked. Fix the entry shape and the untested count will drop."
+      },
+      "claim_adjudication_warning": "2 of 3 submitted verdict(s) were NOT applied \u2014 the claims they targeted are counted as 'untested' below, which understates what you actually checked. Fix the entry shape and the untested count will drop.",
+      "claim_gap_note": "3 of 3 claims declared at CHECK were never adjudicated \u2014 recorded as UNTESTED. These are beliefs the praxic work rested on that nothing verified; they are exactly what a single `know` score averages away.",
+      "edges_with_artifacts": 1,
+      "artifacts_with_sources": 1,
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "partial",
+        "connected_ratio": 0.2,
+        "connected_artifacts": 1,
+        "total_artifacts": 5,
+        "satisfied": false,
+        "enforced": true,
+        "note": "artifact-graph gate [ENFORCED \u2014 blocks]: 1/5 artifacts connected (20%), below the 34% floor \u2014 MUST weave more (transition blocked). Structural goal-edges are automatic; add semantic edges (log-artifacts nodes+edges, or --related-to / --edge on any *-log) to raise connectivity."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok"
+    },
+    "coverage": "Receive-side mailbox work: poll, read, log. Deferred: praxic goal updates and coordination timeline refinement.",
+    "git_commit_sha": "18cb23df7d79ae02a9edb0872e1112a0f74ff74b",
+    "git_notes_ref": "empirica/session/e20c0bc7-9843-402f-a04c-9386493214d2/POSTFLIGHT/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "c50ba3773438f494798417d2e1b50316e747f437",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_D79198A7-3CBB-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".../active_transaction_term_D79198A7-3CBB-45.json  |  10 +++-------\n .empirica/sessions/sessions.db                     | Bin 3338240 -> 3358720 bytes\n 2 files changed, 3 insertions(+), 7 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.75,
+      "curr": 0.8,
+      "delta": 0.05
+    },
+    "uncertainty": {
+      "prev": 0.2,
+      "curr": 0.12,
+      "delta": -0.08
+    }
+  },
+  "token_count": 681
+}

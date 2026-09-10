@@ -1,0 +1,51 @@
+{
+  "session_id": "e20c0bc7-9843-402f-a04c-9386493214d2",
+  "phase": "CHECK",
+  "round": 3,
+  "timestamp": "2026-09-10T15:03:16.387615+00:00",
+  "vectors": {
+    "know": 0.75,
+    "uncertainty": 0.2
+  },
+  "overall_confidence": 0.583,
+  "meta": {
+    "decision": "proceed",
+    "reasoning": "Noetic work (mailbox poll, response receipt, finding log) is complete. Blocked on reading full proposal content for praxic goal updates. Recommend: (1) attempt to read proposal body details, or (2) reply to mesh-support requesting full specs details if current message is just a status ping.",
+    "confidence": 0.8,
+    "gaps": [
+      "uncertainty: 0.20"
+    ],
+    "cycle": null,
+    "round": 3,
+    "transaction_id": "109840da-c445-4ea5-8e30-d8a3f855a5dc",
+    "git_commit_sha": "02204df6af7f40f51baa66c6ef3b5d8fc8171f27",
+    "git_notes_ref": "empirica/session/e20c0bc7-9843-402f-a04c-9386493214d2/CHECK/3"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "c50ba3773438f494798417d2e1b50316e747f437",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_D79198A7-3CBB-45.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".../active_transaction_term_D79198A7-3CBB-45.json  |  33 ++++++++++++++++-----\n .empirica/sessions/sessions.db                     | Bin 3338240 -> 3354624 bytes\n 2 files changed, 25 insertions(+), 8 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.85,
+      "curr": 0.75,
+      "delta": -0.1
+    },
+    "uncertainty": {
+      "prev": 0.15,
+      "curr": 0.2,
+      "delta": 0.05
+    }
+  },
+  "token_count": 161
+}

@@ -1,13 +1,9 @@
 {
-  "transaction_id": "adafc615-3a0e-4f85-9e50-58501d9c139e",
+  "transaction_id": "109840da-c445-4ea5-8e30-d8a3f855a5dc",
   "session_id": "e20c0bc7-9843-402f-a04c-9386493214d2",
   "claude_session_id": null,
-  "preflight_timestamp": 1789011430.3923998,
+  "preflight_timestamp": 1789052392.309557,
   "status": "closed",
   "project_path": "/Users/andersonfamily/practices/acat-x",
-  "updated_at": 1789041972.806166,
-  "domain": "acat-x",
-  "criticality": "critical",
-  "work_type": "infra",
-  "cascade_profile": "default"
+  "updated_at": 1789052726.918586
 }
