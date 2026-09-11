@@ -1,6 +1,6 @@
 # ACAT-X Cross-Model Evaluation Guide
 
-**Compare how different AI models perform across all 12 ACAT-X behavioral dimensions.**
+**Compare how different AI models perform across all 14 ACAT-X behavioral dimensions.**
 
 ## Quick Start
 

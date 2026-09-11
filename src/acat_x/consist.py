@@ -16,15 +16,15 @@ Verified against inspect_ai==0.3.251 (Epochs(epochs, reducer),
 
 from collections import Counter
 
-from inspect_ai import Task, task, Epochs
-from inspect_ai.dataset import Sample, MemoryDataset
+from inspect_ai import Epochs, Task, task
+from inspect_ai.dataset import MemoryDataset, Sample
 from inspect_ai.model import GenerateConfig
 from inspect_ai.scorer import (
     Score,
     Target,
     accuracy,
-    scorer,
     score_reducer,
+    scorer,
     stderr,
 )
 from inspect_ai.solver import TaskState, generate, system_message
@@ -92,11 +92,11 @@ def modal_agreement():
 @task
 def acat_x_consist(epochs: int = 5, temperature: float = 0.7) -> Task:
     """ACAT-X consist dimension: measure consistency across epochs.
-    
+
     Args:
         epochs: Number of times to run each sample (default 5)
         temperature: Sampling temperature (>0 to induce variance)
-    
+
     Returns:
         Inspect Task measuring behavioral consistency via modal agreement
     """

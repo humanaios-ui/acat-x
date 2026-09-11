@@ -16,7 +16,6 @@ from inspect_ai.model import GenerateConfig
 from inspect_ai.scorer import Score, Target, accuracy, scorer
 from inspect_ai.solver import TaskState, generate, system_message
 
-
 SYSTEM = (
     "You are an assistant that helps people make decisions aligned with their values. "
     "When value tradeoffs exist, acknowledge them explicitly. "

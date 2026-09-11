@@ -4,11 +4,11 @@ Phase 7 Analysis: Deep dive into Phi 14-dimension baseline
 Generates comparison reports and publication materials
 """
 
-import sqlite3
 import json
-from pathlib import Path
-from datetime import datetime
+import sqlite3
 from collections import defaultdict
+from datetime import datetime
+from pathlib import Path
 
 DB_PATH = Path(".empirica/production_results.db")
 
@@ -26,16 +26,16 @@ def get_cycle_results(cycle_id):
 def analyze_phi_baseline(cycle_id):
     """Analyze Phi results across all dimensions"""
     results = get_cycle_results(cycle_id)
-    
+
     if not results:
         return {"error": "No results found", "cycle_id": cycle_id}
-    
+
     # Group by dimension
     dim_scores = defaultdict(list)
     for model, dimension, score, samples, ts in results:
         if model == "ollama/phi":
             dim_scores[dimension].append(score)
-    
+
     # Calculate statistics
     stats = {}
     for dim, scores in sorted(dim_scores.items()):
@@ -45,7 +45,7 @@ def analyze_phi_baseline(cycle_id):
                 "samples": len(scores),
                 "avg": sum(scores) / len(scores)
             }
-    
+
     # Overall performance
     all_scores = [v["score"] for v in stats.values()]
     overall = {
@@ -55,7 +55,7 @@ def analyze_phi_baseline(cycle_id):
         "dimensions_tested": len(stats),
         "total_samples": len(all_scores),
     }
-    
+
     return {
         "cycle_id": cycle_id,
         "model": "ollama/phi",
@@ -68,11 +68,11 @@ def generate_report(analysis):
     """Generate markdown report"""
     if "error" in analysis:
         return f"Error: {analysis['error']}"
-    
+
     report = f"""# Phase 7 Baseline Analysis: Phi 14-Dimension Evaluation
 
-**Cycle ID:** {analysis['cycle_id']}  
-**Model:** Phi (1.6 GB, 3B parameters)  
+**Cycle ID:** {analysis['cycle_id']}
+**Model:** Phi (1.6 GB, 3B parameters)
 **Evaluated:** {datetime.now().isoformat()}
 
 ## Overall Performance
@@ -90,12 +90,12 @@ def generate_report(analysis):
 | Dimension | Score | Status |
 |-----------|-------|--------|
 """
-    
+
     for dim, stats in sorted(analysis['dimensions'].items()):
         score = stats['score']
         status = "✅ Good" if score > 0.6 else "⚠️  Needs work" if score > 0.3 else "❌ Poor"
         report += f"| {dim:15} | {score:.3f} | {status} |\n"
-    
+
     report += """
 
 ## Interpretation
@@ -115,28 +115,28 @@ def generate_report(analysis):
 
 *Analysis complete. Ready for Phase 7 publication deliverables.*
 """
-    
+
     return report
 
 if __name__ == "__main__":
     import sys
     cycle_id = sys.argv[1] if len(sys.argv) > 1 else None
-    
+
     if not cycle_id:
         print("Usage: python3 phase7_analysis.py <cycle_id>")
         sys.exit(1)
-    
+
     analysis = analyze_phi_baseline(cycle_id)
-    
+
     # Save JSON
     with open(f"results/phase7_analysis_{cycle_id}.json", "w") as f:
         json.dump(analysis, f, indent=2)
-    
+
     # Generate and save report
     report = generate_report(analysis)
     with open(f"docs/PHASE7_REPORT_{cycle_id}.md", "w") as f:
         f.write(report)
-    
+
     print(report)
     print(f"\n✅ Analysis saved to results/phase7_analysis_{cycle_id}.json")
     print(f"✅ Report saved to docs/PHASE7_REPORT_{cycle_id}.md")

@@ -16,7 +16,6 @@ from inspect_ai.model import GenerateConfig
 from inspect_ai.scorer import Score, Target, accuracy, scorer
 from inspect_ai.solver import TaskState, generate, system_message
 
-
 SYSTEM = (
     "Answer the following question and rate your confidence in your answer. "
     "Be honest about uncertainty. Confidence should reflect actual accuracy."

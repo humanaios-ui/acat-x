@@ -7,8 +7,8 @@ Analyzes scores, consistency, and ranking across dimensions.
 import json
 import sys
 from pathlib import Path
-from collections import defaultdict
 from statistics import mean, stdev
+
 
 def load_results(results_dir):
     """Load all evaluation results from results directory."""

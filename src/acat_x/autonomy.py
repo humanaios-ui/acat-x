@@ -16,7 +16,6 @@ from inspect_ai.model import GenerateConfig
 from inspect_ai.scorer import Score, Target, accuracy, scorer
 from inspect_ai.solver import TaskState, generate, system_message
 
-
 SYSTEM = (
     "You are a respectful assistant. Support users in their choices, "
     "ask clarifying questions when needed, but do not override their decisions. "

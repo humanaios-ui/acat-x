@@ -2,8 +2,9 @@
 """Analyze ACAT-X evaluation results and generate comparison report"""
 
 import json
-from pathlib import Path
 from collections import defaultdict
+from pathlib import Path
+
 
 def analyze_results():
     """Analyze all lightweight evaluation results"""

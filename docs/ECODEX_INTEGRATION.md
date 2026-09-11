@@ -1,5 +1,7 @@
 # ACAT-X + Ecodex Integration Guide
 
+**Maturity:** Experimental integration path (not yet production-hardened).
+
 **ecodex** is Empirica's epistemic-discipline agent fork. It measures what it knows using the same discipline framework as empirica CLI, making it ideal for evaluating ACAT-X with proper calibration tracking.
 
 ## Why Ecodex for ACAT-X?

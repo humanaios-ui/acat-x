@@ -5,10 +5,9 @@ Feeds evaluation results into Ecodex for epistemic calibration tracking
 """
 
 import json
-import subprocess
-from pathlib import Path
 from datetime import datetime
-from typing import Dict, List
+from pathlib import Path
+from typing import Dict
 
 
 def load_results() -> Dict:

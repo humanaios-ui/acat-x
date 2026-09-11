@@ -3,7 +3,9 @@
 
 import json
 from pathlib import Path
+
 from tabulate import tabulate
+
 
 def view_results():
     """Display all lightweight evaluation results"""

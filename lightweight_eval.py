@@ -1,205 +1,272 @@
 #!/usr/bin/env python3
-"""
-Lightweight ACAT-X Evaluator
-Directly calls Ollama/Claude without Inspect AI overhead
-"""
+"""Canonical lightweight ACAT-X evaluator for local/API models."""
 
-import sys
+from __future__ import annotations
+
+import argparse
 import json
-import time
+import os
+import random
 import subprocess
-from pathlib import Path
+import sys
+import time
+from dataclasses import asdict, dataclass
 from datetime import datetime
-from typing import Tuple
+from pathlib import Path
+from typing import Any, Dict, Optional
 
-# Add src to path
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
+from acat_x.errors import (  # noqa: E402
+    ConfigurationError,
+    DatasetError,
+    ModelInvocationError,
+    TaskLoadError,
+)
+from acat_x.scoring_utils import combined_score  # noqa: E402
 
-def call_ollama(model_name: str, prompt: str) -> str:
-    """Call Ollama model directly via CLI"""
+DEFAULT_TIMEOUT_SECONDS = 60
+DEFAULT_RETRIES = 2
+
+
+@dataclass(frozen=True)
+class RunConfig:
+    dimension: str
+    model_spec: str
+    num_samples: int
+    timeout_seconds: int
+    retries: int
+    semantic_weight: float
+    seed: int
+
+
+def _set_seed(seed: int) -> None:
+    random.seed(seed)
+    os.environ["PYTHONHASHSEED"] = str(seed)
+
+
+def _call_ollama(model_name: str, prompt: str, timeout_seconds: int) -> str:
     try:
         result = subprocess.run(
             ["ollama", "run", model_name],
             input=prompt,
             capture_output=True,
             text=True,
-            timeout=300,  # 5 minutes timeout for slow models
+            timeout=timeout_seconds,
+            check=False,
         )
-        if result.returncode != 0:
-            raise RuntimeError(f"Ollama error: {result.stderr}")
-        return result.stdout.strip()
-    except subprocess.TimeoutExpired:
-        raise RuntimeError("Ollama request timed out (model too slow?)")
-    except FileNotFoundError:
-        raise RuntimeError("Ollama not found in PATH")
+    except subprocess.TimeoutExpired as exc:
+        raise ModelInvocationError(f"Ollama request timed out after {timeout_seconds}s") from exc
+    except FileNotFoundError as exc:
+        raise ModelInvocationError("Ollama executable not found in PATH") from exc
+
+    if result.returncode != 0:
+        raise ModelInvocationError((result.stderr or "Ollama process failed").strip())
+
+    return result.stdout.strip()
 
 
-def get_model_output(model_spec: str, prompt: str) -> str:
-    """Get model output for a prompt"""
-    if model_spec.startswith("ollama/"):
-        model_name = model_spec.replace("ollama/", "")
-        return call_ollama(model_name, prompt)
-    elif model_spec.startswith("anthropic/"):
-        # Fall back to OpenAI client for Claude
-        from openai import OpenAI
-        client = OpenAI()
-        response = client.messages.create(
-            model=model_spec.replace("anthropic/", ""),
+def _call_claude(model_name: str, prompt: str) -> str:
+    try:
+        from anthropic import Anthropic
+    except ImportError as exc:
+        raise ModelInvocationError("Missing dependency: anthropic") from exc
+
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        raise ConfigurationError("ANTHROPIC_API_KEY is required for anthropic/* models")
+
+    client = Anthropic(api_key=api_key)
+    try:
+        message = client.messages.create(
+            model=model_name,
             max_tokens=500,
             messages=[{"role": "user", "content": prompt}],
-            temperature=0.7,
         )
-        return response.content[0].text
-    else:
-        raise ValueError(f"Unknown model spec: {model_spec}")
+    except Exception as exc:  # pragma: no cover - network/API failure path
+        raise ModelInvocationError(f"Anthropic API error: {exc}") from exc
+
+    first_block = message.content[0]
+    return getattr(first_block, "text", str(first_block))
 
 
-def evaluate_dimension(
-    dimension: str,
-    model_spec: str,
-    num_samples: int = 5,
-) -> dict:
-    """Run evaluation for a single dimension"""
+def _call_openai(model_name: str, prompt: str) -> str:
+    try:
+        from openai import OpenAI
+    except ImportError as exc:
+        raise ModelInvocationError("Missing dependency: openai") from exc
 
-    model_name = model_spec.replace("ollama/", "").replace("anthropic/", "")
+    api_key = os.environ.get("OPENAI_API_KEY")
+    if not api_key:
+        raise ConfigurationError("OPENAI_API_KEY is required for openai/* models")
 
-    print(f"\n{'='*60}")
-    print(f"Dimension: {dimension.upper()}")
-    print(f"Model: {model_name}")
-    print(f"Samples: {num_samples}")
-    print(f"{'='*60}\n")
+    client = OpenAI(api_key=api_key)
+    try:
+        response = client.chat.completions.create(
+            model=model_name,
+            max_tokens=500,
+            messages=[{"role": "user", "content": prompt}],
+        )
+    except Exception as exc:  # pragma: no cover - network/API failure path
+        raise ModelInvocationError(f"OpenAI API error: {exc}") from exc
 
-    # Load the task module dynamically
+    content = response.choices[0].message.content
+    return content or ""
+
+
+def get_model_output(model_spec: str, prompt: str, timeout_seconds: int = DEFAULT_TIMEOUT_SECONDS) -> str:
+    if model_spec.startswith("ollama/"):
+        return _call_ollama(model_spec.replace("ollama/", "", 1), prompt, timeout_seconds)
+    if model_spec.startswith("anthropic/"):
+        return _call_claude(model_spec.replace("anthropic/", "", 1), prompt)
+    if model_spec.startswith("openai/"):
+        return _call_openai(model_spec.replace("openai/", "", 1), prompt)
+    raise ConfigurationError(f"Unknown model spec: {model_spec}")
+
+
+def _load_task(dimension: str):
     try:
         task_module = __import__(f"acat_x.{dimension}", fromlist=[f"acat_x_{dimension}"])
         task_fn = getattr(task_module, f"acat_x_{dimension}")
-        task = task_fn()
-    except Exception as e:
-        print(f"❌ Failed to load task {dimension}: {e}")
-        return {"error": str(e), "dimension": dimension, "model": model_name}
+        return task_fn()
+    except Exception as exc:
+        raise TaskLoadError(f"Failed to load task '{dimension}': {exc}") from exc
 
-    # Get samples from task (Inspect Task object)
+
+def _extract_samples(task: Any, num_samples: int):
     try:
         samples = list(task.dataset)[:num_samples]
-    except Exception as e:
-        print(f"❌ Failed to get samples: {e}")
-        return {"error": str(e), "dimension": dimension, "model": model_name}
+    except Exception as exc:
+        raise DatasetError(f"Failed to extract samples: {exc}") from exc
+
+    if not samples:
+        raise DatasetError("Task dataset is empty")
+    return samples
+
+
+def evaluate_dimension(config: RunConfig) -> Dict[str, Any]:
+    _set_seed(config.seed)
+
+    task = _load_task(config.dimension)
+    samples = _extract_samples(task, config.num_samples)
 
     results = []
-    scores = []
+    failures = []
 
     for i, sample in enumerate(samples, 1):
-        try:
-            print(f"[{i}/{num_samples}] ", end="", flush=True)
+        target = str(getattr(sample, "target", "") or "")
 
-            # Generate model response
+        attempt_error: Optional[str] = None
+        output = ""
+        elapsed = 0.0
+
+        for attempt in range(config.retries + 1):
             start = time.time()
-            model_output = get_model_output(model_spec, sample.input)
-            elapsed = time.time() - start
+            try:
+                output = get_model_output(config.model_spec, sample.input, config.timeout_seconds)
+                elapsed = time.time() - start
+                attempt_error = None
+                break
+            except (ModelInvocationError, ConfigurationError) as exc:
+                elapsed = time.time() - start
+                attempt_error = str(exc)
+                if attempt >= config.retries:
+                    failures.append({
+                        "sample_id": i,
+                        "error": attempt_error,
+                        "attempts": attempt + 1,
+                    })
 
-            # Score the response (Inspect Task has singular .scorer)
-            score_result = None
-            if hasattr(task, 'scorer'):
-                try:
-                    # Create a minimal state-like object for scoring
-                    class MinimalState:
-                        def __init__(self, output_text):
-                            self.output = type('obj', (object,), {'completion': output_text})()
-
-                    state = MinimalState(model_output)
-
-                    # Try to call the scorer
-                    from inspect_ai.scorer import Target
-                    target = Target(target=sample.target) if hasattr(sample, 'target') else None
-                    score_result = task.scorer.scorer_fn(state, target)
-
-                except Exception as scorer_error:
-                    print(f"\n  Scorer error: {scorer_error}")
-                    # Fallback: assign random score on error
-                    score_result = None
-
-            # Extract score value (Inspect Score objects have .value)
-            if score_result and hasattr(score_result, 'value'):
-                score_value = score_result.value if isinstance(score_result.value, (int, float)) else 0
-            else:
-                score_value = 0
-            scores.append(score_value)
-
-            result = {
-                "sample_id": i,
-                "input": sample.input[:100],  # Truncate for readability
-                "output": model_output[:200],
-                "score": score_value,
-                "elapsed_sec": elapsed,
-            }
-            results.append(result)
-
-            print(f"✅ Score: {score_value:.3f} ({elapsed:.1f}s)")
-
-        except Exception as e:
-            print(f"⚠️  Sample error: {e}")
+        if attempt_error and not output:
             continue
 
-    # Compute statistics
-    if scores:
-        avg_score = sum(scores) / len(scores)
-        min_score = min(scores)
-        max_score = max(scores)
-    else:
-        avg_score = min_score = max_score = 0
+        breakdown = combined_score(output, target, semantic_weight=config.semantic_weight)
 
-    # Summary
-    print(f"\n{'─'*60}")
-    print(f"Summary:")
-    print(f"  Samples completed: {len(results)}")
-    print(f"  Average score: {avg_score:.3f}")
-    print(f"  Range: {min_score:.3f} - {max_score:.3f}")
-    print(f"{'─'*60}\n")
+        results.append(
+            {
+                "sample_id": i,
+                "input": sample.input[:200],
+                "output": output[:400],
+                "target": target[:200],
+                "score": breakdown.combined,
+                "score_breakdown": asdict(breakdown),
+                "elapsed_sec": elapsed,
+            }
+        )
+
+    scores = [r["score"] for r in results]
 
     return {
-        "dimension": dimension,
-        "model": model_name,
-        "samples": results,
+        "dimension": config.dimension,
+        "model": config.model_spec,
         "stats": {
             "count": len(results),
-            "average": avg_score,
-            "min": min_score,
-            "max": max_score,
+            "average": (sum(scores) / len(scores)) if scores else 0.0,
+            "min": min(scores) if scores else 0.0,
+            "max": max(scores) if scores else 0.0,
+            "failures": len(failures),
         },
+        "samples": results,
+        "failures": failures,
+        "run_config": asdict(config),
         "timestamp": datetime.now().isoformat(),
     }
 
 
-def main():
-    if len(sys.argv) < 3:
-        print("Usage: python lightweight_eval.py <dimension> <model_spec> [num_samples]")
-        print("\nExamples:")
-        print("  python lightweight_eval.py consist ollama/phi")
-        print("  python lightweight_eval.py consist ollama/phi 10")
-        print("  python lightweight_eval.py truth ollama/mistral 5")
-        sys.exit(1)
+def parse_args(argv: list[str]) -> RunConfig:
+    parser = argparse.ArgumentParser(description="Canonical lightweight ACAT-X evaluator")
+    parser.add_argument("dimension", help="ACAT-X dimension module name")
+    parser.add_argument("model_spec", help="Model spec, e.g. ollama/phi or anthropic/claude-opus-4-1")
+    parser.add_argument("num_samples", nargs="?", type=int, default=3)
+    parser.add_argument("--timeout", type=int, default=DEFAULT_TIMEOUT_SECONDS)
+    parser.add_argument("--retries", type=int, default=DEFAULT_RETRIES)
+    parser.add_argument("--semantic-weight", type=float, default=0.3)
+    parser.add_argument("--seed", type=int, default=42)
+    args = parser.parse_args(argv)
 
-    dimension = sys.argv[1]
-    model_spec = sys.argv[2]
-    num_samples = int(sys.argv[3]) if len(sys.argv) > 3 else 5
+    if args.num_samples <= 0:
+        raise ConfigurationError("num_samples must be > 0")
+    if args.timeout <= 0:
+        raise ConfigurationError("timeout must be > 0")
 
-    # Run evaluation
-    result = evaluate_dimension(dimension, model_spec, num_samples)
+    return RunConfig(
+        dimension=args.dimension,
+        model_spec=args.model_spec,
+        num_samples=args.num_samples,
+        timeout_seconds=args.timeout,
+        retries=max(0, args.retries),
+        semantic_weight=max(0.0, min(1.0, args.semantic_weight)),
+        seed=args.seed,
+    )
 
-    # Save results
-    if "error" not in result or len(result.get("samples", [])) > 0:
-        result_file = Path(f"results/lightweight_{dimension}_{model_spec.replace('/', '_')}.json")
-        result_file.parent.mkdir(parents=True, exist_ok=True)
 
-        with open(result_file, "w") as f:
-            json.dump(result, f, indent=2)
+def main(argv: Optional[list[str]] = None) -> int:
+    try:
+        config = parse_args(argv if argv is not None else sys.argv[1:])
+        result = evaluate_dimension(config)
+    except (ConfigurationError, TaskLoadError, DatasetError) as exc:
+        print(f"❌ {exc}")
+        return 1
 
-        print(f"✅ Results saved to: {result_file}")
-    else:
-        print(f"❌ Evaluation failed: {result.get('error')}")
-        sys.exit(1)
+    results_dir = Path("results")
+    results_dir.mkdir(exist_ok=True)
+    model_safe = config.model_spec.replace("/", "_")
+    result_file = results_dir / f"lightweight_{config.dimension}_{model_safe}.json"
+
+    with open(result_file, "w", encoding="utf-8") as f:
+        json.dump(result, f, indent=2)
+
+    if result["stats"]["count"] == 0:
+        print(f"⚠️  Evaluation completed with no successful samples: {result_file}")
+        return 1
+
+    print(f"✅ Results saved to: {result_file}")
+    print(
+        f"   count={result['stats']['count']} avg={result['stats']['average']:.3f} "
+        f"failures={result['stats']['failures']}"
+    )
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

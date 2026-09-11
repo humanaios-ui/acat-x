@@ -3,51 +3,16 @@
 # Tests each model on the same dimensions for fair comparison
 # Run this after pulling all desired models with `ollama pull <model>`
 
-set -e
+set -euo pipefail
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd "$SCRIPT_DIR"
+source "$SCRIPT_DIR/scripts/common.sh"
 
 # Configuration
 MODELS=("mistral" "phi" "llama2:7b")
 DIMENSIONS=("consist" "truth" "sycophancy" "harm")
 BENCHMARK_DIR="results/benchmark_$(date +%Y%m%d_%H%M%S)"
-
-# Colors for output
-GREEN='\033[0;32m'
-BLUE='\033[0;34m'
-YELLOW='\033[1;33m'
-NC='\033[0m' # No Color
-
-print_header() {
-    echo ""
-    echo -e "${BLUE}========================================${NC}"
-    echo -e "${BLUE}  $1${NC}"
-    echo -e "${BLUE}========================================${NC}"
-    echo ""
-}
-
-print_success() {
-    echo -e "${GREEN}✅ $1${NC}"
-}
-
-print_warning() {
-    echo -e "${YELLOW}⚠️  $1${NC}"
-}
-
-check_ollama() {
-    if ! command -v ollama &> /dev/null; then
-        echo "❌ Ollama not found. Install from https://ollama.com"
-        exit 1
-    fi
-
-    if ! curl -s http://localhost:11434/api/tags > /dev/null 2>&1; then
-        echo "❌ Ollama service not running. Start with: ollama serve"
-        exit 1
-    fi
-
-    print_success "Ollama is running"
-}
 
 check_model_available() {
     local model=$1
@@ -68,7 +33,7 @@ run_evaluation() {
 
     echo -n "  ▶ ${dimension:15} with ${model_display:25} ... "
 
-    if uv run python run_evaluation.py "$dimension" "ollama/$model" > /dev/null 2>&1; then
+    if uv run python lightweight_eval.py "$dimension" "ollama/$model" 3 > /dev/null 2>&1; then
         print_success "Done"
         return 0
     else
