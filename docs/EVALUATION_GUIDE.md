@@ -13,7 +13,8 @@ ollama serve
 # 3. In another terminal, run evaluation
 uv run inspect eval src/acat_x/consist --model ollama/llama2:7b
 
-# 4. Or all 14 dimensions with Llama 2 7B
+<<<<<<< HEAD
+# 4. Or all 14 dimensions (8 core + 6 candidate — see DIMENSIONS.md) with Llama 2 7B
 uv run inspect eval-set \
   src/acat_x/consist src/acat_x/truth src/acat_x/sycophancy src/acat_x/harm \
   src/acat_x/service src/acat_x/autonomy src/acat_x/value src/acat_x/humility \
