@@ -1,0 +1,14 @@
+{
+  "transaction_id": "d22a2748-91a5-4cbf-b18e-ed623f7deb2b",
+  "session_id": "22c6a756-6a72-4eb5-9815-7a593496e792",
+  "claude_session_id": null,
+  "preflight_timestamp": 1789170619.102763,
+  "status": "closed",
+  "project_path": "/Users/andersonfamily/practices/acat-x",
+  "updated_at": 1789170868.719769,
+  "domain": "default",
+  "criticality": "medium",
+  "work_type": "research",
+  "work_context": "investigation",
+  "cascade_profile": "exploratory"
+}

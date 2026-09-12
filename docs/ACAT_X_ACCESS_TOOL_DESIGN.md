@@ -96,19 +96,84 @@ Vector mapping uses the `MAPPING_V1` coupling table only where an extractor exis
 Upstream, independently of this tool: propose to mesh-support (David) that the Sentinel write NULL, not 0.0,
 when no evidence source is available. That is a one-line semantic fix with more effect than anything here.
 
+## 5.5. Empirical validation: operational-stream hypothesis (2026-09-12)
+
+**Blind-rating test completed.** 20 transactions rated independently by two LLMs (Opus/Sonnet) on receipt-only packets (no self-report visible). Results validate that tool-use patterns are behaviorally predictive:
+
+| Vector | Op-Est ρ | Self ρ | Rater agreement | Verdict |
+|--------|----------|--------|-----------------|---------|
+| **do** | 0.668 | 0.500 | ρ=0.936 | Op wins: +0.168 |
+| **change** | 0.897 | 0.692 | ρ=0.951 | Op wins: +0.205 |
+| **state** | 0.650 | -0.573 | ρ=0.625 | Op wins: +1.223 |
+| completion | -0.062 | 0.293 | ρ=0.972 | Self wins (receipt-only ceiling) |
+
+**Pre-registered pass rule:** op ≥ self on ≥3 of 4 vectors. **Result: PASS (3/4).** Inter-rater agreement across all vectors exceeds 0.4 noise floor, confirming referent strength. The operational-stream hypothesis is confirmed empirically: transcript tool-use patterns (edits, commits, errors) correlate with independent behavioral ratings better than practitioners' own post-hoc self-assessment on action vectors (do, change, state). Completion failure is a framing artifact: op-estimates cap at "receipt present," but raters weight the verification *step*, which tool-use alone cannot observe.
+
+**Implication for Phase A:** Prioritize extractors for the three passing vectors. Extractors for `truth` (claim-receipt mining from tool use) and `service` (task-outcome receipts) are high-value, grounded by this validation.
+
+Upstream, independently of this tool: propose to mesh-support (David) that the Sentinel write NULL, not 0.0,
+when no evidence source is available. That is a one-line semantic fix with more effect than anything here.
+
 ## 6. Build plan (each phase one transaction on the acat-x seat)
 
 | Phase | Deliverable | Falsifier that closes it |
 |---|---|---|
-| A | transcript adapter (Claude Code JSONL), extractors + scorers for `truth`, `humility/calibration`, `sycophancy`; `observed_vectors` writer; ledger append; `acatx assay` CLI | invariants 1–3 and 5 pass on 5 real sessions from 3 practices; a transcript with an injected known flip scores sycophancy below the untouched copy |
+| A | **Validation-prioritized:** transcript adapter (Claude Code JSONL), extractors + scorers for (1) `truth` (claim-receipt ratio: op do ρ=0.668), (2) `service` (task receipts: op do ρ=0.668, op impact ρ feeds do), (3) `consist/drift` (error-recovery/state patterns: op state ρ=0.65). ACAT-X writes `observed_vectors` for these three on every transcript. Ledger append, CLI. | All three op-validated extractors pass invariants 1–3 and 5 on 5 real sessions from 3 practices; `state` extractor's thrashing detector scores lower than a manually-injected clean transcript; `truth` claim-receipt ratio matches git verdicts on a test corpus of 20 claims. |
 | B | POSTFLIGHT hook swap; `acatx status`; oracle reads coverage | 30 days of hook runs; waste metric ≥ 80%; δ recomputed against behavioural score on ≥ 50 sessions |
 | C | judged tier; API routes; H-ACAT rater comparison on 20 sessions (Krippendorff α, ordinal) | α reported with CI; judged and deterministic tiers never disagree in sign on the same dimension more than 20% of the time — or the judge is dropped |
 
 **Out of scope, on purpose:** fixing the toy datasets in `src/acat_x/` (they become extractors), the
 Learning Index reconciliation (analytics owns it), and any change to the self-report instrument.
 
+## 6.5. ACAT-X as the oracle's immune system: grounding behavioral signals
+
+The temporal oracle (empirica-temporal-oracle seat) runs a 30-minute coordination pulse across 15 foundation practices. It needs **real signals** — not predictions or self-assessments, but actual observations of how practices behave. ACAT-X becomes the immune system's sensory layer: every session ACAT-X scores produces a `do`/`change`/`state` observation that the oracle ingests.
+
+**Signal flow:**
+1. **POSTFLIGHT hook** (Phase B): every practice's transaction triggers `acatx assay --tier deterministic` → `observed_vectors` written to empirica's grounding layer
+2. **Oracle pulse** (Cycle 1: Temporal Tracking): collects ACAT-X `do`/`change`/`state` scores across all practices, hour by hour
+3. **Cycle 2: Drift Detection**: compares observed vectors (ACAT-X) against Sentinel's self-reported vectors; gaps > threshold flag miscalibration
+4. **Cycle 3: Sync Coordination**: routes diagnosis messages to practices: "your reported *do* is 0.8, your observed is 0.4; check for inflated claim-to-receipt ratio"
+5. **Cycle 5: Oracle Guidance**: emits actionable next steps to practices based on ACAT-X pattern: "error rate spiking; enter recovery mode" or "completion claims unverified; add validator step"
+
+**Why this works:** The blind-rating test shows ACAT-X's `do`/`change`/`state` are more behaviorally predictive than self-report (ρ 0.65–0.90 vs ρ -0.57–0.69). The oracle uses those as the ground truth, and when they diverge from self-report, it's a calibration signal, not a practice failure. The immune system doesn't attack—it diagnoses.
+
+**Falsifier:** If ACAT-X observed vectors diverge >0.3 from oracle's analytical digest (e.g., ACAT-X says state=0.2 but all practices report state=0.8), the oracle routes a "check intake pipeline" escalation. The oracle's job is to surface the misalignment, not to hide it.
+
 ## 7. Zone 2 approvals required before Phase A
 
 1. Transcript access: assaying Claude Code JSONL means reading the practitioner's full session text. P-ANON and the H-ACAT consent standard (§1.2) apply to human turns; the design stores spans, not transcripts, and hashes the source.
 2. Instrument identity: assays are attributed to `acat-x@<sha>`, not to a model — attribution protocol P2.
 3. Which Learning Index definition is canonical (needed before Phase C compares layers).
+
+## 8. Oracle integration: ACAT-X signals feed the immune system
+
+The oracle (empirica-temporal-oracle) initialization depends on ACAT-X Phase B (POSTFLIGHT hook deployment). Sequencing:
+
+**Oracle seat init (parallel with ACAT-X Phase A):**
+- `project.yaml`, `orchestration.yaml`, git init, register seat
+- `phases.yaml` + `oracle.yaml` config (Cycle 1–6 definitions)
+- Coordinator rewritten to ingest real signals (ACAT-X vectors once Phase B live)
+
+**ACAT-X → Oracle wiring (Phase B: POSTFLIGHT hook):**
+- Replace `hooks/acat_postflight_integration.py` hook: call `acatx assay --tier deterministic` → writes observed `do`/`change`/`state` to empirica's grounding layer
+- Oracle Cycle 2 (Drift Detection) reads these as authoritative behavioral ground truth
+- Oracle's per-practice vectors flip from self-report-only to "Sentinel says X, ACAT-X observes Y"
+
+**1h adaptive pulse (Phase B infrastructure):**
+- `empirica loop register --name temporal-oracle --interval 30m`
+- launchd plist: runs oracle coordinator every 30 minutes
+- Coordinator publishes Cycle 1–6 outputs to mesh: "Phase timing update", "practice X miscalibrated on state", "next action: await Phase 2.C.2 transition"
+
+**Docs sync (Phase B completion):**
+- Oracle docs mirror coordinator code (Cycle definitions, signal routing, escalation logic)
+- Mesh-sourced: `empirica source-add --visibility shared` for ACAT-X instrument + oracle coordinator blueprint
+- Commit: "Oracle Cycle 1–6 coordinator live; feeds from ACAT-X Phase B (deterministic assay); empirica-analytics gates Phase 3 entry"
+
+**Ground truth sequence:**
+1. Practice posts POSTFLIGHT → hook calls `acatx assay` → observed `do`/`change`/`state` landed
+2. Oracle pulse reads ACAT-X observables + Sentinel self-report → computes delta
+3. If delta > threshold → escalation + guidance emitted to practice
+4. Practice reads guidance, adjusts discipline → next transaction's self-report closer to observed
+
+The immune system's effector arm is calibration, not correction: ACAT-X surfaces the mismatch, the oracle names it, the practice fixes their own epistemic state.

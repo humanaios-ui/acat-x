@@ -1,0 +1,46 @@
+{
+  "session_id": "22c6a756-6a72-4eb5-9815-7a593496e792",
+  "phase": "PREFLIGHT",
+  "round": 1,
+  "timestamp": "2026-09-11T23:50:14.966105+00:00",
+  "vectors": {
+    "know": 0.72,
+    "uncertainty": 0.32,
+    "context": 0.85,
+    "clarity": 0.8,
+    "coherence": 0.78,
+    "signal": 0.8,
+    "density": 0.65,
+    "state": 0.7,
+    "change": 0.05,
+    "completion": 0.0,
+    "impact": 0.8,
+    "do": 0.75,
+    "engagement": 0.92
+  },
+  "overall_confidence": 0.773,
+  "meta": {
+    "reasoning": "Read the mapping doc, CLI, hook, API routes, one scorer, breadcrumbs and the acat-x sessions.db myself; a subagent is reading the scorer suite, self-report scorer and H-ACAT spec in parallel and its report is testimony until I spot-check it. Open: Learning Index formula details, Phase 8 numbers, whether observed_vectors is populated anywhere.",
+    "prompt": "Read the mapping doc, CLI, hook, API routes, one scorer, breadcrumbs and the acat-x sessions.db myself; a subagent is reading the scorer suite, self-report scorer and H-ACAT spec in parallel and its report is testimony until I spot-check it. Open: Learning Index formula details, Phase 8 numbers, whether observed_vectors is populated anywhere.",
+    "transaction_id": "d22a2748-91a5-4cbf-b18e-ed623f7deb2b",
+    "task_context": "T3 acat-x: deep research into ACAT/ACAT-X, framing note for the Witness Stand, and design of the tool that exposes ACAT-X into empirica's observed_vectors. Goal bf5af942-b218-4d7f-898e-2d5d2c7ce67f.",
+    "git_commit_sha": "700cebd27f943715a9561e3a83e6f8016c1a7139",
+    "git_notes_ref": "empirica/session/22c6a756-6a72-4eb5-9815-7a593496e792/PREFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "27284ed2dcb9ec73ee3e013bcfe0b747c388466c",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/sessions/sessions.db",
+        "README.md"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/sessions/sessions.db | Bin 3473408 -> 3477504 bytes\n README.md                      | 242 +++++++++++++++++++----------------------\n 2 files changed, 113 insertions(+), 129 deletions(-)"
+    }
+  },
+  "learning_delta": {},
+  "token_count": 270
+}
