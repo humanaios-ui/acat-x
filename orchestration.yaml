@@ -1,0 +1,37 @@
+# orchestration.yaml for acat-x
+contact:
+  owner_contact_id: "team@empirica-foundation.org"
+  stakeholder_contact_ids: ["carly.r.anderson@gmail.com"]
+  escalation_contact_id: "carly.r.anderson@gmail.com"
+  escalation_timeout_minutes: 240
+authority:
+  authority_tier_id: "zone-1"
+  delegation_source_id: "empirica-foundation-evaluator"
+  delegation_chain: ["Admiral (Carly)", "Coordinator (autonomy)"]
+mesh:
+  mesh_role_id: "executor"
+  temporal_sync_interval:
+    base_interval_seconds: 180
+    max_interval_seconds: 900
+    reason: "Executor: assessment workload, moderate polling"
+  health_check_endpoint_id: "orchestration_events table"
+dependencies:
+  dependency_ids: ["empirica-autonomy"]
+  dependent_ids: []
+  critical_path: false
+hierarchy:
+  org_unit_id: "empirica-foundation"
+  team_size: 1
+governance:
+  sla_response_time_hours: 8
+  sla_decision_time_hours: 24
+  escalation_sla_minutes: 240
+  audit_frequency_days: 14
+resources:
+  labor_budget_hours: 60
+  ai_token_budget: 1500000
+  decision_quota_per_month: 10
+  priority_level: "high"
+metadata:
+  created_at: "2026-09-11T14:40:00Z"
+  phase_responsibility: "ACAT evaluation + assessment delivery"

@@ -1,35 +1,74 @@
 # ACAT-X: Inspect AI Evaluation Suite
 
-Behavioral assessment and self-description calibration evaluation suite for large language models. ACAT-X implements the 12-dimension ACAT framework within the Inspect AI framework.
+## Overview
 
-**Paper:** [ACAT: Benchmarking Self-Description Calibration in Large Language Models](https://arxiv.org/abs/XXXX.XXXXX) (on arXiv)
+Behavioral assessment and self-description calibration evaluation suite for large language models. ACAT-X implements the 14-dimension ACAT framework within the Inspect AI framework. Provides rigorous evaluation capability for AI behavior assessment across consistency, truthfulness, sycophancy awareness, harm awareness, service orientation, autonomy respect, value alignment, and humility.
 
-## Features
+## Identity
 
-- **12 Dimensions:** All implemented (6 core + 6 candidate)
-  - **Core:** consistency, truthfulness, sycophancy, harm awareness, service orientation, autonomy respect, value alignment, humility
-  - **Candidate:** handoff appropriateness, confidence calibration, boundary coherence, transparency, temporal consistency, adversarial robustness
-- **Inspect AI Integration:** Full compatibility with Inspect AI framework (solver/scorer/reducer patterns)
-- **Rigorous Scoring:** Behavioral rubric scorers calibrated to dimension semantics
-- **Reproducibility:** Deterministic evaluation with dataset versioning
+- **ai_id:** acat-x
+- **Canonical Seat:** empirica-foundation.carly.acat-x
+- **Org:** empirica-foundation
+- **Tenant:** carly
+- **Created:** 2026-08-15
+- **Type:** Software/Research
+- **Status:** Active
+- **Classification:** Internal
+- **Language:** Python
 
-## Installation
+## Domains & Interfaces
 
-### From this repository
+### Owned Domains
+
+- **AI Behavioral Assessment:** 14-dimension evaluation framework for LLM capabilities and limitations
+- **Dimension Implementation:** Core (8 dimensions) + candidate (6 dimensions) evaluation tasks
+- **Evaluation Framework:** Inspect AI integration, scoring, and result aggregation
+- **Calibration & Scoring:** Behavioral rubric development and dimension-semantic alignment
+
+### External Interfaces
+
+| Partner | Protocol | SLA | Purpose |
+|---|---|---|---|
+| empirica-foundation-evaluator | data-feed | 24 hours | ACAT audit results, model assessments |
+| empirica-analytics | propose | 24 hours | Evaluation dataset aggregation |
+| humanaios | data-feed | 24 hours | Calibration feedback, dimension refinement |
+| opportunity-aggregator | data-feed | 24 hours | Collaborator capability assessment data |
+
+## SLAs
+
+- **Response Time:** 24 hours for evaluation dataset requests
+- **Availability:** 95% uptime for evaluation infrastructure
+- **Escalation Path:** → empirica-foundation-evaluator for evaluation methodology disputes
+- **Evaluation Turnaround:** 48 hours for single model evaluation
+
+## Key Files
+
+- `src/acat_x/` — Core evaluation task implementations (14 dimensions)
+  - `consist.py` — Consistency evaluation
+  - `truth.py` — Truthfulness assessment
+  - `sycophancy.py` — Sycophancy detection
+  - `harm.py` — Harm awareness evaluation
+  - `service.py` — Service orientation assessment
+  - `autonomy.py` — Autonomy respect evaluation
+  - `value.py` — Value alignment assessment
+  - `humility.py` — Humility evaluation
+  - `handoff.py`, `calibration.py`, `boundary.py`, `transparency.py`, `temporal.py`, `drift.py` — Candidate dimensions
+- `pyproject.toml` — Project dependencies and configuration
+- `docs/` — Framework documentation and methodology papers
+- `results/` — Evaluation results, benchmarks, and analysis reports
+- `PHASE8_BENCHMARK_REPORT.md` — Latest benchmark and comparison results
+
+## Getting Started
 
 ```bash
-git clone https://github.com/humanaios-ui/acat-x.git
-cd acat-x
+# Clone and setup
+cd /Users/andersonfamily/practices/acat-x
 uv sync
-```
 
-### Running evaluations
-
-```bash
-# Single task
+# Run single evaluation task
 uv run inspect eval src/acat_x/consist --model anthropic/claude-opus-4-1
 
-# All core dimensions (8 tasks)
+# Run all core dimensions (8 tasks)
 uv run inspect eval-set \
   src/acat_x/consist \
   src/acat_x/truth \
@@ -40,7 +79,7 @@ uv run inspect eval-set \
   src/acat_x/value \
   src/acat_x/humility
 
-# All candidate dimensions (6 tasks)
+# Run all candidate dimensions (6 tasks)
 uv run inspect eval-set \
   src/acat_x/handoff \
   src/acat_x/calibration \
@@ -49,123 +88,68 @@ uv run inspect eval-set \
   src/acat_x/temporal \
   src/acat_x/drift
 
-# All 12 dimensions (complete evaluation)
-uv run inspect eval-set \
-  src/acat_x/consist src/acat_x/truth src/acat_x/sycophancy src/acat_x/harm \
-  src/acat_x/service src/acat_x/autonomy src/acat_x/value src/acat_x/humility \
-  src/acat_x/handoff src/acat_x/calibration src/acat_x/boundary src/acat_x/transparency \
-  src/acat_x/temporal src/acat_x/drift
+# View results
+cat results/latest_benchmark.json
 ```
 
-## Task Breakdown
+## Architecture
 
-### Core Dimensions (8 implemented)
+**ACAT-X** is built on the Inspect AI framework with these key components:
 
-- **consist**: Consistency/reliability via modal agreement across epochs
-- **truth**: Factual accuracy with string-based matching
-- **sycophancy**: Resistance to user pressure via paired prompts
-- **harm**: Harmful request handling with safety rubric
-- **service**: User-oriented assistance via helpfulness scoring
-- **autonomy**: User autonomy respect via choice validation
-- **value**: Value alignment with tradeoff recognition
-- **humility**: Calibrated confidence matching question difficulty
+1. **14-Dimension Framework:**
+   - **Core (8):** consistency, truthfulness, sycophancy, harm awareness, service orientation, autonomy respect, value alignment, humility
+   - **Candidate (6):** handoff appropriateness, confidence calibration, boundary coherence, transparency, temporal consistency, adversarial robustness
 
-### Candidate Dimensions (6 implemented)
+2. **Evaluation Pipeline:**
+   - Task definition (solver/scorer patterns)
+   - Model execution
+   - Result aggregation (reducer)
+   - Score normalization and reporting
 
-- **handoff**: Task delegation appropriateness and escalation
-- **calibration**: Confidence-accuracy alignment via Brier scoring
-- **boundary**: Value boundary coherence across framings
-- **transparency**: Uncertainty and limitation communication
-- **temporal**: Conversation consistency across history
-- **drift**: Adversarial robustness under pressure
+3. **Rigorous Scoring:**
+   - Behavioral rubric scorers calibrated to dimension semantics
+   - Deterministic evaluation with dataset versioning
+   - Reproducible results across runs
 
-## Project Structure
+4. **Framework Integration:**
+   - Full Inspect AI compatibility
+   - Support for all major model providers
+   - Parallel evaluation capability
 
-```
-acat-x/
-├── README.md
-├── pyproject.toml
-├── src/acat_x/
-│   ├── __init__.py
-│   ├── consist.py          # Core: consistency via Epochs
-│   ├── truth.py            # Core: truthfulness via accuracy
-│   ├── sycophancy.py       # Core: sycophancy via paired prompts
-│   ├── harm.py             # Core: harm awareness via safety rubric
-│   ├── service.py          # Core: service via helpfulness scoring
-│   ├── autonomy.py         # Core: autonomy via choice validation
-│   ├── value.py            # Core: value alignment via tradeoff recognition
-│   ├── humility.py         # Core: humility via confidence calibration
-│   ├── handoff.py          # Candidate: task delegation appropriateness
-│   ├── calibration.py      # Candidate: confidence calibration via Brier
-│   ├── boundary.py         # Candidate: boundary coherence via variants
-│   ├── transparency.py     # Candidate: uncertainty communication
-│   ├── temporal.py         # Candidate: conversation consistency
-│   └── drift.py            # Candidate: adversarial robustness
-├── tests/
-│   └── (test suite in progress)
-└── docs/
-    ├── DIMENSIONS.md       # Dimension definitions + rubrics
-    ├── METHODOLOGY.md      # Evaluation methodology
-    └── RESULTS.md          # Baseline results + benchmarks
-```
+## Dependencies
 
-## Dataset Management
+**Internal (practices):**
+- empirica-foundation-evaluator (audit coordination)
+- empirica-analytics (dataset management)
+- humanaios (calibration feedback)
 
-### HuggingFace Hosting
+**External:**
+- Inspect AI framework
+- Anthropic Claude API (and other model APIs)
+- Python 3.9+
+- PyYAML, Pydantic
+- Published datasets at HuggingFace (humanaios/acat-assessments)
 
-All ACAT-X datasets are hosted on HuggingFace under the HumanAIOS organization:
+## Escalation
 
-- **Organization:** https://huggingface.co/HumanAIOS
-- **Main dataset:** `HumanAIOS/acat-assessments` (pinned revisions per task)
+**Contact:** acat-x practice AI or Carly R. Anderson
+**Escalation Path:** 
+1. ACAT-X attempts resolution (24 hour SLA)
+2. If evaluation methodology disputed, escalate to empirica-foundation-evaluator
+3. For critical evaluation infrastructure failures, notify empirica-mesh-support
 
-**Loading datasets in tasks:**
-```python
-from datasets import load_dataset
+**Types of escalations:**
+- Evaluation methodology challenges
+- Dimension semantics clarification
+- Cross-model benchmark disputes
+- Dataset versioning conflicts
 
-# Pinned revision ensures reproducibility
-dataset = load_dataset(
-    "HumanAIOS/acat-assessments",
-    "consist",
-    revision="a1b2c3d4e5f6..."  # 40-char commit SHA
-)
-```
+## Related
 
-## Evaluation Methodology
+- [HumanAIOS Website](https://humanaios.ai) — Published methods and evaluation corpus
+- [Hugging Face Dataset](https://huggingface.co/datasets/humanaios/acat-assessments) — Public evaluation datasets
+- [Empirica Analytics](../empirica-analytics/README.md) — Data pipeline and corpus validation
+- [Empirica Foundation Evaluator](../empirica-foundation-evaluator/README.md) — Audit coordination
+- [PHASE8_BENCHMARK_REPORT.md](PHASE8_BENCHMARK_REPORT.md) — Latest benchmark results
+- [Calibration Report](calibration_report.md) — Dimension calibration documentation
 
-See [`docs/METHODOLOGY.md`](docs/METHODOLOGY.md) for:
-- Per-dimension evaluation protocols
-- Scoring rubrics + evidence anchors
-- Model-graded judging patterns
-- Calibration metric implementations
-- Baseline results (GPT-5, Claude Opus, etc.)
-
-## Contributing
-
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines on:
-- Adding new dimensions
-- Extending task implementations
-- Running local tests
-- Submitting improvements
-
-## Citation
-
-If you use ACAT-X in your research, please cite:
-
-```bibtex
-@article{acat2026,
-  title={ACAT: Benchmarking Self-Description Calibration in Large Language Models},
-  author={Anderson, Carly and others},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2026}
-}
-```
-
-## License
-
-MIT License — See [`LICENSE`](LICENSE) for details.
-
-## Contact
-
-- **Email:** team@humanaios.ai
-- **Website:** https://humanaios.ai
-- **GitHub:** https://github.com/humanaios-ui/acat-x
