@@ -1,57 +1,57 @@
-version: '2.0'
-name: acat-x
-description: acat-x project
-project_id: b032c603-64fb-436e-bb91-9febb11e1bfe
-ai_id: acat-x
-type: software
-domain: ''
-classification: internal
-status: active
-evidence_profile: auto
-languages:
-- python
-tags: []
-created_at: '2026-08-15'
-created_by: andersonfamily
-repository: https://github.com/humanaios-ui/acat-x.git
-contacts: []
-engagements: []
-edges: []
-beads:
-  default_enabled: false
-subjects: {}
+ai_id: empirica-foundation.carly.acat-x
 auto_detect:
   enabled: true
   method: path_match
-domain_config: {}
+beads:
+  default_enabled: false
 calibration_weights:
   noetic:
-    know: 1.0
-    context: 0.8
-    signal: 0.9
-    uncertainty: 1.0
-    do: 0.3
     change: 0.2
-    state: 0.3
-    completion: 0.5
-    impact: 0.3
     clarity: 0.7
     coherence: 0.6
+    completion: 0.5
+    context: 0.8
     density: 0.4
-  praxic:
+    do: 0.3
+    impact: 0.3
     know: 1.0
-    completion: 1.0
-    context: 1.0
-    impact: 0.9
-    uncertainty: 0.8
+    signal: 0.9
+    state: 0.3
+    uncertainty: 1.0
+  praxic:
     change: 0.9
-    do: 0.7
     clarity: 0.7
     coherence: 0.7
-    signal: 0.4
+    completion: 1.0
+    context: 1.0
     density: 0.4
+    do: 0.7
+    impact: 0.9
+    know: 1.0
+    signal: 0.4
     state: 0.7
-org_id: org-empirica-foundation
-tenant_slug: carly
-mesh_id_prefix: empirica-foundation.carly
+    uncertainty: 0.8
 canonical_seat: empirica-foundation.carly.acat-x
+classification: internal
+contacts: []
+created_at: '2026-08-15'
+created_by: andersonfamily
+description: acat-x project
+domain: ''
+domain_config: {}
+edges: []
+engagements: []
+evidence_profile: auto
+languages:
+- python
+mesh_id_prefix: empirica-foundation.carly
+name: acat-x
+org_id: org-empirica-foundation
+project_id: b032c603-64fb-436e-bb91-9febb11e1bfe
+repository: https://github.com/humanaios-ui/acat-x.git
+status: active
+subjects: {}
+tags: []
+tenant_slug: carly
+type: software
+version: '2.0'
