@@ -13,6 +13,7 @@
     "analyze_results",
     "cross_test_models",
     "ecodex_integration",
+    "hooks.acat_postflight_integration",
     "lightweight_eval",
     "lightweight_eval_v2",
     "lightweight_eval_v3_apis",
@@ -26,7 +27,10 @@
     "run_evaluation",
     "scripts.compare_evaluations",
     "semantic_scorer",
+    "src.extractors.consist_extractor",
+    "src.extractors.service_extractor",
+    "src.extractors.truth_extractor",
     "view_results"
   ],
-  "module_count": 33
+  "module_count": 37
 }
