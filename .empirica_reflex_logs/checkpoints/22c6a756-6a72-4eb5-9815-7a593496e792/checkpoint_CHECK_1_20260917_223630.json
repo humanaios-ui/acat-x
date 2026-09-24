@@ -1,0 +1,53 @@
+{
+  "session_id": "22c6a756-6a72-4eb5-9815-7a593496e792",
+  "phase": "CHECK",
+  "round": 1,
+  "timestamp": "2026-09-17T22:35:34.327978+00:00",
+  "vectors": {
+    "know": 0.82,
+    "uncertainty": 0.12,
+    "context": 0.85,
+    "clarity": 0.88,
+    "coherence": 0.8,
+    "signal": 0.85,
+    "density": 0.78,
+    "state": 0.8,
+    "change": 0.0,
+    "completion": 0.15,
+    "impact": 0.82,
+    "do": 0.88,
+    "engagement": 0.92
+  },
+  "overall_confidence": 0.85,
+  "meta": {
+    "decision": "proceed",
+    "reasoning": "Surveyed artifact graph state: 40+ findings (avg impact 0.6), 12 unknowns (5 high-impact >0.6), ~30% orphan rate on findings, stale sources detected. Ready to perform targeted reattachment + resolution + audit.",
+    "confidence": 0.88,
+    "gaps": [
+      "uncertainty: 0.12",
+      "change: 0.00",
+      "completion: 0.15"
+    ],
+    "cycle": null,
+    "round": 1,
+    "transaction_id": null,
+    "git_commit_sha": null,
+    "git_notes_ref": "empirica/session/22c6a756-6a72-4eb5-9815-7a593496e792/CHECK/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "8ae8dcbec2387a3ce642303971739988e9718dc9",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/project.yaml",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/sessions/sessions.db | Bin 3547136 -> 3563520 bytes\n 1 file changed, 0 insertions(+), 0 deletions(-)"
+    }
+  },
+  "learning_delta": {},
+  "token_count": 154
+}

@@ -1,0 +1,32 @@
+{
+  "transaction_id": "d3a7f426-e992-4ca6-803c-825c115ef750",
+  "session_id": "b6843ebd-4dfd-4b98-85c6-f24614db72df",
+  "claude_session_id": null,
+  "preflight_timestamp": 1790188620.783405,
+  "status": "open",
+  "project_path": "/Users/andersonfamily/practices/acat-x",
+  "updated_at": 1790188620.7846851,
+  "work_type": "research",
+  "task_context": "Assess Oct 1 automation deployment blockers. Clarify Phase 3.B decision gate (Measurement-first vs Freemium). Address Sep 15 decision outcome and partner access failure.",
+  "cascade_profile": "exploratory",
+  "preflight_pattern_count": 27,
+  "injection_budget": {
+    "injected_per_category": {
+      "dead_ends": 5,
+      "relevant_findings": 4,
+      "eidetic_facts": 2,
+      "episodic_narratives": 4,
+      "related_goals": 5,
+      "unverified_assumptions": 2,
+      "prior_decisions": 5
+    },
+    "injected_total": 27,
+    "cap_per_category": null,
+    "cap_total": null,
+    "capped_per_category": 0,
+    "capped_total": 0,
+    "deduped": 3,
+    "elided_for_budget": 3,
+    "note": "Lean teaser \u2014 duplicates removed, long items truncated, lowest-ranked elided to fit budget. Full context via `empirica investigate` / `project-search` / `commit-context`."
+  }
+}

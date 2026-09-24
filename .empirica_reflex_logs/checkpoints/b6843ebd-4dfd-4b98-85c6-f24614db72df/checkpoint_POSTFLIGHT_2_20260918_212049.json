@@ -1,0 +1,180 @@
+{
+  "session_id": "b6843ebd-4dfd-4b98-85c6-f24614db72df",
+  "phase": "POSTFLIGHT",
+  "round": 2,
+  "timestamp": "2026-09-18T21:20:45.914464+00:00",
+  "vectors": {
+    "know": 0.9,
+    "uncertainty": 0.1,
+    "do": 0.85,
+    "context": 0.85,
+    "clarity": 0.95,
+    "coherence": 0.9,
+    "signal": 0.95,
+    "density": 0.9,
+    "state": 0.9,
+    "change": 0.85,
+    "completion": 0.8,
+    "impact": 0.95,
+    "engagement": 0.95
+  },
+  "overall_confidence": 0.867,
+  "meta": {
+    "reasoning": "ECO acceptance confirmed on Constitution \u00a7III-b remediation proposal (prop_l32hcdguvjeplf5tqwjp3izaky). Carly accepted at 21:18:28 UTC. mesh-support now authorized to execute three remediation tasks (Type Reclassification 2-3h, Orphan Connectivity 4-6h, Retraction Discipline 1-2h) + ecosystem briefing. Phase 2\u21923 gate critical path unblocked. Coordination goal fbcb2a49... tracks 4 subtasks. Two findings logged documenting proposal acceptance and ECO decision. Clarity, signal, and coherence up: proposal acceptance is clear confirmation. Completion up from 0.65 to 0.80: significant progress toward Phase gate unblock.",
+    "task_summary": "ECO acceptance confirmed on Constitution \u00a7III-b remediation proposal (prop_l32hcdguvjeplf5tqwjp3izaky). Carly accepted at 21:18:28 UTC. mesh-support now authorized to execute three remediation tasks (Type Reclassification 2-3h, Orphan Connectivity 4-6h, Retraction Discipline 1-2h) + ecosystem briefing. Phase 2\u21923 gate critical path unblocked. Coordination goal fbcb2a49... tracks 4 subtasks. Two findings logged documenting proposal acceptance and ECO decision. Clarity, signal, and coherence up: proposal acceptance is clear confirmation. Completion up from 0.65 to 0.80: significant progress toward Phase gate unblock.",
+    "postflight_confidence": 0.9,
+    "internal_consistency": "good",
+    "deltas": {
+      "know": 0.05,
+      "uncertainty": -0.1,
+      "do": 0.1,
+      "context": 0.05,
+      "clarity": 0.25,
+      "coherence": 0.15,
+      "signal": 0.15,
+      "density": 0.15,
+      "state": 0.2,
+      "change": 0.35,
+      "completion": 0.4,
+      "impact": 0.05,
+      "engagement": 0.1
+    },
+    "trajectory_issues": [],
+    "transaction_id": "18731ed1-3b21-495f-8488-6d9864d20ca9",
+    "tool_call_count": 0,
+    "work_type": "code",
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 2,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "claims": {
+        "declared": 1,
+        "held": 1,
+        "refuted": 0,
+        "untested": 0,
+        "gaps": []
+      },
+      "breadth_note": "Only findings artifacts logged. Missing: unknowns, dead_ends, mistakes, assumptions, decisions. Unlogged artifact types are ungrounded prediction domains \u2014 were there assumptions, decisions, dead-ends, or mistakes worth capturing?",
+      "edges_with_artifacts": 2,
+      "artifacts_with_sources": 0,
+      "sources_discipline_note": "2 artifacts logged with 0 source_refs. Where did the evidence come from? Use --source <id> on any *-log command, or `empirica source-add` to register the source first. Sourced artifacts get full provenance trail in audit + compliance.",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "connected",
+        "connected_ratio": 1.0,
+        "connected_artifacts": 2,
+        "total_artifacts": 2,
+        "satisfied": true,
+        "enforced": false,
+        "note": "artifact-graph gate [enforce, report-only]: 2/2 artifacts connected (100%) \u2014 meets the 34% floor."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok"
+    },
+    "coverage": null,
+    "git_commit_sha": "6c59df01ff2289c004e40437221715a18822f714",
+    "git_notes_ref": "empirica/session/b6843ebd-4dfd-4b98-85c6-f24614db72df/POSTFLIGHT/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "8ae8dcbec2387a3ce642303971739988e9718dc9",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/cache/dep_graph_acat-x.json",
+        ".empirica/project.yaml",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".breadcrumbs.yaml                     | 127 ++++++++++++++--------------------\n .empirica/cache/dep_graph_acat-x.json |   6 +-\n .empirica/sessions/sessions.db        | Bin 3547136 -> 3637248 bytes\n 3 files changed, 58 insertions(+), 75 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.85,
+      "curr": 0.9,
+      "delta": 0.05
+    },
+    "uncertainty": {
+      "prev": 0.2,
+      "curr": 0.1,
+      "delta": -0.1
+    },
+    "do": {
+      "prev": 0.75,
+      "curr": 0.85,
+      "delta": 0.1
+    },
+    "context": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "clarity": {
+      "prev": 0.7,
+      "curr": 0.95,
+      "delta": 0.25
+    },
+    "coherence": {
+      "prev": 0.75,
+      "curr": 0.9,
+      "delta": 0.15
+    },
+    "signal": {
+      "prev": 0.8,
+      "curr": 0.95,
+      "delta": 0.15
+    },
+    "density": {
+      "prev": 0.75,
+      "curr": 0.9,
+      "delta": 0.15
+    },
+    "state": {
+      "prev": 0.7,
+      "curr": 0.9,
+      "delta": 0.2
+    },
+    "change": {
+      "prev": 0.5,
+      "curr": 0.85,
+      "delta": 0.35
+    },
+    "completion": {
+      "prev": 0.4,
+      "curr": 0.8,
+      "delta": 0.4
+    },
+    "impact": {
+      "prev": 0.9,
+      "curr": 0.95,
+      "delta": 0.05
+    },
+    "engagement": {
+      "prev": 0.85,
+      "curr": 0.95,
+      "delta": 0.1
+    }
+  },
+  "token_count": 692
+}

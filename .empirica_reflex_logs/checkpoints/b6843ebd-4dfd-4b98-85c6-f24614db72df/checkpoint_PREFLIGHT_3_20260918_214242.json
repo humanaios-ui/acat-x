@@ -1,0 +1,114 @@
+{
+  "session_id": "b6843ebd-4dfd-4b98-85c6-f24614db72df",
+  "phase": "PREFLIGHT",
+  "round": 3,
+  "timestamp": "2026-09-18T21:42:38.273850+00:00",
+  "vectors": {
+    "know": 0.8,
+    "uncertainty": 0.25,
+    "do": 0.75,
+    "context": 0.75,
+    "clarity": 0.7,
+    "coherence": 0.7,
+    "signal": 0.75,
+    "density": 0.7,
+    "state": 0.65,
+    "change": 0.5,
+    "completion": 0.4,
+    "impact": 0.85,
+    "engagement": 0.85
+  },
+  "overall_confidence": 0.767,
+  "meta": {
+    "reasoning": "Constitution remediation is now ECO-approved and handed to mesh-support. Next critical task: verify mesh-support delivered blocker specs on the Sep 17-18 target date. If missed, activate Admiral escalation path (secondary blocker). Phase 3 mesh coordination blocker from earlier session still open \u2014 need status update.",
+    "prompt": "Constitution remediation is now ECO-approved and handed to mesh-support. Next critical task: verify mesh-support delivered blocker specs on the Sep 17-18 target date. If missed, activate Admiral escalation path (secondary blocker). Phase 3 mesh coordination blocker from earlier session still open \u2014 need status update.",
+    "transaction_id": "0bfa6ab9-8aee-41c4-abc5-197307e63f2c",
+    "task_context": "Check Phase 3 blocker specs delivery status from mesh-support. Critical path: Sep 17-18 target for specs delivery. Today is Sep 18. M2 gate Sep 25 depends on Phase 3 readiness. Secondary blocker: Admiral audit decision.",
+    "git_commit_sha": "13a717adf32d21203e8b299c43356d1b40b9f64a",
+    "git_notes_ref": "empirica/session/b6843ebd-4dfd-4b98-85c6-f24614db72df/PREFLIGHT/3"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "8ae8dcbec2387a3ce642303971739988e9718dc9",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/cache/dep_graph_acat-x.json",
+        ".empirica/project.yaml",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".breadcrumbs.yaml                     | 139 ++++++++++++++--------------------\n .empirica/cache/dep_graph_acat-x.json |   6 +-\n .empirica/sessions/sessions.db        | Bin 3547136 -> 3657728 bytes\n 3 files changed, 61 insertions(+), 84 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.9,
+      "curr": 0.8,
+      "delta": -0.1
+    },
+    "uncertainty": {
+      "prev": 0.1,
+      "curr": 0.25,
+      "delta": 0.15
+    },
+    "do": {
+      "prev": 0.85,
+      "curr": 0.75,
+      "delta": -0.1
+    },
+    "context": {
+      "prev": 0.85,
+      "curr": 0.75,
+      "delta": -0.1
+    },
+    "clarity": {
+      "prev": 0.95,
+      "curr": 0.7,
+      "delta": -0.25
+    },
+    "coherence": {
+      "prev": 0.9,
+      "curr": 0.7,
+      "delta": -0.2
+    },
+    "signal": {
+      "prev": 0.95,
+      "curr": 0.75,
+      "delta": -0.2
+    },
+    "density": {
+      "prev": 0.9,
+      "curr": 0.7,
+      "delta": -0.2
+    },
+    "state": {
+      "prev": 0.9,
+      "curr": 0.65,
+      "delta": -0.25
+    },
+    "change": {
+      "prev": 0.85,
+      "curr": 0.5,
+      "delta": -0.35
+    },
+    "completion": {
+      "prev": 0.8,
+      "curr": 0.4,
+      "delta": -0.4
+    },
+    "impact": {
+      "prev": 0.95,
+      "curr": 0.85,
+      "delta": -0.1
+    },
+    "engagement": {
+      "prev": 0.95,
+      "curr": 0.85,
+      "delta": -0.1
+    }
+  },
+  "token_count": 390
+}

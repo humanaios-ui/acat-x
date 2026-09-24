@@ -1,0 +1,178 @@
+{
+  "session_id": "b6843ebd-4dfd-4b98-85c6-f24614db72df",
+  "phase": "POSTFLIGHT",
+  "round": 1,
+  "timestamp": "2026-09-18T21:13:36.733316+00:00",
+  "vectors": {
+    "know": 0.85,
+    "uncertainty": 0.15,
+    "do": 0.75,
+    "context": 0.8,
+    "clarity": 0.9,
+    "coherence": 0.85,
+    "signal": 0.9,
+    "density": 0.8,
+    "state": 0.8,
+    "change": 0.7,
+    "completion": 0.65,
+    "impact": 0.95,
+    "engagement": 0.95
+  },
+  "overall_confidence": 0.8,
+  "meta": {
+    "reasoning": "Constitution \u00a7III-b audit completed. Three failure modes confirmed: Type Collapse (73% findings), Orphan Accumulation (38% orphan), Retraction Gap (0% retractions). Coordination goal created (fbcb2a49...) with 4 subtasks. Proposal sent to mesh-support (prop_l32hcdguvjeplf5tqwjp3izaky) requesting execution of three remediation tasks + ecosystem briefing. Status: ECO-gated, awaiting Accept. Phase 2\u21923 gate (Sep 18) critical path established.",
+    "task_summary": "Constitution \u00a7III-b audit completed. Three failure modes confirmed: Type Collapse (73% findings), Orphan Accumulation (38% orphan), Retraction Gap (0% retractions). Coordination goal created (fbcb2a49...) with 4 subtasks. Proposal sent to mesh-support (prop_l32hcdguvjeplf5tqwjp3izaky) requesting execution of three remediation tasks + ecosystem briefing. Status: ECO-gated, awaiting Accept. Phase 2\u21923 gate (Sep 18) critical path established.",
+    "postflight_confidence": 0.85,
+    "internal_consistency": "good",
+    "deltas": {
+      "know": 0.0,
+      "uncertainty": -0.05,
+      "do": 0.0,
+      "context": 0.0,
+      "clarity": 0.05,
+      "coherence": 0.05,
+      "signal": 0.05,
+      "density": 0.05,
+      "state": 0.1,
+      "change": 0.1,
+      "completion": 0.15,
+      "impact": 0.05,
+      "engagement": 0.05
+    },
+    "trajectory_issues": [],
+    "transaction_id": "c90e4767-031a-4e2c-94b6-687c32a16ff7",
+    "tool_call_count": 0,
+    "work_type": "code",
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 1,
+        "unknowns": 0,
+        "dead_ends": 1,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 1
+      },
+      "claims": {
+        "declared": 3,
+        "held": 3,
+        "refuted": 0,
+        "untested": 0,
+        "gaps": []
+      },
+      "edges_with_artifacts": 3,
+      "artifacts_with_sources": 0,
+      "sources_discipline_note": "3 artifacts logged with 0 source_refs. Where did the evidence come from? Use --source <id> on any *-log command, or `empirica source-add` to register the source first. Sourced artifacts get full provenance trail in audit + compliance.",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "connected",
+        "connected_ratio": 1.0,
+        "connected_artifacts": 3,
+        "total_artifacts": 3,
+        "satisfied": true,
+        "enforced": false,
+        "note": "artifact-graph gate [enforce, report-only]: 3/3 artifacts connected (100%) \u2014 meets the 34% floor."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok"
+    },
+    "coverage": null,
+    "git_commit_sha": "84b3e6b24108c3ecc5cbff9ae2e4b2094315e1f7",
+    "git_notes_ref": "empirica/session/b6843ebd-4dfd-4b98-85c6-f24614db72df/POSTFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "8ae8dcbec2387a3ce642303971739988e9718dc9",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/cache/dep_graph_acat-x.json",
+        ".empirica/project.yaml",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/cache/dep_graph_acat-x.json |   6 +++++-\n .empirica/sessions/sessions.db        | Bin 3547136 -> 3592192 bytes\n 2 files changed, 5 insertions(+), 1 deletion(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.2,
+      "curr": 0.15,
+      "delta": -0.05
+    },
+    "do": {
+      "prev": 0.75,
+      "curr": 0.75,
+      "delta": 0.0
+    },
+    "context": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "clarity": {
+      "prev": 0.85,
+      "curr": 0.9,
+      "delta": 0.05
+    },
+    "coherence": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "signal": {
+      "prev": 0.85,
+      "curr": 0.9,
+      "delta": 0.05
+    },
+    "density": {
+      "prev": 0.75,
+      "curr": 0.8,
+      "delta": 0.05
+    },
+    "state": {
+      "prev": 0.7,
+      "curr": 0.8,
+      "delta": 0.1
+    },
+    "change": {
+      "prev": 0.6,
+      "curr": 0.7,
+      "delta": 0.1
+    },
+    "completion": {
+      "prev": 0.5,
+      "curr": 0.65,
+      "delta": 0.15
+    },
+    "impact": {
+      "prev": 0.9,
+      "curr": 0.95,
+      "delta": 0.05
+    },
+    "engagement": {
+      "prev": 0.9,
+      "curr": 0.95,
+      "delta": 0.05
+    }
+  },
+  "token_count": 587
+}

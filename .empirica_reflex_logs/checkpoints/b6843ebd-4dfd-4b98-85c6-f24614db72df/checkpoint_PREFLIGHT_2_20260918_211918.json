@@ -1,0 +1,114 @@
+{
+  "session_id": "b6843ebd-4dfd-4b98-85c6-f24614db72df",
+  "phase": "PREFLIGHT",
+  "round": 2,
+  "timestamp": "2026-09-18T21:19:13.227666+00:00",
+  "vectors": {
+    "know": 0.85,
+    "uncertainty": 0.2,
+    "do": 0.75,
+    "context": 0.8,
+    "clarity": 0.7,
+    "coherence": 0.75,
+    "signal": 0.8,
+    "density": 0.75,
+    "state": 0.7,
+    "change": 0.5,
+    "completion": 0.4,
+    "impact": 0.9,
+    "engagement": 0.85
+  },
+  "overall_confidence": 0.8,
+  "meta": {
+    "reasoning": "",
+    "prompt": "Preflight assessment",
+    "transaction_id": "18731ed1-3b21-495f-8488-6d9864d20ca9",
+    "task_context": "Check ECO response on Constitution \u00a7III-b remediation proposal sent to mesh-support",
+    "git_commit_sha": "245fe9b2ce1dc14918f20039566f1d342a6f388b",
+    "git_notes_ref": "empirica/session/b6843ebd-4dfd-4b98-85c6-f24614db72df/PREFLIGHT/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "8ae8dcbec2387a3ce642303971739988e9718dc9",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/cache/dep_graph_acat-x.json",
+        ".empirica/project.yaml",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".breadcrumbs.yaml                     | 127 ++++++++++++++--------------------\n .empirica/cache/dep_graph_acat-x.json |   6 +-\n .empirica/sessions/sessions.db        | Bin 3547136 -> 3629056 bytes\n 3 files changed, 58 insertions(+), 75 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.15,
+      "curr": 0.2,
+      "delta": 0.05
+    },
+    "do": {
+      "prev": 0.75,
+      "curr": 0.75,
+      "delta": 0.0
+    },
+    "context": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "clarity": {
+      "prev": 0.9,
+      "curr": 0.7,
+      "delta": -0.2
+    },
+    "coherence": {
+      "prev": 0.85,
+      "curr": 0.75,
+      "delta": -0.1
+    },
+    "signal": {
+      "prev": 0.9,
+      "curr": 0.8,
+      "delta": -0.1
+    },
+    "density": {
+      "prev": 0.8,
+      "curr": 0.75,
+      "delta": -0.05
+    },
+    "state": {
+      "prev": 0.8,
+      "curr": 0.7,
+      "delta": -0.1
+    },
+    "change": {
+      "prev": 0.7,
+      "curr": 0.5,
+      "delta": -0.2
+    },
+    "completion": {
+      "prev": 0.65,
+      "curr": 0.4,
+      "delta": -0.25
+    },
+    "impact": {
+      "prev": 0.95,
+      "curr": 0.9,
+      "delta": -0.05
+    },
+    "engagement": {
+      "prev": 0.95,
+      "curr": 0.85,
+      "delta": -0.1
+    }
+  },
+  "token_count": 245
+}
