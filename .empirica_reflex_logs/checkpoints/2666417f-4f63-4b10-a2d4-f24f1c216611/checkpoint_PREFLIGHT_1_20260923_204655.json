@@ -1,0 +1,46 @@
+{
+  "session_id": "2666417f-4f63-4b10-a2d4-f24f1c216611",
+  "phase": "PREFLIGHT",
+  "round": 1,
+  "timestamp": "2026-09-23T20:46:43.239722+00:00",
+  "vectors": {
+    "know": 0.6,
+    "do": 0.75,
+    "context": 0.65,
+    "clarity": 0.65,
+    "coherence": 0.6,
+    "signal": 0.7,
+    "density": 0.55,
+    "state": 0.55,
+    "change": 0.3,
+    "completion": 0.0,
+    "impact": 0.85,
+    "engagement": 0.9,
+    "uncertainty": 0.4
+  },
+  "overall_confidence": 0.667,
+  "meta": {
+    "reasoning": "",
+    "prompt": "Preflight assessment",
+    "transaction_id": "3d42fb84-a66e-480f-8966-c506a3a5398e",
+    "git_commit_sha": "0ac7022c4e4e5f5472df71ace26e506a83bb9301",
+    "git_notes_ref": "empirica/session/2666417f-4f63-4b10-a2d4-f24f1c216611/PREFLIGHT/1"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "d598b6bf8e88f836073bd409999e003069aa2e25",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_9D13E732-7979-40.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".breadcrumbs.yaml                                  | 144 ++++++++++-----------\n .../active_transaction_term_9D13E732-7979-40.json  |   5 +-\n .empirica/sessions/sessions.db                     | Bin 3764224 -> 3805184 bytes\n 3 files changed, 74 insertions(+), 75 deletions(-)"
+    }
+  },
+  "learning_delta": {},
+  "token_count": 111
+}

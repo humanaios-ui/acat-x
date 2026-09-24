@@ -1,0 +1,10 @@
+{
+  "transaction_id": "ae8da5a0-2e49-4b0c-b26b-6223de76b6d5",
+  "session_id": "1a10ea7e-9978-4f7e-9db3-a150bb6faf80",
+  "claude_session_id": null,
+  "preflight_timestamp": 1790283572.506083,
+  "status": "open",
+  "project_path": "/Users/andersonfamily/practices/acat-x",
+  "updated_at": 1790283572.5083368,
+  "avg_turns": 0
+}

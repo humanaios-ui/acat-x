@@ -1,0 +1,198 @@
+{
+  "session_id": "b6843ebd-4dfd-4b98-85c6-f24614db72df",
+  "phase": "POSTFLIGHT",
+  "round": 4,
+  "timestamp": "2026-09-18T21:59:10.333967+00:00",
+  "vectors": {
+    "know": 0.9,
+    "uncertainty": 0.1,
+    "do": 0.95,
+    "context": 0.85,
+    "clarity": 0.9,
+    "coherence": 0.85,
+    "signal": 0.9,
+    "density": 0.85,
+    "state": 0.85,
+    "change": 0.9,
+    "completion": 0.75,
+    "impact": 0.85,
+    "engagement": 0.9
+  },
+  "overall_confidence": 0.9,
+  "meta": {
+    "reasoning": "Session coordination work completed and committed. Two critical path items identified: (1) Constitution \u00a7III-b remediation ECO-approved by Carly, mesh-support authorized to execute 4 remediation tasks; (2) Phase 3 blocker specs proposal located (prop_4eo3ake7szbhph5ekmbabndxgq), Sep 17-18 target deadline, Sep 20 slip threshold HIGH RISK for M2 gate (Sep 25). Admiral escalation watch active. Session artifacts (5 findings + 1 decision) logged and committed. Ready for next session to examine blocker specs content and verify Admiral decision status.",
+    "task_summary": "Session coordination work completed and committed. Two critical path items identified: (1) Constitution \u00a7III-b remediation ECO-approved by Carly, mesh-support authorized to execute 4 remediation tasks; (2) Phase 3 blocker specs proposal located (prop_4eo3ake7szbhph5ekmbabndxgq), Sep 17-18 target deadline, Sep 20 slip threshold HIGH RISK for M2 gate (Sep 25). Admiral escalation watch active. Session artifacts (5 findings + 1 decision) logged and committed. Ready for next session to examine blocker specs content and verify Admiral decision status.",
+    "postflight_confidence": 0.9,
+    "internal_consistency": "good",
+    "deltas": {
+      "know": 0.0,
+      "uncertainty": 0.0,
+      "do": 0.0,
+      "context": 0.0,
+      "clarity": 0.0,
+      "coherence": 0.0,
+      "signal": 0.0,
+      "density": 0.0,
+      "state": 0.0,
+      "change": 0.0,
+      "completion": 0.0,
+      "impact": 0.0,
+      "engagement": 0.0
+    },
+    "trajectory_issues": [],
+    "transaction_id": "d93b01df-00a9-4beb-8fa6-381256e87d5f",
+    "tool_call_count": 0,
+    "work_type": "code",
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": {
+      "solicited_prompts": 0,
+      "unsolicited_prompts": 1
+    },
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 0,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "claims": {
+        "declared": 1,
+        "held": 1,
+        "refuted": 0,
+        "untested": 0,
+        "gaps": [],
+        "adjudication": {
+          "applied": 1,
+          "unmatched": 2,
+          "entries": [
+            {
+              "reason": "no_matching_claim",
+              "keys_seen": [
+                "claim",
+                "index",
+                "verdict"
+              ]
+            },
+            {
+              "reason": "no_matching_claim",
+              "keys_seen": [
+                "claim",
+                "index",
+                "verdict"
+              ]
+            }
+          ],
+          "hint": "each entry needs 'verdict' (held|refuted|untested) plus one of 'claim' (the declared text), 'index' (1-based), or 'id'"
+        },
+        "adjudication_warning": "2 of 3 submitted verdict(s) were NOT applied \u2014 the claims they targeted are counted as 'untested' below, which understates what you actually checked. Fix the entry shape and the untested count will drop."
+      },
+      "claim_adjudication_warning": "2 of 3 submitted verdict(s) were NOT applied \u2014 the claims they targeted are counted as 'untested' below, which understates what you actually checked. Fix the entry shape and the untested count will drop.",
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok"
+    },
+    "coverage": null,
+    "git_commit_sha": "899c55f8084485f476491c0a141db3b6dadaa84d",
+    "git_notes_ref": "empirica/session/b6843ebd-4dfd-4b98-85c6-f24614db72df/POSTFLIGHT/4"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "2c5df23d35a1cc8bc79b7acc990e23be011c6c87",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "2c5df23d35a1cc8bc79b7acc990e23be011c6c87",
+        "message": "chore(acat-x): Critical path coordination \u2014 Constitution remediation + Phase 3 blocker specs",
+        "author": "Carly Anderson",
+        "timestamp": "2026-09-18T16:58:36-05:00",
+        "files_changed": [
+          ".breadcrumbs.yaml",
+          ".empirica/project.yaml"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/cache/dep_graph_acat-x.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".empirica/cache/dep_graph_acat-x.json |   6 +++++-\n .empirica/sessions/sessions.db        | Bin 3547136 -> 3731456 bytes\n 2 files changed, 5 insertions(+), 1 deletion(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.1,
+      "curr": 0.1,
+      "delta": 0.0
+    },
+    "do": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "context": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "clarity": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "coherence": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "signal": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "density": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "state": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "change": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "completion": {
+      "prev": 0.75,
+      "curr": 0.75,
+      "delta": 0.0
+    },
+    "impact": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "engagement": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    }
+  },
+  "token_count": 713
+}

@@ -1,0 +1,191 @@
+{
+  "session_id": "b6843ebd-4dfd-4b98-85c6-f24614db72df",
+  "phase": "POSTFLIGHT",
+  "round": 5,
+  "timestamp": "2026-09-18T23:30:57.496446+00:00",
+  "vectors": {
+    "know": 0.85,
+    "do": 0.8,
+    "context": 0.8,
+    "clarity": 0.8,
+    "coherence": 0.8,
+    "signal": 0.85,
+    "density": 0.78,
+    "state": 0.85,
+    "change": 0.5,
+    "completion": 0.7,
+    "impact": 0.85,
+    "engagement": 0.85,
+    "uncertainty": 0.2
+  },
+  "overall_confidence": 0.817,
+  "meta": {
+    "reasoning": "",
+    "task_summary": "Task completed",
+    "postflight_confidence": 0.8,
+    "internal_consistency": "good",
+    "deltas": {
+      "know": 0.05,
+      "do": 0.0,
+      "context": 0.05,
+      "clarity": 0.05,
+      "coherence": 0.02,
+      "signal": 0.05,
+      "density": 0.03,
+      "state": 0.05,
+      "change": 0.0,
+      "completion": 0.3,
+      "impact": 0.0,
+      "engagement": 0.0,
+      "uncertainty": -0.05
+    },
+    "trajectory_issues": [],
+    "transaction_id": "928178af-5395-4ebd-9666-3d92f3a1dcf3",
+    "tool_call_count": 0,
+    "work_type": null,
+    "phase_tool_counts": {
+      "noetic_tool_calls": 0,
+      "praxic_tool_calls": 0
+    },
+    "avg_turns_at_start": 0,
+    "context_shifts": null,
+    "entity_context": null,
+    "tool_trace": null,
+    "retrospective": {
+      "artifact_counts": {
+        "findings": 3,
+        "unknowns": 0,
+        "dead_ends": 0,
+        "mistakes": 0,
+        "assumptions": 0,
+        "decisions": 0
+      },
+      "claims": {
+        "declared": 3,
+        "held": 3,
+        "refuted": 0,
+        "untested": 0,
+        "gaps": []
+      },
+      "breadth_note": "Only findings artifacts logged. Missing: unknowns, dead_ends, mistakes, assumptions, decisions. Unlogged artifact types are ungrounded prediction domains \u2014 were there assumptions, decisions, dead-ends, or mistakes worth capturing?",
+      "edges_with_artifacts": 3,
+      "artifacts_with_sources": 0,
+      "sources_discipline_note": "3 artifacts logged with 0 source_refs. Where did the evidence come from? Use --source <id> on any *-log command, or `empirica source-add` to register the source first. Sourced artifacts get full provenance trail in audit + compliance.",
+      "weave_gate": {
+        "scalars": {
+          "strictness": 0.75,
+          "connectivity_floor": 0.34,
+          "patience": 0.8
+        },
+        "response": "enforce",
+        "verdict": "connected",
+        "connected_ratio": 1.0,
+        "connected_artifacts": 3,
+        "total_artifacts": 3,
+        "satisfied": true,
+        "enforced": false,
+        "note": "artifact-graph gate [enforce, report-only]: 3/3 artifacts connected (100%) \u2014 meets the 34% floor."
+      },
+      "commit_warning": "Uncommitted changes detected. Grounded calibration for change/state/do will be based on committed work only \u2014 uncommitted edits are invisible.",
+      "ser_ack_check": "ok"
+    },
+    "coverage": null,
+    "git_commit_sha": "5a25cd4f21a81aa02d7c59d79ad77627b124f038",
+    "git_notes_ref": "empirica/session/b6843ebd-4dfd-4b98-85c6-f24614db72df/POSTFLIGHT/5"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "d598b6bf8e88f836073bd409999e003069aa2e25",
+    "commits_since_last_checkpoint": [
+      {
+        "sha": "d598b6bf8e88f836073bd409999e003069aa2e25",
+        "message": "chore(acat-x): Action items processed \u2014 blocker specs + remediation status verified",
+        "author": "Carly Anderson",
+        "timestamp": "2026-09-18T18:30:25-05:00",
+        "files_changed": [
+          ".breadcrumbs.yaml",
+          ".empirica/active_transaction_term_9D13E732-7979-40.json",
+          ".empirica/cache/dep_graph_acat-x.json",
+          ".empirica/sessions/sessions.db"
+        ]
+      }
+    ],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".empirica/active_transaction_term_9D13E732-7979-40.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".../active_transaction_term_9D13E732-7979-40.json  |   5 ++---\n .empirica/sessions/sessions.db                     | Bin 3764224 -> 3764224 bytes\n 2 files changed, 2 insertions(+), 3 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "do": {
+      "prev": 0.8,
+      "curr": 0.8,
+      "delta": 0.0
+    },
+    "context": {
+      "prev": 0.75,
+      "curr": 0.8,
+      "delta": 0.05
+    },
+    "clarity": {
+      "prev": 0.75,
+      "curr": 0.8,
+      "delta": 0.05
+    },
+    "coherence": {
+      "prev": 0.78,
+      "curr": 0.8,
+      "delta": 0.02
+    },
+    "signal": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "density": {
+      "prev": 0.75,
+      "curr": 0.78,
+      "delta": 0.03
+    },
+    "state": {
+      "prev": 0.8,
+      "curr": 0.85,
+      "delta": 0.05
+    },
+    "change": {
+      "prev": 0.5,
+      "curr": 0.5,
+      "delta": 0.0
+    },
+    "completion": {
+      "prev": 0.4,
+      "curr": 0.7,
+      "delta": 0.3
+    },
+    "impact": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "engagement": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.25,
+      "curr": 0.2,
+      "delta": -0.05
+    }
+  },
+  "token_count": 518
+}

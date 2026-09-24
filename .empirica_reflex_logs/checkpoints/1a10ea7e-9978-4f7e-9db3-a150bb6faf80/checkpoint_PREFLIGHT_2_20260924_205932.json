@@ -1,0 +1,112 @@
+{
+  "session_id": "1a10ea7e-9978-4f7e-9db3-a150bb6faf80",
+  "phase": "PREFLIGHT",
+  "round": 2,
+  "timestamp": "2026-09-24T20:59:19.126186+00:00",
+  "vectors": {
+    "know": 1.0,
+    "do": 0.95,
+    "context": 0.95,
+    "clarity": 0.95,
+    "coherence": 0.9,
+    "signal": 0.9,
+    "density": 0.85,
+    "state": 0.9,
+    "change": 0.85,
+    "completion": 0.0,
+    "impact": 0.6,
+    "engagement": 0.85,
+    "uncertainty": 0.05
+  },
+  "overall_confidence": 0.967,
+  "meta": {
+    "reasoning": "",
+    "prompt": "Preflight assessment",
+    "transaction_id": "ae8da5a0-2e49-4b0c-b26b-6223de76b6d5",
+    "git_commit_sha": "6ad4bc417bc360cc7ffb7f801e1a489813341f7e",
+    "git_notes_ref": "empirica/session/1a10ea7e-9978-4f7e-9db3-a150bb6faf80/PREFLIGHT/2"
+  },
+  "epistemic_tags": {},
+  "git_state": {
+    "head_commit": "d598b6bf8e88f836073bd409999e003069aa2e25",
+    "commits_since_last_checkpoint": [],
+    "uncommitted_changes": {
+      "files_modified": [
+        ".breadcrumbs.yaml",
+        ".empirica/active_transaction_term_9D13E732-7979-40.json",
+        ".empirica/sessions/sessions.db"
+      ],
+      "files_added": [],
+      "files_deleted": [],
+      "diff_stat": ".breadcrumbs.yaml                                  | 157 ++++++++++-----------\n .../active_transaction_term_9D13E732-7979-40.json  |   5 +-\n .empirica/sessions/sessions.db                     | Bin 3764224 -> 3940352 bytes\n 3 files changed, 80 insertions(+), 82 deletions(-)"
+    }
+  },
+  "learning_delta": {
+    "know": {
+      "prev": 1.0,
+      "curr": 1.0,
+      "delta": 0.0
+    },
+    "do": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "context": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "clarity": {
+      "prev": 0.95,
+      "curr": 0.95,
+      "delta": 0.0
+    },
+    "coherence": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "signal": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "density": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "state": {
+      "prev": 0.9,
+      "curr": 0.9,
+      "delta": 0.0
+    },
+    "change": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "completion": {
+      "prev": 0.0,
+      "curr": 0.0,
+      "delta": 0.0
+    },
+    "impact": {
+      "prev": 0.6,
+      "curr": 0.6,
+      "delta": 0.0
+    },
+    "engagement": {
+      "prev": 0.85,
+      "curr": 0.85,
+      "delta": 0.0
+    },
+    "uncertainty": {
+      "prev": 0.05,
+      "curr": 0.05,
+      "delta": 0.0
+    }
+  },
+  "token_count": 228
+}
