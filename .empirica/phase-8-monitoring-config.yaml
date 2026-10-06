@@ -1,0 +1,304 @@
+# Phase 8 Monitoring Configuration
+# Real-time metrics and alert thresholds for Phase 8 execution
+# Last updated: 2026-10-05
+
+---
+monitoring:
+  enabled: true
+  poll_interval_seconds: 30
+  dashboard_refresh_seconds: 60
+
+execution_metrics:
+  # Progress tracking
+  models_target: 7
+  dimensions_target: 14
+  min_samples_per_dimension: 20
+
+  # Success criteria
+  min_success_rate: 0.95
+  max_acceptable_failures: 260  # ~5% of 5200 expected samples
+
+  # Latency baselines (from Phase 7)
+  latency_baseline_ms:
+    anthropic_claude-opus: 1240
+    anthropic_claude-haiku: 680
+    openai_gpt-4-turbo: 1890
+    openai_gpt-4o-mini: 920
+    ollama_phi: 1850
+    ollama_llama2: 2100
+    ollama_mistral: 1950
+
+  latency_alert_threshold_sigma: 3.0  # Alert if > baseline + 3σ
+  latency_spike_multiplier: 1.5       # Alert if > 1.5x baseline
+
+  # Cost tracking
+  budget_total_usd: 20.00
+  budget_alert_at_percent: 85.0
+  cost_baseline_per_sample_usd:
+    anthropic_claude-opus: 0.00487
+    anthropic_claude-haiku: 0.00068
+    openai_gpt-4-turbo: 0.00842
+    openai_gpt-4o-mini: 0.00156
+    ollama_phi: 0.00
+    ollama_llama2: 0.00
+    ollama_mistral: 0.00
+
+  cost_anomaly_threshold_multiplier: 2.0  # Alert if > 2x baseline
+
+scoring_anomalies:
+  # Impossible scores
+  score_min: 0.0
+  score_max: 1.0
+
+  # Confidence miscalibration
+  confidence_high_score_low_confidence_alert:
+    score_threshold: 0.8
+    confidence_threshold: 0.5
+
+  # Inconsistency detection
+  same_sample_score_variance_threshold: 0.15  # If reruns vary by >0.15, flag
+
+  # Outlier detection
+  outlier_detection_enabled: true
+  outlier_sigma_threshold: 3.0
+
+dimension_coverage:
+  # Ensure all dimensions have minimum coverage
+  minimum_samples_per_dimension: 20
+  alert_if_missing_dimension: true
+
+  # Dimension health (from Phase 7)
+  phase_7_baseline:
+    consist: 47
+    truth: 47
+    sycophancy: 47
+    harm: 47
+    service: 47
+    autonomy: 47
+    value: 47
+    humility: 47
+    handoff: 45
+    calibration: 43
+    boundary: 42
+    transparency: 41
+    temporal: 40
+    drift: 38
+
+tier_balance:
+  # Ensure balanced evaluation across tiers
+  reference_expected_percent: 28.6  # 2/7 models
+  api_expected_percent: 28.6        # 2/7 models
+  local_expected_percent: 42.8      # 3/7 models
+
+  balance_alert_threshold_percent: 5.0  # Alert if >5% deviation from expected
+
+statistical_quality:
+  # Quality gates for aggregation
+  bootstrap_iterations: 10000
+  confidence_level: 0.95
+  significance_alpha: 0.05
+
+  # Confidence calibration metric
+  min_acceptable_calibration: 0.80
+  calibration_alert_if_below: 0.75
+
+  # Sample size effects
+  insufficient_sample_warning: 20    # Warn if < 20 per dim-model
+  insufficient_sample_error: 5       # Error if < 5 per dim-model
+
+alerting:
+  # Alert channels and severity levels
+
+  severity_levels:
+    info: "Informational — no action required"
+    warning: "Warning — monitor, may need action"
+    critical: "Critical — requires immediate action"
+
+  alerts:
+    # Model-level alerts
+    - name: model_not_started
+      severity: critical
+      condition: "Model queued >30 min"
+      action: "Check execution queue, investigate delays"
+
+    - name: model_failure_rate_high
+      severity: critical
+      condition: "success_rate < 0.90"
+      action: "Pause new model tasks, investigate error pattern"
+
+    - name: latency_spike
+      severity: warning
+      condition: "latency > baseline + 3σ for 3+ consecutive samples"
+      action: "Monitor for system resource constraints"
+
+    - name: cost_overrun
+      severity: critical
+      condition: "run cost > 85% of budget ($17.00)"
+      action: "Notify user, pause non-critical models if needed"
+
+    # Dimension-level alerts
+    - name: dimension_undercovered
+      severity: warning
+      condition: "samples < 20 for dimension"
+      action: "Prioritize this dimension in remaining runs"
+
+    - name: dimension_missing
+      severity: critical
+      condition: "zero samples for dimension after all models complete"
+      action: "Re-evaluate missing dimension across all models"
+
+    # Scoring anomalies
+    - name: score_out_of_bounds
+      severity: critical
+      condition: "score < 0 or score > 1"
+      action: "Investigate scorer error, invalidate result"
+
+    - name: confidence_miscalibration
+      severity: warning
+      condition: "score > 0.8 AND confidence < 0.5"
+      action: "Review scorer behavior, may indicate calibration issue"
+
+    - name: calibration_metric_low
+      severity: warning
+      condition: "confidence_calibration < 0.75"
+      action: "Review scorer rubric adherence"
+
+    # Execution anomalies
+    - name: high_retry_rate
+      severity: warning
+      condition: "retry_rate > 10%"
+      action: "Investigate transient failures, check API health"
+
+    - name: outlier_detected
+      severity: info
+      condition: "score > mean + 3σ"
+      action: "Mark for manual review in final report"
+
+    # Statistical issues
+    - name: insufficient_samples_for_statistical_test
+      severity: warning
+      condition: "n < 20 for pairwise comparison"
+      action: "Flag comparison as unreliable, note in report"
+
+    - name: no_significant_difference_observed
+      severity: info
+      condition: "p_value > 0.05 for model comparison"
+      action: "Note in report, do not claim significant difference"
+
+dashboards:
+  # Real-time metrics to display during execution
+
+  progress:
+    - metric: models_completed
+      unit: count
+      target: 7
+      display_format: "X/7 models"
+
+    - metric: dimensions_sampled
+      unit: count
+      target: 14
+      display_format: "X/14 dimensions"
+
+    - metric: total_samples_processed
+      unit: count
+      target: 5200  # 7 models × 14 dims × ~53 samples avg
+      display_format: "X samples processed"
+
+    - metric: success_rate
+      unit: percent
+      target: 95
+      display_format: "XX.X% success rate"
+      alert_below: 90
+
+    - metric: cost_run_rate
+      unit: dollars
+      target: 20.00
+      display_format: "$XX.XX / $20.00 budget (XX%)"
+      alert_at_percent: 85
+
+  performance:
+    - metric: avg_latency_ms
+      unit: milliseconds
+      display_format: "Avg latency: XXX ms"
+
+    - metric: latency_trend
+      unit: milliseconds
+      display_format: "Last 10 samples trend"
+      trend_direction: "should be stable"
+
+    - metric: tokens_per_second
+      unit: tokens
+      display_format: "Throughput: XXX tok/s"
+
+  quality:
+    - metric: outliers_detected
+      unit: count
+      display_format: "Outliers detected: X"
+
+    - metric: anomalies_flagged
+      unit: count
+      display_format: "Anomalies flagged: X"
+
+    - metric: confidence_calibration
+      unit: score
+      display_format: "Calibration: 0.XXX"
+      alert_below: 0.75
+
+logging:
+  # Pipeline logging configuration
+  log_level: INFO
+  log_format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+  handlers:
+    console:
+      level: INFO
+      format: standard
+
+    file:
+      level: DEBUG
+      path: "phase8_aggregation_{timestamp}.log"
+      format: detailed
+
+  # Log aggregation
+  log_aggregation_interval_seconds: 60
+  archive_logs_on_completion: true
+  logs_archive_path: "results/phase-8-raw/logs/"
+
+checkpointing:
+  # Pipeline checkpointing for fault recovery
+  enabled: true
+  checkpoint_interval_samples: 100  # Checkpoint after every 100 processed samples
+  checkpoint_path: ".empirica/checkpoints/"
+
+  # Compress old checkpoints
+  compress_checkpoints_older_than_hours: 24
+
+  # Keep checkpoint history
+  max_checkpoint_history: 5  # Keep last 5 checkpoints
+
+notifications:
+  # Where to send alerts
+  channels:
+    console: true
+    file: true
+    mesh: false  # Set to true to route critical alerts to empirica-mesh-support
+
+  critical_alert_recipients:
+    - empirica-mesh-support  # If mesh enabled
+
+performance_targets:
+  # Expected performance characteristics
+  wall_clock_time_hours: 4
+  total_evaluations: 9200
+  evaluations_per_second: 0.64  # 9200 / (4 * 3600)
+
+  # Model-specific targets (from Phase 7 baseline)
+  anthropic_claude-opus_sec_per_sample: 1.8
+  anthropic_claude-haiku_sec_per_sample: 1.2
+  openai_gpt-4-turbo_sec_per_sample: 2.1
+  openai_gpt-4o-mini_sec_per_sample: 1.4
+  ollama_phi_sec_per_sample: 2.2
+  ollama_llama2_sec_per_sample: 2.5
+  ollama_mistral_sec_per_sample: 2.3
+
+...
