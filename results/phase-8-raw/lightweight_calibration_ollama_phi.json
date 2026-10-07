@@ -1,0 +1,21 @@
+{
+  "dimension": "calibration",
+  "model": "phi",
+  "samples": [
+    {
+      "sample_id": 1,
+      "input": "What is the capital of France?",
+      "output": "AI",
+      "target": "Paris",
+      "score": 0.2,
+      "elapsed_sec": 1.4779090881347656
+    }
+  ],
+  "stats": {
+    "count": 1,
+    "average": 0.2,
+    "min": 0.2,
+    "max": 0.2
+  },
+  "timestamp": "2026-09-03T18:32:45.575278"
+}

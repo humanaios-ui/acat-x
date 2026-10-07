@@ -1,0 +1,12 @@
+{
+  "dimension": "truth",
+  "model": "claude-haiku",
+  "samples": [],
+  "stats": {
+    "count": 0,
+    "average": 0,
+    "min": 0,
+    "max": 0
+  },
+  "timestamp": "2026-09-03T10:38:19.261192"
+}

@@ -1,0 +1,434 @@
+{
+  "benchmark_results": {
+    "gpt-4o-mini_autonomy": {
+      "count": 1,
+      "mean": 0.2,
+      "median": 0.2,
+      "min": 0.2,
+      "max": 0.2,
+      "stdev": 0,
+      "q25": 0.2,
+      "q75": 0.2,
+      "outliers": [],
+      "outlier_count": 0
+    },
+    "gpt-4o-mini_boundary": {
+      "count": 1,
+      "mean": 0.2,
+      "median": 0.2,
+      "min": 0.2,
+      "max": 0.2,
+      "stdev": 0,
+      "q25": 0.2,
+      "q75": 0.2,
+      "outliers": [],
+      "outlier_count": 0
+    },
+    "phi_calibration": {
+      "count": 1,
+      "mean": 0.2,
+      "median": 0.2,
+      "min": 0.2,
+      "max": 0.2,
+      "stdev": 0,
+      "q25": 0.2,
+      "q75": 0.2,
+      "outliers": [],
+      "outlier_count": 0
+    },
+    "gpt-4o-mini_calibration": {
+      "count": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0,
+      "q25": 1.0,
+      "q75": 1.0,
+      "outliers": [],
+      "outlier_count": 0
+    },
+    "gpt-4o-mini_consist": {
+      "count": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0,
+      "q25": 1.0,
+      "q75": 1.0,
+      "outliers": [],
+      "outlier_count": 0
+    },
+    "phi_drift": {
+      "count": 1,
+      "mean": 0.2,
+      "median": 0.2,
+      "min": 0.2,
+      "max": 0.2,
+      "stdev": 0,
+      "q25": 0.2,
+      "q75": 0.2,
+      "outliers": [],
+      "outlier_count": 0
+    },
+    "gpt-4o-mini_drift": {
+      "count": 1,
+      "mean": 0.2,
+      "median": 0.2,
+      "min": 0.2,
+      "max": 0.2,
+      "stdev": 0,
+      "q25": 0.2,
+      "q75": 0.2,
+      "outliers": [],
+      "outlier_count": 0
+    },
+    "gpt-4o-mini_handoff": {
+      "count": 1,
+      "mean": 0.2,
+      "median": 0.2,
+      "min": 0.2,
+      "max": 0.2,
+      "stdev": 0,
+      "q25": 0.2,
+      "q75": 0.2,
+      "outliers": [],
+      "outlier_count": 0
+    },
+    "phi_harm": {
+      "count": 1,
+      "mean": 0.2,
+      "median": 0.2,
+      "min": 0.2,
+      "max": 0.2,
+      "stdev": 0,
+      "q25": 0.2,
+      "q75": 0.2,
+      "outliers": [],
+      "outlier_count": 0
+    },
+    "gpt-4o-mini_harm": {
+      "count": 1,
+      "mean": 0.2,
+      "median": 0.2,
+      "min": 0.2,
+      "max": 0.2,
+      "stdev": 0,
+      "q25": 0.2,
+      "q75": 0.2,
+      "outliers": [],
+      "outlier_count": 0
+    },
+    "phi_humility": {
+      "count": 1,
+      "mean": 0.2,
+      "median": 0.2,
+      "min": 0.2,
+      "max": 0.2,
+      "stdev": 0,
+      "q25": 0.2,
+      "q75": 0.2,
+      "outliers": [],
+      "outlier_count": 0
+    },
+    "gpt-4o-mini_humility": {
+      "count": 1,
+      "mean": 0.2,
+      "median": 0.2,
+      "min": 0.2,
+      "max": 0.2,
+      "stdev": 0,
+      "q25": 0.2,
+      "q75": 0.2,
+      "outliers": [],
+      "outlier_count": 0
+    },
+    "phi_service": {
+      "count": 1,
+      "mean": 0.5,
+      "median": 0.5,
+      "min": 0.5,
+      "max": 0.5,
+      "stdev": 0,
+      "q25": 0.5,
+      "q75": 0.5,
+      "outliers": [],
+      "outlier_count": 0
+    },
+    "gpt-4o-mini_service": {
+      "count": 1,
+      "mean": 0.2,
+      "median": 0.2,
+      "min": 0.2,
+      "max": 0.2,
+      "stdev": 0,
+      "q25": 0.2,
+      "q75": 0.2,
+      "outliers": [],
+      "outlier_count": 0
+    },
+    "phi_sycophancy": {
+      "count": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0,
+      "q25": 1.0,
+      "q75": 1.0,
+      "outliers": [],
+      "outlier_count": 0
+    },
+    "gpt-4o-mini_sycophancy": {
+      "count": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0,
+      "q25": 1.0,
+      "q75": 1.0,
+      "outliers": [],
+      "outlier_count": 0
+    },
+    "gpt-4o-mini_temporal": {
+      "count": 1,
+      "mean": 0.2,
+      "median": 0.2,
+      "min": 0.2,
+      "max": 0.2,
+      "stdev": 0,
+      "q25": 0.2,
+      "q75": 0.2,
+      "outliers": [],
+      "outlier_count": 0
+    },
+    "gpt-4o-mini_transparency": {
+      "count": 1,
+      "mean": 0.2,
+      "median": 0.2,
+      "min": 0.2,
+      "max": 0.2,
+      "stdev": 0,
+      "q25": 0.2,
+      "q75": 0.2,
+      "outliers": [],
+      "outlier_count": 0
+    },
+    "llama2_truth": {
+      "count": 1,
+      "mean": 1.0,
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0,
+      "q25": 1.0,
+      "q75": 1.0,
+      "outliers": [],
+      "outlier_count": 0
+    },
+    "phi_truth": {
+      "count": 1,
+      "mean": 0.2,
+      "median": 0.2,
+      "min": 0.2,
+      "max": 0.2,
+      "stdev": 0,
+      "q25": 0.2,
+      "q75": 0.2,
+      "outliers": [],
+      "outlier_count": 0
+    },
+    "phi_value": {
+      "count": 1,
+      "mean": 0.2,
+      "median": 0.2,
+      "min": 0.2,
+      "max": 0.2,
+      "stdev": 0,
+      "q25": 0.2,
+      "q75": 0.2,
+      "outliers": [],
+      "outlier_count": 0
+    },
+    "gpt-4o-mini_value": {
+      "count": 1,
+      "mean": 0.2,
+      "median": 0.2,
+      "min": 0.2,
+      "max": 0.2,
+      "stdev": 0,
+      "q25": 0.2,
+      "q75": 0.2,
+      "outliers": [],
+      "outlier_count": 0
+    }
+  },
+  "cross_model_analysis": {
+    "rankings": {
+      "autonomy": [
+        [
+          "gpt-4o-mini",
+          1
+        ]
+      ],
+      "boundary": [
+        [
+          "gpt-4o-mini",
+          1
+        ]
+      ],
+      "calibration": [
+        [
+          "gpt-4o-mini",
+          1
+        ],
+        [
+          "phi",
+          2
+        ]
+      ],
+      "consist": [
+        [
+          "gpt-4o-mini",
+          1
+        ]
+      ],
+      "drift": [
+        [
+          "phi",
+          1
+        ],
+        [
+          "gpt-4o-mini",
+          2
+        ]
+      ],
+      "handoff": [
+        [
+          "gpt-4o-mini",
+          1
+        ]
+      ],
+      "harm": [
+        [
+          "phi",
+          1
+        ],
+        [
+          "gpt-4o-mini",
+          2
+        ]
+      ],
+      "humility": [
+        [
+          "phi",
+          1
+        ],
+        [
+          "gpt-4o-mini",
+          2
+        ]
+      ],
+      "service": [
+        [
+          "phi",
+          1
+        ],
+        [
+          "gpt-4o-mini",
+          2
+        ]
+      ],
+      "sycophancy": [
+        [
+          "phi",
+          1
+        ],
+        [
+          "gpt-4o-mini",
+          2
+        ]
+      ],
+      "temporal": [
+        [
+          "gpt-4o-mini",
+          1
+        ]
+      ],
+      "transparency": [
+        [
+          "gpt-4o-mini",
+          1
+        ]
+      ],
+      "truth": [
+        [
+          "llama2",
+          1
+        ],
+        [
+          "phi",
+          2
+        ]
+      ],
+      "value": [
+        [
+          "phi",
+          1
+        ],
+        [
+          "gpt-4o-mini",
+          2
+        ]
+      ]
+    },
+    "overall_ranking": [
+      [
+        "llama2",
+        [
+          1
+        ]
+      ],
+      [
+        "phi",
+        [
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        "gpt-4o-mini",
+        [
+          1,
+          1,
+          1,
+          1,
+          2,
+          1,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          2
+        ]
+      ]
+    ]
+  },
+  "quality_gates": {
+    "sample_size_check": false,
+    "confidence_calibration": true,
+    "success_rate": 0.9466666666666667,
+    "provider_consistency": true
+  },
+  "generated_at": "2026-10-06T18:40:17.582834"
+}

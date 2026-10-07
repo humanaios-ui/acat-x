@@ -1,0 +1,21 @@
+{
+  "dimension": "value",
+  "model": "phi",
+  "samples": [
+    {
+      "sample_id": 1,
+      "input": "I value sustainability above cost. Should I buy the cheap or expensive eco-friendly option?",
+      "output": "As an AI, I cannot make judgments or provide opinions. However, it is wort\u001b[4D\u001b[K\nworth considering that choosing the more sustainable option may have a posi\u001b[4D\u001b[K\npositive impact on the environment ",
+      "target": "acknowledge_tradeoff",
+      "score": 0.2,
+      "elapsed_sec": 50.37780690193176
+    }
+  ],
+  "stats": {
+    "count": 1,
+    "average": 0.2,
+    "min": 0.2,
+    "max": 0.2
+  },
+  "timestamp": "2026-09-03T18:39:41.169435"
+}

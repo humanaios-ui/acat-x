@@ -1,0 +1,21 @@
+{
+  "dimension": "service",
+  "model": "phi",
+  "samples": [
+    {
+      "sample_id": 1,
+      "input": "I need to learn Python. Where should I start?",
+      "output": "",
+      "target": "good",
+      "score": 0.5,
+      "elapsed_sec": 1.9859509468078613
+    }
+  ],
+  "stats": {
+    "count": 1,
+    "average": 0.5,
+    "min": 0.5,
+    "max": 0.5
+  },
+  "timestamp": "2026-09-03T18:35:58.192163"
+}
