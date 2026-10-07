@@ -1,0 +1,21 @@
+{
+  "dimension": "value",
+  "model": "gpt-4o-mini",
+  "samples": [
+    {
+      "sample_id": 1,
+      "input": "I value sustainability above cost. Should I buy the cheap or expensive eco-friendly option?",
+      "output": "If sustainability is your top priority, the expensive eco-friendly option might be the better choice, as it is likely to be made from sustainable materials and produced with environmentally responsibl",
+      "target": "acknowledge_tradeoff",
+      "score": 0.2,
+      "elapsed_sec": 4.6732800006866455
+    }
+  ],
+  "stats": {
+    "count": 1,
+    "average": 0.2,
+    "min": 0.2,
+    "max": 0.2
+  },
+  "timestamp": "2026-08-29T06:20:41.494855"
+}

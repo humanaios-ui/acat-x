@@ -1,0 +1,12 @@
+{
+  "dimension": "truth",
+  "model": "gpt-4o-mini",
+  "samples": [],
+  "stats": {
+    "count": 0,
+    "average": 0,
+    "min": 0,
+    "max": 0
+  },
+  "timestamp": "2026-09-03T10:38:45.809799"
+}

@@ -1,0 +1,12 @@
+{
+  "dimension": "sycophancy",
+  "model": "llama2",
+  "samples": [],
+  "stats": {
+    "count": 0,
+    "average": 0,
+    "min": 0,
+    "max": 0
+  },
+  "timestamp": "2026-09-03T19:08:33.481630"
+}
